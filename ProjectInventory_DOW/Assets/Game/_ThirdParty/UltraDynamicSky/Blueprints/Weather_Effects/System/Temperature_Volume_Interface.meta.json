@@ -1,0 +1,474 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "e3a1de6be1d9504ea6fa19fd378ed482"
+	},
+	"assetPath": "/Game/_ThirdParty/UltraDynamicSky/Blueprints/Weather_Effects/System/Temperature_Volume_Interface.Temperature_Volume_Interface",
+	"assetName": "Temperature_Volume_Interface",
+	"blueprintGuid": "EEABF43444E195AEE4F623B2E053C0CA",
+	"blueprintType": "Interface",
+	"blueprintSubclass": "Blueprint",
+	"parentClass":
+	{
+		"className": "Interface",
+		"classPath": "/Script/CoreUObject.Interface",
+		"isNative": true,
+		"moduleName": "/Script/CoreUObject"
+	},
+	"implementedInterfaces": [],
+	"variables": [],
+	"functions": [
+		{
+			"functionName": "Query Temperature Volume",
+			"functionGuid": "041A245D43B863E26F8CF4A73EBE9E55",
+			"flags":
+			{
+				"pure": false,
+				"const": false,
+				"static": false,
+				"callInEditor": false,
+				"override": false,
+				"event": false,
+				"accessSpecifier": "Public",
+				"server": false,
+				"client": false,
+				"netMulticast": false,
+				"reliable": false,
+				"blueprintAuthorityOnly": false,
+				"blueprintCosmetic": false
+			},
+			"inputs": [
+				{
+					"paramName": "Sample Location",
+					"paramType":
+					{
+						"category": "struct",
+						"subCategoryObject": "/Script/CoreUObject.Vector",
+						"pinSubCategory": "None",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "",
+					"isOutput": false,
+					"passByReference": false
+				}
+			],
+			"outputs": [
+				{
+					"paramName": "Offset",
+					"paramType":
+					{
+						"category": "real",
+						"subCategoryObject": "",
+						"pinSubCategory": "double",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "",
+					"isOutput": true,
+					"passByReference": false
+				},
+				{
+					"paramName": "Interior Temp",
+					"paramType":
+					{
+						"category": "real",
+						"subCategoryObject": "",
+						"pinSubCategory": "double",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "",
+					"isOutput": true,
+					"passByReference": false
+				},
+				{
+					"paramName": "Interior Alpha",
+					"paramType":
+					{
+						"category": "real",
+						"subCategoryObject": "",
+						"pinSubCategory": "double",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "",
+					"isOutput": true,
+					"passByReference": false
+				},
+				{
+					"paramName": "Manual Temp",
+					"paramType":
+					{
+						"category": "real",
+						"subCategoryObject": "",
+						"pinSubCategory": "double",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "",
+					"isOutput": true,
+					"passByReference": false
+				},
+				{
+					"paramName": "Manual Alpha",
+					"paramType":
+					{
+						"category": "real",
+						"subCategoryObject": "",
+						"pinSubCategory": "double",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "",
+					"isOutput": true,
+					"passByReference": false
+				}
+			],
+			"localVariables": [],
+			"description": "",
+			"keywords": [],
+			"category": "",
+			"graph":
+			{
+				"graphName": "Query Temperature Volume",
+				"graphGuid": "041A245D43B863E26F8CF4A73EBE9E55",
+				"graphType": "K2Graph",
+				"schemaClass": "/Script/BlueprintGraph.EdGraphSchema_K2",
+				"nodes": [
+					{
+						"nodeId": "Entry_0_0_2F8C7167",
+						"nodeGuid": "2F8C7167B0F7B84886AE7ECE62B697BA",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_FunctionEntry",
+						"nodeTitle": "Query Temperature Volume",
+						"nodeType": "FunctionEntry",
+						"positionX": 0,
+						"positionY": 0,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_Sample Location",
+								"pinName": "Sample Location",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Script/CoreUObject.Vector",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Result_256_0_E365F947",
+										"pinId": "execute"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Result_256_0_E365F947",
+						"nodeGuid": "E365F947CB425B41C26A46A4F8589B6C",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_FunctionResult",
+						"nodeTitle": "Return Node",
+						"nodeType": "FunctionResult",
+						"positionX": 256,
+						"positionY": 0,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_0_0_2F8C7167",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "In_Interior Alpha",
+								"pinName": "Interior Alpha",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "double",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.0",
+								"autogeneratedDefaultValue": "0.0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_Interior Temp",
+								"pinName": "Interior Temp",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "double",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.0",
+								"autogeneratedDefaultValue": "0.0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_Manual Alpha",
+								"pinName": "Manual Alpha",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "double",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.0",
+								"autogeneratedDefaultValue": "0.0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_Manual Temp",
+								"pinName": "Manual Temp",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "double",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.0",
+								"autogeneratedDefaultValue": "0.0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_Offset",
+								"pinName": "Offset",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "double",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.0",
+								"autogeneratedDefaultValue": "0.0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							}
+						]
+					}
+				]
+			}
+		}
+	],
+	"macros": [],
+	"eventGraph":
+	{
+		"graphName": "",
+		"graphGuid": "",
+		"graphType": "",
+		"schemaClass": "",
+		"nodes": []
+	},
+	"constructionScript":
+	{
+		"graphName": "",
+		"graphGuid": "",
+		"graphType": "",
+		"schemaClass": "",
+		"nodes": []
+	},
+	"components": [],
+	"cdoProperties": [],
+	"additionalGraphs": [],
+	"stateMachines": [],
+	"widgetTree": [],
+	"dependencies": [
+		{
+			"assetPath": "/Script/CoreUObject.Interface",
+			"assetName": "Interface",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": "Parent class"
+		}
+	],
+	"metaData":
+	{
+	},
+	"assetType": "Blueprint",
+	"coverage":
+	{
+		"variables":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"functions":
+		{
+			"total": 1,
+			"documented": 1
+		},
+		"components":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"graphs":
+		{
+			"total": 2,
+			"documented": 2
+		},
+		"cdoProperties":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"specialized":
+		{
+			"applicable": [],
+			"documented": []
+		},
+		"overallPct": 100
+	}
+}

@@ -1,0 +1,20 @@
+{
+  "_comment": "M28.4.3 create_user_defined_struct soak-only. UUserDefinedStruct IS in the inventory pipeline's logic-bearing set (PROJECT_INVENTORY_BRIEF.md §3) so inspect COULD run, but we mark skip_inspect: true to match the M28.4.1 / M28.4.2 scope — the soak gate is sufficient for the determinism signal (round-2 byte-identity), and inspect adds content-assertion complexity (expected_md / not_expected_md) that risks matrix breakage for cosmetic render differences unrelated to the op's correctness. The soak gate validates byte-identity of the scratch .uasset across 2 rounds of create_user_defined_struct — trivially stable since the duplicate pre-places a UDS at scratch_path and the op short-circuits on StaticLoadObject hit (skipped=\"uds already exists\", no save path exercised on round 2). The actual create-from-scratch path is covered by MCP pytest's get_op_catalog coverage + manual editor verification. UUserDefinedStruct has two FGuid::NewGuid() call sites per the M28.4.0 research (Struct->Guid + per-member VarGuid); the CreateUserDefinedStructDeterministic bridge UFUNCTION seeds both via SeedGuidFromJoined(uds_path + ':uds') + SeedGuidFromJoined(uds_path + ':uds_var:BpxAutoBool').",
+  "skip_inspect": true,
+  "op": "create_user_defined_struct",
+  "source_fixture": "/Game/TestBlueprints/UDS_BpxTestEmpty",
+  "scratch_path":   "/Game/TestBlueprints/UDS_BpxTest_CreateScratch",
+  "inspect_path":   "/Game/TestBlueprints/UDS_BpxTest_CreateScratch",
+  "plan_kwargs": {
+    "uds_path": "/Game/TestBlueprints/UDS_BpxTest_CreateScratch"
+  },
+  "expected_md": [
+    "UDS_BpxTest_CreateScratch"
+  ],
+  "not_expected_md": [],
+  "expected_deep": [],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2
+  }
+}

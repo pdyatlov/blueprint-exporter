@@ -1,0 +1,1777 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "a3120f31586b870b0d2a3461d9a24ec8"
+	},
+	"assetPath": "/Game/Standards/Player/BP_FPS_CameraModifier.BP_FPS_CameraModifier",
+	"assetName": "BP_FPS_CameraModifier",
+	"blueprintGuid": "EA1B4A2E433EFE5F3541F9A56BCD4FBC",
+	"blueprintType": "Normal",
+	"blueprintSubclass": "Blueprint",
+	"parentClass":
+	{
+		"className": "CameraModifier",
+		"classPath": "/Script/Engine.CameraModifier",
+		"isNative": true,
+		"moduleName": "/Script/Engine"
+	},
+	"implementedInterfaces": [],
+	"variables": [
+		{
+			"variableName": "Owner_AC_WeaponController",
+			"variableGuid": "FF8C4D9B4FF471597767EA91C1D81327",
+			"variableType":
+			{
+				"category": "object",
+				"subCategoryObject": "/Game/_ThirdParty/GASP_example/Loadout/AC_WeaponController.AC_WeaponController_C",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "None",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": true,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "",
+			"metaData":
+			{
+			}
+		}
+	],
+	"functions": [
+		{
+			"functionName": "BlueprintModifyCamera",
+			"functionGuid": "7AAA99054BE602DDB2D83BAD2EC2D3FF",
+			"flags":
+			{
+				"pure": false,
+				"const": false,
+				"static": false,
+				"callInEditor": false,
+				"override": false,
+				"event": false,
+				"accessSpecifier": "Public",
+				"server": false,
+				"client": false,
+				"netMulticast": false,
+				"reliable": false,
+				"blueprintAuthorityOnly": false,
+				"blueprintCosmetic": true
+			},
+			"inputs": [
+				{
+					"paramName": "DeltaTime",
+					"paramType":
+					{
+						"category": "real",
+						"subCategoryObject": "",
+						"pinSubCategory": "float",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "0.0",
+					"isOutput": false,
+					"passByReference": false
+				},
+				{
+					"paramName": "ViewLocation",
+					"paramType":
+					{
+						"category": "struct",
+						"subCategoryObject": "/Script/CoreUObject.Vector",
+						"pinSubCategory": "None",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "0, 0, 0",
+					"isOutput": false,
+					"passByReference": false
+				},
+				{
+					"paramName": "ViewRotation",
+					"paramType":
+					{
+						"category": "struct",
+						"subCategoryObject": "/Script/CoreUObject.Rotator",
+						"pinSubCategory": "None",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "0, 0, 0",
+					"isOutput": false,
+					"passByReference": false
+				},
+				{
+					"paramName": "FOV",
+					"paramType":
+					{
+						"category": "real",
+						"subCategoryObject": "",
+						"pinSubCategory": "float",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "0.0",
+					"isOutput": false,
+					"passByReference": false
+				}
+			],
+			"outputs": [
+				{
+					"paramName": "NewViewLocation",
+					"paramType":
+					{
+						"category": "struct",
+						"subCategoryObject": "/Script/CoreUObject.Vector",
+						"pinSubCategory": "None",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "",
+					"isOutput": true,
+					"passByReference": false
+				},
+				{
+					"paramName": "NewViewRotation",
+					"paramType":
+					{
+						"category": "struct",
+						"subCategoryObject": "/Script/CoreUObject.Rotator",
+						"pinSubCategory": "None",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "",
+					"isOutput": true,
+					"passByReference": false
+				},
+				{
+					"paramName": "NewFOV",
+					"paramType":
+					{
+						"category": "real",
+						"subCategoryObject": "",
+						"pinSubCategory": "float",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "",
+					"isOutput": true,
+					"passByReference": false
+				}
+			],
+			"localVariables": [],
+			"description": "",
+			"keywords": [],
+			"category": "",
+			"graph":
+			{
+				"graphName": "BlueprintModifyCamera",
+				"graphGuid": "7AAA99054BE602DDB2D83BAD2EC2D3FF",
+				"graphType": "K2Graph",
+				"schemaClass": "/Script/BlueprintGraph.EdGraphSchema_K2",
+				"nodes": [
+					{
+						"nodeId": "Call_UpdateCameraOffset_560_-16_5F37511D",
+						"nodeGuid": "5F37511D7800CCF7C3168540FE5CEFC3",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "UpdateCameraOffset",
+						"nodeType": "CallFunction",
+						"positionX": 560,
+						"positionY": -16,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_CameraPosition",
+								"pinName": "CameraPosition",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Script/CoreUObject.Vector",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0, 0, 0",
+								"autogeneratedDefaultValue": "0, 0, 0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_464_192_FA5E4BE2",
+										"pinId": "OutputPin"
+									}
+								]
+							},
+							{
+								"pinId": "In_CameraQuaternion",
+								"pinName": "CameraQuaternion",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Script/CoreUObject.Quat",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Conv_RotatorToQuaternion_416_128_548E16F2",
+										"pinId": "ReturnValue"
+									}
+								]
+							},
+							{
+								"pinId": "In_Delta",
+								"pinName": "Delta",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "double",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.0",
+								"autogeneratedDefaultValue": "0.0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_256_96_8525A717",
+										"pinId": "OutputPin"
+									}
+								]
+							},
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_0_0_D12E682F",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_Owner_AC_WeaponController_320_48_91D070F8",
+										"pinId": "Owner_AC_WeaponController"
+									}
+								]
+							},
+							{
+								"pinId": "Out_ModifiedRotation",
+								"pinName": "ModifiedRotation",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Script/CoreUObject.Quat",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Quat_Rotator_880_96_001E2532",
+										"pinId": "Q"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Result_1088_0_61CEA8C4",
+										"pinId": "execute"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "UpdateCameraOffset",
+							"targetFunction": "/Game/_ThirdParty/GASP_example/Loadout/AC_WeaponController.SKEL_AC_WeaponController_C:UpdateCameraOffset",
+							"functionName": "UpdateCameraOffset",
+							"functionOwnerClass": "/Game/_ThirdParty/GASP_example/Loadout/AC_WeaponController.SKEL_AC_WeaponController_C"
+						}
+					},
+					{
+						"nodeId": "Entry_0_0_D12E682F",
+						"nodeGuid": "D12E682FA65366C51212A6802ED2AA9F",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_FunctionEntry",
+						"nodeTitle": "Blueprint Modify Camera",
+						"nodeType": "FunctionEntry",
+						"positionX": 0,
+						"positionY": 0,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_DeltaTime",
+								"pinName": "DeltaTime",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.0",
+								"autogeneratedDefaultValue": "0.0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_256_96_8525A717",
+										"pinId": "InputPin"
+									}
+								]
+							},
+							{
+								"pinId": "Out_FOV",
+								"pinName": "FOV",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.0",
+								"autogeneratedDefaultValue": "0.0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_256_224_84EC749A",
+										"pinId": "InputPin"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_UpdateCameraOffset_560_-16_5F37511D",
+										"pinId": "execute"
+									}
+								]
+							},
+							{
+								"pinId": "Out_ViewLocation",
+								"pinName": "ViewLocation",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Script/CoreUObject.Vector",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0, 0, 0",
+								"autogeneratedDefaultValue": "0, 0, 0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_288_192_2C0E2C97",
+										"pinId": "InputPin"
+									}
+								]
+							},
+							{
+								"pinId": "Out_ViewRotation",
+								"pinName": "ViewRotation",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Script/CoreUObject.Rotator",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0, 0, 0",
+								"autogeneratedDefaultValue": "0, 0, 0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_272_208_D725BC87",
+										"pinId": "InputPin"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Result_1088_0_61CEA8C4",
+						"nodeGuid": "61CEA8C4E7931576D77C3A15923C94BF",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_FunctionResult",
+						"nodeTitle": "Return Node",
+						"nodeType": "FunctionResult",
+						"positionX": 1088,
+						"positionY": 0,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_UpdateCameraOffset_560_-16_5F37511D",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "In_NewFOV",
+								"pinName": "NewFOV",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.0",
+								"autogeneratedDefaultValue": "0.0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_960_224_522FD14E",
+										"pinId": "OutputPin"
+									}
+								]
+							},
+							{
+								"pinId": "In_NewViewLocation",
+								"pinName": "NewViewLocation",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Script/CoreUObject.Vector",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0, 0, 0",
+								"autogeneratedDefaultValue": "0, 0, 0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_928_192_6CFAB797",
+										"pinId": "OutputPin"
+									}
+								]
+							},
+							{
+								"pinId": "In_NewViewRotation",
+								"pinName": "NewViewRotation",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Script/CoreUObject.Rotator",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0, 0, 0",
+								"autogeneratedDefaultValue": "0, 0, 0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_1008_96_8E08A536",
+										"pinId": "OutputPin"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Get_Owner_AC_WeaponController_320_48_91D070F8",
+						"nodeGuid": "91D070F81B44BE90679BE6A2C94E9A46",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get Owner_AC_WeaponController",
+						"nodeType": "VariableGet",
+						"positionX": 320,
+						"positionY": 48,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Loadout/AC_WeaponController.AC_WeaponController_C",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_Owner_AC_WeaponController",
+								"pinName": "Owner_AC_WeaponController",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Loadout/AC_WeaponController.AC_WeaponController_C",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_UpdateCameraOffset_560_-16_5F37511D",
+										"pinId": "self"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "Owner_AC_WeaponController",
+							"isPure": true,
+							"variableSourceClass": "Self"
+						}
+					},
+					{
+						"nodeId": "K2Node_Knot_256_96_8525A717",
+						"nodeGuid": "8525A7173704509D98964E0EE96A9297",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_Knot",
+						"nodeTitle": "Reroute Node",
+						"nodeType": "K2Node",
+						"positionX": 256,
+						"positionY": 96,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_InputPin",
+								"pinName": "InputPin",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_0_0_D12E682F",
+										"pinId": "DeltaTime"
+									}
+								]
+							},
+							{
+								"pinId": "Out_OutputPin",
+								"pinName": "OutputPin",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_UpdateCameraOffset_560_-16_5F37511D",
+										"pinId": "Delta"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Call_Quat_Rotator_880_96_001E2532",
+						"nodeGuid": "001E253251EAF20CF893CF7C4278E793",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "Quat_Rotator",
+						"nodeType": "CallFunction",
+						"positionX": 880,
+						"positionY": 96,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_Q",
+								"pinName": "Q",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Script/CoreUObject.Quat",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": true,
+									"isConst": true,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_UpdateCameraOffset_560_-16_5F37511D",
+										"pinId": "ModifiedRotation"
+									}
+								]
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Script/CoreUObject.Rotator",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0, 0, 0",
+								"autogeneratedDefaultValue": "0, 0, 0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_1008_96_8E08A536",
+										"pinId": "InputPin"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "Quat_Rotator",
+							"targetFunction": "/Script/Engine.KismetMathLibrary:Quat_Rotator",
+							"functionName": "Quat_Rotator",
+							"functionOwnerClass": "/Script/Engine.KismetMathLibrary"
+						}
+					},
+					{
+						"nodeId": "K2Node_Knot_1008_96_8E08A536",
+						"nodeGuid": "8E08A5367AB923CD49509A7C3FB8949D",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_Knot",
+						"nodeTitle": "Reroute Node",
+						"nodeType": "K2Node",
+						"positionX": 1008,
+						"positionY": 96,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_InputPin",
+								"pinName": "InputPin",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Quat_Rotator_880_96_001E2532",
+										"pinId": "ReturnValue"
+									}
+								]
+							},
+							{
+								"pinId": "Out_OutputPin",
+								"pinName": "OutputPin",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Result_1088_0_61CEA8C4",
+										"pinId": "NewViewRotation"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Call_Conv_RotatorToQuaternion_416_128_548E16F2",
+						"nodeGuid": "548E16F28312944178EAB82133875821",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "Conv_RotatorToQuaternion",
+						"nodeType": "CallFunction",
+						"positionX": 416,
+						"positionY": 128,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_InRot",
+								"pinName": "InRot",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Script/CoreUObject.Rotator",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0, 0, 0",
+								"autogeneratedDefaultValue": "0, 0, 0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_352_208_20A9B794",
+										"pinId": "OutputPin"
+									}
+								]
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Script/CoreUObject.Quat",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_UpdateCameraOffset_560_-16_5F37511D",
+										"pinId": "CameraQuaternion"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "Conv_RotatorToQuaternion",
+							"targetFunction": "/Script/Engine.KismetMathLibrary:Conv_RotatorToQuaternion",
+							"functionName": "Conv_RotatorToQuaternion",
+							"functionOwnerClass": "/Script/Engine.KismetMathLibrary"
+						}
+					},
+					{
+						"nodeId": "K2Node_Knot_288_192_2C0E2C97",
+						"nodeGuid": "2C0E2C978695711C9C2171556984FF98",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_Knot",
+						"nodeTitle": "Reroute Node",
+						"nodeType": "K2Node",
+						"positionX": 288,
+						"positionY": 192,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_InputPin",
+								"pinName": "InputPin",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_0_0_D12E682F",
+										"pinId": "ViewLocation"
+									}
+								]
+							},
+							{
+								"pinId": "Out_OutputPin",
+								"pinName": "OutputPin",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_464_192_FA5E4BE2",
+										"pinId": "InputPin"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "K2Node_Knot_464_192_FA5E4BE2",
+						"nodeGuid": "FA5E4BE2839FCF524E6824151AD870A4",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_Knot",
+						"nodeTitle": "Reroute Node",
+						"nodeType": "K2Node",
+						"positionX": 464,
+						"positionY": 192,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_InputPin",
+								"pinName": "InputPin",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_288_192_2C0E2C97",
+										"pinId": "OutputPin"
+									}
+								]
+							},
+							{
+								"pinId": "Out_OutputPin",
+								"pinName": "OutputPin",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_UpdateCameraOffset_560_-16_5F37511D",
+										"pinId": "CameraPosition"
+									},
+									{
+										"nodeId": "K2Node_Knot_928_192_6CFAB797",
+										"pinId": "InputPin"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "K2Node_Knot_928_192_6CFAB797",
+						"nodeGuid": "6CFAB79717370EF46BBC7BD6C3B7167E",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_Knot",
+						"nodeTitle": "Reroute Node",
+						"nodeType": "K2Node",
+						"positionX": 928,
+						"positionY": 192,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_InputPin",
+								"pinName": "InputPin",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_464_192_FA5E4BE2",
+										"pinId": "OutputPin"
+									}
+								]
+							},
+							{
+								"pinId": "Out_OutputPin",
+								"pinName": "OutputPin",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Result_1088_0_61CEA8C4",
+										"pinId": "NewViewLocation"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "K2Node_Knot_272_208_D725BC87",
+						"nodeGuid": "D725BC875D0B201361E6997D90274CCD",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_Knot",
+						"nodeTitle": "Reroute Node",
+						"nodeType": "K2Node",
+						"positionX": 272,
+						"positionY": 208,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_InputPin",
+								"pinName": "InputPin",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_0_0_D12E682F",
+										"pinId": "ViewRotation"
+									}
+								]
+							},
+							{
+								"pinId": "Out_OutputPin",
+								"pinName": "OutputPin",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_352_208_20A9B794",
+										"pinId": "InputPin"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "K2Node_Knot_352_208_20A9B794",
+						"nodeGuid": "20A9B7948054DCDBF42458AB30143B08",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_Knot",
+						"nodeTitle": "Reroute Node",
+						"nodeType": "K2Node",
+						"positionX": 352,
+						"positionY": 208,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_InputPin",
+								"pinName": "InputPin",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_272_208_D725BC87",
+										"pinId": "OutputPin"
+									}
+								]
+							},
+							{
+								"pinId": "Out_OutputPin",
+								"pinName": "OutputPin",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Conv_RotatorToQuaternion_416_128_548E16F2",
+										"pinId": "InRot"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "K2Node_Knot_256_224_84EC749A",
+						"nodeGuid": "84EC749AEC05857E899CE75C152BB46F",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_Knot",
+						"nodeTitle": "Reroute Node",
+						"nodeType": "K2Node",
+						"positionX": 256,
+						"positionY": 224,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_InputPin",
+								"pinName": "InputPin",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_0_0_D12E682F",
+										"pinId": "FOV"
+									}
+								]
+							},
+							{
+								"pinId": "Out_OutputPin",
+								"pinName": "OutputPin",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_960_224_522FD14E",
+										"pinId": "InputPin"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "K2Node_Knot_960_224_522FD14E",
+						"nodeGuid": "522FD14ED115F9B80A79542AD3D06CEA",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_Knot",
+						"nodeTitle": "Reroute Node",
+						"nodeType": "K2Node",
+						"positionX": 960,
+						"positionY": 224,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_InputPin",
+								"pinName": "InputPin",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_256_224_84EC749A",
+										"pinId": "OutputPin"
+									}
+								]
+							},
+							{
+								"pinId": "Out_OutputPin",
+								"pinName": "OutputPin",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Result_1088_0_61CEA8C4",
+										"pinId": "NewFOV"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		}
+	],
+	"macros": [],
+	"eventGraph":
+	{
+		"graphName": "EventGraph",
+		"graphGuid": "A04B703A4495F101EBCFB69D8415C71C",
+		"graphType": "EventGraph",
+		"schemaClass": "/Script/BlueprintGraph.EdGraphSchema_K2",
+		"nodes": []
+	},
+	"constructionScript":
+	{
+		"graphName": "",
+		"graphGuid": "",
+		"graphType": "",
+		"schemaClass": "",
+		"nodes": []
+	},
+	"components": [],
+	"cdoProperties": [],
+	"additionalGraphs": [],
+	"stateMachines": [],
+	"widgetTree": [],
+	"dependencies": [
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Loadout/AC_WeaponController",
+			"assetName": "AC_WeaponController",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/Engine.CameraModifier",
+			"assetName": "CameraModifier",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": "Parent class"
+		}
+	],
+	"metaData":
+	{
+	},
+	"assetType": "Blueprint",
+	"coverage":
+	{
+		"variables":
+		{
+			"total": 1,
+			"documented": 1
+		},
+		"functions":
+		{
+			"total": 1,
+			"documented": 1
+		},
+		"components":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"graphs":
+		{
+			"total": 2,
+			"documented": 2
+		},
+		"cdoProperties":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"specialized":
+		{
+			"applicable": [],
+			"documented": []
+		},
+		"overallPct": 100
+	}
+}

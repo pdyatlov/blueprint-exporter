@@ -1,0 +1,203 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"assetType": "PoseSearchDatabase",
+	"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Databases/Relaxed/PSD_Relaxed_Stand_Walk_FromTraversal.PSD_Relaxed_Stand_Walk_FromTraversal",
+	"assetName": "PSD_Relaxed_Stand_Walk_FromTraversal",
+	"parentClass":
+	{
+		"className": "DataAsset",
+		"classPath": "/Script/Engine.DataAsset",
+		"isNative": true
+	},
+	"schema":
+	{
+		"path": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Schemas/PSS_Default_Mover.PSS_Default_Mover",
+		"sampleRate": 30,
+		"cardinality": 21,
+		"channels": [
+			{
+				"className": "PoseSearchFeatureChannel_Trajectory",
+				"classPath": "/Script/PoseSearch.PoseSearchFeatureChannel_Trajectory"
+			},
+			{
+				"className": "PoseSearchFeatureChannel_Curve",
+				"classPath": "/Script/PoseSearch.PoseSearchFeatureChannel_Curve"
+			}
+		],
+		"skeletonRoles": [
+			{
+				"role": "(none)",
+				"skeletonPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Meshes/SK_UEFN_Mannequin.SK_UEFN_Mannequin"
+			}
+		]
+	},
+	"animationAssets": [
+		{
+			"index": 0,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Traversal/Hurdle/M_Relaxed_Traversal_Hurdle_1_0_walk_F_Lfoot.M_Relaxed_Traversal_Hurdle_1_0_walk_F_Lfoot",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		},
+		{
+			"index": 1,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Traversal/Hurdle/M_Relaxed_Traversal_Hurdle_1_0_walk_F_Rfoot.M_Relaxed_Traversal_Hurdle_1_0_walk_F_Rfoot",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		},
+		{
+			"index": 2,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Traversal/Hurdle/M_Relaxed_Traversal_Hurdle_1_0_walk_F_V2_Lfoot.M_Relaxed_Traversal_Hurdle_1_0_walk_F_V2_Lfoot",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		},
+		{
+			"index": 3,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Traversal/Hurdle/M_Relaxed_Traversal_Hurdle_1_0_walk_F_V2_Rfoot.M_Relaxed_Traversal_Hurdle_1_0_walk_F_V2_Rfoot",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		},
+		{
+			"index": 4,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Traversal/Mantle/M_Relaxed_Traversal_Mantle_1_0_walk_F_Lfoot.M_Relaxed_Traversal_Mantle_1_0_walk_F_Lfoot",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		},
+		{
+			"index": 5,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Traversal/Mantle/M_Relaxed_Traversal_Mantle_1_0_walk_F_Rfoot.M_Relaxed_Traversal_Mantle_1_0_walk_F_Rfoot",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		}
+	],
+	"normalizationSet": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Normalization_Sets/PSN_Relaxed_All.PSN_Relaxed_All",
+	"performance":
+	{
+		"poseSearchMode": "PCAKDTree",
+		"continuingPoseCostBias": -0.10000000149011612,
+		"baseCostBias": -0.10000000149011612,
+		"loopingCostBias": -0.004999999888241291,
+		"continuingInteractionCostBias": 0,
+		"kdTreeQueryNumNeighbors": 200,
+		"numberOfPrincipalComponents": 4,
+		"kdTreeMaxLeafSize": 16,
+		"posePruningSimilarityThreshold": 0,
+		"pcaValuesPruningSimilarityThreshold": 0,
+		"excludeFromDatabaseMin": 0,
+		"excludeFromDatabaseMax": -0.30000001192092896,
+		"additionalExtrapolationMin": -100,
+		"additionalExtrapolationMax": 100
+	},
+	"tags": [],
+	"dependencies": [
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Normalization_Sets/PSN_Relaxed_All",
+			"assetName": "PSN_Relaxed_All",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Schemas/PSS_Default_Mover",
+			"assetName": "PSS_Default_Mover",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Traversal/Hurdle/M_Relaxed_Traversal_Hurdle_1_0_walk_F_Lfoot",
+			"assetName": "M_Relaxed_Traversal_Hurdle_1_0_walk_F_Lfoot",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Traversal/Hurdle/M_Relaxed_Traversal_Hurdle_1_0_walk_F_Rfoot",
+			"assetName": "M_Relaxed_Traversal_Hurdle_1_0_walk_F_Rfoot",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Traversal/Hurdle/M_Relaxed_Traversal_Hurdle_1_0_walk_F_V2_Lfoot",
+			"assetName": "M_Relaxed_Traversal_Hurdle_1_0_walk_F_V2_Lfoot",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Traversal/Hurdle/M_Relaxed_Traversal_Hurdle_1_0_walk_F_V2_Rfoot",
+			"assetName": "M_Relaxed_Traversal_Hurdle_1_0_walk_F_V2_Rfoot",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Traversal/Mantle/M_Relaxed_Traversal_Mantle_1_0_walk_F_Lfoot",
+			"assetName": "M_Relaxed_Traversal_Mantle_1_0_walk_F_Lfoot",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Traversal/Mantle/M_Relaxed_Traversal_Mantle_1_0_walk_F_Rfoot",
+			"assetName": "M_Relaxed_Traversal_Mantle_1_0_walk_F_Rfoot",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/PoseSearch",
+			"assetName": "PoseSearch",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		}
+	],
+	"coverage":
+	{
+		"animationAssets":
+		{
+			"total": 6,
+			"documented": 6
+		},
+		"specialized":
+		{
+			"applicable": [],
+			"documented": []
+		},
+		"overallPct": 100
+	}
+}

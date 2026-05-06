@@ -1,0 +1,23 @@
+{
+  "_comment": "M28.3.1 add_branch_node post-apply inspection + soak. Duplicates BP_BpxTestGraphNodes (empty Actor BP) into a scratch path and spawns a UK2Node_IfThenElse (Branch) onto the default EventGraph at a fixed position. The inspect gate asserts the rendered .deep.md surfaces the new Branch node; the soak gate asserts md5 stability across 2 rounds, proving SeedGuidFromJoined(':graph:EventGraph:branch:128,-48') + SeedPinGuidsForNode (per-pin seed over the four default Branch pins execute/Condition/then/else) overrides UEdGraphNode::CreateNewGuid + UEdGraphPin::CreatePin's FGuid::NewGuid() calls that fire inside AllocateDefaultPins.",
+  "op": "add_branch_node",
+  "source_fixture": "/Game/TestBlueprints/BP_BpxTestGraphNodes",
+  "scratch_path":   "/Game/TestBlueprints/BP_BpxTest_GraphNodesScratch",
+  "inspect_path":   "/Game/TestBlueprints/BP_BpxTest_GraphNodesScratch",
+  "plan_kwargs": {
+    "bp_path":    "/Game/TestBlueprints/BP_BpxTest_GraphNodesScratch",
+    "graph_name": "EventGraph",
+    "position":   [128, -48]
+  },
+  "expected_md": [],
+  "not_expected_md": [],
+  "expected_deep": [
+    "K2Node_IfThenElse",
+    "Branch"
+  ],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2,
+    "stable_keys": ["node_guid"]
+  }
+}

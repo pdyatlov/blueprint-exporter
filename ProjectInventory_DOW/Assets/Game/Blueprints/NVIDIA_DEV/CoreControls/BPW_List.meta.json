@@ -1,0 +1,5898 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "f40d4f3efa11736b8533ae4ea4c925c8"
+	},
+	"assetPath": "/Game/Blueprints/NVIDIA_DEV/CoreControls/BPW_List.BPW_List",
+	"assetName": "BPW_List",
+	"blueprintGuid": "9534F4234961A42AAE320197094F2DB1",
+	"blueprintType": "Normal",
+	"blueprintSubclass": "WidgetBlueprint",
+	"parentClass":
+	{
+		"className": "UserWidget",
+		"classPath": "/Script/UMG.UserWidget",
+		"isNative": true,
+		"moduleName": "/Script/UMG"
+	},
+	"implementedInterfaces": [],
+	"variables": [
+		{
+			"variableName": "dropdown_padding",
+			"variableGuid": "0922494D40320048FF1E5B872D7141FC",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "0.000000",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "",
+			"metaData":
+			{
+			}
+		},
+		{
+			"variableName": "label",
+			"variableGuid": "87051F514849C29C04DF9ABE91378AE1",
+			"variableType":
+			{
+				"category": "text",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "NSLOCTEXT(\"[C4C9C729961945447EE5C3274BCC0267]\", \"019F143C46BE044BB341DBB6723A3567\", \"Label\")",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "",
+			"metaData":
+			{
+			}
+		},
+		{
+			"variableName": "options",
+			"variableGuid": "9B50390A4F1E46D01B35DE9F52310898",
+			"variableType":
+			{
+				"category": "string",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": true,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "",
+			"metaData":
+			{
+			}
+		},
+		{
+			"variableName": "selected_id",
+			"variableGuid": "416F1F8D48FF82D1C45F0C8D0B4372D9",
+			"variableType":
+			{
+				"category": "int",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "0",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "",
+			"metaData":
+			{
+				"MultiLine": "true"
+			}
+		},
+		{
+			"variableName": "SelectionChanged",
+			"variableGuid": "DEC66ED74B9CCC31D03E838B9CC4E838",
+			"variableType":
+			{
+				"category": "mcdelegate",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false,
+				"subCategoryObjectResolved": false
+			},
+			"defaultValue": "()",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": true,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "",
+			"metaData":
+			{
+			}
+		}
+	],
+	"functions": [
+		{
+			"functionName": "AddOption",
+			"functionGuid": "C2B77A32480D8E3638D84CA3F6DAEC7F",
+			"flags":
+			{
+				"pure": false,
+				"const": false,
+				"static": false,
+				"callInEditor": false,
+				"override": false,
+				"event": false,
+				"accessSpecifier": "Public",
+				"server": false,
+				"client": false,
+				"netMulticast": false,
+				"reliable": false,
+				"blueprintAuthorityOnly": false,
+				"blueprintCosmetic": false
+			},
+			"inputs": [
+				{
+					"paramName": "Option",
+					"paramType":
+					{
+						"category": "string",
+						"subCategoryObject": "",
+						"pinSubCategory": "None",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "",
+					"isOutput": false,
+					"passByReference": false
+				}
+			],
+			"outputs": [],
+			"localVariables": [],
+			"description": "",
+			"keywords": [],
+			"category": "Default",
+			"graph":
+			{
+				"graphName": "AddOption",
+				"graphGuid": "C2B77A32480D8E3638D84CA3F6DAEC7F",
+				"graphType": "K2Graph",
+				"schemaClass": "/Script/UMGEditor.WidgetGraphSchema",
+				"nodes": [
+					{
+						"nodeId": "Get_options_112_-16_958BD8E8",
+						"nodeGuid": "958BD8E890485403B1F09BC36D7A755E",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get options",
+						"nodeType": "VariableGet",
+						"positionX": 112,
+						"positionY": -16,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_options",
+								"pinName": "options",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "string",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": true,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Array_Add_352_0_E312E620",
+										"pinId": "TargetArray"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "options",
+							"isPure": true,
+							"variableSourceClass": "Self"
+						}
+					},
+					{
+						"nodeId": "Call_Array_Add_352_0_E312E620",
+						"nodeGuid": "E312E620D97933FBD31582934C7B8480",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallArrayFunction",
+						"nodeTitle": "Array_Add",
+						"nodeType": "CallFunction",
+						"positionX": 352,
+						"positionY": 0,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_112_48_CB02E40E",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "In_NewItem",
+								"pinName": "NewItem",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "string",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": true,
+									"isConst": true,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_112_48_CB02E40E",
+										"pinId": "Option"
+									}
+								]
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_TargetArray",
+								"pinName": "TargetArray",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "string",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": true,
+									"isSet": false,
+									"isMap": false,
+									"isReference": true,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_options_112_-16_958BD8E8",
+										"pinId": "options"
+									}
+								]
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0",
+								"autogeneratedDefaultValue": "0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_AddOption_544_0_EA8A7878",
+										"pinId": "execute"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "Array_Add",
+							"targetFunction": "/Script/Engine.KismetArrayLibrary:Array_Add",
+							"functionName": "Array_Add",
+							"functionOwnerClass": "/Script/Engine.KismetArrayLibrary"
+						}
+					},
+					{
+						"nodeId": "Call_AddOption_544_0_EA8A7878",
+						"nodeGuid": "EA8A7878D26ECD5E164461A7579DBE96",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "AddOption",
+						"nodeType": "CallFunction",
+						"positionX": 544,
+						"positionY": 0,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Array_Add_352_0_E312E620",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "In_Option",
+								"pinName": "Option",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "string",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_112_48_CB02E40E",
+										"pinId": "Option"
+									}
+								]
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_l_items_352_144_9B85D84F",
+										"pinId": "l_items"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "AddOption",
+							"targetFunction": "/Script/UMG.ComboBoxString:AddOption",
+							"functionName": "AddOption",
+							"functionOwnerClass": "/Script/UMG.ComboBoxString"
+						}
+					},
+					{
+						"nodeId": "Entry_112_48_CB02E40E",
+						"nodeGuid": "CB02E40EEFC57E3953288CFE47C2F474",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_FunctionEntry",
+						"nodeTitle": "AddOption",
+						"nodeType": "FunctionEntry",
+						"positionX": 112,
+						"positionY": 48,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_Option",
+								"pinName": "Option",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "string",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_AddOption_544_0_EA8A7878",
+										"pinId": "Option"
+									},
+									{
+										"nodeId": "Call_Array_Add_352_0_E312E620",
+										"pinId": "NewItem"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Array_Add_352_0_E312E620",
+										"pinId": "execute"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Get_l_items_352_144_9B85D84F",
+						"nodeGuid": "9B85D84F7F53293D59220BC073815149",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get l_items",
+						"nodeType": "VariableGet",
+						"positionX": 352,
+						"positionY": 144,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/UMG.ComboBoxString",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_l_items",
+								"pinName": "l_items",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/UMG.ComboBoxString",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_AddOption_544_0_EA8A7878",
+										"pinId": "self"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "l_items",
+							"isPure": true,
+							"variableSourceClass": "Self"
+						}
+					}
+				]
+			}
+		},
+		{
+			"functionName": "GetSelectedOption",
+			"functionGuid": "89AFCC324B065C117E7DA6A94209B0A2",
+			"flags":
+			{
+				"pure": false,
+				"const": false,
+				"static": false,
+				"callInEditor": false,
+				"override": false,
+				"event": false,
+				"accessSpecifier": "Public",
+				"server": false,
+				"client": false,
+				"netMulticast": false,
+				"reliable": false,
+				"blueprintAuthorityOnly": false,
+				"blueprintCosmetic": false
+			},
+			"inputs": [],
+			"outputs": [
+				{
+					"paramName": "OptionID",
+					"paramType":
+					{
+						"category": "int",
+						"subCategoryObject": "",
+						"pinSubCategory": "None",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "",
+					"isOutput": true,
+					"passByReference": false
+				},
+				{
+					"paramName": "OptionLabel",
+					"paramType":
+					{
+						"category": "string",
+						"subCategoryObject": "",
+						"pinSubCategory": "None",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "",
+					"isOutput": true,
+					"passByReference": false
+				}
+			],
+			"localVariables": [],
+			"description": "",
+			"keywords": [],
+			"category": "Default",
+			"graph":
+			{
+				"graphName": "GetSelectedOption",
+				"graphGuid": "89AFCC324B065C117E7DA6A94209B0A2",
+				"graphType": "K2Graph",
+				"schemaClass": "/Script/UMGEditor.WidgetGraphSchema",
+				"nodes": [
+					{
+						"nodeId": "Entry_0_0_1182882F",
+						"nodeGuid": "1182882FF5884CFD26C3CDA08191E532",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_FunctionEntry",
+						"nodeTitle": "GetSelectedOption",
+						"nodeType": "FunctionEntry",
+						"positionX": 0,
+						"positionY": 0,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Result_256_0_FEA39596",
+										"pinId": "execute"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Result_256_0_FEA39596",
+						"nodeGuid": "FEA39596F2B88940320DE70EAA4C0DCF",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_FunctionResult",
+						"nodeTitle": "Return Node",
+						"nodeType": "FunctionResult",
+						"positionX": 256,
+						"positionY": 0,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_0_0_1182882F",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "In_OptionID",
+								"pinName": "OptionID",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0",
+								"autogeneratedDefaultValue": "0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_GetSelectedIndex_-32_80_86A97BB1",
+										"pinId": "ReturnValue"
+									}
+								]
+							},
+							{
+								"pinId": "In_OptionLabel",
+								"pinName": "OptionLabel",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "string",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_GetSelectedOption_-32_176_6A60FF83",
+										"pinId": "ReturnValue"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Call_GetSelectedIndex_-32_80_86A97BB1",
+						"nodeGuid": "86A97BB103F20E9EDCBE58843B5A66BD",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "GetSelectedIndex",
+						"nodeType": "CallFunction",
+						"positionX": -32,
+						"positionY": 80,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_l_items_-224_144_DCCDD9C1",
+										"pinId": "l_items"
+									}
+								]
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0",
+								"autogeneratedDefaultValue": "0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Result_256_0_FEA39596",
+										"pinId": "OptionID"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "GetSelectedIndex",
+							"targetFunction": "/Script/UMG.ComboBoxString:GetSelectedIndex",
+							"functionName": "GetSelectedIndex",
+							"functionOwnerClass": "/Script/UMG.ComboBoxString"
+						}
+					},
+					{
+						"nodeId": "Get_l_items_-224_144_DCCDD9C1",
+						"nodeGuid": "DCCDD9C1AA9677B69304D1F8841D8F73",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get l_items",
+						"nodeType": "VariableGet",
+						"positionX": -224,
+						"positionY": 144,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/UMG.ComboBoxString",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_l_items",
+								"pinName": "l_items",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/UMG.ComboBoxString",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_GetSelectedIndex_-32_80_86A97BB1",
+										"pinId": "self"
+									},
+									{
+										"nodeId": "Call_GetSelectedOption_-32_176_6A60FF83",
+										"pinId": "self"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "l_items",
+							"isPure": true,
+							"variableSourceClass": "Self"
+						}
+					},
+					{
+						"nodeId": "Call_GetSelectedOption_-32_176_6A60FF83",
+						"nodeGuid": "6A60FF835561FD516377EA6892B31F4B",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "GetSelectedOption",
+						"nodeType": "CallFunction",
+						"positionX": -32,
+						"positionY": 176,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_l_items_-224_144_DCCDD9C1",
+										"pinId": "l_items"
+									}
+								]
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "string",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Result_256_0_FEA39596",
+										"pinId": "OptionLabel"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "GetSelectedOption",
+							"targetFunction": "/Script/UMG.ComboBoxString:GetSelectedOption",
+							"functionName": "GetSelectedOption",
+							"functionOwnerClass": "/Script/UMG.ComboBoxString"
+						}
+					}
+				]
+			}
+		},
+		{
+			"functionName": "SetDisabled",
+			"functionGuid": "C4DD081F42C34D7A85DDA49935D0C1CC",
+			"flags":
+			{
+				"pure": false,
+				"const": false,
+				"static": false,
+				"callInEditor": false,
+				"override": false,
+				"event": false,
+				"accessSpecifier": "Public",
+				"server": false,
+				"client": false,
+				"netMulticast": false,
+				"reliable": false,
+				"blueprintAuthorityOnly": false,
+				"blueprintCosmetic": false
+			},
+			"inputs": [
+				{
+					"paramName": "Is Disabled",
+					"paramType":
+					{
+						"category": "bool",
+						"subCategoryObject": "",
+						"pinSubCategory": "None",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "",
+					"isOutput": false,
+					"passByReference": false
+				}
+			],
+			"outputs": [],
+			"localVariables": [],
+			"description": "",
+			"keywords": [],
+			"category": "Default",
+			"graph":
+			{
+				"graphName": "SetDisabled",
+				"graphGuid": "C4DD081F42C34D7A85DDA49935D0C1CC",
+				"graphType": "K2Graph",
+				"schemaClass": "/Script/UMGEditor.WidgetGraphSchema",
+				"nodes": [
+					{
+						"nodeId": "Entry_0_0_5B4E2768",
+						"nodeGuid": "5B4E2768B9A62AC49425A5330064643A",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_FunctionEntry",
+						"nodeTitle": "SetDisabled",
+						"nodeType": "FunctionEntry",
+						"positionX": 0,
+						"positionY": 0,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_Is Disabled",
+								"pinName": "Is Disabled",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_IfThenElse_176_0_2AF1C077",
+										"pinId": "Condition"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_IfThenElse_176_0_2AF1C077",
+										"pinId": "execute"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "K2Node_IfThenElse_176_0_2AF1C077",
+						"nodeGuid": "2AF1C0776D318553B382F70129C7E3A6",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_IfThenElse",
+						"nodeTitle": "Branch",
+						"nodeType": "Branch",
+						"positionX": 176,
+						"positionY": 0,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_Condition",
+								"pinName": "Condition",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "true",
+								"autogeneratedDefaultValue": "true",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_0_0_5B4E2768",
+										"pinId": "Is Disabled"
+									}
+								]
+							},
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_0_0_5B4E2768",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "Out_else",
+								"pinName": "else",
+								"pinFriendlyName": "false",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "true",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"functionName": "SetSelectedOption",
+			"functionGuid": "3E75B64D4E971C5BB2B3759E943729C5",
+			"flags":
+			{
+				"pure": false,
+				"const": false,
+				"static": false,
+				"callInEditor": false,
+				"override": false,
+				"event": false,
+				"accessSpecifier": "Public",
+				"server": false,
+				"client": false,
+				"netMulticast": false,
+				"reliable": false,
+				"blueprintAuthorityOnly": false,
+				"blueprintCosmetic": false
+			},
+			"inputs": [
+				{
+					"paramName": "OptionName",
+					"paramType":
+					{
+						"category": "string",
+						"subCategoryObject": "",
+						"pinSubCategory": "None",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "",
+					"isOutput": false,
+					"passByReference": false
+				},
+				{
+					"paramName": "OptionID",
+					"paramType":
+					{
+						"category": "int",
+						"subCategoryObject": "",
+						"pinSubCategory": "None",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "",
+					"isOutput": false,
+					"passByReference": false
+				}
+			],
+			"outputs": [],
+			"localVariables": [],
+			"description": "",
+			"keywords": [],
+			"category": "Default",
+			"graph":
+			{
+				"graphName": "SetSelectedOption",
+				"graphGuid": "3E75B64D4E971C5BB2B3759E943729C5",
+				"graphType": "K2Graph",
+				"schemaClass": "/Script/UMGEditor.WidgetGraphSchema",
+				"nodes": [
+					{
+						"nodeId": "Call_EqualEqual_StrStr_-112_-192_68E132A7",
+						"nodeGuid": "68E132A7364A271B277EF2AA0B33CFFA",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "EqualEqual_StrStr",
+						"nodeType": "CallFunction",
+						"positionX": -112,
+						"positionY": -192,
+						"comment": "If Option Name is empty use option ID",
+						"commentBubbleVisible": true,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_A",
+								"pinName": "A",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "string",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_-336_-128_BDB5E924",
+										"pinId": "OptionName"
+									}
+								]
+							},
+							{
+								"pinId": "In_B",
+								"pinName": "B",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "string",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "false",
+								"autogeneratedDefaultValue": "false",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_IfThenElse_144_-128_194E7294",
+										"pinId": "Condition"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "EqualEqual_StrStr",
+							"targetFunction": "/Script/Engine.KismetStringLibrary:EqualEqual_StrStr",
+							"functionName": "EqualEqual_StrStr",
+							"functionOwnerClass": "/Script/Engine.KismetStringLibrary"
+						}
+					},
+					{
+						"nodeId": "Call_SetSelectedIndex_704_-144_D059A4C2",
+						"nodeGuid": "D059A4C2228B39EE64B3B6463690FCD8",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "SetSelectedIndex",
+						"nodeType": "CallFunction",
+						"positionX": 704,
+						"positionY": -144,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_IfThenElse_144_-128_194E7294",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "In_Index",
+								"pinName": "Index",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": true,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0",
+								"autogeneratedDefaultValue": "0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SelectInt_208_64_BD5A9BF1",
+										"pinId": "ReturnValue"
+									}
+								]
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_l_items_528_-64_C36F0739",
+										"pinId": "l_items"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "SetSelectedIndex",
+							"targetFunction": "/Script/UMG.ComboBoxString:SetSelectedIndex",
+							"functionName": "SetSelectedIndex",
+							"functionOwnerClass": "/Script/UMG.ComboBoxString"
+						}
+					},
+					{
+						"nodeId": "Entry_-336_-128_BDB5E924",
+						"nodeGuid": "BDB5E9244B39B49EF7C21AA46EBB7C79",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_FunctionEntry",
+						"nodeTitle": "SetSelectedOption",
+						"nodeType": "FunctionEntry",
+						"positionX": -336,
+						"positionY": -128,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_OptionID",
+								"pinName": "OptionID",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_EqualEqual_IntInt_-48_160_FDFD72E9",
+										"pinId": "A"
+									},
+									{
+										"nodeId": "Call_SelectInt_208_64_BD5A9BF1",
+										"pinId": "B"
+									}
+								]
+							},
+							{
+								"pinId": "Out_OptionName",
+								"pinName": "OptionName",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "string",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_EqualEqual_StrStr_-112_-192_68E132A7",
+										"pinId": "A"
+									},
+									{
+										"nodeId": "Call_SetSelectedOption_704_48_7D533F84",
+										"pinId": "Option"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_IfThenElse_144_-128_194E7294",
+										"pinId": "execute"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "K2Node_IfThenElse_144_-128_194E7294",
+						"nodeGuid": "194E72949C6940EFF29CAF8B23A0CB4A",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_IfThenElse",
+						"nodeTitle": "Branch",
+						"nodeType": "Branch",
+						"positionX": 144,
+						"positionY": -128,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_Condition",
+								"pinName": "Condition",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "true",
+								"autogeneratedDefaultValue": "true",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_EqualEqual_StrStr_-112_-192_68E132A7",
+										"pinId": "ReturnValue"
+									}
+								]
+							},
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_-336_-128_BDB5E924",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "Out_else",
+								"pinName": "else",
+								"pinFriendlyName": "false",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetSelectedOption_704_48_7D533F84",
+										"pinId": "execute"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "true",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetSelectedIndex_704_-144_D059A4C2",
+										"pinId": "execute"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Get_l_items_528_-64_C36F0739",
+						"nodeGuid": "C36F0739DC695E9FF47833D64A037AED",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get l_items",
+						"nodeType": "VariableGet",
+						"positionX": 528,
+						"positionY": -64,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/UMG.ComboBoxString",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_l_items",
+								"pinName": "l_items",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/UMG.ComboBoxString",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetSelectedIndex_704_-144_D059A4C2",
+										"pinId": "self"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "l_items",
+							"isPure": true,
+							"variableSourceClass": "Self"
+						}
+					},
+					{
+						"nodeId": "Call_Array_Length_-320_32_3F1E75E1",
+						"nodeGuid": "3F1E75E17BC38ECCAEB468576B253112",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallArrayFunction",
+						"nodeTitle": "Array_Length",
+						"nodeType": "CallFunction",
+						"positionX": -320,
+						"positionY": 32,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_TargetArray",
+								"pinName": "TargetArray",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "string",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": true,
+									"isSet": false,
+									"isMap": false,
+									"isReference": true,
+									"isConst": true,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_options_-496_48_FC02B606",
+										"pinId": "options"
+									}
+								]
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0",
+								"autogeneratedDefaultValue": "0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Subtract_IntInt_-32_48_27BEDCB5",
+										"pinId": "A"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "Array_Length",
+							"targetFunction": "/Script/Engine.KismetArrayLibrary:Array_Length",
+							"functionName": "Array_Length",
+							"functionOwnerClass": "/Script/Engine.KismetArrayLibrary"
+						}
+					},
+					{
+						"nodeId": "Get_options_-496_48_FC02B606",
+						"nodeGuid": "FC02B6067E52AA3EF2040B6CEB2966C7",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get options",
+						"nodeType": "VariableGet",
+						"positionX": -496,
+						"positionY": 48,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_options",
+								"pinName": "options",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "string",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": true,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Array_Length_-320_32_3F1E75E1",
+										"pinId": "TargetArray"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "options",
+							"isPure": true,
+							"variableSourceClass": "Self"
+						}
+					},
+					{
+						"nodeId": "Call_Subtract_IntInt_-32_48_27BEDCB5",
+						"nodeGuid": "27BEDCB5DA41AD8CB50BEECDA31DACEB",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_PromotableOperator",
+						"nodeTitle": "Subtract_IntInt",
+						"nodeType": "CallFunction",
+						"positionX": -32,
+						"positionY": 48,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_A",
+								"pinName": "A",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Array_Length_-320_32_3F1E75E1",
+										"pinId": "ReturnValue"
+									}
+								]
+							},
+							{
+								"pinId": "In_B",
+								"pinName": "B",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "1",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SelectInt_208_64_BD5A9BF1",
+										"pinId": "A"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "Subtract_IntInt",
+							"targetFunction": "/Script/Engine.KismetMathLibrary:Subtract_IntInt",
+							"functionName": "Subtract_IntInt",
+							"functionOwnerClass": "/Script/Engine.KismetMathLibrary"
+						}
+					},
+					{
+						"nodeId": "Call_SetSelectedOption_704_48_7D533F84",
+						"nodeGuid": "7D533F84FC8E3C817D14B08BF6F76C2F",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "SetSelectedOption",
+						"nodeType": "CallFunction",
+						"positionX": 704,
+						"positionY": 48,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_IfThenElse_144_-128_194E7294",
+										"pinId": "else"
+									}
+								]
+							},
+							{
+								"pinId": "In_Option",
+								"pinName": "Option",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "string",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_-336_-128_BDB5E924",
+										"pinId": "OptionName"
+									}
+								]
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_l_items_544_128_30D851D8",
+										"pinId": "l_items"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "SetSelectedOption",
+							"targetFunction": "/Script/UMG.ComboBoxString:SetSelectedOption",
+							"functionName": "SetSelectedOption",
+							"functionOwnerClass": "/Script/UMG.ComboBoxString"
+						}
+					},
+					{
+						"nodeId": "Call_SelectInt_208_64_BD5A9BF1",
+						"nodeGuid": "BD5A9BF1823EF09F1F3DC65282341692",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "SelectInt",
+						"nodeType": "CallFunction",
+						"positionX": 208,
+						"positionY": 64,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_A",
+								"pinName": "A",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0",
+								"autogeneratedDefaultValue": "0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Subtract_IntInt_-32_48_27BEDCB5",
+										"pinId": "ReturnValue"
+									}
+								]
+							},
+							{
+								"pinId": "In_B",
+								"pinName": "B",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0",
+								"autogeneratedDefaultValue": "0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_-336_-128_BDB5E924",
+										"pinId": "OptionID"
+									}
+								]
+							},
+							{
+								"pinId": "In_bPickA",
+								"pinName": "bPickA",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "false",
+								"autogeneratedDefaultValue": "false",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_EqualEqual_IntInt_-48_160_FDFD72E9",
+										"pinId": "ReturnValue"
+									}
+								]
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0",
+								"autogeneratedDefaultValue": "0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetSelectedIndex_704_-144_D059A4C2",
+										"pinId": "Index"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "SelectInt",
+							"targetFunction": "/Script/Engine.KismetMathLibrary:SelectInt",
+							"functionName": "SelectInt",
+							"functionOwnerClass": "/Script/Engine.KismetMathLibrary"
+						}
+					},
+					{
+						"nodeId": "Get_l_items_544_128_30D851D8",
+						"nodeGuid": "30D851D8385DA64C9FA4D2D97514193D",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get l_items",
+						"nodeType": "VariableGet",
+						"positionX": 544,
+						"positionY": 128,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/UMG.ComboBoxString",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_l_items",
+								"pinName": "l_items",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/UMG.ComboBoxString",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetSelectedOption_704_48_7D533F84",
+										"pinId": "self"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "l_items",
+							"isPure": true,
+							"variableSourceClass": "Self"
+						}
+					},
+					{
+						"nodeId": "Call_EqualEqual_IntInt_-48_160_FDFD72E9",
+						"nodeGuid": "FDFD72E908B583966EB5CC9C64024713",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_PromotableOperator",
+						"nodeTitle": "EqualEqual_IntInt",
+						"nodeType": "CallFunction",
+						"positionX": -48,
+						"positionY": 160,
+						"comment": "Last Index",
+						"commentBubbleVisible": true,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_A",
+								"pinName": "A",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_-336_-128_BDB5E924",
+										"pinId": "OptionID"
+									}
+								]
+							},
+							{
+								"pinId": "In_B",
+								"pinName": "B",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "-1",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_ErrorTolerance",
+								"pinName": "ErrorTolerance",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "None",
+									"subCategoryObject": "",
+									"pinSubCategory": "",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"hasBrokenReference": true,
+									"brokenReferenceInfo": "Pin has no category (NAME_None) - likely corrupted"
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SelectInt_208_64_BD5A9BF1",
+										"pinId": "bPickA"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "EqualEqual_IntInt",
+							"targetFunction": "/Script/Engine.KismetMathLibrary:EqualEqual_IntInt",
+							"functionName": "EqualEqual_IntInt",
+							"functionOwnerClass": "/Script/Engine.KismetMathLibrary"
+						}
+					}
+				]
+			}
+		}
+	],
+	"macros": [],
+	"eventGraph":
+	{
+		"graphName": "EventGraph",
+		"graphGuid": "B209BB1A47E5AFD7EEA0AF8FCE989395",
+		"graphType": "EventGraph",
+		"schemaClass": "/Script/BlueprintGraph.EdGraphSchema_K2",
+		"nodes": [
+			{
+				"nodeId": "Call_SetText_400_-16_5654CE97",
+				"nodeGuid": "5654CE97099F1D7FE2D3C12C93FFD5BB",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+				"nodeTitle": "SetText",
+				"nodeType": "CallFunction",
+				"positionX": 400,
+				"positionY": -16,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_execute",
+						"pinName": "execute",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Event_PreConstruct_0_0_01800047",
+								"pinId": "Out_then"
+							}
+						]
+					},
+					{
+						"pinId": "In_InText",
+						"pinName": "InText",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "text",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Get_label_224_128_DEAE0D78",
+								"pinId": "Out_label"
+							}
+						]
+					},
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Get_txt_label_224_80_CED27BFB",
+								"pinId": "Out_txt_label"
+							}
+						]
+					},
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "K2Node_MacroInstance_592_0_E78D4E52",
+								"pinId": "In_Exec"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"memberName": "SetText",
+					"targetFunction": "/Script/UMG.TextBlock:SetText",
+					"functionName": "SetText",
+					"functionOwnerClass": "/Script/UMG.TextBlock"
+				}
+			},
+			{
+				"nodeId": "Call_AddOption_880_-16_EC6A44FD",
+				"nodeGuid": "EC6A44FDD817C5F56F744859ADAC6884",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+				"nodeTitle": "AddOption",
+				"nodeType": "CallFunction",
+				"positionX": 880,
+				"positionY": -16,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_execute",
+						"pinName": "execute",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "K2Node_MacroInstance_592_0_E78D4E52",
+								"pinId": "Out_LoopBody"
+							}
+						]
+					},
+					{
+						"pinId": "In_Option",
+						"pinName": "Option",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "string",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "K2Node_MacroInstance_592_0_E78D4E52",
+								"pinId": "Out_Array Element"
+							}
+						]
+					},
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Get_l_items_656_192_1200B0D1",
+								"pinId": "Out_l_items"
+							}
+						]
+					},
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					}
+				],
+				"nodeSpecificData":
+				{
+					"memberName": "AddOption",
+					"targetFunction": "/Script/UMG.ComboBoxString:AddOption",
+					"functionName": "AddOption",
+					"functionOwnerClass": "/Script/UMG.ComboBoxString"
+				}
+			},
+			{
+				"nodeId": "Event_PreConstruct_0_0_01800047",
+				"nodeGuid": "018000475BEA2CB9D002670029D997F1",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_Event",
+				"nodeTitle": "Event Pre Construct",
+				"nodeType": "Event",
+				"positionX": 0,
+				"positionY": 0,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": true,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "Out_IsDesignTime",
+						"pinName": "IsDesignTime",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "bool",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "false",
+						"autogeneratedDefaultValue": "false",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_OutputDelegate",
+						"pinName": "OutputDelegate",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "delegate",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SetText_400_-16_5654CE97",
+								"pinId": "In_execute"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"eventName": "PreConstruct",
+					"customFunctionName": "None",
+					"isOverrideEvent": true
+				}
+			},
+			{
+				"nodeId": "K2Node_MacroInstance_592_0_E78D4E52",
+				"nodeGuid": "E78D4E5219657805A66AE73F90CE6E3A",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_MacroInstance",
+				"nodeTitle": "For Each Loop",
+				"nodeType": "MacroInstance",
+				"positionX": 592,
+				"positionY": 0,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_Array",
+						"pinName": "Array",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "string",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": true,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Get_options_416_176_B328DDCE",
+								"pinId": "Out_options"
+							}
+						]
+					},
+					{
+						"pinId": "In_Exec",
+						"pinName": "Exec",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SetText_400_-16_5654CE97",
+								"pinId": "Out_then"
+							}
+						]
+					},
+					{
+						"pinId": "Out_Array Element",
+						"pinName": "Array Element",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "string",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_AddOption_880_-16_EC6A44FD",
+								"pinId": "In_Option"
+							}
+						]
+					},
+					{
+						"pinId": "Out_Array Index",
+						"pinName": "Array Index",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "int",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_Completed",
+						"pinName": "Completed",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SetSelectedIndex_880_176_BDD0F1D0",
+								"pinId": "In_execute"
+							}
+						]
+					},
+					{
+						"pinId": "Out_LoopBody",
+						"pinName": "LoopBody",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_AddOption_880_-16_EC6A44FD",
+								"pinId": "In_execute"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"macroGraphName": "ForEachLoop",
+					"macroBlueprintPath": "/Engine/EditorBlueprintResources/StandardMacros.StandardMacros"
+				}
+			},
+			{
+				"nodeId": "Get_txt_label_224_80_CED27BFB",
+				"nodeGuid": "CED27BFBD504D4F8B117A527D7FBDE11",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+				"nodeTitle": "Get txt_label",
+				"nodeType": "VariableGet",
+				"positionX": 224,
+				"positionY": 80,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "/Script/UMG.TextBlock",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": true,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_txt_label",
+						"pinName": "txt_label",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "/Script/UMG.TextBlock",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SetText_400_-16_5654CE97",
+								"pinId": "In_self"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"variableName": "txt_label",
+					"isPure": true,
+					"variableSourceClass": "Self"
+				}
+			},
+			{
+				"nodeId": "Get_label_224_128_DEAE0D78",
+				"nodeGuid": "DEAE0D78101C606A0BAAFEE4472A211A",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+				"nodeTitle": "Get label",
+				"nodeType": "VariableGet",
+				"positionX": 224,
+				"positionY": 128,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": true,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_label",
+						"pinName": "label",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "text",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SetText_400_-16_5654CE97",
+								"pinId": "In_InText"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"variableName": "label",
+					"isPure": true,
+					"variableSourceClass": "Self"
+				}
+			},
+			{
+				"nodeId": "Get_options_416_176_B328DDCE",
+				"nodeGuid": "B328DDCE2BAB0CD22AFBD2C3851AF9C2",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+				"nodeTitle": "Get options",
+				"nodeType": "VariableGet",
+				"positionX": 416,
+				"positionY": 176,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": true,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_options",
+						"pinName": "options",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "string",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": true,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "K2Node_MacroInstance_592_0_E78D4E52",
+								"pinId": "In_Array"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"variableName": "options",
+					"isPure": true,
+					"variableSourceClass": "Self"
+				}
+			},
+			{
+				"nodeId": "Call_SetSelectedIndex_880_176_BDD0F1D0",
+				"nodeGuid": "BDD0F1D0D479D4FC020F5E964BADB6FD",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+				"nodeTitle": "SetSelectedIndex",
+				"nodeType": "CallFunction",
+				"positionX": 880,
+				"positionY": 176,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_execute",
+						"pinName": "execute",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "K2Node_MacroInstance_592_0_E78D4E52",
+								"pinId": "Out_Completed"
+							}
+						]
+					},
+					{
+						"pinId": "In_Index",
+						"pinName": "Index",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "int",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": true,
+							"isWeakPointer": false
+						},
+						"defaultValue": "0",
+						"autogeneratedDefaultValue": "0",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Get_selected_id_656_272_ED592C7E",
+								"pinId": "Out_selected_id"
+							}
+						]
+					},
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Get_l_items_656_192_1200B0D1",
+								"pinId": "Out_l_items"
+							}
+						]
+					},
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SetPadding_1168_352_7E091E04",
+								"pinId": "In_execute"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"memberName": "SetSelectedIndex",
+					"targetFunction": "/Script/UMG.ComboBoxString:SetSelectedIndex",
+					"functionName": "SetSelectedIndex",
+					"functionOwnerClass": "/Script/UMG.ComboBoxString"
+				}
+			},
+			{
+				"nodeId": "Get_l_items_656_192_1200B0D1",
+				"nodeGuid": "1200B0D1348A31D60183E9878012B150",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+				"nodeTitle": "Get l_items",
+				"nodeType": "VariableGet",
+				"positionX": 656,
+				"positionY": 192,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "/Script/UMG.ComboBoxString",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": true,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_l_items",
+						"pinName": "l_items",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "/Script/UMG.ComboBoxString",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_AddOption_880_-16_EC6A44FD",
+								"pinId": "In_self"
+							},
+							{
+								"nodeId": "Call_SetSelectedIndex_880_176_BDD0F1D0",
+								"pinId": "In_self"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"variableName": "l_items",
+					"isPure": true,
+					"variableSourceClass": "Self"
+				}
+			},
+			{
+				"nodeId": "Event_Construct_0_208_730BE217",
+				"nodeGuid": "730BE217D7897F32493344EC7E18D462",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_Event",
+				"nodeTitle": "Event Construct",
+				"nodeType": "Event",
+				"positionX": 0,
+				"positionY": 208,
+				"comment": "This node is disabled and will not be called.\nDrag off pins to build functionality.",
+				"commentBubbleVisible": true,
+				"commentBubblePinned": true,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "Out_OutputDelegate",
+						"pinName": "OutputDelegate",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "delegate",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					}
+				],
+				"nodeSpecificData":
+				{
+					"eventName": "Construct",
+					"customFunctionName": "None",
+					"isOverrideEvent": true
+				}
+			},
+			{
+				"nodeId": "Get_selected_id_656_272_ED592C7E",
+				"nodeGuid": "ED592C7E52C3DE952275861950F0115B",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+				"nodeTitle": "Get selected_id",
+				"nodeType": "VariableGet",
+				"positionX": 656,
+				"positionY": 272,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": true,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_selected_id",
+						"pinName": "selected_id",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "int",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "0",
+						"autogeneratedDefaultValue": "0",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SetSelectedIndex_880_176_BDD0F1D0",
+								"pinId": "In_Index"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"variableName": "selected_id",
+					"isPure": true,
+					"variableSourceClass": "Self"
+				}
+			},
+			{
+				"nodeId": "K2Node_DynamicCast_848_336_102F49BC",
+				"nodeGuid": "102F49BCC2783B05F8BDB3857E040BDB",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_DynamicCast",
+				"nodeTitle": "Cast To HorizontalBoxSlot",
+				"nodeType": "Cast",
+				"positionX": 848,
+				"positionY": 336,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_Object",
+						"pinName": "Object",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "/Script/UMG.HorizontalBoxSlot",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Get_Slot_640_352_E11D561E",
+								"pinId": "Out_Slot"
+							}
+						]
+					},
+					{
+						"pinId": "Out_AsHorizontal Box Slot",
+						"pinName": "AsHorizontal Box Slot",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "/Script/UMG.HorizontalBoxSlot",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SetPadding_1168_352_7E091E04",
+								"pinId": "In_self"
+							}
+						]
+					},
+					{
+						"pinId": "Out_bSuccess",
+						"pinName": "bSuccess",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "bool",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					}
+				],
+				"nodeSpecificData":
+				{
+					"targetType": "/Script/UMG.HorizontalBoxSlot",
+					"isPureCast": true
+				}
+			},
+			{
+				"nodeId": "Get_l_items_480_352_07135F34",
+				"nodeGuid": "07135F3477F0ACC55B7FC5C345331630",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+				"nodeTitle": "Get l_items",
+				"nodeType": "VariableGet",
+				"positionX": 480,
+				"positionY": 352,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "/Script/UMG.ComboBoxString",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": true,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_l_items",
+						"pinName": "l_items",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "/Script/UMG.ComboBoxString",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Get_Slot_640_352_E11D561E",
+								"pinId": "In_self"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"variableName": "l_items",
+					"isPure": true,
+					"variableSourceClass": "Self"
+				}
+			},
+			{
+				"nodeId": "Get_Slot_640_352_E11D561E",
+				"nodeGuid": "E11D561ED9D2EA20D511AFD2E4878DE3",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+				"nodeTitle": "Get Slot",
+				"nodeType": "VariableGet",
+				"positionX": 640,
+				"positionY": 352,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "/Script/UMG.PanelSlot",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Get_l_items_480_352_07135F34",
+								"pinId": "Out_l_items"
+							}
+						]
+					},
+					{
+						"pinId": "Out_Slot",
+						"pinName": "Slot",
+						"pinFriendlyName": "Slot",
+						"direction": "Output",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "/Script/UMG.PanelSlot",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "K2Node_DynamicCast_848_336_102F49BC",
+								"pinId": "In_Object"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"variableName": "Slot",
+					"isPure": true
+				}
+			},
+			{
+				"nodeId": "Call_SetPadding_1168_352_7E091E04",
+				"nodeGuid": "7E091E0449A3D3C1729A700C28AC8361",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+				"nodeTitle": "SetPadding",
+				"nodeType": "CallFunction",
+				"positionX": 1168,
+				"positionY": 352,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_execute",
+						"pinName": "execute",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SetSelectedIndex_880_176_BDD0F1D0",
+								"pinId": "Out_then"
+							}
+						]
+					},
+					{
+						"pinId": "In_InPadding",
+						"pinName": "InPadding",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "struct",
+							"subCategoryObject": "/Script/SlateCore.Margin",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "K2Node_MakeStruct_896_496_8AC94287",
+								"pinId": "Out_Margin"
+							}
+						]
+					},
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "K2Node_DynamicCast_848_336_102F49BC",
+								"pinId": "Out_AsHorizontal Box Slot"
+							}
+						]
+					},
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					}
+				],
+				"nodeSpecificData":
+				{
+					"memberName": "SetPadding",
+					"targetFunction": "/Script/UMG.HorizontalBoxSlot:SetPadding",
+					"functionName": "SetPadding",
+					"functionOwnerClass": "/Script/UMG.HorizontalBoxSlot"
+				}
+			},
+			{
+				"nodeId": "Event_Tick_0_416_4A559A4F",
+				"nodeGuid": "4A559A4F07BF1FEAD634AF2D11AC32E7",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_Event",
+				"nodeTitle": "Event Tick",
+				"nodeType": "Event",
+				"positionX": 0,
+				"positionY": 416,
+				"comment": "This node is disabled and will not be called.\nDrag off pins to build functionality.",
+				"commentBubbleVisible": true,
+				"commentBubblePinned": true,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "Out_InDeltaTime",
+						"pinName": "InDeltaTime",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "real",
+							"subCategoryObject": "",
+							"pinSubCategory": "float",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "0.0",
+						"autogeneratedDefaultValue": "0.0",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_MyGeometry",
+						"pinName": "MyGeometry",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "struct",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_OutputDelegate",
+						"pinName": "OutputDelegate",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "delegate",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					}
+				],
+				"nodeSpecificData":
+				{
+					"eventName": "Tick",
+					"customFunctionName": "None",
+					"isOverrideEvent": true
+				}
+			},
+			{
+				"nodeId": "K2Node_MakeStruct_896_496_8AC94287",
+				"nodeGuid": "8AC94287DD7E94600220FA681B21A2CE",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_MakeStruct",
+				"nodeTitle": "Make Margin",
+				"nodeType": "K2Node",
+				"positionX": 896,
+				"positionY": 496,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_Bottom",
+						"pinName": "Bottom",
+						"pinFriendlyName": "Bottom",
+						"direction": "Input",
+						"type":
+						{
+							"category": "real",
+							"subCategoryObject": "",
+							"pinSubCategory": "float",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "0.000000",
+						"autogeneratedDefaultValue": "0.000000",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "In_Left",
+						"pinName": "Left",
+						"pinFriendlyName": "Left",
+						"direction": "Input",
+						"type":
+						{
+							"category": "real",
+							"subCategoryObject": "",
+							"pinSubCategory": "float",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "0.000000",
+						"autogeneratedDefaultValue": "0.000000",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Get_dropdown_padding_704_512_0739A8BE",
+								"pinId": "Out_dropdown_padding"
+							}
+						]
+					},
+					{
+						"pinId": "In_Right",
+						"pinName": "Right",
+						"pinFriendlyName": "Right",
+						"direction": "Input",
+						"type":
+						{
+							"category": "real",
+							"subCategoryObject": "",
+							"pinSubCategory": "float",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "0.000000",
+						"autogeneratedDefaultValue": "0.000000",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "In_Top",
+						"pinName": "Top",
+						"pinFriendlyName": "Top",
+						"direction": "Input",
+						"type":
+						{
+							"category": "real",
+							"subCategoryObject": "",
+							"pinSubCategory": "float",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "0.000000",
+						"autogeneratedDefaultValue": "0.000000",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_Margin",
+						"pinName": "Margin",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "struct",
+							"subCategoryObject": "/Script/SlateCore.Margin",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SetPadding_1168_352_7E091E04",
+								"pinId": "In_InPadding"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"structType": "/Script/SlateCore.Margin"
+				}
+			},
+			{
+				"nodeId": "Get_dropdown_padding_704_512_0739A8BE",
+				"nodeGuid": "0739A8BEBC498F444F579ED99E115062",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+				"nodeTitle": "Get dropdown_padding",
+				"nodeType": "VariableGet",
+				"positionX": 704,
+				"positionY": 512,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": true,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_dropdown_padding",
+						"pinName": "dropdown_padding",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "real",
+							"subCategoryObject": "",
+							"pinSubCategory": "double",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "0.0",
+						"autogeneratedDefaultValue": "0.0",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "K2Node_MakeStruct_896_496_8AC94287",
+								"pinId": "In_Left"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"variableName": "dropdown_padding",
+					"isPure": true,
+					"variableSourceClass": "Self"
+				}
+			},
+			{
+				"nodeId": "Event_BndEvt__BPW_List_l_items_K2Node_ComponentBoundEvent_0_OnSelectionChangedEvent__DelegateSignature_0_768_8DE3C780",
+				"nodeGuid": "8DE3C780B3C9E14BD3B7912560750181",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_ComponentBoundEvent",
+				"nodeTitle": "On Selection Changed (l_items)",
+				"nodeType": "Event",
+				"positionX": 0,
+				"positionY": 768,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "Out_OutputDelegate",
+						"pinName": "OutputDelegate",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "delegate",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_SelectedItem",
+						"pinName": "SelectedItem",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "string",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_SelectionType",
+						"pinName": "SelectionType",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "byte",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "OnKeyPress",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "K2Node_CallDelegate_768_768_1CB1DEBA",
+								"pinId": "In_execute"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"eventName": "BndEvt__BPW_List_l_items_K2Node_ComponentBoundEvent_0_OnSelectionChangedEvent__DelegateSignature",
+					"customFunctionName": "BndEvt__BPW_List_l_items_K2Node_ComponentBoundEvent_0_OnSelectionChangedEvent__DelegateSignature",
+					"isOverrideEvent": false
+				}
+			},
+			{
+				"nodeId": "K2Node_CallDelegate_768_768_1CB1DEBA",
+				"nodeGuid": "1CB1DEBAC91E35783B7DA9D803653417",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_CallDelegate",
+				"nodeTitle": "Call Selection Changed",
+				"nodeType": "K2Node",
+				"positionX": 768,
+				"positionY": 768,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_execute",
+						"pinName": "execute",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SetSelectedOption_496_960_55B79397",
+								"pinId": "Out_then"
+							},
+							{
+								"nodeId": "Event_BndEvt__BPW_List_l_items_K2Node_ComponentBoundEvent_0_OnSelectionChangedEvent__DelegateSignature_0_768_8DE3C780",
+								"pinId": "Out_then"
+							}
+						]
+					},
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					}
+				],
+				"nodeSpecificData":
+				{
+					"delegatePropertyName": "SelectionChanged",
+					"delegateOwnerClass": "Self"
+				}
+			},
+			{
+				"nodeId": "Event_UpdateState_0_960_4870D70B",
+				"nodeGuid": "4870D70BFE43F63ADF31227F8D0B6C17",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_CustomEvent",
+				"nodeTitle": "UpdateState\nCustom Event",
+				"nodeType": "Event",
+				"positionX": 0,
+				"positionY": 960,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "Out_DisabledID",
+						"pinName": "DisabledID",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "int",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SelectInt_240_1120_749FEC5B",
+								"pinId": "In_B"
+							}
+						]
+					},
+					{
+						"pinId": "Out_EnabledID",
+						"pinName": "EnabledID",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "int",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SelectInt_240_1120_749FEC5B",
+								"pinId": "In_A"
+							}
+						]
+					},
+					{
+						"pinId": "Out_IsEnabled",
+						"pinName": "IsEnabled",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "bool",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SelectInt_240_1120_749FEC5B",
+								"pinId": "In_bPickA"
+							},
+							{
+								"nodeId": "Call_SetIsEnabled_240_960_83381C16",
+								"pinId": "In_bInIsEnabled"
+							}
+						]
+					},
+					{
+						"pinId": "Out_OutputDelegate",
+						"pinName": "OutputDelegate",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "delegate",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SetIsEnabled_240_960_83381C16",
+								"pinId": "In_execute"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"eventName": "UpdateState",
+					"customFunctionName": "UpdateState",
+					"isOverrideEvent": false
+				}
+			},
+			{
+				"nodeId": "Call_SetIsEnabled_240_960_83381C16",
+				"nodeGuid": "83381C16B77799DE0F2D03969F2C0C3E",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+				"nodeTitle": "SetIsEnabled",
+				"nodeType": "CallFunction",
+				"positionX": 240,
+				"positionY": 960,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_bInIsEnabled",
+						"pinName": "bInIsEnabled",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "bool",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "false",
+						"autogeneratedDefaultValue": "false",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Event_UpdateState_0_960_4870D70B",
+								"pinId": "Out_IsEnabled"
+							}
+						]
+					},
+					{
+						"pinId": "In_execute",
+						"pinName": "execute",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Event_UpdateState_0_960_4870D70B",
+								"pinId": "Out_then"
+							}
+						]
+					},
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Get_l_items_64_1168_CD2FE66B",
+								"pinId": "Out_l_items"
+							}
+						]
+					},
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SetSelectedOption_496_960_55B79397",
+								"pinId": "In_execute"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"memberName": "SetIsEnabled",
+					"targetFunction": "/Script/UMG.Widget:SetIsEnabled",
+					"functionName": "SetIsEnabled",
+					"functionOwnerClass": "/Script/UMG.Widget",
+					"memberParentClass": "Self"
+				}
+			},
+			{
+				"nodeId": "Call_SetSelectedOption_496_960_55B79397",
+				"nodeGuid": "55B7939719D40D58C1EF4E2CC135B6D8",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+				"nodeTitle": "SetSelectedOption",
+				"nodeType": "CallFunction",
+				"positionX": 496,
+				"positionY": 960,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_execute",
+						"pinName": "execute",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SetIsEnabled_240_960_83381C16",
+								"pinId": "Out_then"
+							}
+						]
+					},
+					{
+						"pinId": "In_OptionID",
+						"pinName": "OptionID",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "int",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "0",
+						"autogeneratedDefaultValue": "0",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SelectInt_240_1120_749FEC5B",
+								"pinId": "Out_ReturnValue"
+							}
+						]
+					},
+					{
+						"pinId": "In_OptionName",
+						"pinName": "OptionName",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "string",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "",
+							"pinSubCategory": "self",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "K2Node_CallDelegate_768_768_1CB1DEBA",
+								"pinId": "In_execute"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"memberName": "SetSelectedOption",
+					"targetFunction": "/Game/Blueprints/NVIDIA_DEV/CoreControls/BPW_List.SKEL_BPW_List_C:SetSelectedOption",
+					"functionName": "SetSelectedOption",
+					"functionOwnerClass": "/Game/Blueprints/NVIDIA_DEV/CoreControls/BPW_List.SKEL_BPW_List_C",
+					"memberParentClass": "Self"
+				}
+			},
+			{
+				"nodeId": "Call_SelectInt_240_1120_749FEC5B",
+				"nodeGuid": "749FEC5B1B3F0C80F99A19F7EF3A7F51",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+				"nodeTitle": "SelectInt",
+				"nodeType": "CallFunction",
+				"positionX": 240,
+				"positionY": 1120,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_A",
+						"pinName": "A",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "int",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "0",
+						"autogeneratedDefaultValue": "0",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Event_UpdateState_0_960_4870D70B",
+								"pinId": "Out_EnabledID"
+							}
+						]
+					},
+					{
+						"pinId": "In_B",
+						"pinName": "B",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "int",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "0",
+						"autogeneratedDefaultValue": "0",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Event_UpdateState_0_960_4870D70B",
+								"pinId": "Out_DisabledID"
+							}
+						]
+					},
+					{
+						"pinId": "In_bPickA",
+						"pinName": "bPickA",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "bool",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "false",
+						"autogeneratedDefaultValue": "false",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Event_UpdateState_0_960_4870D70B",
+								"pinId": "Out_IsEnabled"
+							}
+						]
+					},
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": true,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_ReturnValue",
+						"pinName": "ReturnValue",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "int",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "0",
+						"autogeneratedDefaultValue": "0",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SetSelectedOption_496_960_55B79397",
+								"pinId": "In_OptionID"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"memberName": "SelectInt",
+					"targetFunction": "/Script/Engine.KismetMathLibrary:SelectInt",
+					"functionName": "SelectInt",
+					"functionOwnerClass": "/Script/Engine.KismetMathLibrary"
+				}
+			},
+			{
+				"nodeId": "Get_l_items_64_1168_CD2FE66B",
+				"nodeGuid": "CD2FE66B014B3DB247F9059571E679E1",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+				"nodeTitle": "Get l_items",
+				"nodeType": "VariableGet",
+				"positionX": 64,
+				"positionY": 1168,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "/Script/UMG.ComboBoxString",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": true,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_l_items",
+						"pinName": "l_items",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "/Script/UMG.ComboBoxString",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SetIsEnabled_240_960_83381C16",
+								"pinId": "In_self"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"variableName": "l_items",
+					"isPure": true,
+					"variableSourceClass": "Self"
+				}
+			}
+		]
+	},
+	"constructionScript":
+	{
+		"graphName": "",
+		"graphGuid": "",
+		"graphType": "",
+		"schemaClass": "",
+		"nodes": []
+	},
+	"components": [],
+	"cdoProperties": [
+		{
+			"propertyName": "bHasScriptImplementedPaint",
+			"propertyType": "uint8",
+			"value": "False"
+		},
+		{
+			"propertyName": "bHasScriptImplementedTick",
+			"propertyType": "uint8",
+			"value": "False"
+		},
+		{
+			"propertyName": "DesignSizeMode",
+			"propertyType": "EDesignPreviewSizeMode",
+			"value": "Custom"
+		},
+		{
+			"propertyName": "DesignTimeSize",
+			"propertyType": "FVector2D",
+			"value": "(X=256.000000,Y=32.000000)"
+		}
+	],
+	"additionalGraphs": [],
+	"stateMachines": [],
+	"widgetTree": [
+		{
+			"widgetName": "HorizontalBox_34",
+			"widgetClass": "/Script/UMG.HorizontalBox",
+			"isVariable": false,
+			"slotClass": "",
+			"children": [
+				{
+					"widgetName": "txt_label",
+					"widgetClass": "/Script/UMG.TextBlock",
+					"isVariable": true,
+					"slotClass": "/Script/UMG.HorizontalBoxSlot",
+					"children": []
+				},
+				{
+					"widgetName": "l_items",
+					"widgetClass": "/Script/UMG.ComboBoxString",
+					"isVariable": true,
+					"slotClass": "/Script/UMG.HorizontalBoxSlot",
+					"children": []
+				}
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"assetPath": "/Engine/EditorBlueprintResources/StandardMacros",
+			"assetName": "StandardMacros",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/SlateCore",
+			"assetName": "SlateCore",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/UMG",
+			"assetName": "UMG",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/UMG.UserWidget",
+			"assetName": "UserWidget",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": "Parent class"
+		},
+		{
+			"assetPath": "/Script/UMGEditor",
+			"assetName": "UMGEditor",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		}
+	],
+	"metaData":
+	{
+	},
+	"assetType": "WidgetBlueprint",
+	"coverage":
+	{
+		"variables":
+		{
+			"total": 5,
+			"documented": 5
+		},
+		"functions":
+		{
+			"total": 4,
+			"documented": 4
+		},
+		"components":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"graphs":
+		{
+			"total": 2,
+			"documented": 2
+		},
+		"cdoProperties":
+		{
+			"total": 4,
+			"documented": 4
+		},
+		"specialized":
+		{
+			"applicable": [
+				"WidgetBP.WidgetTree"
+			],
+			"documented": [
+				"WidgetBP.WidgetTree"
+			]
+		},
+		"overallPct": 100
+	}
+}

@@ -1,0 +1,18 @@
+{
+  "_comment": "M28.14 add_set_fields_in_struct_node post-apply soak. Duplicates BP_BpxTestGraphNodesCalls into a scratch path and spawns a UK2Node_SetFieldsInStruct typed against /Script/CoreUObject.Vector with fields_to_show=['X','Y'] onto the default EventGraph at a fixed position. FieldsToShow drives the post-alloc ShowPinForProperties bShowPin walk + ReconstructNode that honors the M28.14 catalog's narrowing semantics (SetFieldsInStruct's pin manager defaults bShowPin=false; the bridge flips the requested entries to true before reconstruct). The soak gate asserts md5 stability across 2 rounds, proving SeedGuidFromJoined(':graph:EventGraph:set_fields_in_struct:/Script/CoreUObject.Vector:fields:X,Y:768,112') + post-reconstruct SeedPinGuidsForNode keeps the final pin set (struct in/out + X + Y inputs) byte-stable. Sorted-fields blob in the seed key proves caller-side ordering doesn't drift the GUID. skip_inspect=true (deep render isn't grep-friendly).",
+  "op": "add_set_fields_in_struct_node",
+  "skip_inspect": true,
+  "source_fixture": "/Game/TestBlueprints/BP_BpxTestGraphNodesCalls",
+  "scratch_path":   "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_SetFieldsVector",
+  "plan_kwargs": {
+    "bp_path":           "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_SetFieldsVector",
+    "graph_name":        "EventGraph",
+    "struct_type_path":  "/Script/CoreUObject.Vector",
+    "fields_to_show":    ["X", "Y"],
+    "position":          [768, 112]
+  },
+  "soak": {
+    "rounds": 2,
+    "stable_keys": ["node_guid"]
+  }
+}

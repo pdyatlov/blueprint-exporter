@@ -1,0 +1,24 @@
+{
+  "_comment": "M28.4.1 set_curve_float_keys soak-only. UCurveFloat is not in the inventory pipeline's logic-bearing set (PROJECT_INVENTORY_BRIEF.md §3), so the inspect harness's re-export phase emits zero .md and the inspect gate would always fail. Expanding inventory scope is a separate design decision; for M28.4.1 we keep inspect skipped via `skip_inspect: true` and rely on soak for the determinism signal. The soak gate validates byte-identity of the mutated scratch .uasset across 2 rounds — round 1 populates the empty Curve_BpxTestEmpty duplicate with a 2-point curve (0,0)/(1,100), round 2 element-wise compares and hits the idempotent skip. Exercises explicit-FName determinism on SetKeys (no FGuid drift since UCurveFloat has zero FGuid fields per the M28.4.0 research). Mirrors the M28.5.1 add_eqs_option soak recipe: source fixture empty, plan populates, round-2 replay validates determinism.",
+  "skip_inspect": true,
+  "op": "set_curve_float_keys",
+  "source_fixture": "/Game/TestBlueprints/Curve_BpxTestEmpty",
+  "scratch_path":   "/Game/TestBlueprints/Curve_BpxTest_SetKeysScratch",
+  "inspect_path":   "/Game/TestBlueprints/Curve_BpxTest_SetKeysScratch",
+  "plan_kwargs": {
+    "curve_path": "/Game/TestBlueprints/Curve_BpxTest_SetKeysScratch",
+    "keys": [
+      { "time": 0.0, "value": 0.0 },
+      { "time": 1.0, "value": 100.0 }
+    ]
+  },
+  "expected_md": [
+    "Curve_BpxTest_SetKeysScratch"
+  ],
+  "not_expected_md": [],
+  "expected_deep": [],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2
+  }
+}

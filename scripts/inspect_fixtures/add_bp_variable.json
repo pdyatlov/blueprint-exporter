@@ -1,0 +1,26 @@
+{
+  "_comment": "M28.2.1 add_bp_variable post-apply inspection + soak. Duplicates BP_BpxTestStructuralVariables (empty Actor BP) into a scratch path and adds a single int variable 'ActiveOrder' (design.md item #1 squad-director state). The inspect gate asserts the rendered .md surfaces the new variable; the soak gate asserts md5 stability across 2 rounds (idempotent skip on round 2).",
+  "op": "add_bp_variable",
+  "source_fixture": "/Game/TestBlueprints/BP_BpxTestStructuralVariables",
+  "scratch_path":   "/Game/TestBlueprints/BP_BpxTest_StructuralVariablesScratch",
+  "inspect_path":   "/Game/TestBlueprints/BP_BpxTest_StructuralVariablesScratch",
+  "plan_kwargs": {
+    "bp_path":         "/Game/TestBlueprints/BP_BpxTest_StructuralVariablesScratch",
+    "var_name":        "ActiveOrder",
+    "var_type_spec":   "int",
+    "default_value":   "",
+    "instance_editable": false
+  },
+  "expected_md": [
+    "ActiveOrder"
+  ],
+  "not_expected_md": [],
+  "expected_deep": [
+    "ActiveOrder"
+  ],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2,
+    "stable_keys": []
+  }
+}

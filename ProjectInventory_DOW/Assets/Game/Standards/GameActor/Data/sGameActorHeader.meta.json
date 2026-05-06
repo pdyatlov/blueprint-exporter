@@ -1,0 +1,96 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"assetType": "UserDefinedStruct",
+	"assetPath": "/Game/Standards/GameActor/Data/sGameActorHeader.sGameActorHeader",
+	"assetName": "sGameActorHeader",
+	"fields": [
+		{
+			"name": "GameActorID_2_4B8A74844ABC114F1FA4B5AB426A9673",
+			"type": "int32",
+			"category": "",
+			"toolTip": "Either baked into map or created dynamically, this ID is used to STORE/RECALL data."
+		},
+		{
+			"name": "Dynamicallycreated_9_8F5AE0FF48E38B894351DA845EA53D61",
+			"type": "bool",
+			"category": "",
+			"toolTip": "Does this need to spawn before we feed the recall data to it."
+		},
+		{
+			"name": "GameActorPrefabIndex_22_5B4501E24C00D66AE136B693D0C8D97D",
+			"type": "UClass*",
+			"category": "",
+			"toolTip": "The is the class reffefnce to the Blueprint to spawn to recreate the GameActor"
+		},
+		{
+			"name": "AdditionalDataCount_35_072CC1FF4A4607005D668D931569DB0B",
+			"type": "uint8",
+			"category": "",
+			"toolTip": "How many packets of data did we store for recall."
+		},
+		{
+			"name": "StorageDataIndex_15_2988401A4273E62BFA634A99A1B7513E",
+			"type": "int32",
+			"category": "",
+			"toolTip": "At what index is the RECALL data kept for this GameActor"
+		},
+		{
+			"name": "Position_26_D2EC07A04CDB090FF25C539C1CD573FA",
+			"type": "FVector",
+			"category": "",
+			"toolTip": ""
+		},
+		{
+			"name": "Rotation_30_0EB78416460781DDA3070A9AE1885193",
+			"type": "FRotator",
+			"category": "",
+			"toolTip": ""
+		},
+		{
+			"name": "Keyframes_33_9E19B41E412FEB4A28F48C8709BB92B2",
+			"type": "FsFourBytes",
+			"category": "",
+			"toolTip": ""
+		}
+	],
+	"dependencies": [
+		{
+			"assetPath": "/Game/Standards/GameActor/Data/sFourBytes",
+			"assetName": "sFourBytes",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/CoreUObject",
+			"assetName": "CoreUObject",
+			"dependencyType": "Soft",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/Engine",
+			"assetName": "Engine",
+			"dependencyType": "Soft",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		}
+	],
+	"coverage":
+	{
+		"fields":
+		{
+			"total": 8,
+			"documented": 8
+		},
+		"specialized":
+		{
+			"applicable": [],
+			"documented": []
+		},
+		"overallPct": 100
+	}
+}

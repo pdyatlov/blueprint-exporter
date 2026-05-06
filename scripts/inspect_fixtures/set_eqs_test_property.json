@@ -1,0 +1,23 @@
+{
+  "_comment": "M28.5.3 set_eqs_test_property post-apply inspection + soak. Fifth M28.5 EQS write-side op. Duplicates EQS_BpxTestWithOption (pre-seeded with one option carrying an EnvQueryGenerator_ActorsOfClass generator + one EnvQueryTest_Random test) into a scratch path and mutates the pre-seeded test's TestComment FString — a base-class UEnvQueryTest UPROPERTY (EditDefaultsOnly) that the M15 EnvQueryDeepRenderer surfaces in the per-test UPROPERTY table via RenderUObjectPropertiesTable. Asserts the new value appears in .deep.md so the inspect gate catches any ExportText round-trip regression. Soak protects the SetPropertyValue path's idempotent short-circuit (before == value after round 1). Targets option[0].Tests[0].TestComment by nested-path navigation through the reflection bridge: path = [\"Options\", \"[0]\", \"Tests\", \"[0]\", \"TestComment\"]. Distinct string from the generator fixture so a two-op plan (if authored in the future) wouldn't collide in assertion hits.",
+  "op": "set_eqs_test_property",
+  "source_fixture": "/Game/TestBlueprints/EQS_BpxTestWithOption",
+  "scratch_path":   "/Game/TestBlueprints/EQS_BpxTest_SetTestPropScratch",
+  "inspect_path":   "/Game/TestBlueprints/EQS_BpxTest_SetTestPropScratch",
+  "plan_kwargs": {
+    "eqs_path":      "/Game/TestBlueprints/EQS_BpxTest_SetTestPropScratch",
+    "option_index":  0,
+    "test_index":    0,
+    "property_path": ["TestComment"],
+    "value":         "BpxTestCommented"
+  },
+  "expected_md": [],
+  "not_expected_md": [],
+  "expected_deep": [
+    "BpxTestCommented"
+  ],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2
+  }
+}

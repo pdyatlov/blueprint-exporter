@@ -1,0 +1,6129 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "5e70678ae95469aafba60efb8992676c"
+	},
+	"assetPath": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/LevelVisuals.LevelVisuals",
+	"assetName": "LevelVisuals",
+	"blueprintGuid": "6489C09C4C477AAEC85BC4813DBD9041",
+	"blueprintType": "Normal",
+	"blueprintSubclass": "Blueprint",
+	"parentClass":
+	{
+		"className": "Actor",
+		"classPath": "/Script/Engine.Actor",
+		"isNative": true,
+		"moduleName": "/Script/Engine"
+	},
+	"implementedInterfaces": [],
+	"variables": [
+		{
+			"variableName": "Landscape",
+			"variableGuid": "9C90081C4C257CAD520FADA62F642C6E",
+			"variableType":
+			{
+				"category": "object",
+				"subCategoryObject": "/Script/Landscape.Landscape",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "None",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "",
+			"metaData":
+			{
+			}
+		},
+		{
+			"variableName": "LevelStyles",
+			"variableGuid": "B5A329FD4E7631DC59E6408CF6CE3A30",
+			"variableType":
+			{
+				"category": "struct",
+				"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle",
+				"pinSubCategory": "None",
+				"isArray": true,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "((FogColor_3_DA5FC03848B34AFC1BABBCB1640E14A6=(R=0.791667,G=0.750000,B=1.000000,A=1.000000),BlockColors_19_BD7B5F9248A47F4BA4AEE2BCADEEA20F=((\"Floor\", (GridColor_2_93C9D1544CE9BC2796D83F9E713DAB23=(R=0.300000,G=0.300000,B=0.300000,A=1.000000),GridSizes_16_782DDA9B42440FAB466A829B7C2E5482=(X=100.000000,Y=200.000000,Z=800.000000))),(\"Blocks\", (GridColor_2_93C9D1544CE9BC2796D83F9E713DAB23=(R=0.121569,G=0.121569,B=0.121569,A=1.000000),SurfaceColor_4_9B668B134E34B8A2B41BB98E51273395=(R=0.300000,G=0.300000,B=0.300000,A=1.000000))),(\"Blocks_Traversable\", (GridColor_2_93C9D1544CE9BC2796D83F9E713DAB23=(R=0.300000,G=0.300000,B=0.300000,A=1.000000))))),(FogColor_3_DA5FC03848B34AFC1BABBCB1640E14A6=(R=0.484375,G=0.655383,B=1.000000,A=1.000000),DecalColor_12_1498C751435B031639098A8BF277CF4D=(R=0.000000,G=0.000000,B=0.000000,A=0.500000),BlockColors_19_BD7B5F9248A47F4BA4AEE2BCADEEA20F=((\"Floor\", (GridColor_2_93C9D1544CE9BC2796D83F9E713DAB23=(R=0.200000,G=0.200000,B=0.200000,A=1.000000),SurfaceColor_4_9B668B134E34B8A2B41BB98E51273395=(R=0.510417,G=0.510417,B=0.510417,A=1.000000),GridSizes_16_782DDA9B42440FAB466A829B7C2E5482=(X=100.000000,Y=200.000000,Z=800.000000))),(\"Blocks\", (GridColor_2_93C9D1544CE9BC2796D83F9E713DAB23=(R=0.200000,G=0.200000,B=0.200000,A=1.000000),SurfaceColor_4_9B668B134E34B8A2B41BB98E51273395=(R=0.510417,G=0.510417,B=0.510417,A=1.000000))),(\"Blocks_Traversable\", (GridColor_2_93C9D1544CE9BC2796D83F9E713DAB23=(R=0.500000,G=0.500000,B=0.500000,A=1.000000),SurfaceColor_4_9B668B134E34B8A2B41BB98E51273395=(R=0.250000,G=0.250000,B=0.250000,A=1.000000))))),(FogColor_3_DA5FC03848B34AFC1BABBCB1640E14A6=(R=0.539931,G=0.447917,B=1.000000,A=1.000000),DecalColor_12_1498C751435B031639098A8BF277CF4D=(R=1.000000,G=0.500000,B=0.000000,A=0.400000),BlockColors_19_BD7B5F9248A47F4BA4AEE2BCADEEA20F=((\"Floor\", (GridColor_2_93C9D1544CE9BC2796D83F9E713DAB23=(R=0.500000,G=0.500000,B=0.500000,A=1.000000),SurfaceColor_4_9B668B134E34B8A2B41BB98E51273395=(R=0.258463,G=0.236978,B=0.541667,A=1.000000),GridSizes_16_782DDA9B42440FAB466A829B7C2E5482=(X=100.000000,Y=200.000000,Z=800.000000))),(\"Blocks\", (GridColor_2_93C9D1544CE9BC2796D83F9E713DAB23=(R=0.177083,G=0.177083,B=0.177083,A=1.000000),SurfaceColor_4_9B668B134E34B8A2B41BB98E51273395=(R=0.510417,G=0.510417,B=0.510417,A=1.000000))),(\"Blocks_Traversable\", (GridColor_2_93C9D1544CE9BC2796D83F9E713DAB23=(R=0.700000,G=0.700000,B=0.700000,A=1.000000),SurfaceColor_4_9B668B134E34B8A2B41BB98E51273395=(R=0.850000,G=0.264066,B=0.132812,A=1.000000))))))",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "",
+			"metaData":
+			{
+			}
+		},
+		{
+			"variableName": "StyleIndex",
+			"variableGuid": "7C22F04042CEDD975902319E31890B69",
+			"variableType":
+			{
+				"category": "int",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "0",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "",
+			"metaData":
+			{
+			}
+		}
+	],
+	"functions": [
+		{
+			"functionName": "GetLevelStyle",
+			"functionGuid": "0B6752E24F905BE5955F188D1B4178DE",
+			"flags":
+			{
+				"pure": false,
+				"const": false,
+				"static": false,
+				"callInEditor": false,
+				"override": false,
+				"event": false,
+				"accessSpecifier": "Public",
+				"server": false,
+				"client": false,
+				"netMulticast": false,
+				"reliable": false,
+				"blueprintAuthorityOnly": false,
+				"blueprintCosmetic": false
+			},
+			"inputs": [],
+			"outputs": [
+				{
+					"paramName": "ReturnValue",
+					"paramType":
+					{
+						"category": "struct",
+						"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle",
+						"pinSubCategory": "None",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "",
+					"isOutput": true,
+					"passByReference": false
+				}
+			],
+			"localVariables": [],
+			"description": "",
+			"keywords": [],
+			"category": "",
+			"graph":
+			{
+				"graphName": "GetLevelStyle",
+				"graphGuid": "0B6752E24F905BE5955F188D1B4178DE",
+				"graphType": "K2Graph",
+				"schemaClass": "/Script/BlueprintGraph.EdGraphSchema_K2",
+				"nodes": [
+					{
+						"nodeId": "Entry_0_0_1182882F",
+						"nodeGuid": "1182882FF5884CFD26C3CDA08191E532",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_FunctionEntry",
+						"nodeTitle": "GetLevelStyle",
+						"nodeType": "FunctionEntry",
+						"positionX": 0,
+						"positionY": 0,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Result_1024_0_A998A06F",
+										"pinId": "execute"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Result_1024_0_A998A06F",
+						"nodeGuid": "A998A06F966E75ED9DBE09CDC0FA08E5",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_FunctionResult",
+						"nodeTitle": "Return Node",
+						"nodeType": "FunctionResult",
+						"positionX": 1024,
+						"positionY": 0,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_0_0_1182882F",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "In_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_GetArrayItem_816_80_AD61E87C",
+										"pinId": "Output"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Get_LevelStyles_192_80_4DEB5F84",
+						"nodeGuid": "4DEB5F84E13667CAB95C8737A503F59B",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get LevelStyles",
+						"nodeType": "VariableGet",
+						"positionX": 192,
+						"positionY": 80,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_LevelStyles",
+								"pinName": "LevelStyles",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle",
+									"pinSubCategory": "None",
+									"isArray": true,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Array_LastIndex_352_208_E0B10BF7",
+										"pinId": "TargetArray"
+									},
+									{
+										"nodeId": "K2Node_GetArrayItem_816_80_AD61E87C",
+										"pinId": "Array"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "LevelStyles",
+							"isPure": true,
+							"variableSourceClass": "Self"
+						}
+					},
+					{
+						"nodeId": "K2Node_GetArrayItem_816_80_AD61E87C",
+						"nodeGuid": "AD61E87C05E80B8A9E5B5D3638A268DC",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_GetArrayItem",
+						"nodeTitle": "GET",
+						"nodeType": "K2Node",
+						"positionX": 816,
+						"positionY": 80,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_Array",
+								"pinName": "Array",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": true,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_LevelStyles_192_80_4DEB5F84",
+										"pinId": "LevelStyles"
+									}
+								]
+							},
+							{
+								"pinId": "In_Dimension 1",
+								"pinName": "Dimension 1",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0",
+								"autogeneratedDefaultValue": "0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Clamp_592_128_61474089",
+										"pinId": "ReturnValue"
+									}
+								]
+							},
+							{
+								"pinId": "Out_Output",
+								"pinName": "Output",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Result_1024_0_A998A06F",
+										"pinId": "ReturnValue"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Call_Clamp_592_128_61474089",
+						"nodeGuid": "614740898F87E8FE3605D8507DD4ED6E",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "Clamp",
+						"nodeType": "CallFunction",
+						"positionX": 592,
+						"positionY": 128,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_Max",
+								"pinName": "Max",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0",
+								"autogeneratedDefaultValue": "0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Array_LastIndex_352_208_E0B10BF7",
+										"pinId": "ReturnValue"
+									}
+								]
+							},
+							{
+								"pinId": "In_Min",
+								"pinName": "Min",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0",
+								"autogeneratedDefaultValue": "0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_Value",
+								"pinName": "Value",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0",
+								"autogeneratedDefaultValue": "0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_StyleIndex_432_144_30A9A305",
+										"pinId": "StyleIndex"
+									}
+								]
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0",
+								"autogeneratedDefaultValue": "0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_GetArrayItem_816_80_AD61E87C",
+										"pinId": "Dimension 1"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "Clamp",
+							"targetFunction": "/Script/Engine.KismetMathLibrary:Clamp",
+							"functionName": "Clamp",
+							"functionOwnerClass": "/Script/Engine.KismetMathLibrary"
+						}
+					},
+					{
+						"nodeId": "Get_StyleIndex_432_144_30A9A305",
+						"nodeGuid": "30A9A305E7FF274D6DEA149EDA05B1F3",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get StyleIndex",
+						"nodeType": "VariableGet",
+						"positionX": 432,
+						"positionY": 144,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_StyleIndex",
+								"pinName": "StyleIndex",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0",
+								"autogeneratedDefaultValue": "0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Clamp_592_128_61474089",
+										"pinId": "Value"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "StyleIndex",
+							"isPure": true,
+							"variableSourceClass": "Self"
+						}
+					},
+					{
+						"nodeId": "Call_Array_LastIndex_352_208_E0B10BF7",
+						"nodeGuid": "E0B10BF78A284BDF99EAB2BFC92E9AE0",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallArrayFunction",
+						"nodeTitle": "Array_LastIndex",
+						"nodeType": "CallFunction",
+						"positionX": 352,
+						"positionY": 208,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_TargetArray",
+								"pinName": "TargetArray",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": true,
+									"isSet": false,
+									"isMap": false,
+									"isReference": true,
+									"isConst": true,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_LevelStyles_192_80_4DEB5F84",
+										"pinId": "LevelStyles"
+									}
+								]
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0",
+								"autogeneratedDefaultValue": "0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Clamp_592_128_61474089",
+										"pinId": "Max"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "Array_LastIndex",
+							"targetFunction": "/Script/Engine.KismetArrayLibrary:Array_LastIndex",
+							"functionName": "Array_LastIndex",
+							"functionOwnerClass": "/Script/Engine.KismetArrayLibrary"
+						}
+					}
+				]
+			}
+		},
+		{
+			"functionName": "UpdateLevelVisuals",
+			"functionGuid": "3BFE7560439F9D8F77078FAAE8CBAE3D",
+			"flags":
+			{
+				"pure": false,
+				"const": false,
+				"static": false,
+				"callInEditor": false,
+				"override": false,
+				"event": false,
+				"accessSpecifier": "Public",
+				"server": false,
+				"client": false,
+				"netMulticast": false,
+				"reliable": false,
+				"blueprintAuthorityOnly": false,
+				"blueprintCosmetic": false
+			},
+			"inputs": [],
+			"outputs": [],
+			"localVariables": [
+				{
+					"variableName": "NewStyle",
+					"variableGuid": "6DD509E548CDDF8F3CF01289A3049A56",
+					"variableType":
+					{
+						"category": "struct",
+						"subCategoryObject": "",
+						"pinSubCategory": "None",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false,
+						"subCategoryObjectResolved": false
+					},
+					"defaultValue": "",
+					"category": "",
+					"flags":
+					{
+						"instanceEditable": false,
+						"blueprintReadOnly": false,
+						"exposeOnSpawn": false,
+						"private": false,
+						"exposeToCinematics": false,
+						"replicated": false,
+						"replicationCondition": "",
+						"repNotify": false,
+						"repNotifyFunc": ""
+					},
+					"toolTip": "",
+					"metaData":
+					{
+					}
+				}
+			],
+			"description": "",
+			"keywords": [],
+			"category": "",
+			"graph":
+			{
+				"graphName": "UpdateLevelVisuals",
+				"graphGuid": "3BFE7560439F9D8F77078FAAE8CBAE3D",
+				"graphType": "K2Graph",
+				"schemaClass": "/Script/BlueprintGraph.EdGraphSchema_K2",
+				"nodes": [
+					{
+						"nodeId": "Call_UpdateMaterials_2688_-272_2600D3CD",
+						"nodeGuid": "2600D3CD533486994E83E295436A010D",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "UpdateMaterials",
+						"nodeType": "CallFunction",
+						"positionX": 2688,
+						"positionY": -272,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_IfThenElse_2432_-256_592B0357",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "In_Params",
+								"pinName": "Params",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_GridMaterialParams.S_GridMaterialParams",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": true,
+									"isConst": true,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Map_Find_2048_-64_00CFA5CA",
+										"pinId": "Value"
+									}
+								]
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_MacroInstance_1536_-256_3DD90599",
+										"pinId": "Array Element"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "UpdateMaterials",
+							"targetFunction": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/LevelBlock.SKEL_LevelBlock_C:UpdateMaterials",
+							"functionName": "UpdateMaterials",
+							"functionOwnerClass": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/LevelBlock.SKEL_LevelBlock_C"
+						}
+					},
+					{
+						"nodeId": "Call_GetAllActorsOfClass_1152_-256_90F1DC45",
+						"nodeGuid": "90F1DC45084F115D141CC329A5326675",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "GetAllActorsOfClass",
+						"nodeType": "CallFunction",
+						"positionX": 1152,
+						"positionY": -256,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_ActorClass",
+								"pinName": "ActorClass",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "class",
+									"subCategoryObject": "/Script/CoreUObject.Class",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_ExecutionSequence_768_0_FA7DDDDB",
+										"pinId": "then_0"
+									}
+								]
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_WorldContextObject",
+								"pinName": "WorldContextObject",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/CoreUObject.Object",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": true,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_OutActors",
+								"pinName": "OutActors",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/Engine.Actor",
+									"pinSubCategory": "None",
+									"isArray": true,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_MacroInstance_1536_-256_3DD90599",
+										"pinId": "Array"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_MacroInstance_1536_-256_3DD90599",
+										"pinId": "Exec"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "GetAllActorsOfClass",
+							"targetFunction": "/Script/Engine.GameplayStatics:GetAllActorsOfClass",
+							"functionName": "GetAllActorsOfClass",
+							"functionOwnerClass": "/Script/Engine.GameplayStatics"
+						}
+					},
+					{
+						"nodeId": "K2Node_MacroInstance_1536_-256_3DD90599",
+						"nodeGuid": "3DD905990342605143F3F5D174E62821",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_MacroInstance",
+						"nodeTitle": "For Each Loop",
+						"nodeType": "MacroInstance",
+						"positionX": 1536,
+						"positionY": -256,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_Array",
+								"pinName": "Array",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": true,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_GetAllActorsOfClass_1152_-256_90F1DC45",
+										"pinId": "OutActors"
+									}
+								]
+							},
+							{
+								"pinId": "In_Exec",
+								"pinName": "Exec",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_GetAllActorsOfClass_1152_-256_90F1DC45",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "Out_Array Element",
+								"pinName": "Array Element",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_UpdateMaterials_2688_-272_2600D3CD",
+										"pinId": "self"
+									},
+									{
+										"nodeId": "Get_ColorGroup_1808_-16_B6EA572C",
+										"pinId": "self"
+									},
+									{
+										"nodeId": "Get_UseLevelVisualsColor_1792_-160_E6C42DBE",
+										"pinId": "self"
+									}
+								]
+							},
+							{
+								"pinId": "Out_Array Index",
+								"pinName": "Array Index",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_Completed",
+								"pinName": "Completed",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_LoopBody",
+								"pinName": "LoopBody",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_IfThenElse_2432_-256_592B0357",
+										"pinId": "execute"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"macroGraphName": "ForEachLoop",
+							"macroBlueprintPath": "/Engine/EditorBlueprintResources/StandardMacros.StandardMacros"
+						}
+					},
+					{
+						"nodeId": "K2Node_IfThenElse_2432_-256_592B0357",
+						"nodeGuid": "592B0357EDA2C368EC8F47F924A4538E",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_IfThenElse",
+						"nodeTitle": "Branch",
+						"nodeType": "Branch",
+						"positionX": 2432,
+						"positionY": -256,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_Condition",
+								"pinName": "Condition",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "true",
+								"autogeneratedDefaultValue": "true",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_BooleanAND_2256_-144_1C244873",
+										"pinId": "ReturnValue"
+									}
+								]
+							},
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_MacroInstance_1536_-256_3DD90599",
+										"pinId": "LoopBody"
+									}
+								]
+							},
+							{
+								"pinId": "Out_else",
+								"pinName": "else",
+								"pinFriendlyName": "false",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "true",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_UpdateMaterials_2688_-272_2600D3CD",
+										"pinId": "execute"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Get_UseLevelVisualsColor_1792_-160_E6C42DBE",
+						"nodeGuid": "E6C42DBE93B2355D8387417BC6D4D164",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get UseLevelVisualsColor",
+						"nodeType": "VariableGet",
+						"positionX": 1792,
+						"positionY": -160,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_MacroInstance_1536_-256_3DD90599",
+										"pinId": "Array Element"
+									}
+								]
+							},
+							{
+								"pinId": "Out_UseLevelVisualsColor",
+								"pinName": "UseLevelVisualsColor",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "false",
+								"autogeneratedDefaultValue": "false",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_BooleanAND_2256_-144_1C244873",
+										"pinId": "A"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "UseLevelVisualsColor",
+							"isPure": true
+						}
+					},
+					{
+						"nodeId": "Call_BooleanAND_2256_-144_1C244873",
+						"nodeGuid": "1C244873BF73A3D77A9076F990366919",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator",
+						"nodeTitle": "BooleanAND",
+						"nodeType": "CallFunction",
+						"positionX": 2256,
+						"positionY": -144,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_A",
+								"pinName": "A",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "false",
+								"autogeneratedDefaultValue": "false",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_UseLevelVisualsColor_1792_-160_E6C42DBE",
+										"pinId": "UseLevelVisualsColor"
+									}
+								]
+							},
+							{
+								"pinId": "In_B",
+								"pinName": "B",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "false",
+								"autogeneratedDefaultValue": "false",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Map_Find_2048_-64_00CFA5CA",
+										"pinId": "ReturnValue"
+									}
+								]
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "false",
+								"autogeneratedDefaultValue": "false",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_IfThenElse_2432_-256_592B0357",
+										"pinId": "Condition"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "BooleanAND",
+							"targetFunction": "/Script/Engine.KismetMathLibrary:BooleanAND",
+							"functionName": "BooleanAND",
+							"functionOwnerClass": "/Script/Engine.KismetMathLibrary"
+						}
+					},
+					{
+						"nodeId": "K2Node_BreakStruct_1776_-96_9316E221",
+						"nodeGuid": "9316E221A06B8558B4CFD2FBAC47062F",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_BreakStruct",
+						"nodeTitle": "Break S Level Style",
+						"nodeType": "K2Node",
+						"positionX": 1776,
+						"positionY": -96,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_S_LevelStyle",
+								"pinName": "S_LevelStyle",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": true,
+									"isConst": true,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_NewStyle_1632_-80_3B541941",
+										"pinId": "NewStyle"
+									}
+								]
+							},
+							{
+								"pinId": "Out_BlockColors_19_BD7B5F9248A47F4BA4AEE2BCADEEA20F",
+								"pinName": "BlockColors_19_BD7B5F9248A47F4BA4AEE2BCADEEA20F",
+								"pinFriendlyName": "Block Colors",
+								"direction": "Output",
+								"type":
+								{
+									"category": "name",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": true,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Map_Find_2048_-64_00CFA5CA",
+										"pinId": "TargetMap"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"structType": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle"
+						}
+					},
+					{
+						"nodeId": "Get_NewStyle_1632_-80_3B541941",
+						"nodeGuid": "3B5419419705E6AD5103B2C50F6AE9F2",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get NewStyle",
+						"nodeType": "VariableGet",
+						"positionX": 1632,
+						"positionY": -80,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_NewStyle",
+								"pinName": "NewStyle",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_BreakStruct_1776_-96_9316E221",
+										"pinId": "S_LevelStyle"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "NewStyle",
+							"isPure": true
+						}
+					},
+					{
+						"nodeId": "Call_Map_Find_2048_-64_00CFA5CA",
+						"nodeGuid": "00CFA5CADEF1F5E234F390573BF86E21",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "Map_Find",
+						"nodeType": "CallFunction",
+						"positionX": 2048,
+						"positionY": -64,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_Key",
+								"pinName": "Key",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "name",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": true,
+									"isConst": true,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_ColorGroup_1808_-16_B6EA572C",
+										"pinId": "ColorGroup"
+									}
+								]
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_TargetMap",
+								"pinName": "TargetMap",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "name",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": true,
+									"isReference": true,
+									"isConst": true,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_BreakStruct_1776_-96_9316E221",
+										"pinId": "BlockColors_19_BD7B5F9248A47F4BA4AEE2BCADEEA20F"
+									}
+								]
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "false",
+								"autogeneratedDefaultValue": "false",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_BooleanAND_2256_-144_1C244873",
+										"pinId": "B"
+									}
+								]
+							},
+							{
+								"pinId": "Out_Value",
+								"pinName": "Value",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_UpdateMaterials_2688_-272_2600D3CD",
+										"pinId": "Params"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "Map_Find",
+							"targetFunction": "/Script/Engine.BlueprintMapLibrary:Map_Find",
+							"functionName": "Map_Find",
+							"functionOwnerClass": "/Script/Engine.BlueprintMapLibrary"
+						}
+					},
+					{
+						"nodeId": "Get_ColorGroup_1808_-16_B6EA572C",
+						"nodeGuid": "B6EA572C92066C594DBD173578731F32",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get ColorGroup",
+						"nodeType": "VariableGet",
+						"positionX": 1808,
+						"positionY": -16,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_MacroInstance_1536_-256_3DD90599",
+										"pinId": "Array Element"
+									}
+								]
+							},
+							{
+								"pinId": "Out_ColorGroup",
+								"pinName": "ColorGroup",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "name",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "None",
+								"autogeneratedDefaultValue": "None",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Map_Find_2048_-64_00CFA5CA",
+										"pinId": "Key"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "ColorGroup",
+							"isPure": true
+						}
+					},
+					{
+						"nodeId": "Entry_0_0_1182882F",
+						"nodeGuid": "1182882FF5884CFD26C3CDA08191E532",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_FunctionEntry",
+						"nodeTitle": "UpdateLevelVisuals",
+						"nodeType": "FunctionEntry",
+						"positionX": 0,
+						"positionY": 0,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Set_NewStyle_512_16_52D386AA",
+										"pinId": "execute"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "K2Node_ExecutionSequence_768_0_FA7DDDDB",
+						"nodeGuid": "FA7DDDDB36BC45E5A843B06DB04A2516",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_ExecutionSequence",
+						"nodeTitle": "Sequence",
+						"nodeType": "K2Node",
+						"positionX": 768,
+						"positionY": 0,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Set_NewStyle_512_16_52D386AA",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then_0",
+								"pinName": "then_0",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_GetAllActorsOfClass_1152_-256_90F1DC45",
+										"pinId": "execute"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then_1",
+								"pinName": "then_1",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_1136_176_3BD9C05D",
+										"pinId": "InputPin"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then_2",
+								"pinName": "then_2",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_1136_560_61088AEC",
+										"pinId": "InputPin"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then_3",
+								"pinName": "then_3",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_Landscape_1168_848_553C1A79",
+										"pinId": "execute"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Set_NewStyle_512_16_52D386AA",
+						"nodeGuid": "52D386AA0F993EBF000EBA72C8D0679A",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableSet",
+						"nodeTitle": "Set NewStyle",
+						"nodeType": "VariableSet",
+						"positionX": 512,
+						"positionY": 16,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_0_0_1182882F",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "In_NewStyle",
+								"pinName": "NewStyle",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_GetLevelStyle_320_64_9D4B6FFB",
+										"pinId": "ReturnValue"
+									}
+								]
+							},
+							{
+								"pinId": "Out_Output_Get",
+								"pinName": "Output_Get",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_ExecutionSequence_768_0_FA7DDDDB",
+										"pinId": "execute"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "NewStyle"
+						}
+					},
+					{
+						"nodeId": "Call_GetLevelStyle_320_64_9D4B6FFB",
+						"nodeGuid": "9D4B6FFBE33F0117960A3CB1C8AE9A60",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "GetLevelStyle",
+						"nodeType": "CallFunction",
+						"positionX": 320,
+						"positionY": 64,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "self",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Set_NewStyle_512_16_52D386AA",
+										"pinId": "NewStyle"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "GetLevelStyle",
+							"targetFunction": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/LevelVisuals.SKEL_LevelVisuals_C:GetLevelStyle",
+							"functionName": "GetLevelStyle",
+							"functionOwnerClass": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/LevelVisuals.SKEL_LevelVisuals_C",
+							"memberParentClass": "Self"
+						}
+					},
+					{
+						"nodeId": "Call_SetFogInscatteringColor_1536_128_17FBF997",
+						"nodeGuid": "17FBF997B8CFDD885C879E81AED7AD62",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "SetFogInscatteringColor",
+						"nodeType": "CallFunction",
+						"positionX": 1536,
+						"positionY": 128,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_1136_176_3BD9C05D",
+										"pinId": "OutputPin"
+									}
+								]
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_ExponentialHeightFog_1312_192_F4EA7F22",
+										"pinId": "ExponentialHeightFog"
+									}
+								]
+							},
+							{
+								"pinId": "In_Value",
+								"pinName": "Value",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Script/CoreUObject.LinearColor",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_BreakStruct_1280_240_D665E59E",
+										"pinId": "FogColor_3_DA5FC03848B34AFC1BABBCB1640E14A6"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetFogDensity_1920_128_7FD53810",
+										"pinId": "execute"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "SetFogInscatteringColor",
+							"targetFunction": "/Script/Engine.ExponentialHeightFogComponent:SetFogInscatteringColor",
+							"functionName": "SetFogInscatteringColor",
+							"functionOwnerClass": "/Script/Engine.ExponentialHeightFogComponent"
+						}
+					},
+					{
+						"nodeId": "Call_SetFogDensity_1920_128_7FD53810",
+						"nodeGuid": "7FD5381005DE10D72499E5A8D6E2B464",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "SetFogDensity",
+						"nodeType": "CallFunction",
+						"positionX": 1920,
+						"positionY": 128,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetFogInscatteringColor_1536_128_17FBF997",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_ExponentialHeightFog_1312_192_F4EA7F22",
+										"pinId": "ExponentialHeightFog"
+									}
+								]
+							},
+							{
+								"pinId": "In_Value",
+								"pinName": "Value",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.0",
+								"autogeneratedDefaultValue": "0.0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_BreakStruct_1280_240_D665E59E",
+										"pinId": "FogDensity_22_21D76EA447CB464F8ECFC6B3D18938E0"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "SetFogDensity",
+							"targetFunction": "/Script/Engine.ExponentialHeightFogComponent:SetFogDensity",
+							"functionName": "SetFogDensity",
+							"functionOwnerClass": "/Script/Engine.ExponentialHeightFogComponent"
+						}
+					},
+					{
+						"nodeId": "K2Node_Knot_1136_176_3BD9C05D",
+						"nodeGuid": "3BD9C05D4BEDD9411A74B72E2CDEA7C5",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_Knot",
+						"nodeTitle": "Reroute Node",
+						"nodeType": "K2Node",
+						"positionX": 1136,
+						"positionY": 176,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_InputPin",
+								"pinName": "InputPin",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_ExecutionSequence_768_0_FA7DDDDB",
+										"pinId": "then_1"
+									}
+								]
+							},
+							{
+								"pinId": "Out_OutputPin",
+								"pinName": "OutputPin",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetFogInscatteringColor_1536_128_17FBF997",
+										"pinId": "execute"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Get_ExponentialHeightFog_1312_192_F4EA7F22",
+						"nodeGuid": "F4EA7F225BD92DF839504EDD97795D91",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get ExponentialHeightFog",
+						"nodeType": "VariableGet",
+						"positionX": 1312,
+						"positionY": 192,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/Engine.ExponentialHeightFogComponent",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_ExponentialHeightFog",
+								"pinName": "ExponentialHeightFog",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/Engine.ExponentialHeightFogComponent",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetFogDensity_1920_128_7FD53810",
+										"pinId": "self"
+									},
+									{
+										"nodeId": "Call_SetFogInscatteringColor_1536_128_17FBF997",
+										"pinId": "self"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "ExponentialHeightFog",
+							"isPure": true,
+							"variableSourceClass": "Self"
+						}
+					},
+					{
+						"nodeId": "K2Node_BreakStruct_1280_240_D665E59E",
+						"nodeGuid": "D665E59E6F04C2D1498A1F959FD9D145",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_BreakStruct",
+						"nodeTitle": "Break S Level Style",
+						"nodeType": "K2Node",
+						"positionX": 1280,
+						"positionY": 240,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_S_LevelStyle",
+								"pinName": "S_LevelStyle",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": true,
+									"isConst": true,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_NewStyle_1136_272_3657DF2F",
+										"pinId": "NewStyle"
+									}
+								]
+							},
+							{
+								"pinId": "Out_FogColor_3_DA5FC03848B34AFC1BABBCB1640E14A6",
+								"pinName": "FogColor_3_DA5FC03848B34AFC1BABBCB1640E14A6",
+								"pinFriendlyName": "Fog Color",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetFogInscatteringColor_1536_128_17FBF997",
+										"pinId": "Value"
+									}
+								]
+							},
+							{
+								"pinId": "Out_FogDensity_22_21D76EA447CB464F8ECFC6B3D18938E0",
+								"pinName": "FogDensity_22_21D76EA447CB464F8ECFC6B3D18938E0",
+								"pinFriendlyName": "Fog Density",
+								"direction": "Output",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "double",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetFogDensity_1920_128_7FD53810",
+										"pinId": "Value"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"structType": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle"
+						}
+					},
+					{
+						"nodeId": "Get_NewStyle_1136_272_3657DF2F",
+						"nodeGuid": "3657DF2FC94FAFBC5FCD587065CF1729",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get NewStyle",
+						"nodeType": "VariableGet",
+						"positionX": 1136,
+						"positionY": 272,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_NewStyle",
+								"pinName": "NewStyle",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_BreakStruct_1280_240_D665E59E",
+										"pinId": "S_LevelStyle"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "NewStyle",
+							"isPure": true
+						}
+					},
+					{
+						"nodeId": "Call_SetDecalColor_1536_512_C86F9C31",
+						"nodeGuid": "C86F9C311093C6E7B7F023506F9810C6",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "SetDecalColor",
+						"nodeType": "CallFunction",
+						"positionX": 1536,
+						"positionY": 512,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_Color",
+								"pinName": "Color",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Script/CoreUObject.LinearColor",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": true,
+									"isConst": true,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_BreakStruct_1264_640_35BC83FA",
+										"pinId": "DecalColor_12_1498C751435B031639098A8BF277CF4D"
+									}
+								]
+							},
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_Knot_1136_560_61088AEC",
+										"pinId": "OutputPin"
+									}
+								]
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_Decal_1376_592_F8FD89DC",
+										"pinId": "Decal"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "SetDecalColor",
+							"targetFunction": "/Script/Engine.DecalComponent:SetDecalColor",
+							"functionName": "SetDecalColor",
+							"functionOwnerClass": "/Script/Engine.DecalComponent"
+						}
+					},
+					{
+						"nodeId": "K2Node_Knot_1136_560_61088AEC",
+						"nodeGuid": "61088AECC12678BF86C13ED013F5AACC",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_Knot",
+						"nodeTitle": "Reroute Node",
+						"nodeType": "K2Node",
+						"positionX": 1136,
+						"positionY": 560,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_InputPin",
+								"pinName": "InputPin",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_ExecutionSequence_768_0_FA7DDDDB",
+										"pinId": "then_2"
+									}
+								]
+							},
+							{
+								"pinId": "Out_OutputPin",
+								"pinName": "OutputPin",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetDecalColor_1536_512_C86F9C31",
+										"pinId": "execute"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Get_Decal_1376_592_F8FD89DC",
+						"nodeGuid": "F8FD89DCBF64C6239831D88B68B4016A",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get Decal",
+						"nodeType": "VariableGet",
+						"positionX": 1376,
+						"positionY": 592,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/Engine.DecalComponent",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_Decal",
+								"pinName": "Decal",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/Engine.DecalComponent",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetDecalColor_1536_512_C86F9C31",
+										"pinId": "self"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "Decal",
+							"isPure": true,
+							"variableSourceClass": "Self"
+						}
+					},
+					{
+						"nodeId": "K2Node_BreakStruct_1264_640_35BC83FA",
+						"nodeGuid": "35BC83FA0E24FE0C9A82618E414F73DB",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_BreakStruct",
+						"nodeTitle": "Break S Level Style",
+						"nodeType": "K2Node",
+						"positionX": 1264,
+						"positionY": 640,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_S_LevelStyle",
+								"pinName": "S_LevelStyle",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": true,
+									"isConst": true,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_NewStyle_1120_672_A90A24FC",
+										"pinId": "NewStyle"
+									}
+								]
+							},
+							{
+								"pinId": "Out_DecalColor_12_1498C751435B031639098A8BF277CF4D",
+								"pinName": "DecalColor_12_1498C751435B031639098A8BF277CF4D",
+								"pinFriendlyName": "Decal Color",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetDecalColor_1536_512_C86F9C31",
+										"pinId": "Color"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"structType": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle"
+						}
+					},
+					{
+						"nodeId": "Get_NewStyle_1120_672_A90A24FC",
+						"nodeGuid": "A90A24FC1F2C77B7D7E75CF7473E75A0",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get NewStyle",
+						"nodeType": "VariableGet",
+						"positionX": 1120,
+						"positionY": 672,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_NewStyle",
+								"pinName": "NewStyle",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_BreakStruct_1264_640_35BC83FA",
+										"pinId": "S_LevelStyle"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "NewStyle",
+							"isPure": true
+						}
+					},
+					{
+						"nodeId": "Call_SetLandscapeMaterialVectorParameterValue_1536_832_1572F074",
+						"nodeGuid": "1572F07419863AB45F5A508724370E8D",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "SetLandscapeMaterialVectorParameterValue",
+						"nodeType": "CallFunction",
+						"positionX": 1536,
+						"positionY": 832,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_Landscape_1168_848_553C1A79",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "In_ParameterName",
+								"pinName": "ParameterName",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "name",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "Grid Color",
+								"autogeneratedDefaultValue": "None",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_Landscape_1168_848_553C1A79",
+										"pinId": "Landscape"
+									}
+								]
+							},
+							{
+								"pinId": "In_Value",
+								"pinName": "Value",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Script/CoreUObject.LinearColor",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_BreakStruct_928_1344_2C0F0A62",
+										"pinId": "GridColor_2_93C9D1544CE9BC2796D83F9E713DAB23"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetLandscapeMaterialVectorParameterValue_1536_1040_A41ADAA0",
+										"pinId": "execute"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "SetLandscapeMaterialVectorParameterValue",
+							"targetFunction": "/Script/Landscape.LandscapeProxy:SetLandscapeMaterialVectorParameterValue",
+							"functionName": "SetLandscapeMaterialVectorParameterValue",
+							"functionOwnerClass": "/Script/Landscape.LandscapeProxy"
+						}
+					},
+					{
+						"nodeId": "Get_Landscape_1168_848_553C1A79",
+						"nodeGuid": "553C1A79824B90E6E16E766C7C78745E",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get Landscape",
+						"nodeType": "VariableGet",
+						"positionX": 1168,
+						"positionY": 848,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_ExecutionSequence_768_0_FA7DDDDB",
+										"pinId": "then_3"
+									}
+								]
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/Landscape.Landscape",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_else",
+								"pinName": "else",
+								"pinFriendlyName": "Is Not Valid",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_Landscape",
+								"pinName": "Landscape",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/Landscape.Landscape",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetLandscapeMaterialScalarParameterValue_1536_1248_517E5C44",
+										"pinId": "self"
+									},
+									{
+										"nodeId": "Call_SetLandscapeMaterialScalarParameterValue_1536_1456_25D11C6E",
+										"pinId": "self"
+									},
+									{
+										"nodeId": "Call_SetLandscapeMaterialScalarParameterValue_1536_1664_F49B64E5",
+										"pinId": "self"
+									},
+									{
+										"nodeId": "Call_SetLandscapeMaterialScalarParameterValue_1536_1872_8C9C84F6",
+										"pinId": "self"
+									},
+									{
+										"nodeId": "Call_SetLandscapeMaterialVectorParameterValue_1536_1040_A41ADAA0",
+										"pinId": "self"
+									},
+									{
+										"nodeId": "Call_SetLandscapeMaterialVectorParameterValue_1536_832_1572F074",
+										"pinId": "self"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "Is Valid",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetLandscapeMaterialVectorParameterValue_1536_832_1572F074",
+										"pinId": "execute"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "Landscape",
+							"isPure": false,
+							"variableSourceClass": "Self"
+						}
+					},
+					{
+						"nodeId": "Call_SetLandscapeMaterialVectorParameterValue_1536_1040_A41ADAA0",
+						"nodeGuid": "A41ADAA0E8A28C3B4063EB916A81F0A9",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "SetLandscapeMaterialVectorParameterValue",
+						"nodeType": "CallFunction",
+						"positionX": 1536,
+						"positionY": 1040,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetLandscapeMaterialVectorParameterValue_1536_832_1572F074",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "In_ParameterName",
+								"pinName": "ParameterName",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "name",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "Surface Color",
+								"autogeneratedDefaultValue": "None",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_Landscape_1168_848_553C1A79",
+										"pinId": "Landscape"
+									}
+								]
+							},
+							{
+								"pinId": "In_Value",
+								"pinName": "Value",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Script/CoreUObject.LinearColor",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_BreakStruct_928_1344_2C0F0A62",
+										"pinId": "SurfaceColor_4_9B668B134E34B8A2B41BB98E51273395"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetLandscapeMaterialScalarParameterValue_1536_1248_517E5C44",
+										"pinId": "execute"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "SetLandscapeMaterialVectorParameterValue",
+							"targetFunction": "/Script/Landscape.LandscapeProxy:SetLandscapeMaterialVectorParameterValue",
+							"functionName": "SetLandscapeMaterialVectorParameterValue",
+							"functionOwnerClass": "/Script/Landscape.LandscapeProxy"
+						}
+					},
+					{
+						"nodeId": "Call_SetLandscapeMaterialScalarParameterValue_1536_1248_517E5C44",
+						"nodeGuid": "517E5C440E95060BCB955C38B9D41D13",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "SetLandscapeMaterialScalarParameterValue",
+						"nodeType": "CallFunction",
+						"positionX": 1536,
+						"positionY": 1248,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetLandscapeMaterialVectorParameterValue_1536_1040_A41ADAA0",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "In_ParameterName",
+								"pinName": "ParameterName",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "name",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "Grid 1 Size",
+								"autogeneratedDefaultValue": "None",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_Landscape_1168_848_553C1A79",
+										"pinId": "Landscape"
+									}
+								]
+							},
+							{
+								"pinId": "In_Value",
+								"pinName": "Value",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.0",
+								"autogeneratedDefaultValue": "0.0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_BreakStruct_928_1344_2C0F0A62",
+										"pinId": "GridSizes_16_782DDA9B42440FAB466A829B7C2E5482_X"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetLandscapeMaterialScalarParameterValue_1536_1456_25D11C6E",
+										"pinId": "execute"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "SetLandscapeMaterialScalarParameterValue",
+							"targetFunction": "/Script/Landscape.LandscapeProxy:SetLandscapeMaterialScalarParameterValue",
+							"functionName": "SetLandscapeMaterialScalarParameterValue",
+							"functionOwnerClass": "/Script/Landscape.LandscapeProxy"
+						}
+					},
+					{
+						"nodeId": "K2Node_BreakStruct_384_1344_EF29DFB8",
+						"nodeGuid": "EF29DFB85EE2155BD2494D6B0198AEB2",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_BreakStruct",
+						"nodeTitle": "Break S Level Style",
+						"nodeType": "K2Node",
+						"positionX": 384,
+						"positionY": 1344,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_S_LevelStyle",
+								"pinName": "S_LevelStyle",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": true,
+									"isConst": true,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_NewStyle_240_1360_78B90AE4",
+										"pinId": "NewStyle"
+									}
+								]
+							},
+							{
+								"pinId": "Out_BlockColors_19_BD7B5F9248A47F4BA4AEE2BCADEEA20F",
+								"pinName": "BlockColors_19_BD7B5F9248A47F4BA4AEE2BCADEEA20F",
+								"pinFriendlyName": "Block Colors",
+								"direction": "Output",
+								"type":
+								{
+									"category": "name",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": true,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Map_Find_640_1360_D6269708",
+										"pinId": "TargetMap"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"structType": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle"
+						}
+					},
+					{
+						"nodeId": "K2Node_BreakStruct_928_1344_2C0F0A62",
+						"nodeGuid": "2C0F0A62F1D05ECFB3DCB3ED764B936D",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_BreakStruct",
+						"nodeTitle": "Break S Grid Material Params",
+						"nodeType": "K2Node",
+						"positionX": 928,
+						"positionY": 1344,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_S_GridMaterialParams",
+								"pinName": "S_GridMaterialParams",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_GridMaterialParams.S_GridMaterialParams",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": true,
+									"isConst": true,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Map_Find_640_1360_D6269708",
+										"pinId": "Value"
+									}
+								]
+							},
+							{
+								"pinId": "Out_GridColor_2_93C9D1544CE9BC2796D83F9E713DAB23",
+								"pinName": "GridColor_2_93C9D1544CE9BC2796D83F9E713DAB23",
+								"pinFriendlyName": "Grid Color",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_GridMaterialParams.S_GridMaterialParams",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetLandscapeMaterialVectorParameterValue_1536_832_1572F074",
+										"pinId": "Value"
+									}
+								]
+							},
+							{
+								"pinId": "Out_GridSizes_16_782DDA9B42440FAB466A829B7C2E5482",
+								"pinName": "GridSizes_16_782DDA9B42440FAB466A829B7C2E5482",
+								"pinFriendlyName": "Grid Sizes",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_GridMaterialParams.S_GridMaterialParams",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_GridSizes_16_782DDA9B42440FAB466A829B7C2E5482_X",
+								"pinName": "GridSizes_16_782DDA9B42440FAB466A829B7C2E5482_X",
+								"pinFriendlyName": "Grid Sizes X",
+								"direction": "Output",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "double",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.0",
+								"autogeneratedDefaultValue": "0.0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetLandscapeMaterialScalarParameterValue_1536_1248_517E5C44",
+										"pinId": "Value"
+									}
+								]
+							},
+							{
+								"pinId": "Out_GridSizes_16_782DDA9B42440FAB466A829B7C2E5482_Y",
+								"pinName": "GridSizes_16_782DDA9B42440FAB466A829B7C2E5482_Y",
+								"pinFriendlyName": "Grid Sizes Y",
+								"direction": "Output",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "double",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.0",
+								"autogeneratedDefaultValue": "0.0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetLandscapeMaterialScalarParameterValue_1536_1456_25D11C6E",
+										"pinId": "Value"
+									}
+								]
+							},
+							{
+								"pinId": "Out_GridSizes_16_782DDA9B42440FAB466A829B7C2E5482_Z",
+								"pinName": "GridSizes_16_782DDA9B42440FAB466A829B7C2E5482_Z",
+								"pinFriendlyName": "Grid Sizes Z",
+								"direction": "Output",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "double",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.0",
+								"autogeneratedDefaultValue": "0.0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetLandscapeMaterialScalarParameterValue_1536_1664_F49B64E5",
+										"pinId": "Value"
+									}
+								]
+							},
+							{
+								"pinId": "Out_Specularity_21_1B077FB34A0BA551F2D806BF119B8EA8",
+								"pinName": "Specularity_21_1B077FB34A0BA551F2D806BF119B8EA8",
+								"pinFriendlyName": "Specularity",
+								"direction": "Output",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "double",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetLandscapeMaterialScalarParameterValue_1536_1872_8C9C84F6",
+										"pinId": "Value"
+									}
+								]
+							},
+							{
+								"pinId": "Out_SurfaceColor_4_9B668B134E34B8A2B41BB98E51273395",
+								"pinName": "SurfaceColor_4_9B668B134E34B8A2B41BB98E51273395",
+								"pinFriendlyName": "Surface Color",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_GridMaterialParams.S_GridMaterialParams",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetLandscapeMaterialVectorParameterValue_1536_1040_A41ADAA0",
+										"pinId": "Value"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"structType": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_GridMaterialParams.S_GridMaterialParams"
+						}
+					},
+					{
+						"nodeId": "Get_NewStyle_240_1360_78B90AE4",
+						"nodeGuid": "78B90AE4B617011FA63C7FB008AE70E7",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get NewStyle",
+						"nodeType": "VariableGet",
+						"positionX": 240,
+						"positionY": 1360,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_NewStyle",
+								"pinName": "NewStyle",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle.S_LevelStyle",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_BreakStruct_384_1344_EF29DFB8",
+										"pinId": "S_LevelStyle"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "NewStyle",
+							"isPure": true
+						}
+					},
+					{
+						"nodeId": "Call_Map_Find_640_1360_D6269708",
+						"nodeGuid": "D62697083535572208F7F8017CCA4E83",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "Map_Find",
+						"nodeType": "CallFunction",
+						"positionX": 640,
+						"positionY": 1360,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_Key",
+								"pinName": "Key",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "name",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": true,
+									"isConst": true,
+									"isWeakPointer": false
+								},
+								"defaultValue": "Landscape",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_TargetMap",
+								"pinName": "TargetMap",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "name",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": true,
+									"isReference": true,
+									"isConst": true,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_BreakStruct_384_1344_EF29DFB8",
+										"pinId": "BlockColors_19_BD7B5F9248A47F4BA4AEE2BCADEEA20F"
+									}
+								]
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "false",
+								"autogeneratedDefaultValue": "false",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_Value",
+								"pinName": "Value",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_BreakStruct_928_1344_2C0F0A62",
+										"pinId": "S_GridMaterialParams"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "Map_Find",
+							"targetFunction": "/Script/Engine.BlueprintMapLibrary:Map_Find",
+							"functionName": "Map_Find",
+							"functionOwnerClass": "/Script/Engine.BlueprintMapLibrary"
+						}
+					},
+					{
+						"nodeId": "Call_SetLandscapeMaterialScalarParameterValue_1536_1456_25D11C6E",
+						"nodeGuid": "25D11C6EA66AEE4ABF1CDF2BE94345EF",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "SetLandscapeMaterialScalarParameterValue",
+						"nodeType": "CallFunction",
+						"positionX": 1536,
+						"positionY": 1456,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetLandscapeMaterialScalarParameterValue_1536_1248_517E5C44",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "In_ParameterName",
+								"pinName": "ParameterName",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "name",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "Grid 2 Size",
+								"autogeneratedDefaultValue": "None",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_Landscape_1168_848_553C1A79",
+										"pinId": "Landscape"
+									}
+								]
+							},
+							{
+								"pinId": "In_Value",
+								"pinName": "Value",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.0",
+								"autogeneratedDefaultValue": "0.0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_BreakStruct_928_1344_2C0F0A62",
+										"pinId": "GridSizes_16_782DDA9B42440FAB466A829B7C2E5482_Y"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetLandscapeMaterialScalarParameterValue_1536_1664_F49B64E5",
+										"pinId": "execute"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "SetLandscapeMaterialScalarParameterValue",
+							"targetFunction": "/Script/Landscape.LandscapeProxy:SetLandscapeMaterialScalarParameterValue",
+							"functionName": "SetLandscapeMaterialScalarParameterValue",
+							"functionOwnerClass": "/Script/Landscape.LandscapeProxy"
+						}
+					},
+					{
+						"nodeId": "Call_SetLandscapeMaterialScalarParameterValue_1536_1664_F49B64E5",
+						"nodeGuid": "F49B64E5F4DE308FE95874B554C16D30",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "SetLandscapeMaterialScalarParameterValue",
+						"nodeType": "CallFunction",
+						"positionX": 1536,
+						"positionY": 1664,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetLandscapeMaterialScalarParameterValue_1536_1456_25D11C6E",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "In_ParameterName",
+								"pinName": "ParameterName",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "name",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "Grid 3 Size",
+								"autogeneratedDefaultValue": "None",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_Landscape_1168_848_553C1A79",
+										"pinId": "Landscape"
+									}
+								]
+							},
+							{
+								"pinId": "In_Value",
+								"pinName": "Value",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.0",
+								"autogeneratedDefaultValue": "0.0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_BreakStruct_928_1344_2C0F0A62",
+										"pinId": "GridSizes_16_782DDA9B42440FAB466A829B7C2E5482_Z"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetLandscapeMaterialScalarParameterValue_1536_1872_8C9C84F6",
+										"pinId": "execute"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "SetLandscapeMaterialScalarParameterValue",
+							"targetFunction": "/Script/Landscape.LandscapeProxy:SetLandscapeMaterialScalarParameterValue",
+							"functionName": "SetLandscapeMaterialScalarParameterValue",
+							"functionOwnerClass": "/Script/Landscape.LandscapeProxy"
+						}
+					},
+					{
+						"nodeId": "Call_SetLandscapeMaterialScalarParameterValue_1536_1872_8C9C84F6",
+						"nodeGuid": "8C9C84F69DC97FAD78F92AEEAD31150D",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "SetLandscapeMaterialScalarParameterValue",
+						"nodeType": "CallFunction",
+						"positionX": 1536,
+						"positionY": 1872,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_SetLandscapeMaterialScalarParameterValue_1536_1664_F49B64E5",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "In_ParameterName",
+								"pinName": "ParameterName",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "name",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "Base Specular",
+								"autogeneratedDefaultValue": "None",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_Landscape_1168_848_553C1A79",
+										"pinId": "Landscape"
+									}
+								]
+							},
+							{
+								"pinId": "In_Value",
+								"pinName": "Value",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.0",
+								"autogeneratedDefaultValue": "0.0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "K2Node_BreakStruct_928_1344_2C0F0A62",
+										"pinId": "Specularity_21_1B077FB34A0BA551F2D806BF119B8EA8"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "SetLandscapeMaterialScalarParameterValue",
+							"targetFunction": "/Script/Landscape.LandscapeProxy:SetLandscapeMaterialScalarParameterValue",
+							"functionName": "SetLandscapeMaterialScalarParameterValue",
+							"functionOwnerClass": "/Script/Landscape.LandscapeProxy"
+						}
+					}
+				]
+			}
+		}
+	],
+	"macros": [],
+	"eventGraph":
+	{
+		"graphName": "EventGraph",
+		"graphGuid": "7E1B85C14ED2D51411EB959C7041078B",
+		"graphType": "EventGraph",
+		"schemaClass": "/Script/BlueprintGraph.EdGraphSchema_K2",
+		"nodes": [
+			{
+				"nodeId": "Event_SetLevelStyle_0_0_93701F4C",
+				"nodeGuid": "93701F4C548DC97552A346FDD016FD81",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_CustomEvent",
+				"nodeTitle": "SetLevelStyle\nCustom Event",
+				"nodeType": "Event",
+				"positionX": 0,
+				"positionY": 0,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "Out_Index",
+						"pinName": "Index",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "int",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Set_StyleIndex_256_32_974F3803",
+								"pinId": "In_StyleIndex"
+							}
+						]
+					},
+					{
+						"pinId": "Out_OutputDelegate",
+						"pinName": "OutputDelegate",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "delegate",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Set_StyleIndex_256_32_974F3803",
+								"pinId": "In_execute"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"eventName": "SetLevelStyle",
+					"customFunctionName": "SetLevelStyle",
+					"isOverrideEvent": false
+				}
+			},
+			{
+				"nodeId": "Call_UpdateLevelVisuals_512_0_8C64BF07",
+				"nodeGuid": "8C64BF0764D775A566D0BB9544C3566E",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+				"nodeTitle": "UpdateLevelVisuals",
+				"nodeType": "CallFunction",
+				"positionX": 512,
+				"positionY": 0,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_execute",
+						"pinName": "execute",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Event_ReceiveBeginPlay_256_256_96E40598",
+								"pinId": "Out_then"
+							},
+							{
+								"nodeId": "Event_UpdateVisuals_256_128_CD6A56BE",
+								"pinId": "Out_then"
+							},
+							{
+								"nodeId": "Set_StyleIndex_256_32_974F3803",
+								"pinId": "Out_then"
+							}
+						]
+					},
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "",
+							"pinSubCategory": "self",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					}
+				],
+				"nodeSpecificData":
+				{
+					"memberName": "UpdateLevelVisuals",
+					"targetFunction": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/LevelVisuals.SKEL_LevelVisuals_C:UpdateLevelVisuals",
+					"functionName": "UpdateLevelVisuals",
+					"functionOwnerClass": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/LevelVisuals.SKEL_LevelVisuals_C",
+					"memberParentClass": "Self"
+				}
+			},
+			{
+				"nodeId": "Set_StyleIndex_256_32_974F3803",
+				"nodeGuid": "974F38032FAAA467629C7957F51F8C13",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_VariableSet",
+				"nodeTitle": "Set StyleIndex",
+				"nodeType": "VariableSet",
+				"positionX": 256,
+				"positionY": 32,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_execute",
+						"pinName": "execute",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Event_SetLevelStyle_0_0_93701F4C",
+								"pinId": "Out_then"
+							}
+						]
+					},
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": true,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "In_StyleIndex",
+						"pinName": "StyleIndex",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "int",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "0",
+						"autogeneratedDefaultValue": "0",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Event_SetLevelStyle_0_0_93701F4C",
+								"pinId": "Out_Index"
+							}
+						]
+					},
+					{
+						"pinId": "Out_Output_Get",
+						"pinName": "Output_Get",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "int",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "0",
+						"autogeneratedDefaultValue": "0",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_UpdateLevelVisuals_512_0_8C64BF07",
+								"pinId": "In_execute"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"variableName": "StyleIndex",
+					"variableSourceClass": "Self"
+				}
+			},
+			{
+				"nodeId": "Event_UpdateVisuals_256_128_CD6A56BE",
+				"nodeGuid": "CD6A56BE735FD55347B4C8A44884EAD5",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_CustomEvent",
+				"nodeTitle": "UpdateVisuals\nCustom Event",
+				"nodeType": "Event",
+				"positionX": 256,
+				"positionY": 128,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "Out_OutputDelegate",
+						"pinName": "OutputDelegate",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "delegate",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_UpdateLevelVisuals_512_0_8C64BF07",
+								"pinId": "In_execute"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"eventName": "UpdateVisuals",
+					"customFunctionName": "UpdateVisuals",
+					"isOverrideEvent": false
+				}
+			},
+			{
+				"nodeId": "Event_ReceiveBeginPlay_256_256_96E40598",
+				"nodeGuid": "96E405986C3A0F55A6C4CD52F037B6FC",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_Event",
+				"nodeTitle": "Event BeginPlay",
+				"nodeType": "Event",
+				"positionX": 256,
+				"positionY": 256,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "Out_OutputDelegate",
+						"pinName": "OutputDelegate",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "delegate",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_UpdateLevelVisuals_512_0_8C64BF07",
+								"pinId": "In_execute"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"eventName": "ReceiveBeginPlay",
+					"customFunctionName": "None",
+					"isOverrideEvent": true
+				}
+			}
+		]
+	},
+	"constructionScript":
+	{
+		"graphName": "UserConstructionScript",
+		"graphGuid": "18B5FC32443AA76335C6C8821E0E59A6",
+		"graphType": "ConstructionScript",
+		"schemaClass": "/Script/BlueprintGraph.EdGraphSchema_K2",
+		"nodes": [
+			{
+				"nodeId": "Call_UpdateLevelVisuals_256_-16_6C8AEFA0",
+				"nodeGuid": "6C8AEFA051902605021719835B0F3579",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+				"nodeTitle": "UpdateLevelVisuals",
+				"nodeType": "CallFunction",
+				"positionX": 256,
+				"positionY": -16,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_execute",
+						"pinName": "execute",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Entry_0_0_1182882F",
+								"pinId": "Out_then"
+							}
+						]
+					},
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "",
+							"pinSubCategory": "self",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					}
+				],
+				"nodeSpecificData":
+				{
+					"memberName": "UpdateLevelVisuals",
+					"targetFunction": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/LevelVisuals.SKEL_LevelVisuals_C:UpdateLevelVisuals",
+					"functionName": "UpdateLevelVisuals",
+					"functionOwnerClass": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/LevelVisuals.SKEL_LevelVisuals_C",
+					"memberParentClass": "Self"
+				}
+			},
+			{
+				"nodeId": "Entry_0_0_1182882F",
+				"nodeGuid": "1182882FF5884CFD26C3CDA08191E532",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_FunctionEntry",
+				"nodeTitle": "Construction Script",
+				"nodeType": "FunctionEntry",
+				"positionX": 0,
+				"positionY": 0,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_UpdateLevelVisuals_256_-16_6C8AEFA0",
+								"pinId": "In_execute"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	"components": [
+		{
+			"componentName": "Scene",
+			"componentClass": "/Script/Engine.SceneComponent",
+			"parentComponentName": "",
+			"isRootComponent": false,
+			"attachSocketName": "None",
+			"properties": [],
+			"childComponents": [
+				{
+					"componentName": "SkyLight",
+					"componentClass": "/Script/Engine.SkyLightComponent",
+					"parentComponentName": "",
+					"isRootComponent": false,
+					"attachSocketName": "None",
+					"properties": [
+						{
+							"propertyName": "SourceType",
+							"propertyType": "TEnumAsByte<ESkyLightSourceType>",
+							"value": "SLS_SpecifiedCubemap"
+						},
+						{
+							"propertyName": "Cubemap",
+							"propertyType": "TObjectPtr<UTextureCube>",
+							"value": "/Script/Engine.TextureCube'/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Textures/T_sky_01_8k.T_sky_01_8k'"
+						},
+						{
+							"propertyName": "Intensity",
+							"propertyType": "float",
+							"value": "2.000000"
+						},
+						{
+							"propertyName": "RelativeLocation",
+							"propertyType": "FVector",
+							"value": "(X=0.000000,Y=0.000000,Z=400.000000)"
+						}
+					],
+					"childComponents": []
+				},
+				{
+					"componentName": "DirectionalLight",
+					"componentClass": "/Script/Engine.DirectionalLightComponent",
+					"parentComponentName": "",
+					"isRootComponent": false,
+					"attachSocketName": "None",
+					"properties": [
+						{
+							"propertyName": "ForwardShadingPriority",
+							"propertyType": "int32",
+							"value": "1"
+						},
+						{
+							"propertyName": "RelativeLocation",
+							"propertyType": "FVector",
+							"value": "(X=0.000000,Y=0.000000,Z=300.000000)"
+						},
+						{
+							"propertyName": "RelativeRotation",
+							"propertyType": "FRotator",
+							"value": "(Pitch=-30.000000,Yaw=-50.000000,Roll=0.000000)"
+						}
+					],
+					"childComponents": []
+				},
+				{
+					"componentName": "ExponentialHeightFog",
+					"componentClass": "/Script/Engine.ExponentialHeightFogComponent",
+					"parentComponentName": "",
+					"isRootComponent": false,
+					"attachSocketName": "None",
+					"properties": [
+						{
+							"propertyName": "FogDensity",
+							"propertyType": "float",
+							"value": "0.200000"
+						},
+						{
+							"propertyName": "FogHeightFalloff",
+							"propertyType": "float",
+							"value": "0.000000"
+						},
+						{
+							"propertyName": "StartDistance",
+							"propertyType": "float",
+							"value": "1000.000000"
+						}
+					],
+					"childComponents": []
+				},
+				{
+					"componentName": "PostProcess",
+					"componentClass": "/Script/Engine.PostProcessComponent",
+					"parentComponentName": "",
+					"isRootComponent": false,
+					"attachSocketName": "None",
+					"properties": [
+						{
+							"propertyName": "Settings",
+							"propertyType": "FPostProcessSettings",
+							"value": "(bOverride_AutoExposureMethod=True,bOverride_AutoExposureBias=True,AutoExposureMethod=AEM_Manual,AutoExposureBias=8.500000)"
+						},
+						{
+							"propertyName": "VolumeGuid",
+							"propertyType": "FGuid",
+							"value": "[transient]"
+						}
+					],
+					"childComponents": []
+				},
+				{
+					"componentName": "Decal",
+					"componentClass": "/Script/Engine.DecalComponent",
+					"parentComponentName": "",
+					"isRootComponent": false,
+					"attachSocketName": "None",
+					"properties": [
+						{
+							"propertyName": "DecalMaterial",
+							"propertyType": "TObjectPtr<UMaterialInterface>",
+							"value": "/Script/Engine.Material'/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Materials/Decal_ProjectLogo.Decal_ProjectLogo'"
+						},
+						{
+							"propertyName": "DecalSize",
+							"propertyType": "FVector",
+							"value": "(X=1.000000,Y=600.000000,Z=600.000000)"
+						},
+						{
+							"propertyName": "DecalColor",
+							"propertyType": "FLinearColor",
+							"value": "(R=1.000000,G=1.000000,B=1.000000,A=0.100000)"
+						},
+						{
+							"propertyName": "RelativeLocation",
+							"propertyType": "FVector",
+							"value": "(X=0.000000,Y=-0.000000,Z=-0.000000)"
+						},
+						{
+							"propertyName": "RelativeRotation",
+							"propertyType": "FRotator",
+							"value": "(Pitch=-90.000000,Yaw=0.000000,Roll=90.000000)"
+						}
+					],
+					"childComponents": []
+				}
+			]
+		}
+	],
+	"cdoProperties": [],
+	"additionalGraphs": [],
+	"stateMachines": [],
+	"widgetTree": [],
+	"dependencies": [
+		{
+			"assetPath": "/Engine/EditorBlueprintResources/StandardMacros",
+			"assetName": "StandardMacros",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Engine/EditorResources/LightIcons/S_LightError",
+			"assetName": "S_LightError",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_GridMaterialParams",
+			"assetName": "S_GridMaterialParams",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Data/S_LevelStyle",
+			"assetName": "S_LevelStyle",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/LevelBlock",
+			"assetName": "LevelBlock",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Materials/Decal_ProjectLogo",
+			"assetName": "Decal_ProjectLogo",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Levels/LevelPrototyping/Textures/T_sky_01_8k",
+			"assetName": "T_sky_01_8k",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/Engine.Actor",
+			"assetName": "Actor",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": "Parent class"
+		},
+		{
+			"assetPath": "/Script/Landscape",
+			"assetName": "Landscape",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		}
+	],
+	"metaData":
+	{
+	},
+	"assetType": "Blueprint",
+	"coverage":
+	{
+		"variables":
+		{
+			"total": 3,
+			"documented": 3
+		},
+		"functions":
+		{
+			"total": 2,
+			"documented": 2
+		},
+		"components":
+		{
+			"total": 1,
+			"documented": 1
+		},
+		"graphs":
+		{
+			"total": 2,
+			"documented": 2
+		},
+		"cdoProperties":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"specialized":
+		{
+			"applicable": [],
+			"documented": []
+		},
+		"overallPct": 100
+	}
+}

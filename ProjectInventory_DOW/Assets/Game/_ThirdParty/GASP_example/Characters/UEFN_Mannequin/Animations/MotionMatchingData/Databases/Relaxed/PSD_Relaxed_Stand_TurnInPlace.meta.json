@@ -1,0 +1,241 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"assetType": "PoseSearchDatabase",
+	"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Databases/Relaxed/PSD_Relaxed_Stand_TurnInPlace.PSD_Relaxed_Stand_TurnInPlace",
+	"assetName": "PSD_Relaxed_Stand_TurnInPlace",
+	"parentClass":
+	{
+		"className": "DataAsset",
+		"classPath": "/Script/Engine.DataAsset",
+		"isNative": true
+	},
+	"schema":
+	{
+		"path": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Schemas/PSS_Relaxed_StandTurn.PSS_Relaxed_StandTurn",
+		"sampleRate": 30,
+		"cardinality": 34,
+		"channels": [
+			{
+				"className": "PoseSearchFeatureChannel_Trajectory",
+				"classPath": "/Script/PoseSearch.PoseSearchFeatureChannel_Trajectory"
+			},
+			{
+				"className": "PoseSearchFeatureChannel_Group",
+				"classPath": "/Script/PoseSearch.PoseSearchFeatureChannel_Group"
+			}
+		],
+		"skeletonRoles": [
+			{
+				"role": "(none)",
+				"skeletonPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Meshes/SK_UEFN_Mannequin.SK_UEFN_Mannequin"
+			}
+		]
+	},
+	"animationAssets": [
+		{
+			"index": 0,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Idle/M_Relaxed_Stand_Turn_180_R.M_Relaxed_Stand_Turn_180_R",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		},
+		{
+			"index": 1,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Idle/M_Relaxed_Stand_Turn_180_L.M_Relaxed_Stand_Turn_180_L",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		},
+		{
+			"index": 2,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Idle/M_Relaxed_Stand_Turn_135_R.M_Relaxed_Stand_Turn_135_R",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		},
+		{
+			"index": 3,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Idle/M_Relaxed_Stand_Turn_135_L.M_Relaxed_Stand_Turn_135_L",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		},
+		{
+			"index": 4,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Idle/M_Relaxed_Stand_Turn_090_R.M_Relaxed_Stand_Turn_090_R",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		},
+		{
+			"index": 5,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Idle/M_Relaxed_Stand_Turn_090_L.M_Relaxed_Stand_Turn_090_L",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		},
+		{
+			"index": 6,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Idle/M_Relaxed_Stand_Turn_045_R.M_Relaxed_Stand_Turn_045_R",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		},
+		{
+			"index": 7,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Idle/M_Relaxed_Stand_Turn_045_L.M_Relaxed_Stand_Turn_045_L",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		}
+	],
+	"normalizationSet": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Normalization_Sets/PSN_Relaxed_All.PSN_Relaxed_All",
+	"performance":
+	{
+		"poseSearchMode": "PCAKDTree",
+		"continuingPoseCostBias": -0.5,
+		"baseCostBias": 0,
+		"loopingCostBias": -0.004999999888241291,
+		"continuingInteractionCostBias": 0,
+		"kdTreeQueryNumNeighbors": 200,
+		"numberOfPrincipalComponents": 4,
+		"kdTreeMaxLeafSize": 16,
+		"posePruningSimilarityThreshold": 0,
+		"pcaValuesPruningSimilarityThreshold": 0,
+		"excludeFromDatabaseMin": 0,
+		"excludeFromDatabaseMax": -0.30000001192092896,
+		"additionalExtrapolationMin": -100,
+		"additionalExtrapolationMax": 100
+	},
+	"tags": [
+		"TurnInPlace"
+	],
+	"dependencies": [
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Idle/M_Relaxed_Stand_Turn_045_L",
+			"assetName": "M_Relaxed_Stand_Turn_045_L",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Idle/M_Relaxed_Stand_Turn_045_R",
+			"assetName": "M_Relaxed_Stand_Turn_045_R",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Idle/M_Relaxed_Stand_Turn_090_L",
+			"assetName": "M_Relaxed_Stand_Turn_090_L",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Idle/M_Relaxed_Stand_Turn_090_R",
+			"assetName": "M_Relaxed_Stand_Turn_090_R",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Idle/M_Relaxed_Stand_Turn_135_L",
+			"assetName": "M_Relaxed_Stand_Turn_135_L",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Idle/M_Relaxed_Stand_Turn_135_R",
+			"assetName": "M_Relaxed_Stand_Turn_135_R",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Idle/M_Relaxed_Stand_Turn_180_L",
+			"assetName": "M_Relaxed_Stand_Turn_180_L",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Idle/M_Relaxed_Stand_Turn_180_R",
+			"assetName": "M_Relaxed_Stand_Turn_180_R",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Normalization_Sets/PSN_Relaxed_All",
+			"assetName": "PSN_Relaxed_All",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Schemas/PSS_Relaxed_StandTurn",
+			"assetName": "PSS_Relaxed_StandTurn",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/PoseSearch",
+			"assetName": "PoseSearch",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		}
+	],
+	"coverage":
+	{
+		"animationAssets":
+		{
+			"total": 8,
+			"documented": 8
+		},
+		"specialized":
+		{
+			"applicable": [],
+			"documented": []
+		},
+		"overallPct": 100
+	}
+}

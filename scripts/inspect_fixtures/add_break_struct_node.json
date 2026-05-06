@@ -1,0 +1,17 @@
+{
+  "_comment": "M28.14 add_break_struct_node post-apply soak. Duplicates BP_BpxTestGraphNodesCalls into a scratch path and spawns a UK2Node_BreakStruct typed against /Script/CoreUObject.Vector onto the default EventGraph at a fixed position. FVector's X/Y/Z are BlueprintVisible so CanBeBroken returns true. The soak gate asserts md5 stability across 2 rounds, proving SeedGuidFromJoined(':graph:EventGraph:break_struct:/Script/CoreUObject.Vector:768,32') + SeedPinGuidsForNode overrides the engine's FGuid::NewGuid() calls inside the inherited K2Node_StructMemberGet::AllocateDefaultPins pin walk. skip_inspect=true (per-field output pin table renders inline but isn't grep-friendly).",
+  "op": "add_break_struct_node",
+  "skip_inspect": true,
+  "source_fixture": "/Game/TestBlueprints/BP_BpxTestGraphNodesCalls",
+  "scratch_path":   "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_BreakStructVector",
+  "plan_kwargs": {
+    "bp_path":           "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_BreakStructVector",
+    "graph_name":        "EventGraph",
+    "struct_type_path":  "/Script/CoreUObject.Vector",
+    "position":          [768, 32]
+  },
+  "soak": {
+    "rounds": 2,
+    "stable_keys": ["node_guid"]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_comment": "M28.4.2 set_data_asset_property soak-only. UDataAsset is not in the inventory pipeline's logic-bearing set (PROJECT_INVENTORY_BRIEF.md §3), so the inspect harness's re-export phase emits zero .md and the inspect gate would always fail. Expanding inventory scope is a separate design decision; for M28.4.2 we keep inspect skipped via `skip_inspect: true` and rely on soak for the determinism signal. The soak gate validates byte-identity of the mutated scratch .uasset across 2 rounds — round 1 populates the empty DA_BpxTestInstance duplicate's Intensity UPROPERTY with 42, round 2 short-circuits via the SetPropertyValue bridge's before==value string compare. Exercises BP-declared variable resolution on a BP-derived DA class (Intensity is declared on DA_BpxTestParentClass via AddMemberVariable; FindFProperty resolves it by the friendly FName). Mirrors the M28.5.3 set_eqs_generator_property soak recipe: source fixture empty, plan populates a single scalar field, round-2 replay validates idempotency.",
+  "skip_inspect": true,
+  "op": "set_data_asset_property",
+  "source_fixture": "/Game/TestBlueprints/DA_BpxTestInstance",
+  "scratch_path":   "/Game/TestBlueprints/DA_BpxTest_SetPropScratch",
+  "inspect_path":   "/Game/TestBlueprints/DA_BpxTest_SetPropScratch",
+  "plan_kwargs": {
+    "asset_path":    "/Game/TestBlueprints/DA_BpxTest_SetPropScratch",
+    "property_path": ["Intensity"],
+    "value":         42
+  },
+  "expected_md": [
+    "DA_BpxTest_SetPropScratch"
+  ],
+  "not_expected_md": [],
+  "expected_deep": [],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2
+  }
+}

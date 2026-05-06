@@ -1,0 +1,24 @@
+{
+  "_comment": "M28.3.3 add_dynamic_cast_node post-apply inspection + soak. Duplicates BP_BpxTestGraphNodesCalls into a scratch path and spawns a UK2Node_DynamicCast targeting /Script/Engine.Actor onto the default EventGraph at a fixed position. Engine.Actor is ubiquitous in all engines; the BP's own class IS an Actor so the cast is well-formed. The inspect gate asserts the rendered .deep.md surfaces the new DynamicCast node AND the typed As<Actor> output pin (proving TargetType was set BEFORE AllocateDefaultPins — post-alloc assignment would leave As<X> as a wildcard). The soak gate asserts md5 stability across 2 rounds, proving SeedGuidFromJoined(':graph:EventGraph:cast:/Script/Engine.Actor:288,-48') + SeedPinGuidsForNode overrides UEdGraphNode::CreateNewGuid + UEdGraphPin::CreatePin's FGuid::NewGuid() calls that fire inside CreatePinsForCastNode.",
+  "op": "add_dynamic_cast_node",
+  "source_fixture": "/Game/TestBlueprints/BP_BpxTestGraphNodesCalls",
+  "scratch_path":   "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_Cast",
+  "inspect_path":   "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_Cast",
+  "plan_kwargs": {
+    "bp_path":           "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_Cast",
+    "graph_name":        "EventGraph",
+    "target_class_path": "/Script/Engine.Actor",
+    "position":          [288, -48]
+  },
+  "expected_md": [],
+  "not_expected_md": [],
+  "expected_deep": [
+    "K2Node_DynamicCast",
+    "Actor"
+  ],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2,
+    "stable_keys": ["node_guid"]
+  }
+}

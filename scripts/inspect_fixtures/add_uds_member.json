@@ -1,0 +1,23 @@
+{
+  "_comment": "M28.4.3 add_uds_member soak-only. Marked skip_inspect: true to match M28.4.1/M28.4.2 scope (soak carries the determinism signal, inspect adds content-assertion complexity for cosmetic render differences). The soak gate validates byte-identity of the mutated scratch .uasset across 2 rounds — round 1 appends BpxAddCandidate:int=42 to the UDS_BpxTestEmpty duplicate (which arrives with {BpxAutoBool, BpxRemovalCandidate}), round 2 sees BpxAddCandidate already present and hits the idempotent skip. Exercises (a) the C++ SeedGuidFromJoined(scratch_path + ':uds_var:BpxAddCandidate') recipe for VarGuid seeding, (b) the RenameVariable pass that regenerates VarName from the seeded VarGuid + the requested friendly name, and (c) the optional DefaultValue path via ChangeVariableDefaultValue. Mirrors the M28.3.4 add_local_variable soak shape (struct-array-append with post-seed VarGuid) and the M28.4.1 set_curve_float_keys idempotency recipe (round-2 replay validates no-save short-circuit).",
+  "skip_inspect": true,
+  "op": "add_uds_member",
+  "source_fixture": "/Game/TestBlueprints/UDS_BpxTestEmpty",
+  "scratch_path":   "/Game/TestBlueprints/UDS_BpxTest_AddMemberScratch",
+  "inspect_path":   "/Game/TestBlueprints/UDS_BpxTest_AddMemberScratch",
+  "plan_kwargs": {
+    "uds_path":      "/Game/TestBlueprints/UDS_BpxTest_AddMemberScratch",
+    "member_name":   "BpxAddCandidate",
+    "var_type_spec": "int",
+    "default_value": "42"
+  },
+  "expected_md": [
+    "UDS_BpxTest_AddMemberScratch"
+  ],
+  "not_expected_md": [],
+  "expected_deep": [],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2
+  }
+}

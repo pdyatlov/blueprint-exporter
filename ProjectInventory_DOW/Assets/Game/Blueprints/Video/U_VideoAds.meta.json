@@ -1,0 +1,1739 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "04726f379f3688db47df59b49f5123ef"
+	},
+	"assetPath": "/Game/Blueprints/Video/U_VideoAds.U_VideoAds",
+	"assetName": "U_VideoAds",
+	"blueprintGuid": "8402642D453CD0FC785FC88700E712C8",
+	"blueprintType": "FunctionLibrary",
+	"blueprintSubclass": "Blueprint",
+	"parentClass":
+	{
+		"className": "BlueprintFunctionLibrary",
+		"classPath": "/Script/Engine.BlueprintFunctionLibrary",
+		"isNative": true,
+		"moduleName": "/Script/Engine"
+	},
+	"implementedInterfaces": [],
+	"variables": [],
+	"functions": [
+		{
+			"functionName": "GetVideoMaterialInstance",
+			"functionGuid": "44CAECCC4EA14BD3E63321BD2CED0E0D",
+			"flags":
+			{
+				"pure": false,
+				"const": false,
+				"static": false,
+				"callInEditor": false,
+				"override": false,
+				"event": false,
+				"accessSpecifier": "Public",
+				"server": false,
+				"client": false,
+				"netMulticast": false,
+				"reliable": false,
+				"blueprintAuthorityOnly": false,
+				"blueprintCosmetic": false
+			},
+			"inputs": [
+				{
+					"paramName": "Media Texture",
+					"paramType":
+					{
+						"category": "object",
+						"subCategoryObject": "/Script/MediaAssets.MediaTexture",
+						"pinSubCategory": "None",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "",
+					"isOutput": false,
+					"passByReference": false
+				},
+				{
+					"paramName": "__WorldContext",
+					"paramType":
+					{
+						"category": "object",
+						"subCategoryObject": "/Script/CoreUObject.Object",
+						"pinSubCategory": "None",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "",
+					"isOutput": false,
+					"passByReference": false
+				}
+			],
+			"outputs": [
+				{
+					"paramName": "Material Instance",
+					"paramType":
+					{
+						"category": "object",
+						"subCategoryObject": "/Script/Engine.MaterialInstance",
+						"pinSubCategory": "None",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "",
+					"isOutput": true,
+					"passByReference": false
+				}
+			],
+			"localVariables": [
+				{
+					"variableName": "TexturesToMaterialInstances",
+					"variableGuid": "D781660748E5FC7BD38B5D987C4175B8",
+					"variableType":
+					{
+						"category": "object",
+						"subCategoryObject": "",
+						"pinSubCategory": "None",
+						"isArray": false,
+						"isSet": false,
+						"isMap": true,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false,
+						"valueTerminalType": "object",
+						"subCategoryObjectResolved": false
+					},
+					"defaultValue": "((\"/Script/MediaAssets.MediaTexture'/Game/Movies/Ads/MediaTextures/MT_Carsia.MT_Carsia'\", \"/Script/Engine.MaterialInstanceConstant'/Game/Movies/Ads/Materials/MI_VideoMaterial_Carsia.MI_VideoMaterial_Carsia'\"),(\"/Script/MediaAssets.MediaTexture'/Game/Movies/Ads/MediaTextures/MT_ChancyShoes.MT_ChancyShoes'\", \"/Script/Engine.MaterialInstanceConstant'/Game/Movies/Ads/Materials/MI_VideoMaterial_ChancyShoes.MI_VideoMaterial_ChancyShoes'\"),(\"/Script/MediaAssets.MediaTexture'/Game/Movies/Ads/MediaTextures/MT_Gait_Video.MT_Gait_Video'\", \"/Script/Engine.MaterialInstanceConstant'/Game/Movies/Ads/Materials/MI_VideoMaterial_GAIT.MI_VideoMaterial_GAIT'\"),(\"/Script/MediaAssets.MediaTexture'/Game/Movies/Ads/MediaTextures/MT_OeilDeFer.MT_OeilDeFer'\", \"/Script/Engine.MaterialInstanceConstant'/Game/Movies/Ads/Materials/MI_VideoMaterial_OeilDeFer.MI_VideoMaterial_OeilDeFer'\"),(\"/Script/MediaAssets.MediaTexture'/Game/Movies/Ads/MediaTextures/MT_Onohua.MT_Onohua'\", \"/Script/Engine.MaterialInstanceConstant'/Game/Movies/Ads/Materials/MI_VideoMaterial_Onohua.MI_VideoMaterial_Onohua'\"),(\"/Script/MediaAssets.MediaTexture'/Game/Movies/Ads/MediaTextures/MT_RobertsCoffee.MT_RobertsCoffee'\", \"/Script/Engine.MaterialInstanceConstant'/Game/Movies/Ads/Materials/MI_VideoMaterial_RobertsCoffee.MI_VideoMaterial_RobertsCoffee'\"),(\"/Script/MediaAssets.MediaTexture'/Game/Movies/Ads/MediaTextures/MT_TargetArmour.MT_TargetArmour'\", \"/Script/Engine.MaterialInstanceConstant'/Game/Movies/Ads/Materials/MI_VideoMaterial_TargetArmour.MI_VideoMaterial_TargetArmour'\"),(\"/Script/MediaAssets.MediaTexture'/Game/Movies/Ads/MediaTextures/MT_Wojicik.MT_Wojicik'\", \"/Script/Engine.MaterialInstanceConstant'/Game/Movies/Ads/Materials/MI_VideoMaterial_Wojicik.MI_VideoMaterial_Wojicik'\"),(\"/Script/MediaAssets.MediaTexture'/Game/Movies/Ads/MediaTextures/MT_Pinkstacks_01.MT_Pinkstacks_01'\", \"/Script/Engine.MaterialInstanceConstant'/Game/Movies/Ads/Materials/MI_VideoMaterial_PinkStacks_01.MI_VideoMaterial_PinkStacks_01'\"))",
+					"category": "",
+					"flags":
+					{
+						"instanceEditable": false,
+						"blueprintReadOnly": false,
+						"exposeOnSpawn": false,
+						"private": false,
+						"exposeToCinematics": false,
+						"replicated": false,
+						"replicationCondition": "",
+						"repNotify": false,
+						"repNotifyFunc": ""
+					},
+					"toolTip": "",
+					"metaData":
+					{
+					}
+				}
+			],
+			"description": "",
+			"keywords": [],
+			"category": "",
+			"graph":
+			{
+				"graphName": "GetVideoMaterialInstance",
+				"graphGuid": "44CAECCC4EA14BD3E63321BD2CED0E0D",
+				"graphType": "K2Graph",
+				"schemaClass": "/Script/BlueprintGraph.EdGraphSchema_K2",
+				"nodes": [
+					{
+						"nodeId": "Entry_-16_-16_BB75F69F",
+						"nodeGuid": "BB75F69F6EA8163E24F987E87D55792A",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_FunctionEntry",
+						"nodeTitle": "GetVideoMaterialInstance",
+						"nodeType": "FunctionEntry",
+						"positionX": -16,
+						"positionY": -16,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out___WorldContext",
+								"pinName": "__WorldContext",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/CoreUObject.Object",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_Media Texture",
+								"pinName": "Media Texture",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/MediaAssets.MediaTexture",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Map_Find_272_80_AA2999E9",
+										"pinId": "Key"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Result_528_0_446B534B",
+										"pinId": "execute"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Result_528_0_446B534B",
+						"nodeGuid": "446B534BBF2367086306232F251AF80E",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_FunctionResult",
+						"nodeTitle": "Return Node",
+						"nodeType": "FunctionResult",
+						"positionX": 528,
+						"positionY": 0,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_-16_-16_BB75F69F",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "In_Material Instance",
+								"pinName": "Material Instance",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/Engine.MaterialInstance",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Map_Find_272_80_AA2999E9",
+										"pinId": "Value"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Call_Map_Find_272_80_AA2999E9",
+						"nodeGuid": "AA2999E9213D04FAB3319A8970C92735",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "Map_Find",
+						"nodeType": "CallFunction",
+						"positionX": 272,
+						"positionY": 80,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_Key",
+								"pinName": "Key",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": true,
+									"isConst": true,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_-16_-16_BB75F69F",
+										"pinId": "Media Texture"
+									}
+								]
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_TargetMap",
+								"pinName": "TargetMap",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": true,
+									"isReference": true,
+									"isConst": true,
+									"isWeakPointer": false,
+									"valueTerminalType": "object",
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_TexturesToMaterialInstances_-32_128_D132C9F1",
+										"pinId": "TexturesToMaterialInstances"
+									}
+								]
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "false",
+								"autogeneratedDefaultValue": "false",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_Value",
+								"pinName": "Value",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Result_528_0_446B534B",
+										"pinId": "Material Instance"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "Map_Find",
+							"targetFunction": "/Script/Engine.BlueprintMapLibrary:Map_Find",
+							"functionName": "Map_Find",
+							"functionOwnerClass": "/Script/Engine.BlueprintMapLibrary"
+						}
+					},
+					{
+						"nodeId": "Get_TexturesToMaterialInstances_-32_128_D132C9F1",
+						"nodeGuid": "D132C9F103F03228AB0053D8252B37BF",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get TexturesToMaterialInstances",
+						"nodeType": "VariableGet",
+						"positionX": -32,
+						"positionY": 128,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_TexturesToMaterialInstances",
+								"pinName": "TexturesToMaterialInstances",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "Map</Script/MediaAssets.MediaTexture,/Script/Engine.MaterialInstance>",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": true,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"valueTerminalType": "object"
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Map_Find_272_80_AA2999E9",
+										"pinId": "TargetMap"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "TexturesToMaterialInstances",
+							"isPure": true
+						}
+					}
+				]
+			}
+		},
+		{
+			"functionName": "Load Associated Video Player",
+			"functionGuid": "5E7BD69241BC3009BE6993B74A3DA41E",
+			"flags":
+			{
+				"pure": false,
+				"const": false,
+				"static": false,
+				"callInEditor": false,
+				"override": false,
+				"event": false,
+				"accessSpecifier": "Public",
+				"server": false,
+				"client": false,
+				"netMulticast": false,
+				"reliable": false,
+				"blueprintAuthorityOnly": false,
+				"blueprintCosmetic": false
+			},
+			"inputs": [
+				{
+					"paramName": "Media Texture",
+					"paramType":
+					{
+						"category": "object",
+						"subCategoryObject": "/Script/MediaAssets.MediaTexture",
+						"pinSubCategory": "None",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "",
+					"isOutput": false,
+					"passByReference": false
+				},
+				{
+					"paramName": "__WorldContext",
+					"paramType":
+					{
+						"category": "object",
+						"subCategoryObject": "/Script/CoreUObject.Object",
+						"pinSubCategory": "None",
+						"isArray": false,
+						"isSet": false,
+						"isMap": false,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false
+					},
+					"defaultValue": "",
+					"isOutput": false,
+					"passByReference": false
+				}
+			],
+			"outputs": [],
+			"localVariables": [
+				{
+					"variableName": "MediaPlayersToSources",
+					"variableGuid": "C221963B426AFA03F1A50BABB946DC48",
+					"variableType":
+					{
+						"category": "object",
+						"subCategoryObject": "",
+						"pinSubCategory": "None",
+						"isArray": false,
+						"isSet": false,
+						"isMap": true,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false,
+						"valueTerminalType": "object",
+						"subCategoryObjectResolved": false
+					},
+					"defaultValue": "((\"/Script/MediaAssets.MediaPlayer'/Game/Movies/Ads/MediaPlayers/MP_Carsia.MP_Carsia'\", \"/Script/MediaAssets.FileMediaSource'/Game/Movies/Ads/Sources/FMS_Carsia_landscape.FMS_Carsia_landscape'\"),(\"/Script/MediaAssets.MediaPlayer'/Game/Movies/Ads/MediaPlayers/MP_ChancyShoes.MP_ChancyShoes'\", \"/Script/MediaAssets.FileMediaSource'/Game/Movies/Ads/Sources/FMS_ChancyShoes_landscape.FMS_ChancyShoes_landscape'\"),(\"/Script/MediaAssets.MediaPlayer'/Game/Movies/Ads/MediaPlayers/MP_OeilDeFer.MP_OeilDeFer'\", \"/Script/MediaAssets.FileMediaSource'/Game/Movies/Ads/Sources/FMS_OeilDeFer_landscape.FMS_OeilDeFer_landscape'\"),(\"/Script/MediaAssets.MediaPlayer'/Game/Movies/Ads/MediaPlayers/MP_Onohua.MP_Onohua'\", \"/Script/MediaAssets.FileMediaSource'/Game/Movies/Ads/Sources/FMS_Onohua_landscape.FMS_Onohua_landscape'\"),(\"/Script/MediaAssets.MediaPlayer'/Game/Movies/Ads/MediaPlayers/MP_RobertsCoffee.MP_RobertsCoffee'\", \"/Script/MediaAssets.FileMediaSource'/Game/Movies/Ads/Sources/FMS_RobertsCoffee_landscape.FMS_RobertsCoffee_landscape'\"),(\"/Script/MediaAssets.MediaPlayer'/Game/Movies/Ads/MediaPlayers/MP_TargetArmour.MP_TargetArmour'\", \"/Script/MediaAssets.FileMediaSource'/Game/Movies/Ads/Sources/FMS_TargetArmour_landscape.FMS_TargetArmour_landscape'\"),(\"/Script/MediaAssets.MediaPlayer'/Game/Movies/Ads/MediaPlayers/MP_Wojicik.MP_Wojicik'\", \"/Script/MediaAssets.FileMediaSource'/Game/Movies/Ads/Sources/FMS_Wojicik_landscape.FMS_Wojicik_landscape'\"),(\"/Script/MediaAssets.MediaPlayer'/Game/Movies/Ads/MediaPlayers/MP_PinkStacks_01.MP_PinkStacks_01'\", \"/Script/MediaAssets.FileMediaSource'/Game/Movies/Ads/Sources/Mov_PS_Hotpink_Abstract_002.Mov_PS_Hotpink_Abstract_002'\"))",
+					"category": "",
+					"flags":
+					{
+						"instanceEditable": false,
+						"blueprintReadOnly": false,
+						"exposeOnSpawn": false,
+						"private": false,
+						"exposeToCinematics": false,
+						"replicated": false,
+						"replicationCondition": "",
+						"repNotify": false,
+						"repNotifyFunc": ""
+					},
+					"toolTip": "",
+					"metaData":
+					{
+					}
+				},
+				{
+					"variableName": "TexturesToMediaPlayers",
+					"variableGuid": "7CE1C5294AC1BA73C90F5B841D51CC2B",
+					"variableType":
+					{
+						"category": "object",
+						"subCategoryObject": "",
+						"pinSubCategory": "None",
+						"isArray": false,
+						"isSet": false,
+						"isMap": true,
+						"isReference": false,
+						"isConst": false,
+						"isWeakPointer": false,
+						"valueTerminalType": "object",
+						"subCategoryObjectResolved": false
+					},
+					"defaultValue": "((\"/Script/MediaAssets.MediaTexture'/Game/Movies/Ads/MediaTextures/MT_Carsia.MT_Carsia'\", \"/Script/MediaAssets.MediaPlayer'/Game/Movies/Ads/MediaPlayers/MP_Carsia.MP_Carsia'\"),(\"/Script/MediaAssets.MediaTexture'/Game/Movies/Ads/MediaTextures/MT_ChancyShoes.MT_ChancyShoes'\", \"/Script/MediaAssets.MediaPlayer'/Game/Movies/Ads/MediaPlayers/MP_ChancyShoes.MP_ChancyShoes'\"),(\"/Script/MediaAssets.MediaTexture'/Game/Movies/Ads/MediaTextures/MT_Gait_Video.MT_Gait_Video'\", \"/Script/MediaAssets.MediaPlayer'/Game/Movies/Ads/MediaPlayers/MP_Gait.MP_Gait'\"),(\"/Script/MediaAssets.MediaTexture'/Game/Movies/Ads/MediaTextures/MT_OeilDeFer.MT_OeilDeFer'\", \"/Script/MediaAssets.MediaPlayer'/Game/Movies/Ads/MediaPlayers/MP_OeilDeFer.MP_OeilDeFer'\"),(\"/Script/MediaAssets.MediaTexture'/Game/Movies/Ads/MediaTextures/MT_Onohua.MT_Onohua'\", \"/Script/MediaAssets.MediaPlayer'/Game/Movies/Ads/MediaPlayers/MP_Onohua.MP_Onohua'\"),(\"/Script/MediaAssets.MediaTexture'/Game/Movies/Ads/MediaTextures/MT_RobertsCoffee.MT_RobertsCoffee'\", \"/Script/MediaAssets.MediaPlayer'/Game/Movies/Ads/MediaPlayers/MP_RobertsCoffee.MP_RobertsCoffee'\"),(\"/Script/MediaAssets.MediaTexture'/Game/Movies/Ads/MediaTextures/MT_TargetArmour.MT_TargetArmour'\", \"/Script/MediaAssets.MediaPlayer'/Game/Movies/Ads/MediaPlayers/MP_TargetArmour.MP_TargetArmour'\"),(\"/Script/MediaAssets.MediaTexture'/Game/Movies/Ads/MediaTextures/MT_Wojicik.MT_Wojicik'\", \"/Script/MediaAssets.MediaPlayer'/Game/Movies/Ads/MediaPlayers/MP_Wojicik.MP_Wojicik'\"),(\"/Script/MediaAssets.MediaTexture'/Game/Movies/Ads/MediaTextures/MT_BalletNeon.MT_BalletNeon'\", \"/Script/MediaAssets.MediaPlayer'/Game/Movies/Ads/MediaPlayers/MP_BalletNeon.MP_BalletNeon'\"),(\"/Script/MediaAssets.MediaTexture'/Game/Movies/Ads/MediaTextures/MT_Pinkstacks_01.MT_Pinkstacks_01'\", \"/Script/MediaAssets.MediaPlayer'/Game/Movies/Ads/MediaPlayers/MP_PinkStacks_01.MP_PinkStacks_01'\"))",
+					"category": "",
+					"flags":
+					{
+						"instanceEditable": false,
+						"blueprintReadOnly": false,
+						"exposeOnSpawn": false,
+						"private": false,
+						"exposeToCinematics": false,
+						"replicated": false,
+						"replicationCondition": "",
+						"repNotify": false,
+						"repNotifyFunc": ""
+					},
+					"toolTip": "",
+					"metaData":
+					{
+					}
+				}
+			],
+			"description": "",
+			"keywords": [],
+			"category": "",
+			"graph":
+			{
+				"graphName": "Load Associated Video Player",
+				"graphGuid": "5E7BD69241BC3009BE6993B74A3DA41E",
+				"graphType": "K2Graph",
+				"schemaClass": "/Script/BlueprintGraph.EdGraphSchema_K2",
+				"nodes": [
+					{
+						"nodeId": "Call_OpenSource_-352_80_FEE4B835",
+						"nodeGuid": "FEE4B835AE92CF5A9C145DF61544E7B1",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "OpenSource",
+						"nodeType": "CallFunction",
+						"positionX": -352,
+						"positionY": 80,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_execute",
+								"pinName": "execute",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_-1280_96_7F3A8B59",
+										"pinId": "then"
+									}
+								]
+							},
+							{
+								"pinId": "In_MediaSource",
+								"pinName": "MediaSource",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/MediaAssets.MediaSource",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Map_Find_-592_224_89E8D682",
+										"pinId": "Value"
+									}
+								]
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Map_Find_-944_176_11486219",
+										"pinId": "Value"
+									}
+								]
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "false",
+								"autogeneratedDefaultValue": "false",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "OpenSource",
+							"targetFunction": "/Script/MediaAssets.MediaPlayer:OpenSource",
+							"functionName": "OpenSource",
+							"functionOwnerClass": "/Script/MediaAssets.MediaPlayer"
+						}
+					},
+					{
+						"nodeId": "Entry_-1280_96_7F3A8B59",
+						"nodeGuid": "7F3A8B5930464DFF034B3559B8440FC1",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_FunctionEntry",
+						"nodeTitle": "Load Associated Video Player",
+						"nodeType": "FunctionEntry",
+						"positionX": -1280,
+						"positionY": 96,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out___WorldContext",
+								"pinName": "__WorldContext",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/CoreUObject.Object",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_Media Texture",
+								"pinName": "Media Texture",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/MediaAssets.MediaTexture",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Map_Find_-944_176_11486219",
+										"pinId": "Key"
+									}
+								]
+							},
+							{
+								"pinId": "Out_then",
+								"pinName": "then",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "exec",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_OpenSource_-352_80_FEE4B835",
+										"pinId": "execute"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Call_Map_Find_-944_176_11486219",
+						"nodeGuid": "114862190EAC2C19E22C4D80284EC9D6",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "Map_Find",
+						"nodeType": "CallFunction",
+						"positionX": -944,
+						"positionY": 176,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_Key",
+								"pinName": "Key",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": true,
+									"isConst": true,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Entry_-1280_96_7F3A8B59",
+										"pinId": "Media Texture"
+									}
+								]
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_TargetMap",
+								"pinName": "TargetMap",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": true,
+									"isReference": true,
+									"isConst": true,
+									"isWeakPointer": false,
+									"valueTerminalType": "object",
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_TexturesToMediaPlayers_-1248_224_34E68EC0",
+										"pinId": "TexturesToMediaPlayers"
+									}
+								]
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "false",
+								"autogeneratedDefaultValue": "false",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_Value",
+								"pinName": "Value",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Map_Find_-592_224_89E8D682",
+										"pinId": "Key"
+									},
+									{
+										"nodeId": "Call_OpenSource_-352_80_FEE4B835",
+										"pinId": "self"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "Map_Find",
+							"targetFunction": "/Script/Engine.BlueprintMapLibrary:Map_Find",
+							"functionName": "Map_Find",
+							"functionOwnerClass": "/Script/Engine.BlueprintMapLibrary"
+						}
+					},
+					{
+						"nodeId": "Get_TexturesToMediaPlayers_-1248_224_34E68EC0",
+						"nodeGuid": "34E68EC0D24C4F45A1A47E7FA1FCA4C3",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get TexturesToMediaPlayers",
+						"nodeType": "VariableGet",
+						"positionX": -1248,
+						"positionY": 224,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_TexturesToMediaPlayers",
+								"pinName": "TexturesToMediaPlayers",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "Map</Script/MediaAssets.MediaTexture,/Script/MediaAssets.MediaPlayer>",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": true,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"valueTerminalType": "object"
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Map_Find_-944_176_11486219",
+										"pinId": "TargetMap"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "TexturesToMediaPlayers",
+							"isPure": true
+						}
+					},
+					{
+						"nodeId": "Call_Map_Find_-592_224_89E8D682",
+						"nodeGuid": "89E8D68244FBCCD69ACFEE5B0756A3E2",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "Map_Find",
+						"nodeType": "CallFunction",
+						"positionX": -592,
+						"positionY": 224,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_Key",
+								"pinName": "Key",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": true,
+									"isConst": true,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Map_Find_-944_176_11486219",
+										"pinId": "Value"
+									}
+								]
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_TargetMap",
+								"pinName": "TargetMap",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": true,
+									"isReference": true,
+									"isConst": true,
+									"isWeakPointer": false,
+									"valueTerminalType": "object",
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_MediaPlayersToSources_-944_272_70D3FAEF",
+										"pinId": "MediaPlayersToSources"
+									}
+								]
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "false",
+								"autogeneratedDefaultValue": "false",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_Value",
+								"pinName": "Value",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_OpenSource_-352_80_FEE4B835",
+										"pinId": "MediaSource"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "Map_Find",
+							"targetFunction": "/Script/Engine.BlueprintMapLibrary:Map_Find",
+							"functionName": "Map_Find",
+							"functionOwnerClass": "/Script/Engine.BlueprintMapLibrary"
+						}
+					},
+					{
+						"nodeId": "Get_MediaPlayersToSources_-944_272_70D3FAEF",
+						"nodeGuid": "70D3FAEFCDD92D2630D7306914ABB282",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get MediaPlayersToSources",
+						"nodeType": "VariableGet",
+						"positionX": -944,
+						"positionY": 272,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_MediaPlayersToSources",
+								"pinName": "MediaPlayersToSources",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "Map</Script/MediaAssets.MediaPlayer,/Script/MediaAssets.MediaSource>",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": true,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"valueTerminalType": "object"
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Map_Find_-592_224_89E8D682",
+										"pinId": "TargetMap"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "MediaPlayersToSources",
+							"isPure": true
+						}
+					}
+				]
+			}
+		}
+	],
+	"macros": [],
+	"eventGraph":
+	{
+		"graphName": "",
+		"graphGuid": "",
+		"graphType": "",
+		"schemaClass": "",
+		"nodes": []
+	},
+	"constructionScript":
+	{
+		"graphName": "",
+		"graphGuid": "",
+		"graphType": "",
+		"schemaClass": "",
+		"nodes": []
+	},
+	"components": [],
+	"cdoProperties": [],
+	"additionalGraphs": [],
+	"stateMachines": [],
+	"widgetTree": [],
+	"dependencies": [
+		{
+			"assetPath": "/Game/Movies/Ads/Materials/MI_VideoMaterial_Carsia",
+			"assetName": "MI_VideoMaterial_Carsia",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/Materials/MI_VideoMaterial_ChancyShoes",
+			"assetName": "MI_VideoMaterial_ChancyShoes",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/Materials/MI_VideoMaterial_GAIT",
+			"assetName": "MI_VideoMaterial_GAIT",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/Materials/MI_VideoMaterial_OeilDeFer",
+			"assetName": "MI_VideoMaterial_OeilDeFer",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/Materials/MI_VideoMaterial_Onohua",
+			"assetName": "MI_VideoMaterial_Onohua",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/Materials/MI_VideoMaterial_PinkStacks_01",
+			"assetName": "MI_VideoMaterial_PinkStacks_01",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/Materials/MI_VideoMaterial_RobertsCoffee",
+			"assetName": "MI_VideoMaterial_RobertsCoffee",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/Materials/MI_VideoMaterial_TargetArmour",
+			"assetName": "MI_VideoMaterial_TargetArmour",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/Materials/MI_VideoMaterial_Wojicik",
+			"assetName": "MI_VideoMaterial_Wojicik",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/MediaPlayers/MP_BalletNeon",
+			"assetName": "MP_BalletNeon",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/MediaPlayers/MP_Carsia",
+			"assetName": "MP_Carsia",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/MediaPlayers/MP_ChancyShoes",
+			"assetName": "MP_ChancyShoes",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/MediaPlayers/MP_Gait",
+			"assetName": "MP_Gait",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/MediaPlayers/MP_OeilDeFer",
+			"assetName": "MP_OeilDeFer",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/MediaPlayers/MP_Onohua",
+			"assetName": "MP_Onohua",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/MediaPlayers/MP_PinkStacks_01",
+			"assetName": "MP_PinkStacks_01",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/MediaPlayers/MP_RobertsCoffee",
+			"assetName": "MP_RobertsCoffee",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/MediaPlayers/MP_TargetArmour",
+			"assetName": "MP_TargetArmour",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/MediaPlayers/MP_Wojicik",
+			"assetName": "MP_Wojicik",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/MediaTextures/MT_BalletNeon",
+			"assetName": "MT_BalletNeon",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/MediaTextures/MT_Carsia",
+			"assetName": "MT_Carsia",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/MediaTextures/MT_ChancyShoes",
+			"assetName": "MT_ChancyShoes",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/MediaTextures/MT_Gait_Video",
+			"assetName": "MT_Gait_Video",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/MediaTextures/MT_OeilDeFer",
+			"assetName": "MT_OeilDeFer",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/MediaTextures/MT_Onohua",
+			"assetName": "MT_Onohua",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/MediaTextures/MT_Pinkstacks_01",
+			"assetName": "MT_Pinkstacks_01",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/MediaTextures/MT_RobertsCoffee",
+			"assetName": "MT_RobertsCoffee",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/MediaTextures/MT_TargetArmour",
+			"assetName": "MT_TargetArmour",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/MediaTextures/MT_Wojicik",
+			"assetName": "MT_Wojicik",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/Sources/FMS_Carsia_landscape",
+			"assetName": "FMS_Carsia_landscape",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/Sources/FMS_ChancyShoes_landscape",
+			"assetName": "FMS_ChancyShoes_landscape",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/Sources/FMS_OeilDeFer_landscape",
+			"assetName": "FMS_OeilDeFer_landscape",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/Sources/FMS_Onohua_landscape",
+			"assetName": "FMS_Onohua_landscape",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/Sources/FMS_RobertsCoffee_landscape",
+			"assetName": "FMS_RobertsCoffee_landscape",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/Sources/FMS_TargetArmour_landscape",
+			"assetName": "FMS_TargetArmour_landscape",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/Sources/FMS_Wojicik_landscape",
+			"assetName": "FMS_Wojicik_landscape",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/Movies/Ads/Sources/Mov_PS_Hotpink_Abstract_002",
+			"assetName": "Mov_PS_Hotpink_Abstract_002",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/Engine.BlueprintFunctionLibrary",
+			"assetName": "BlueprintFunctionLibrary",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": "Parent class"
+		},
+		{
+			"assetPath": "/Script/MediaAssets",
+			"assetName": "MediaAssets",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		}
+	],
+	"metaData":
+	{
+	},
+	"assetType": "Blueprint",
+	"coverage":
+	{
+		"variables":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"functions":
+		{
+			"total": 2,
+			"documented": 2
+		},
+		"components":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"graphs":
+		{
+			"total": 2,
+			"documented": 2
+		},
+		"cdoProperties":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"specialized":
+		{
+			"applicable": [],
+			"documented": []
+		},
+		"overallPct": 100
+	}
+}

@@ -1,0 +1,24 @@
+{
+  "_comment": "M28.3.3 add_execution_sequence_node post-apply inspection + soak. Duplicates BP_BpxTestGraphNodesCalls into a scratch path and spawns a UK2Node_ExecutionSequence with 3 outputs onto the default EventGraph at a fixed position. The inspect gate asserts the rendered .deep.md surfaces the new ExecutionSequence node AND the extended Then_2 output pin (produced via the misleadingly-named IK2Node_AddPinInterface::AddInputPin which actually adds THEN-OUT pins); the soak gate asserts md5 stability across 2 rounds, proving SeedGuidFromJoined(':graph:EventGraph:execseq:3:256,-48') + SeedPinGuidsForNode (run AFTER AddInputPin so extended pins also get deterministic PinIds) overrides UEdGraphNode::CreateNewGuid + UEdGraphPin::CreatePin's FGuid::NewGuid() calls.",
+  "op": "add_execution_sequence_node",
+  "source_fixture": "/Game/TestBlueprints/BP_BpxTestGraphNodesCalls",
+  "scratch_path":   "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_ExecSeq",
+  "inspect_path":   "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_ExecSeq",
+  "plan_kwargs": {
+    "bp_path":     "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_ExecSeq",
+    "graph_name":  "EventGraph",
+    "num_outputs": 3,
+    "position":    [256, -48]
+  },
+  "expected_md": [],
+  "not_expected_md": [],
+  "expected_deep": [
+    "K2Node_ExecutionSequence",
+    "then_2"
+  ],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2,
+    "stable_keys": ["node_guid"]
+  }
+}

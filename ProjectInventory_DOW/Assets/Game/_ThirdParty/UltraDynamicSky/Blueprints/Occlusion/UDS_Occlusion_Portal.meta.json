@@ -1,0 +1,1085 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "a7db837925d6ce00d17fb95ef28ac618"
+	},
+	"assetPath": "/Game/_ThirdParty/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Portal.UDS_Occlusion_Portal",
+	"assetName": "UDS_Occlusion_Portal",
+	"blueprintGuid": "41C15FA443025056C576D583F16CD2FB",
+	"blueprintType": "Normal",
+	"blueprintSubclass": "Blueprint",
+	"parentClass":
+	{
+		"className": "StaticMeshComponent",
+		"classPath": "/Script/Engine.StaticMeshComponent",
+		"isNative": true,
+		"moduleName": "/Script/Engine"
+	},
+	"implementedInterfaces": [],
+	"variables": [
+		{
+			"variableName": "Directional Occlusion",
+			"variableGuid": "82B4690B4933D9F83754E5AC4AD5CFC0",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "0.550000",
+			"category": "Settings",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "Scales the amount that this portal will affect directional occlusion for directional sound occlusion (wind and rain)",
+			"metaData":
+			{
+				"ClampMax": "1",
+				"ClampMin": "0",
+				"MultiLine": "true",
+				"tooltip": "Scales the amount that this portal will affect directional occlusion for directional sound occlusion (wind and rain)",
+				"UIMax": "1",
+				"UIMin": "0"
+			}
+		},
+		{
+			"variableName": "Distance Falloff Exponent",
+			"variableGuid": "2F960BB04AC722914733348DBB31DE41",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "2.000000",
+			"category": "Settings",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "Defines the curve as the effect of this portal falls off with distance, up to the Sample Range.",
+			"metaData":
+			{
+				"MultiLine": "true",
+				"tooltip": "Defines the curve as the effect of this portal falls off with distance, up to the Sample Range.",
+				"UIMax": "5",
+				"UIMin": ".5"
+			}
+		},
+		{
+			"variableName": "Global Occlusion",
+			"variableGuid": "A140DAC74EF35AD10EB8F39A5E157D74",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "0.000000",
+			"category": "Settings",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "Scales the amount that this portal will affect global (general) occlusion,",
+			"metaData":
+			{
+				"ClampMax": "1",
+				"ClampMin": "0",
+				"MultiLine": "true",
+				"tooltip": "Scales the amount that this portal will affect global (general) occlusion,",
+				"UIMax": "1",
+				"UIMin": "0"
+			}
+		},
+		{
+			"variableName": "Sample Range",
+			"variableGuid": "9FA0E7034F7865ECE54A8787B9CD41AC",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "2000.000000",
+			"category": "Settings",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "The distance from the occlusion sampling location within which this portal will have an effect.",
+			"metaData":
+			{
+				"ClampMin": "1",
+				"MultiLine": "true",
+				"tooltip": "The distance from the occlusion sampling location within which this portal will have an effect.",
+				"UIMax": "10000",
+				"UIMin": "1"
+			}
+		}
+	],
+	"functions": [],
+	"macros": [],
+	"eventGraph":
+	{
+		"graphName": "EventGraph",
+		"graphGuid": "87A0AC00457FBB0FF740958375FD4E8C",
+		"graphType": "EventGraph",
+		"schemaClass": "/Script/BlueprintGraph.EdGraphSchema_K2",
+		"nodes": [
+			{
+				"nodeId": "Call_SetWorldScale3D_-9832_-11620_AD633BB8",
+				"nodeGuid": "AD633BB89A00E6665A8969A2D442DD45",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+				"nodeTitle": "SetWorldScale3D",
+				"nodeType": "CallFunction",
+				"positionX": -9832,
+				"positionY": -11620,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_execute",
+						"pinName": "execute",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Event_ReceiveBeginPlay_-10056_-11604_07358C91",
+								"pinId": "Out_then"
+							}
+						]
+					},
+					{
+						"pinId": "In_NewScale",
+						"pinName": "NewScale",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "struct",
+							"subCategoryObject": "/Script/CoreUObject.Vector",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "0, 0, 0",
+						"autogeneratedDefaultValue": "0, 0, 0",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_Conv_DoubleToVector_-9984_-11496_05A4F35E",
+								"pinId": "Out_ReturnValue"
+							}
+						]
+					},
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SetCollisionResponseToAllChannels_-9548_-11620_DD4F0D1A",
+								"pinId": "In_execute"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"memberName": "SetWorldScale3D",
+					"targetFunction": "/Script/Engine.SceneComponent:SetWorldScale3D",
+					"functionName": "SetWorldScale3D",
+					"functionOwnerClass": "/Script/Engine.SceneComponent",
+					"memberParentClass": "Self"
+				}
+			},
+			{
+				"nodeId": "Call_SetCollisionResponseToAllChannels_-9548_-11620_DD4F0D1A",
+				"nodeGuid": "DD4F0D1A04AC1418F8381594C7F815AD",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+				"nodeTitle": "SetCollisionResponseToAllChannels",
+				"nodeType": "CallFunction",
+				"positionX": -9548,
+				"positionY": -11620,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_execute",
+						"pinName": "execute",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SetWorldScale3D_-9832_-11620_AD633BB8",
+								"pinId": "Out_then"
+							}
+						]
+					},
+					{
+						"pinId": "In_NewResponse",
+						"pinName": "NewResponse",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "byte",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "ECR_Ignore",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					}
+				],
+				"nodeSpecificData":
+				{
+					"memberName": "SetCollisionResponseToAllChannels",
+					"targetFunction": "/Script/Engine.PrimitiveComponent:SetCollisionResponseToAllChannels",
+					"functionName": "SetCollisionResponseToAllChannels",
+					"functionOwnerClass": "/Script/Engine.PrimitiveComponent",
+					"memberParentClass": "Self"
+				}
+			},
+			{
+				"nodeId": "Event_ReceiveBeginPlay_-10056_-11604_07358C91",
+				"nodeGuid": "07358C91E7110A1725B40471981D2BA4",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_Event",
+				"nodeTitle": "Event Begin Play",
+				"nodeType": "Event",
+				"positionX": -10056,
+				"positionY": -11604,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "Out_OutputDelegate",
+						"pinName": "OutputDelegate",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "delegate",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_then",
+						"pinName": "then",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "exec",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SetWorldScale3D_-9832_-11620_AD633BB8",
+								"pinId": "In_execute"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"eventName": "ReceiveBeginPlay",
+					"customFunctionName": "None",
+					"isOverrideEvent": true
+				}
+			},
+			{
+				"nodeId": "Get_Sample Range_-10512_-11500_00CD662F",
+				"nodeGuid": "00CD662F9F78B36E367F03796E994EFA",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+				"nodeTitle": "Get Sample Range",
+				"nodeType": "VariableGet",
+				"positionX": -10512,
+				"positionY": -11500,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": true,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_Sample Range",
+						"pinName": "Sample Range",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "real",
+							"subCategoryObject": "",
+							"pinSubCategory": "double",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "0.0",
+						"autogeneratedDefaultValue": "0.0",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_Multiply_DoubleDouble_-10360_-11500_E97A1EFC",
+								"pinId": "In_A"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"variableName": "Sample Range",
+					"isPure": true,
+					"variableSourceClass": "Self"
+				}
+			},
+			{
+				"nodeId": "Call_Multiply_DoubleDouble_-10360_-11500_E97A1EFC",
+				"nodeGuid": "E97A1EFCCB68A8B210FCD62EA5DAE354",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_PromotableOperator",
+				"nodeTitle": "Multiply_DoubleDouble",
+				"nodeType": "CallFunction",
+				"positionX": -10360,
+				"positionY": -11500,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_A",
+						"pinName": "A",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "real",
+							"subCategoryObject": "",
+							"pinSubCategory": "double",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Get_Sample Range_-10512_-11500_00CD662F",
+								"pinId": "Out_Sample Range"
+							}
+						]
+					},
+					{
+						"pinId": "In_B",
+						"pinName": "B",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "real",
+							"subCategoryObject": "",
+							"pinSubCategory": "double",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "1.500000",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_ReturnValue",
+						"pinName": "ReturnValue",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "real",
+							"subCategoryObject": "",
+							"pinSubCategory": "double",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_Divide_DoubleDouble_-10172_-11496_639EF5F4",
+								"pinId": "In_A"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"memberName": "Multiply_DoubleDouble",
+					"targetFunction": "/Script/Engine.KismetMathLibrary:Multiply_DoubleDouble",
+					"functionName": "Multiply_DoubleDouble",
+					"functionOwnerClass": "/Script/Engine.KismetMathLibrary"
+				}
+			},
+			{
+				"nodeId": "Call_Divide_DoubleDouble_-10172_-11496_639EF5F4",
+				"nodeGuid": "639EF5F468D0E44EDAB2FC0E28B1472A",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_PromotableOperator",
+				"nodeTitle": "Divide_DoubleDouble",
+				"nodeType": "CallFunction",
+				"positionX": -10172,
+				"positionY": -11496,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_A",
+						"pinName": "A",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "real",
+							"subCategoryObject": "",
+							"pinSubCategory": "double",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_Multiply_DoubleDouble_-10360_-11500_E97A1EFC",
+								"pinId": "Out_ReturnValue"
+							}
+						]
+					},
+					{
+						"pinId": "In_B",
+						"pinName": "B",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "real",
+							"subCategoryObject": "",
+							"pinSubCategory": "double",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "3000.000000",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_ReturnValue",
+						"pinName": "ReturnValue",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "real",
+							"subCategoryObject": "",
+							"pinSubCategory": "double",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_Conv_DoubleToVector_-9984_-11496_05A4F35E",
+								"pinId": "In_InDouble"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"memberName": "Divide_DoubleDouble",
+					"targetFunction": "/Script/Engine.KismetMathLibrary:Divide_DoubleDouble",
+					"functionName": "Divide_DoubleDouble",
+					"functionOwnerClass": "/Script/Engine.KismetMathLibrary"
+				}
+			},
+			{
+				"nodeId": "Call_Conv_DoubleToVector_-9984_-11496_05A4F35E",
+				"nodeGuid": "05A4F35EBF9136D53DFC0FBA4E592A59",
+				"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+				"nodeTitle": "Conv_DoubleToVector",
+				"nodeType": "CallFunction",
+				"positionX": -9984,
+				"positionY": -11496,
+				"comment": "",
+				"commentBubbleVisible": false,
+				"commentBubblePinned": false,
+				"nodeColor": "",
+				"pins": [
+					{
+						"pinId": "In_InDouble",
+						"pinName": "InDouble",
+						"pinFriendlyName": "",
+						"direction": "Input",
+						"type":
+						{
+							"category": "real",
+							"subCategoryObject": "",
+							"pinSubCategory": "double",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "0.0",
+						"autogeneratedDefaultValue": "0.0",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_Divide_DoubleDouble_-10172_-11496_639EF5F4",
+								"pinId": "Out_ReturnValue"
+							}
+						]
+					},
+					{
+						"pinId": "In_self",
+						"pinName": "self",
+						"pinFriendlyName": "Target",
+						"direction": "Input",
+						"type":
+						{
+							"category": "object",
+							"subCategoryObject": "",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false,
+							"subCategoryObjectResolved": false
+						},
+						"defaultValue": "",
+						"autogeneratedDefaultValue": "",
+						"hidden": true,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": []
+					},
+					{
+						"pinId": "Out_ReturnValue",
+						"pinName": "ReturnValue",
+						"pinFriendlyName": "",
+						"direction": "Output",
+						"type":
+						{
+							"category": "struct",
+							"subCategoryObject": "/Script/CoreUObject.Vector",
+							"pinSubCategory": "None",
+							"isArray": false,
+							"isSet": false,
+							"isMap": false,
+							"isReference": false,
+							"isConst": false,
+							"isWeakPointer": false
+						},
+						"defaultValue": "0, 0, 0",
+						"autogeneratedDefaultValue": "0, 0, 0",
+						"hidden": false,
+						"notConnectable": false,
+						"advancedView": false,
+						"connections": [
+							{
+								"nodeId": "Call_SetWorldScale3D_-9832_-11620_AD633BB8",
+								"pinId": "In_NewScale"
+							}
+						]
+					}
+				],
+				"nodeSpecificData":
+				{
+					"memberName": "Conv_DoubleToVector",
+					"targetFunction": "/Script/Engine.KismetMathLibrary:Conv_DoubleToVector",
+					"functionName": "Conv_DoubleToVector",
+					"functionOwnerClass": "/Script/Engine.KismetMathLibrary"
+				}
+			}
+		]
+	},
+	"constructionScript":
+	{
+		"graphName": "",
+		"graphGuid": "",
+		"graphType": "",
+		"schemaClass": "",
+		"nodes": []
+	},
+	"components": [],
+	"cdoProperties": [
+		{
+			"propertyName": "bAutoActivate",
+			"propertyType": "uint8",
+			"value": "True"
+		},
+		{
+			"propertyName": "bBoundsChangeTriggersStreamingDataRebuild",
+			"propertyType": "uint8",
+			"value": "False"
+		},
+		{
+			"propertyName": "bCanEverAffectNavigation",
+			"propertyType": "uint8",
+			"value": "False"
+		},
+		{
+			"propertyName": "bEnableAutoLODGeneration",
+			"propertyType": "uint8",
+			"value": "False"
+		},
+		{
+			"propertyName": "bGenerateOverlapEvents",
+			"propertyType": "uint8",
+			"value": "False"
+		},
+		{
+			"propertyName": "bHiddenInGame",
+			"propertyType": "uint8",
+			"value": "True"
+		},
+		{
+			"propertyName": "BodyInstance",
+			"propertyType": "FBodyInstance",
+			"value": "(ObjectType=ECC_PhysicsBody,CollisionProfileName=\"Custom\")"
+		},
+		{
+			"propertyName": "bReceivesDecals",
+			"propertyType": "uint8",
+			"value": "False"
+		},
+		{
+			"propertyName": "bRenderInDepthPass",
+			"propertyType": "uint8",
+			"value": "False"
+		},
+		{
+			"propertyName": "bUseAsOccluder",
+			"propertyType": "uint8",
+			"value": "False"
+		},
+		{
+			"propertyName": "bUseDefaultCollision",
+			"propertyType": "uint8",
+			"value": "True"
+		},
+		{
+			"propertyName": "bVisibleInRayTracing",
+			"propertyType": "uint8",
+			"value": "False"
+		},
+		{
+			"propertyName": "bVisibleInRealTimeSkyCaptures",
+			"propertyType": "uint8",
+			"value": "False"
+		},
+		{
+			"propertyName": "bVisibleInReflectionCaptures",
+			"propertyType": "uint8",
+			"value": "False"
+		},
+		{
+			"propertyName": "CastShadow",
+			"propertyType": "uint8",
+			"value": "False"
+		},
+		{
+			"propertyName": "OverrideMaterials",
+			"propertyType": "TArray",
+			"value": "(\"/Script/Engine.Material'/Engine/BasicShapes/BasicShapeMaterial.BasicShapeMaterial'\")"
+		},
+		{
+			"propertyName": "PrimaryComponentTick",
+			"propertyType": "FActorComponentTickFunction",
+			"value": "(bStartWithTickEnabled=False,bAllowTickOnDedicatedServer=False)"
+		},
+		{
+			"propertyName": "StaticMesh",
+			"propertyType": "TObjectPtr<UStaticMesh>",
+			"value": "/Script/Engine.StaticMesh'/Game/_ThirdParty/UltraDynamicSky/Meshes/Portal_Arrow.Portal_Arrow'"
+		}
+	],
+	"additionalGraphs": [],
+	"stateMachines": [],
+	"widgetTree": [],
+	"dependencies": [
+		{
+			"assetPath": "/Engine/BasicShapes/BasicShapeMaterial",
+			"assetName": "BasicShapeMaterial",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/UltraDynamicSky/Meshes/Portal_Arrow",
+			"assetName": "Portal_Arrow",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/Engine.StaticMeshComponent",
+			"assetName": "StaticMeshComponent",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": "Parent class"
+		}
+	],
+	"metaData":
+	{
+	},
+	"assetType": "Blueprint",
+	"coverage":
+	{
+		"variables":
+		{
+			"total": 4,
+			"documented": 4
+		},
+		"functions":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"components":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"graphs":
+		{
+			"total": 2,
+			"documented": 2
+		},
+		"cdoProperties":
+		{
+			"total": 18,
+			"documented": 18
+		},
+		"specialized":
+		{
+			"applicable": [],
+			"documented": []
+		},
+		"overallPct": 100
+	}
+}

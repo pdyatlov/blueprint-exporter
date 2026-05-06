@@ -1,0 +1,60 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"assetType": "DataTable",
+	"assetPath": "/Game/WwiseAudio/DefaultGeometrySurfacePropertiesTable.DefaultGeometrySurfacePropertiesTable",
+	"assetName": "DefaultGeometrySurfacePropertiesTable",
+	"rowStructPath": "/Script/AkAudio.WwiseGeometrySurfacePropertiesRow",
+	"rowStructName": "WwiseGeometrySurfacePropertiesRow",
+	"rowCount": 11,
+	"columns": [
+		{
+			"name": "AcousticTexture",
+			"type": "TSoftObjectPtr<UAkAcousticTexture>",
+			"category": "Geometry Surface Properties",
+			"toolTip": "The Acoustic Texture associated with this row's Physical Material.\nA sound reflected on a surface is filtered according to the acoustic texture's absorption values.\nWhen estimating the Reverb of an environment, acoustic textures applied to the surfaces are used to estimate the environment's Decay and HF Damping.\nThe default value is set to None. A surface with no acoustic texture is considered completely reflective."
+		},
+		{
+			"name": "TransmissionLoss",
+			"type": "float",
+			"category": "Geometry Surface Properties",
+			"toolTip": "The Transmission Loss value associated with this row's Physical Material.\nA sound going through a surface is filtered according to the amount of transmission loss.\nA surface with a transmission loss value of 0 is considered transparent and lets sound pass through without any filtering. Sound cannot reflect on such surfaces.\nThe default value is set to 1, which is also the maximum possible value."
+		}
+	],
+	"rowNames": [
+		"/Engine/EngineMaterials/DefaultDestructiblePhysicalMaterial.DefaultDestructiblePhysicalMaterial",
+		"/Engine/EngineMaterials/DefaultPhysicalMaterial.DefaultPhysicalMaterial",
+		"/Engine/EngineMaterials/LandscapeHolePhysicalMaterial.LandscapeHolePhysicalMaterial",
+		"/Engine/EngineMaterials/PhysMat_Carboard.PhysMat_Carboard",
+		"/Engine/EngineMaterials/PhysMat_Ice.PhysMat_Ice",
+		"/Engine/EngineMaterials/PhysMat_Metal.PhysMat_Metal",
+		"/Engine/EngineMaterials/PhysMat_Rubber.PhysMat_Rubber",
+		"/Engine/EngineMaterials/PhysMat_Vehicle.PhysMat_Vehicle",
+		"/Engine/EngineMaterials/PhysMat_VehicleRagdoll.PhysMat_VehicleRagdoll",
+		"/Game/_ThirdParty/GASP_example/MetaHumans/Common/Materials/RigidBody_PhysicsMaterial.RigidBody_PhysicsMaterial",
+		"/Water/DefaultPhysMat.DefaultPhysMat"
+	],
+	"dependencies": [
+		{
+			"assetPath": "/Script/AkAudio",
+			"assetName": "AkAudio",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		}
+	],
+	"coverage":
+	{
+		"columns":
+		{
+			"total": 2,
+			"documented": 2
+		},
+		"specialized":
+		{
+			"applicable": [],
+			"documented": []
+		},
+		"overallPct": 100
+	}
+}

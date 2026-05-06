@@ -1,0 +1,16 @@
+{
+  "_comment": "M28.11 add_function_output post-apply soak. Duplicates BP_BpxTestGraphNodesCalls into a scratch path and appends a bool output parameter `bSuccess` to DoTheThing's K2Node_FunctionResult::UserDefinedPins. The base fixture's DoTheThing is a void/void function; AddFunctionGraph<UClass> with nullptr signature spawns an Entry node but may not always materialize a Result node — the bridge auto-spawns Result with a deterministic NodeGuid + pin IDs (seeded from <bp>:func:DoTheThing:result) when missing. Soak asserts md5 stability across 2 rounds, covering both the auto-spawn-then-pin-add path AND the pin-add-on-existing-Result path (round 1 spawns Result; round 2 hits idempotence skip).",
+  "op": "add_function_output",
+  "skip_inspect": true,
+  "source_fixture": "/Game/TestBlueprints/BP_BpxTestGraphNodesCalls",
+  "scratch_path":   "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_FuncOutput",
+  "plan_kwargs": {
+    "bp_path":       "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_FuncOutput",
+    "function_name": "DoTheThing",
+    "pin_name":      "bSuccess",
+    "var_type_spec": "bool"
+  },
+  "soak": {
+    "rounds": 2
+  }
+}

@@ -1,0 +1,121 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"assetType": "PoseSearchDatabase",
+	"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Databases/Relaxed/PSD_Relaxed_Stand_Run_LR_Loops.PSD_Relaxed_Stand_Run_LR_Loops",
+	"assetName": "PSD_Relaxed_Stand_Run_LR_Loops",
+	"parentClass":
+	{
+		"className": "DataAsset",
+		"classPath": "/Script/Engine.DataAsset",
+		"isNative": true
+	},
+	"schema":
+	{
+		"path": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Schemas/PSS_Relaxed_Loops.PSS_Relaxed_Loops",
+		"sampleRate": 30,
+		"cardinality": 25,
+		"channels": [
+			{
+				"className": "PoseSearchFeatureChannel_Trajectory",
+				"classPath": "/Script/PoseSearch.PoseSearchFeatureChannel_Trajectory"
+			},
+			{
+				"className": "PoseSearchFeatureChannel_Curve",
+				"classPath": "/Script/PoseSearch.PoseSearchFeatureChannel_Curve"
+			},
+			{
+				"className": "PoseSearchFeatureChannel_Curve",
+				"classPath": "/Script/PoseSearch.PoseSearchFeatureChannel_Curve"
+			},
+			{
+				"className": "PoseSearchFeatureChannel_Heading",
+				"classPath": "/Script/PoseSearch.PoseSearchFeatureChannel_Heading"
+			}
+		],
+		"skeletonRoles": [
+			{
+				"role": "(none)",
+				"skeletonPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Meshes/SK_UEFN_Mannequin.SK_UEFN_Mannequin"
+			}
+		]
+	},
+	"animationAssets": [
+		{
+			"index": 0,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Run/M_Relaxed_Run_Loop_LR_offset.M_Relaxed_Run_Loop_LR_offset",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		}
+	],
+	"normalizationSet": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Normalization_Sets/PSN_Relaxed_All.PSN_Relaxed_All",
+	"performance":
+	{
+		"poseSearchMode": "PCAKDTree",
+		"continuingPoseCostBias": -0.05000000074505806,
+		"baseCostBias": 0,
+		"loopingCostBias": -0.0074999998323619366,
+		"continuingInteractionCostBias": 0,
+		"kdTreeQueryNumNeighbors": 200,
+		"numberOfPrincipalComponents": 4,
+		"kdTreeMaxLeafSize": 16,
+		"posePruningSimilarityThreshold": 0,
+		"pcaValuesPruningSimilarityThreshold": 0,
+		"excludeFromDatabaseMin": 0,
+		"excludeFromDatabaseMax": -0.30000001192092896,
+		"additionalExtrapolationMin": -100,
+		"additionalExtrapolationMax": 100
+	},
+	"tags": [],
+	"dependencies": [
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Normalization_Sets/PSN_Relaxed_All",
+			"assetName": "PSN_Relaxed_All",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Schemas/PSS_Relaxed_Loops",
+			"assetName": "PSS_Relaxed_Loops",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Run/M_Relaxed_Run_Loop_LR_offset",
+			"assetName": "M_Relaxed_Run_Loop_LR_offset",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/PoseSearch",
+			"assetName": "PoseSearch",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		}
+	],
+	"coverage":
+	{
+		"animationAssets":
+		{
+			"total": 1,
+			"documented": 1
+		},
+		"specialized":
+		{
+			"applicable": [],
+			"documented": []
+		},
+		"overallPct": 100
+	}
+}

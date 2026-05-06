@@ -1,0 +1,42 @@
+{
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "270d8840668568233a638e9bd9226222"
+	},
+	"name": "NIS",
+	"pluginType": "Project",
+	"baseDir": "Plugins/Marketplace/NIS",
+	"enabled": true,
+	"version": 14,
+	"versionName": "8.5.0",
+	"friendlyName": "NVIDIA Image Scaling (NIS)",
+	"description": "NVIDIA Image Scaling boosts frame rates using GPU scaling and sharpening.",
+	"category": "Rendering",
+	"createdBy": "NVIDIA",
+	"createdByURL": "https://developer.nvidia.com/image-scaling",
+	"supportURL": "mailto:DLSS-Support@nvidia.com",
+	"canContainContent": false,
+	"installed": true,
+	"modules": [
+		{
+			"name": "NISBlueprint",
+			"hostType": "Runtime",
+			"loadingPhase": "PostConfigInit"
+		},
+		{
+			"name": "NISCore",
+			"hostType": "Runtime",
+			"loadingPhase": "PostEngineInit"
+		},
+		{
+			"name": "NISShaders",
+			"hostType": "Runtime",
+			"loadingPhase": "PostConfigInit"
+		}
+	],
+	"pluginDependencies": []
+}

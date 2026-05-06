@@ -1,0 +1,22 @@
+{
+  "_comment": "M28.4.3 set_uds_member_default soak-only. Marked skip_inspect: true to match M28.4.1/M28.4.2 scope. The soak gate validates byte-identity of the mutated scratch .uasset across 2 rounds — round 1 changes BpxRemovalCandidate's default value from '7' (fixture-seeded) to '99' via ChangeVariableDefaultValue, round 2 sees the DefaultValue string already '99' and short-circuits via the bridge's before==value string compare (skipped=\"value already match\"). Exercises the dedicated C++ UFUNCTION SetUserDefinedStructMemberDefault that wraps FStructureEditorUtils::ChangeVariableDefaultValue rather than rerouting through the generic SetPropertyValue bridge — the dedicated path writes VarDesc.DefaultValue (authoritative string) and triggers OnStructureChanged(DefaultValueChanged) -> RecreateDefaultInstanceInEditorData so the serialized string + DefaultInstance memory stay in sync (M28.4.0 research Open Question #1 resolution). A direct SetPropertyValue write would have left the UDS in a torn state.",
+  "skip_inspect": true,
+  "op": "set_uds_member_default",
+  "source_fixture": "/Game/TestBlueprints/UDS_BpxTestEmpty",
+  "scratch_path":   "/Game/TestBlueprints/UDS_BpxTest_SetDefaultScratch",
+  "inspect_path":   "/Game/TestBlueprints/UDS_BpxTest_SetDefaultScratch",
+  "plan_kwargs": {
+    "uds_path":    "/Game/TestBlueprints/UDS_BpxTest_SetDefaultScratch",
+    "member_name": "BpxRemovalCandidate",
+    "value":       "99"
+  },
+  "expected_md": [
+    "UDS_BpxTest_SetDefaultScratch"
+  ],
+  "not_expected_md": [],
+  "expected_deep": [],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2
+  }
+}

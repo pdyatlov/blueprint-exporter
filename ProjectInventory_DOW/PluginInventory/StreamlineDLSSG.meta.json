@@ -1,0 +1,43 @@
+{
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "31d14932b4ebebe1dec1b4f663dbf1a0"
+	},
+	"name": "StreamlineDLSSG",
+	"pluginType": "Project",
+	"baseDir": "Plugins/Marketplace/StreamlineDLSSG",
+	"enabled": true,
+	"version": 129,
+	"versionName": "8.5.0-SL2.10.3",
+	"friendlyName": "NVIDIA DLSS Frame Generation and DLSS Multi Frame Generation",
+	"description": "NVIDIA DLSS Frame Generation and DLSS Multi Frame Generation use AI to boost frame rates by generating additional high-quality frames, all while optimizing responsiveness with NVIDIA Reflex.",
+	"category": "Rendering",
+	"createdBy": "NVIDIA",
+	"createdByURL": "https://developer.nvidia.com/rtx/streamline",
+	"supportURL": "mailto:DLSS-Support@nvidia.com",
+	"canContainContent": false,
+	"installed": true,
+	"modules": [
+		{
+			"name": "StreamlineDLSSGBlueprint",
+			"hostType": "Runtime",
+			"loadingPhase": "PostEngineInit"
+		}
+	],
+	"pluginDependencies": [
+		{
+			"name": "StreamlineCore",
+			"enabled": true,
+			"optional": false
+		},
+		{
+			"name": "StreamlineReflex",
+			"enabled": true,
+			"optional": false
+		}
+	]
+}

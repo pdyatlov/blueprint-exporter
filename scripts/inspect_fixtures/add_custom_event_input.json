@@ -1,0 +1,18 @@
+{
+  "_comment": "M28.11 add_custom_event_input post-apply soak. Duplicates BP_NodeZoo (Actor BP with declared CustomEvent `Ping` in EventGraph + variables + ExecutionSequence) into a scratch path and appends a string input parameter `Channel` to the Ping event's K2Node_CustomEvent::UserDefinedPins. Soak asserts md5 stability across 2 rounds, proving SeedGuidFromJoined(':custom_event:Ping:userpin:Channel:out') overrides FGuid::NewGuid() called by UEdGraphPin::CreatePin inside K2Node_EditablePinBase::CreateUserDefinedPin. skip_inspect=true because user-defined pins on CustomEvent nodes surface as inputs into the event handler body but DeepDumpRenderer's existing K2Node_CustomEvent rendering doesn't itemize them in a grep-friendly form the inspect gate would catch.",
+  "op": "add_custom_event_input",
+  "skip_inspect": true,
+  "source_fixture": "/Game/TestBlueprints/BP_NodeZoo",
+  "scratch_path":   "/Game/TestBlueprints/BP_NodeZooScratch_CustomEventInput",
+  "plan_kwargs": {
+    "bp_path":    "/Game/TestBlueprints/BP_NodeZooScratch_CustomEventInput",
+    "graph_name": "EventGraph",
+    "event_name": "Ping",
+    "pin_name":   "Channel",
+    "var_type_spec": "string",
+    "default_value": ""
+  },
+  "soak": {
+    "rounds": 2
+  }
+}

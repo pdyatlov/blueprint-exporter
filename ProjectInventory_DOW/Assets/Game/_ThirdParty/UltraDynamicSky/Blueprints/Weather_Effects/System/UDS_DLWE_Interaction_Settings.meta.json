@@ -1,0 +1,730 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "8c595ab5abcdbfaa76721c580b508399"
+	},
+	"assetPath": "/Game/_ThirdParty/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_DLWE_Interaction_Settings.UDS_DLWE_Interaction_Settings",
+	"assetName": "UDS_DLWE_Interaction_Settings",
+	"blueprintGuid": "5C2F5BDB45A12F310C6C78A9CFC8AEB0",
+	"blueprintType": "Normal",
+	"blueprintSubclass": "Blueprint",
+	"parentClass":
+	{
+		"className": "PrimaryDataAsset",
+		"classPath": "/Script/Engine.PrimaryDataAsset",
+		"isNative": true,
+		"moduleName": "/Script/Engine"
+	},
+	"implementedInterfaces": [],
+	"variables": [
+		{
+			"variableName": "Active Distance",
+			"variableGuid": "85C0E43541563B5C08D064ABE5A1BCF9",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "5000.000000",
+			"category": "Basic Controls",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "The max distance from the control point location on UDW for this component to be active.",
+			"metaData":
+			{
+				"ClampMin": "100",
+				"MultiLine": "true",
+				"tooltip": "The max distance from the control point location on UDW for this component to be active.",
+				"UIMax": "10000",
+				"UIMin": "500"
+			}
+		},
+		{
+			"variableName": "Affect Puddle Fluid Volumes",
+			"variableGuid": "937A37F24F6E5C2F888627B2A5241132",
+			"variableType":
+			{
+				"category": "bool",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "True",
+			"category": "Basic Controls",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "",
+			"metaData":
+			{
+			}
+		},
+		{
+			"variableName": "Affects DLWE Puddles",
+			"variableGuid": "1520DDA947A3DE603B28E6B5C114A230",
+			"variableType":
+			{
+				"category": "bool",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "True",
+			"category": "Basic Controls",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "If true, the component will be active when in Dynamic Puddles mode, and capable of drawing interactions, playing sounds, etc.",
+			"metaData":
+			{
+				"MultiLine": "true",
+				"tooltip": "If true, the component will be active when in Dynamic Puddles mode, and capable of drawing interactions, playing sounds, etc."
+			}
+		},
+		{
+			"variableName": "Affects DLWE Snow/Dust",
+			"variableGuid": "B367777046A5A39E275D288D9CA76203",
+			"variableType":
+			{
+				"category": "bool",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "True",
+			"category": "Basic Controls",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "If true, the component will be active when in Dynamic Snow/Dust mode, and capable of drawing interactions, playing sounds, etc.",
+			"metaData":
+			{
+				"MultiLine": "true",
+				"tooltip": "If true, the component will be active when in Dynamic Snow/Dust mode, and capable of drawing interactions, playing sounds, etc."
+			}
+		},
+		{
+			"variableName": "Dust Sound Volume",
+			"variableGuid": "AC2A9E894A1D4D920E3B03BCD8FB12B9",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "1.000000",
+			"category": "Sounds",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "Scales the volume of the interaction sounds on dynamic dust.",
+			"metaData":
+			{
+				"MultiLine": "true",
+				"tooltip": "Scales the volume of the interaction sounds on dynamic dust.",
+				"UIMax": "2",
+				"UIMin": ".01"
+			}
+		},
+		{
+			"variableName": "Enable Dust Sound Effects",
+			"variableGuid": "F97FD1AB4901022E67AF678032B57FDD",
+			"variableType":
+			{
+				"category": "bool",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "True",
+			"category": "Sounds",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "If true, the component will play sounds when hitting/dragging through dust.",
+			"metaData":
+			{
+				"MultiLine": "true",
+				"tooltip": "If true, the component will play sounds when hitting/dragging through dust."
+			}
+		},
+		{
+			"variableName": "Enable Puddle Sound Effects",
+			"variableGuid": "E7DB50B74BAED1D9F697A49B2B97EA00",
+			"variableType":
+			{
+				"category": "bool",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "True",
+			"category": "Sounds",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "If true, the component will play sounds when hitting/dragging through puddles.",
+			"metaData":
+			{
+				"MultiLine": "true",
+				"tooltip": "If true, the component will play sounds when hitting/dragging through puddles."
+			}
+		},
+		{
+			"variableName": "Enable Puddle Splash Particles",
+			"variableGuid": "12E9AA854A8338FA81C43DB0ADFBEB76",
+			"variableType":
+			{
+				"category": "bool",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "True",
+			"category": "Particles",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "If true, splash droplet particles will spawn when the component impacts a puddle surface.",
+			"metaData":
+			{
+				"MultiLine": "true",
+				"tooltip": "If true, splash droplet particles will spawn when the component impacts a puddle surface."
+			}
+		},
+		{
+			"variableName": "Enable Snow Particles",
+			"variableGuid": "B835FE9744B5F1892F5B6785A7A881E3",
+			"variableType":
+			{
+				"category": "bool",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "True",
+			"category": "Particles",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "If true, a snow trail particle effect will spawn while the component is interacting with dynamic snow.",
+			"metaData":
+			{
+				"MultiLine": "true",
+				"tooltip": "If true, a snow trail particle effect will spawn while the component is interacting with dynamic snow."
+			}
+		},
+		{
+			"variableName": "Enable Snow Sound Effects",
+			"variableGuid": "EC391EE740450CA2C6911AA25632D984",
+			"variableType":
+			{
+				"category": "bool",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "True",
+			"category": "Sounds",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "If true, the component will play sounds when hitting/dragging through snow.",
+			"metaData":
+			{
+				"MultiLine": "true",
+				"tooltip": "If true, the component will play sounds when hitting/dragging through snow."
+			}
+		},
+		{
+			"variableName": "General Surface Impact Sounds",
+			"variableGuid": "6A6094684A19B1C6D576B6B40838C900",
+			"variableType":
+			{
+				"category": "object",
+				"subCategoryObject": "Map</Script/PhysicsCore.PhysicalMaterial,/Script/Engine.SoundBase>",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": true,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false,
+				"valueTerminalType": "object:/Script/Engine.SoundBase"
+			},
+			"defaultValue": "()",
+			"category": "General Surface Response",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "If this map has contents, the component will play impact sounds based on the physical material it detects with its collision trace. These sounds will not play if snow or puddle impact sounds are playing instead.",
+			"metaData":
+			{
+				"MultiLine": "true",
+				"tooltip": "If this map has contents, the component will play impact sounds based on the physical material it detects with its collision trace. These sounds will not play if snow or puddle impact sounds are playing instead."
+			}
+		},
+		{
+			"variableName": "Landscape Collision Object Types",
+			"variableGuid": "40D6065E4A4EC4BDEF2533A0E79D6564",
+			"variableType":
+			{
+				"category": "byte",
+				"subCategoryObject": "/Script/Engine.EObjectTypeQuery",
+				"pinSubCategory": "None",
+				"isArray": true,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "(ObjectTypeQuery1)",
+			"category": "Interactions",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "The object types which the component will be tracing for when it tries to check for ground surfaces and puddle fluid volumes.\r\nNote, this does need to have World Static included if you want interactions with Puddle Fluid Volumes to work.",
+			"metaData":
+			{
+				"tooltip": "The object types which the component will be tracing for when it tries to check for ground surfaces and puddle fluid volumes.\r\nNote, this does need to have World Static included if you want interactions with Puddle Fluid Volumes to work."
+			}
+		},
+		{
+			"variableName": "Max Sample Rate",
+			"variableGuid": "8740B3EC4E5E2D4DDEF08DADBF41F884",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "15.000000",
+			"category": "Basic Controls",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "Samples per second when the interaction component is near the camera.",
+			"metaData":
+			{
+				"tooltip": "Samples per second when the interaction component is near the camera.",
+				"UIMax": "30",
+				"UIMin": "1"
+			}
+		},
+		{
+			"variableName": "Physical Materials which enable DLWE Interactions on non-Landscapes",
+			"variableGuid": "DF46C1904E895B0B8144488B702EA8CA",
+			"variableType":
+			{
+				"category": "object",
+				"subCategoryObject": "/Script/PhysicsCore.PhysicalMaterial",
+				"pinSubCategory": "None",
+				"isArray": true,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "",
+			"category": "Interactions",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "If the DLWE Interaction components touch surfaces with any of these physical materials, they will respond as if they're touching a landscape. Useful for using DLWE effects on things other than landscapes, like static meshes.",
+			"metaData":
+			{
+				"tooltip": "If the DLWE Interaction components touch surfaces with any of these physical materials, they will respond as if they're touching a landscape. Useful for using DLWE effects on things other than landscapes, like static meshes."
+			}
+		},
+		{
+			"variableName": "Puddle Ripple Size",
+			"variableGuid": "AEE673B04ABC33D0C916B3AB29857E57",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "15.000000",
+			"category": "Interactions",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": true,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "Multiplied by the Size of the interaction component to create the max size of ripples created in puddles.",
+			"metaData":
+			{
+				"tooltip": "Multiplied by the Size of the interaction component to create the max size of ripples created in puddles.",
+				"UIMax": "25",
+				"UIMin": "1"
+			}
+		},
+		{
+			"variableName": "Puddle Sound Volume",
+			"variableGuid": "F26CB1C544AE208ADA9C66903C216506",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "1.000000",
+			"category": "Sounds",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "Scales the volume of the interaction sounds on dynamic puddles.",
+			"metaData":
+			{
+				"MultiLine": "true",
+				"tooltip": "Scales the volume of the interaction sounds on dynamic puddles.",
+				"UIMax": "2",
+				"UIMin": ".01"
+			}
+		},
+		{
+			"variableName": "Snow Sound Volume",
+			"variableGuid": "5EFAF50E45EEA2AB7DE3E08847BC3A64",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "1.000000",
+			"category": "Sounds",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "Scales the volume of the interaction sounds on dynamic snow.",
+			"metaData":
+			{
+				"MultiLine": "true",
+				"tooltip": "Scales the volume of the interaction sounds on dynamic snow.",
+				"UIMax": "2",
+				"UIMin": "0.01"
+			}
+		}
+	],
+	"functions": [],
+	"macros": [],
+	"eventGraph":
+	{
+		"graphName": "EventGraph",
+		"graphGuid": "9DF5FA544E6F5119E139F88AB96D30F5",
+		"graphType": "EventGraph",
+		"schemaClass": "/Script/BlueprintGraph.EdGraphSchema_K2",
+		"nodes": []
+	},
+	"constructionScript":
+	{
+		"graphName": "",
+		"graphGuid": "",
+		"graphType": "",
+		"schemaClass": "",
+		"nodes": []
+	},
+	"components": [],
+	"cdoProperties": [],
+	"dataCarrierKind": "DataAsset",
+	"additionalGraphs": [],
+	"stateMachines": [],
+	"widgetTree": [],
+	"dependencies": [
+		{
+			"assetPath": "/Script/Engine.PrimaryDataAsset",
+			"assetName": "PrimaryDataAsset",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": "Parent class"
+		},
+		{
+			"assetPath": "/Script/PhysicsCore",
+			"assetName": "PhysicsCore",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		}
+	],
+	"metaData":
+	{
+	},
+	"assetType": "Blueprint",
+	"coverage":
+	{
+		"variables":
+		{
+			"total": 17,
+			"documented": 17
+		},
+		"functions":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"components":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"graphs":
+		{
+			"total": 2,
+			"documented": 2
+		},
+		"cdoProperties":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"specialized":
+		{
+			"applicable": [
+				"DataAsset.CDO"
+			],
+			"documented": [
+				"DataAsset.CDO"
+			]
+		},
+		"overallPct": 100
+	}
+}

@@ -1,0 +1,76 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"assetType": "DataTable",
+	"assetPath": "/Game/WwiseAudio/DefaultReverbAssignmentTable.DefaultReverbAssignmentTable",
+	"assetName": "DefaultReverbAssignmentTable",
+	"rowStructPath": "/Script/AkAudio.WwiseDecayAuxBusRow",
+	"rowStructName": "WwiseDecayAuxBusRow",
+	"rowCount": 3,
+	"columns": [
+		{
+			"name": "Decay",
+			"type": "float",
+			"category": "Reverb Assignment",
+			"toolTip": "The number of seconds it takes for the sound reverberation in an environment to decay by 60 dB."
+		},
+		{
+			"name": "AuxBus",
+			"type": "TSoftObjectPtr<UAkAuxBus>",
+			"category": "Reverb Assignment",
+			"toolTip": "The Auxiliary Bus with a reverb effect to use for a chosen Decay value."
+		}
+	],
+	"rowNames": [
+		"Aux_Area_Int_Large",
+		"Aux_Area_Int_Medium",
+		"Aux_Area_Int_Small"
+	],
+	"dependencies": [
+		{
+			"assetPath": "/Script/AkAudio",
+			"assetName": "AkAudio",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/WwiseAudio/Busses/Master_Main/Master_Bus/Auxiliary/Auxiliary/Aux_Area/Aux_Area_Int_Large",
+			"assetName": "Aux_Area_Int_Large",
+			"dependencyType": "Soft",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/WwiseAudio/Busses/Master_Main/Master_Bus/Auxiliary/Auxiliary/Aux_Area/Aux_Area_Int_Medium",
+			"assetName": "Aux_Area_Int_Medium",
+			"dependencyType": "Soft",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/WwiseAudio/Busses/Master_Main/Master_Bus/Auxiliary/Auxiliary/Aux_Area/Aux_Area_Int_Small",
+			"assetName": "Aux_Area_Int_Small",
+			"dependencyType": "Soft",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		}
+	],
+	"coverage":
+	{
+		"columns":
+		{
+			"total": 2,
+			"documented": 2
+		},
+		"specialized":
+		{
+			"applicable": [],
+			"documented": []
+		},
+		"overallPct": 100
+	}
+}

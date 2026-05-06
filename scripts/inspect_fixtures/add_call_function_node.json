@@ -1,0 +1,25 @@
+{
+  "_comment": "M28.3.2 add_call_function_node post-apply inspection + soak. Duplicates BP_BpxTestGraphNodesCalls (Actor BP with declared DoTheThing() member function) into a scratch path and spawns a UK2Node_CallFunction targeting self-context DoTheThing onto the default EventGraph at a fixed position. The inspect gate asserts the rendered .deep.md surfaces the new CallFunction node; the soak gate asserts md5 stability across 2 rounds, proving SeedGuidFromJoined(':graph:EventGraph:call:DoTheThing:self:128,-48') + SeedPinGuidsForNode overrides UEdGraphNode::CreateNewGuid + UEdGraphPin::CreatePin's FGuid::NewGuid() calls that fire inside AllocateDefaultPins.",
+  "op": "add_call_function_node",
+  "source_fixture": "/Game/TestBlueprints/BP_BpxTestGraphNodesCalls",
+  "scratch_path":   "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_Call",
+  "inspect_path":   "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_Call",
+  "plan_kwargs": {
+    "bp_path":            "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_Call",
+    "graph_name":         "EventGraph",
+    "function_name":      "DoTheThing",
+    "target_class_path":  "",
+    "position":           [128, -48]
+  },
+  "expected_md": [],
+  "not_expected_md": [],
+  "expected_deep": [
+    "K2Node_CallFunction",
+    "DoTheThing"
+  ],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2,
+    "stable_keys": ["node_guid"]
+  }
+}

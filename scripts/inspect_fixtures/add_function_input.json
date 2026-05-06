@@ -1,0 +1,17 @@
+{
+  "_comment": "M28.11 add_function_input post-apply soak. Duplicates BP_BpxTestGraphNodesCalls (Actor BP with declared void/void function DoTheThing — same source as add_local_variable.json) into a scratch path and appends an int input parameter `Step` to DoTheThing's K2Node_FunctionEntry::UserDefinedPins. Soak asserts md5 stability across 2 rounds, proving SeedGuidFromJoined(':entry:DoTheThing:userpin:Step:out') overrides FGuid::NewGuid() called by UEdGraphPin::CreatePin inside K2Node_EditablePinBase::CreateUserDefinedPin -> CreatePinFromUserDefinition. skip_inspect=true because user-defined pins on FunctionEntry surface as part of the function signature header and the existing DeepDumpRenderer doesn't re-render the signature in a grep-friendly format the inspect gate would catch.",
+  "op": "add_function_input",
+  "skip_inspect": true,
+  "source_fixture": "/Game/TestBlueprints/BP_BpxTestGraphNodesCalls",
+  "scratch_path":   "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_FuncInput",
+  "plan_kwargs": {
+    "bp_path":       "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_FuncInput",
+    "function_name": "DoTheThing",
+    "pin_name":      "Step",
+    "var_type_spec": "int",
+    "default_value": "3"
+  },
+  "soak": {
+    "rounds": 2
+  }
+}

@@ -1,0 +1,191 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"assetType": "PoseSearchDatabase",
+	"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/ExperimentalStateMachineData/PSD_SM_CMC_Idles.PSD_SM_CMC_Idles",
+	"assetName": "PSD_SM_CMC_Idles",
+	"parentClass":
+	{
+		"className": "DataAsset",
+		"classPath": "/Script/Engine.DataAsset",
+		"isNative": true
+	},
+	"schema":
+	{
+		"path": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/ExperimentalStateMachineData/PSS_SM_CMC_Idles.PSS_SM_CMC_Idles",
+		"sampleRate": 30,
+		"cardinality": 18,
+		"channels": [
+			{
+				"className": "PoseSearchFeatureChannel_Pose",
+				"classPath": "/Script/PoseSearch.PoseSearchFeatureChannel_Pose"
+			}
+		],
+		"skeletonRoles": [
+			{
+				"role": "(none)",
+				"skeletonPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Meshes/SK_UEFN_Mannequin.SK_UEFN_Mannequin"
+			}
+		]
+	},
+	"animationAssets": [
+		{
+			"index": 0,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Idle/M_Neutral_Crouch_Idle_Loop.M_Neutral_Crouch_Idle_Loop",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0.48827651143074036,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		},
+		{
+			"index": 1,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Crouch/M_Relaxed_Transition_Stand_to_Crouch.M_Relaxed_Transition_Stand_to_Crouch",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0.17724999785423279,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		},
+		{
+			"index": 2,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Crouch/M_Relaxed_Transition_Crouch_to_Stand.M_Relaxed_Transition_Crouch_to_Stand",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0.17724999785423279,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		},
+		{
+			"index": 3,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Crouch/M_Neutral_Transition_Stand_to_Crouch.M_Neutral_Transition_Stand_to_Crouch",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0.17724999785423279,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		},
+		{
+			"index": 4,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Crouch/M_Neutral_Transition_Crouch_to_Stand.M_Neutral_Transition_Crouch_to_Stand",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0.17725038528442383,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		},
+		{
+			"index": 5,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Idle/M_Neutral_Stand_Idle_Loop.M_Neutral_Stand_Idle_Loop",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0.5137447714805603,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		}
+	],
+	"normalizationSet": "",
+	"performance":
+	{
+		"poseSearchMode": "BruteForce",
+		"continuingPoseCostBias": -0.0099999997764825821,
+		"baseCostBias": 0,
+		"loopingCostBias": 0,
+		"continuingInteractionCostBias": 0,
+		"kdTreeQueryNumNeighbors": 200,
+		"numberOfPrincipalComponents": 4,
+		"kdTreeMaxLeafSize": 16,
+		"posePruningSimilarityThreshold": 0,
+		"pcaValuesPruningSimilarityThreshold": 0,
+		"excludeFromDatabaseMin": 0,
+		"excludeFromDatabaseMax": -0.30000001192092896,
+		"additionalExtrapolationMin": -100,
+		"additionalExtrapolationMax": 100
+	},
+	"tags": [],
+	"dependencies": [
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Crouch/M_Neutral_Transition_Crouch_to_Stand",
+			"assetName": "M_Neutral_Transition_Crouch_to_Stand",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Crouch/M_Neutral_Transition_Stand_to_Crouch",
+			"assetName": "M_Neutral_Transition_Stand_to_Crouch",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Crouch/M_Relaxed_Transition_Crouch_to_Stand",
+			"assetName": "M_Relaxed_Transition_Crouch_to_Stand",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Crouch/M_Relaxed_Transition_Stand_to_Crouch",
+			"assetName": "M_Relaxed_Transition_Stand_to_Crouch",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/ExperimentalStateMachineData/PSS_SM_CMC_Idles",
+			"assetName": "PSS_SM_CMC_Idles",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Idle/M_Neutral_Crouch_Idle_Loop",
+			"assetName": "M_Neutral_Crouch_Idle_Loop",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Idle/M_Neutral_Stand_Idle_Loop",
+			"assetName": "M_Neutral_Stand_Idle_Loop",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/PoseSearch",
+			"assetName": "PoseSearch",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		}
+	],
+	"coverage":
+	{
+		"animationAssets":
+		{
+			"total": 6,
+			"documented": 6
+		},
+		"specialized":
+		{
+			"applicable": [],
+			"documented": []
+		},
+		"overallPct": 100
+	}
+}

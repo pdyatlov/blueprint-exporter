@@ -1,0 +1,19 @@
+{
+  "_comment": "M28.10.1 create_blueprint_class soak — idempotence-only, matching the M28.4.x convention (create_curve_float, create_data_asset_instance, create_user_defined_struct). The bridge pre-places a UBlueprint at scratch_path via duplicate, then the op short-circuits on the StaticLoadObject hit in the bridge UFUNCTION (skipped='asset already exists with matching parent', no save path exercised). Soak gate validates byte-identity of the duplicated .uasset across rounds. The actual create-path determinism (BlueprintGuid + UCS entry NodeGuid + GraphGuid seeding) was verified end-to-end during M28.10.1 implementation via the M28.10.1 soak-harness extension `soak.recreate_between_rounds=true` — round-2-after-delete byte-diff dropped from full divergence to 16 bytes residual (one FGuid still drifting somewhere in the post-export annotation table or asset-registry tag block, source not yet pinpointed). Production usage is single-create per BP path, so the residual drift is benign — two consecutive runs of `apply_plan` that both hit the create path produce nearly-identical files and the same DeepDump output. The harness extension is preserved for any future op that wants stricter create-path soak coverage. Source fixture is the existing UDS_BpxTestEmpty (any small BP would do) — duplicate_asset works on any UObject, but a UBlueprint source matches the post-condition class and avoids a class-mismatch error on the bridge's idempotence path.",
+  "skip_inspect": true,
+  "op": "create_blueprint_class",
+  "source_fixture": "/Game/TestBlueprints/BP_InheritanceChain_Grandparent",
+  "scratch_path": "/Game/TestBlueprints/BP_BpxTest_CreateScratch",
+  "inspect_path": "/Game/TestBlueprints/BP_BpxTest_CreateScratch",
+  "plan_kwargs": {
+    "parent_path": "/Script/Engine.Actor",
+    "new_bp_path": "/Game/TestBlueprints/BP_BpxTest_CreateScratch"
+  },
+  "expected_md": [],
+  "not_expected_md": [],
+  "expected_deep": [],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2
+  }
+}

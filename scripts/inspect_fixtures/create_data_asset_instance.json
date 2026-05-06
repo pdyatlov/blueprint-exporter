@@ -1,0 +1,21 @@
+{
+  "_comment": "M28.4.2 create_data_asset_instance soak-only. UDataAsset is not in the inventory pipeline's logic-bearing set (PROJECT_INVENTORY_BRIEF.md §3), so the inspect harness's re-export phase emits zero .md and the inspect gate would always fail. Expanding inventory scope is a separate design decision; for M28.4.2 we keep inspect skipped via `skip_inspect: true` and rely on soak for the determinism signal. The soak gate validates byte-identity of the scratch .uasset across 2 rounds of create_data_asset_instance — trivially stable since the duplicate pre-places a DA instance at scratch_path and the op short-circuits on StaticLoadObject hit (skipped=\"asset already exists\", no save path exercised on round 2). The actual create-from-scratch path is covered by MCP pytest's get_op_catalog coverage + manual editor verification. UDataAsset / UPrimaryDataAsset have zero FGuid::NewGuid() usage per the M28.4.0 research so no seed recipe is needed; explicit FName on NewObject (derived from the short-name tail) is the only determinism lever.",
+  "skip_inspect": true,
+  "op": "create_data_asset_instance",
+  "source_fixture": "/Game/TestBlueprints/DA_BpxTestInstance",
+  "scratch_path":   "/Game/TestBlueprints/DA_BpxTest_CreateScratch",
+  "inspect_path":   "/Game/TestBlueprints/DA_BpxTest_CreateScratch",
+  "plan_kwargs": {
+    "asset_path":         "/Game/TestBlueprints/DA_BpxTest_CreateScratch",
+    "parent_class_path":  "/Game/TestBlueprints/DA_BpxTestParentClass.DA_BpxTestParentClass_C"
+  },
+  "expected_md": [
+    "DA_BpxTest_CreateScratch"
+  ],
+  "not_expected_md": [],
+  "expected_deep": [],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2
+  }
+}

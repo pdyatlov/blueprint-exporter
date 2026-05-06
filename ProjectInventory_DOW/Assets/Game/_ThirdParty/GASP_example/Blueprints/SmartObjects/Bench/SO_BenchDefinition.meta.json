@@ -1,0 +1,135 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"assetType": "SmartObjectDefinition",
+	"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/Bench/SO_BenchDefinition.SO_BenchDefinition",
+	"assetName": "SO_BenchDefinition",
+	"parentClass":
+	{
+		"className": "DataAsset",
+		"classPath": "/Script/Engine.DataAsset",
+		"isNative": true
+	},
+	"object":
+	{
+		"activityTags": [],
+		"userTagFilterEmpty": false,
+		"userTagFilterDesc": " ANY_EXACT( SmartObject.ObjectType.NPC, SmartObject.ObjectType.Player )",
+		"preconditionsSet": false,
+		"parameterCount": 0,
+		"tagFilteringPolicy": "Override",
+		"tagMergingPolicy": "Override",
+		"worldConditionSchema": "/Script/SmartObjectsModule.SmartObjectWorldConditionSchema",
+		"definitionDataStructTypes": []
+	},
+	"defaultBehaviorDefinitions": [
+		"/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/Bench/SO_BenchDefinition.SO_BenchDefinition:GameplayInteractionSmartObjectBehaviorDefinition_0"
+	],
+	"slots": [
+		{
+			"index": 0,
+			"name": "BenchSlot1",
+			"offset":
+			{
+				"x": 0,
+				"y": 45,
+				"z": 0
+			},
+			"rotation":
+			{
+				"pitch": 0,
+				"yaw": 0,
+				"roll": 0
+			},
+			"enabled": true,
+			"activityTags": [],
+			"runtimeTags": [],
+			"userTagFilterEmpty": true,
+			"selectionPreconditionsSet": false,
+			"behaviorDefinitions": [],
+			"definitionDataStructTypes": [
+				"/Script/SmartObjectsModule.SmartObjectSlotEntranceAnnotation"
+			]
+		},
+		{
+			"index": 1,
+			"name": "BenchSlot2",
+			"offset":
+			{
+				"x": 0,
+				"y": -45,
+				"z": 0
+			},
+			"rotation":
+			{
+				"pitch": 0,
+				"yaw": 0,
+				"roll": 0
+			},
+			"enabled": true,
+			"activityTags": [],
+			"runtimeTags": [],
+			"userTagFilterEmpty": true,
+			"selectionPreconditionsSet": false,
+			"behaviorDefinitions": [],
+			"definitionDataStructTypes": [
+				"/Script/SmartObjectsModule.SmartObjectSlotEntranceAnnotation"
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/Bench/ST_SmartObject_Bench",
+			"assetName": "ST_SmartObject_Bench",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/GameplayInteractionsModule",
+			"assetName": "GameplayInteractionsModule",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/GameplayTags",
+			"assetName": "GameplayTags",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/SmartObjectsModule",
+			"assetName": "SmartObjectsModule",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/Bench/BP_SmartBench",
+			"assetName": "BP_SmartBench",
+			"dependencyType": "Soft",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		}
+	],
+	"coverage":
+	{
+		"slots":
+		{
+			"total": 2,
+			"documented": 2
+		},
+		"specialized":
+		{
+			"applicable": [],
+			"documented": []
+		},
+		"overallPct": 100
+	}
+}

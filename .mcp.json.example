@@ -1,0 +1,15 @@
+{
+  "_comment": "Copy to .mcp.json at the repo root and replace every <...> with an absolute path on your machine. Run 'bpx-mcp-doctor' to validate the config before starting Claude Code. See blueprint-exporter/scripts/blueprint-exporter-mcp/README.md for the env-var reference. MCP clients ignore this _comment field.",
+
+  "mcpServers": {
+    "blueprint-exporter": {
+      "command": "python",
+      "args": ["-m", "blueprint_exporter_mcp"],
+      "env": {
+        "BPX_INVENTORY_ROOT": "<absolute path to a ProjectInventory directory>",
+        "BPX_ENGINE_ROOT":    "<absolute path to your UE Engine/ directory>",
+        "BPX_UPROJECT":       "<absolute path to your .uproject file>"
+      }
+    }
+  }
+}

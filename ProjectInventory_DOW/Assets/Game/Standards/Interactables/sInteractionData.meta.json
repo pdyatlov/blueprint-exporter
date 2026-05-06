@@ -1,0 +1,64 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"assetType": "UserDefinedStruct",
+	"assetPath": "/Game/Standards/Interactables/sInteractionData.sInteractionData",
+	"assetName": "sInteractionData",
+	"fields": [
+		{
+			"name": "eInteractionType_2_BCDB64AA45D964CD7A0A80BD0F81C05A",
+			"type": "TEnumAsByte<eInteractionType>",
+			"category": "",
+			"toolTip": "What kind of interaction"
+		},
+		{
+			"name": "user_5_7ED640DB4C12E76D23588281DE892461",
+			"type": "AActor*",
+			"category": "",
+			"toolTip": "Who is interacting"
+		},
+		{
+			"name": "ValueA_9_A92998AC48F1627F089BCFB3ECD061A8",
+			"type": "int32",
+			"category": "",
+			"toolTip": "Interaction specific value A"
+		},
+		{
+			"name": "ValueB_11_B1226AAC4A327FBA14B0A1806106E0EE",
+			"type": "int32",
+			"category": "",
+			"toolTip": "Interaction specific value b"
+		}
+	],
+	"dependencies": [
+		{
+			"assetPath": "/Game/Standards/Interactables/eInteractionType",
+			"assetName": "eInteractionType",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/Engine",
+			"assetName": "Engine",
+			"dependencyType": "Soft",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		}
+	],
+	"coverage":
+	{
+		"fields":
+		{
+			"total": 4,
+			"documented": 4
+		},
+		"specialized":
+		{
+			"applicable": [],
+			"documented": []
+		},
+		"overallPct": 100
+	}
+}

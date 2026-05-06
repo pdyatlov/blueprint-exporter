@@ -1,0 +1,64 @@
+# BP_Lamp_Ceiling_02
+
+## Identity
+
+| Field | Value |
+|---|---|
+| Asset path | `/Game/Art/EnvKits/Sub/Stronghold/Lamps_A/BP_Lamp_Ceiling_02.BP_Lamp_Ceiling_02` |
+| Asset name | `BP_Lamp_Ceiling_02` |
+| Subclass | `Blueprint` |
+| Blueprint type | `Normal` |
+| Engine version | `5.7.4-573521+++UE_DOW+main` |
+| Plugin version | `1.28.6` |
+
+## Inheritance
+
+- Parent class: `Actor` (`/Script/Engine.Actor`, native, module `/Script/Engine`)
+- Interfaces: _none_
+
+## Variables (0)
+
+_None._
+
+## Functions (0)
+
+_None._
+
+## Macros (0)
+
+_None._
+
+## Components (1)
+
+- `SharedRoot` — `SceneComponent` @ socket `None`
+  - `SpotLight2_LightComponent0` — `SpotLightComponent` @ socket `None`
+  - `SM_Cable_01_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_02_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+
+## Class Default Object (0)
+
+_No authored overrides on inherited properties._
+
+## Graphs
+
+- Event graph: `EventGraph` (3 nodes)
+- Construction script: `UserConstructionScript` (1 nodes)
+- Additional graphs: _none_
+
+## References
+
+Hard refs out (4):
+- `/Engine/EditorResources/LightIcons/S_LightError` [asset]
+- `/Game/Art/EnvKits/Sub/Stronghold/Lamps_A/SM_Cable_01` [asset]
+- `/Game/Art/EnvKits/Sub/Stronghold/Lamps_A/SM_Ceiling_02` [asset]
+- `/Script/Engine.Actor` [native]
+
+Soft refs out (0):
+- _none_
+
+## Metadata & Flags
+
+- Blueprint type: `Normal`
+- Subclass: `Blueprint`
+- Custom metadata: _none_
+

@@ -1,0 +1,962 @@
+{
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "c0860171166de131e2652b45fa518ac0"
+	},
+	"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/ST_NPC_SandboxCharacter_SmartObject.ST_NPC_SandboxCharacter_SmartObject",
+	"assetName": "ST_NPC_SandboxCharacter_SmartObject",
+	"schema": "StateTreeAIComponentSchema",
+	"evaluators": [],
+	"globalTasks": [],
+	"rootStates": [
+		{
+			"name": "Root",
+			"stateGuid": "CB2B8E884BDBBB7EC6F8A88078A32975",
+			"type": "State",
+			"selectionBehavior": "TrySelectChildrenInOrder",
+			"enterConditions": [],
+			"tasks": [],
+			"transitions": [],
+			"children": [
+				{
+					"name": "Smart Object State",
+					"stateGuid": "3B06FAB443CBB0279B1E0C9CEE90AED6",
+					"type": "State",
+					"selectionBehavior": "TrySelectChildrenInOrder",
+					"enterConditions": [],
+					"tasks": [],
+					"transitions": [
+						{
+							"transitionId": "32B7FA0942179BD63B7BA1812464B316",
+							"trigger": "OnStateCompleted",
+							"targetStateName": "Patrol State",
+							"targetStateGuid": "6D4364FF43F6A715AC22B3B39F3EA84D",
+							"linkType": "GotoState",
+							"priority": "Normal",
+							"conditions": []
+						}
+					],
+					"children": [
+						{
+							"name": "UsingSmartObj",
+							"stateGuid": "C732464B42662141B3D92B9C75097434",
+							"type": "State",
+							"selectionBehavior": "TrySelectChildrenInOrder",
+							"enterConditions": [
+								{
+									"name": "StateTreeBlueprintConditionWrapper",
+									"structType": "/Script/StateTreeModule.StateTreeBlueprintConditionWrapper",
+									"category": "EnterCondition",
+									"instanceId": "40C808F34EE2CAE9662B72A0CF393CA5",
+									"properties": [
+										{
+											"name": "BindingsBatch",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "ConditionClass",
+											"type": "TSubclassOf<UStateTreeConditionBlueprintBase>",
+											"value": "/Script/Engine.BlueprintGeneratedClass'/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STC_CheckCooldown.STC_CheckCooldown_C'"
+										},
+										{
+											"name": "DeltaIndent",
+											"type": "int8",
+											"value": "0"
+										},
+										{
+											"name": "EvaluationMode",
+											"type": "EStateTreeConditionEvaluationMode",
+											"value": "Evaluated"
+										},
+										{
+											"name": "ExecutionRuntimeTemplateIndex",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "InstanceDataHandle",
+											"type": "FStateTreeDataHandle",
+											"value": "(Index=65535,StateHandle=(Index=65535))"
+										},
+										{
+											"name": "InstanceTemplateIndex",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "Name",
+											"type": "FName",
+											"value": "None"
+										},
+										{
+											"name": "Operand",
+											"type": "EStateTreeExpressionOperand",
+											"value": "And"
+										},
+										{
+											"name": "OutputBindingsBatch",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										}
+									],
+									"instanceObjectClass": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STC_CheckCooldown.STC_CheckCooldown_C",
+									"instanceObjectProperties": [
+										{
+											"name": "AIController",
+											"type": "AAIController*",
+											"value": "None",
+											"category": "Context"
+										},
+										{
+											"name": "CooldownName",
+											"type": "FString",
+											"value": "Sit",
+											"category": "Default"
+										},
+										{
+											"name": "Description",
+											"type": "FText",
+											"value": "",
+											"category": "Description"
+										},
+										{
+											"name": "IconColor",
+											"type": "FColor",
+											"value": "(B=127,G=239,R=255,A=255)",
+											"category": "Description"
+										},
+										{
+											"name": "IconName",
+											"type": "FName",
+											"value": "EditorStyle|EditorViewport.ToggleRealTime",
+											"category": "Description"
+										}
+									]
+								}
+							],
+							"tasks": [],
+							"transitions": [],
+							"children": [
+								{
+									"name": "FindSmartObject",
+									"stateGuid": "ECE044E44EE0B7CF878B11B5E88AD971",
+									"type": "State",
+									"selectionBehavior": "TrySelectChildrenInOrder",
+									"enterConditions": [],
+									"tasks": [
+										{
+											"name": "StateTreeBlueprintTaskWrapper",
+											"structType": "/Script/StateTreeModule.StateTreeBlueprintTaskWrapper",
+											"category": "Task",
+											"instanceId": "DE25A7234B8348F4939450AD6FAB3A71",
+											"properties": [
+												{
+													"name": "bCanEditConsideredForCompletion",
+													"type": "uint8",
+													"value": "True"
+												},
+												{
+													"name": "bConsideredForCompletion",
+													"type": "uint8",
+													"value": "True"
+												},
+												{
+													"name": "BindingsBatch",
+													"type": "FStateTreeIndex16",
+													"value": "(Value=65535)"
+												},
+												{
+													"name": "bTaskEnabled",
+													"type": "uint8",
+													"value": "True"
+												},
+												{
+													"name": "ExecutionRuntimeTemplateIndex",
+													"type": "FStateTreeIndex16",
+													"value": "(Value=65535)"
+												},
+												{
+													"name": "InstanceDataHandle",
+													"type": "FStateTreeDataHandle",
+													"value": "(Index=65535,StateHandle=(Index=65535))"
+												},
+												{
+													"name": "InstanceTemplateIndex",
+													"type": "FStateTreeIndex16",
+													"value": "(Value=65535)"
+												},
+												{
+													"name": "Name",
+													"type": "FName",
+													"value": "None"
+												},
+												{
+													"name": "OutputBindingsBatch",
+													"type": "FStateTreeIndex16",
+													"value": "(Value=65535)"
+												},
+												{
+													"name": "TaskClass",
+													"type": "TSubclassOf<UStateTreeTaskBlueprintBase>",
+													"value": "/Script/Engine.BlueprintGeneratedClass'/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/TasksAndConditions/STT_SetCharacterInputState.STT_SetCharacterInputState_C'"
+												},
+												{
+													"name": "TaskFlags",
+													"type": "uint8",
+													"value": "0"
+												},
+												{
+													"name": "TransitionHandlingPriority",
+													"type": "EStateTreeTransitionPriority",
+													"value": "Normal"
+												}
+											],
+											"instanceObjectClass": "/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/TasksAndConditions/STT_SetCharacterInputState.STT_SetCharacterInputState_C",
+											"instanceObjectProperties": [
+												{
+													"name": "bCanEditConsideredForCompletion",
+													"type": "uint8",
+													"value": "True",
+													"category": "Default"
+												},
+												{
+													"name": "bConsideredForCompletion",
+													"type": "uint8",
+													"value": "False",
+													"category": "Default"
+												},
+												{
+													"name": "bShouldCallTickOnlyOnEvents",
+													"type": "uint8",
+													"value": "False",
+													"category": "Default"
+												},
+												{
+													"name": "bShouldCopyBoundPropertiesOnExitState",
+													"type": "uint8",
+													"value": "True",
+													"category": "Default"
+												},
+												{
+													"name": "bShouldCopyBoundPropertiesOnTick",
+													"type": "uint8",
+													"value": "True",
+													"category": "Default"
+												},
+												{
+													"name": "bShouldStateChangeOnReselect",
+													"type": "uint8",
+													"value": "True",
+													"category": "Default"
+												},
+												{
+													"name": "Character",
+													"type": "APawn*",
+													"value": "None",
+													"category": "Context"
+												},
+												{
+													"name": "Description",
+													"type": "FText",
+													"value": "",
+													"category": "Description"
+												},
+												{
+													"name": "IconColor",
+													"type": "FColor",
+													"value": "(B=138,G=138,R=255,A=255)",
+													"category": "Description"
+												},
+												{
+													"name": "IconName",
+													"type": "FName",
+													"value": "EditorStyle|ClassIcon.K2Node_VariableSet",
+													"category": "Description"
+												},
+												{
+													"name": "WantsToWalk",
+													"type": "bool",
+													"value": "True",
+													"category": "Default"
+												}
+											]
+										},
+										{
+											"name": "StateTreeBlueprintTaskWrapper",
+											"structType": "/Script/StateTreeModule.StateTreeBlueprintTaskWrapper",
+											"category": "Task",
+											"instanceId": "C272522F45F678E6776BF08324CD2B5B",
+											"properties": [
+												{
+													"name": "bCanEditConsideredForCompletion",
+													"type": "uint8",
+													"value": "True"
+												},
+												{
+													"name": "bConsideredForCompletion",
+													"type": "uint8",
+													"value": "True"
+												},
+												{
+													"name": "BindingsBatch",
+													"type": "FStateTreeIndex16",
+													"value": "(Value=65535)"
+												},
+												{
+													"name": "bTaskEnabled",
+													"type": "uint8",
+													"value": "True"
+												},
+												{
+													"name": "ExecutionRuntimeTemplateIndex",
+													"type": "FStateTreeIndex16",
+													"value": "(Value=65535)"
+												},
+												{
+													"name": "InstanceDataHandle",
+													"type": "FStateTreeDataHandle",
+													"value": "(Index=65535,StateHandle=(Index=65535))"
+												},
+												{
+													"name": "InstanceTemplateIndex",
+													"type": "FStateTreeIndex16",
+													"value": "(Value=65535)"
+												},
+												{
+													"name": "Name",
+													"type": "FName",
+													"value": "None"
+												},
+												{
+													"name": "OutputBindingsBatch",
+													"type": "FStateTreeIndex16",
+													"value": "(Value=65535)"
+												},
+												{
+													"name": "TaskClass",
+													"type": "TSubclassOf<UStateTreeTaskBlueprintBase>",
+													"value": "/Script/Engine.BlueprintGeneratedClass'/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STT_FindSmartObject.STT_FindSmartObject_C'"
+												},
+												{
+													"name": "TaskFlags",
+													"type": "uint8",
+													"value": "0"
+												},
+												{
+													"name": "TransitionHandlingPriority",
+													"type": "EStateTreeTransitionPriority",
+													"value": "Normal"
+												}
+											],
+											"instanceObjectClass": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STT_FindSmartObject.STT_FindSmartObject_C",
+											"instanceObjectProperties": [
+												{
+													"name": "Actor",
+													"type": "AActor*",
+													"value": "None",
+													"category": "Context"
+												},
+												{
+													"name": "bCanEditConsideredForCompletion",
+													"type": "uint8",
+													"value": "True",
+													"category": "Default"
+												},
+												{
+													"name": "bConsideredForCompletion",
+													"type": "uint8",
+													"value": "False",
+													"category": "Default"
+												},
+												{
+													"name": "bShouldCallTickOnlyOnEvents",
+													"type": "uint8",
+													"value": "False",
+													"category": "Default"
+												},
+												{
+													"name": "bShouldCopyBoundPropertiesOnExitState",
+													"type": "uint8",
+													"value": "True",
+													"category": "Default"
+												},
+												{
+													"name": "bShouldCopyBoundPropertiesOnTick",
+													"type": "uint8",
+													"value": "True",
+													"category": "Default"
+												},
+												{
+													"name": "bShouldStateChangeOnReselect",
+													"type": "uint8",
+													"value": "True",
+													"category": "Default"
+												},
+												{
+													"name": "CandidateSlot",
+													"type": "FSmartObjectSlotHandle",
+													"value": "()",
+													"category": "Output"
+												},
+												{
+													"name": "Description",
+													"type": "FText",
+													"value": "",
+													"category": "Description"
+												},
+												{
+													"name": "IconColor",
+													"type": "FColor",
+													"value": "(B=148,G=148,R=148,A=255)",
+													"category": "Description"
+												},
+												{
+													"name": "IconName",
+													"type": "FName",
+													"value": "None",
+													"category": "Description"
+												},
+												{
+													"name": "Index",
+													"type": "int32",
+													"value": "0",
+													"category": "Default"
+												},
+												{
+													"name": "Search Box Extents",
+													"type": "FVector",
+													"value": "(X=1000.000000,Y=1000.000000,Z=500.000000)",
+													"category": "Default"
+												},
+												{
+													"name": "Search Result",
+													"type": "FSmartObjectRequestResult",
+													"value": "()",
+													"category": "Internal"
+												},
+												{
+													"name": "SearchResults",
+													"type": "TArray",
+													"value": "",
+													"category": "Default"
+												},
+												{
+													"name": "SearchType",
+													"type": "TEnumAsByte<SmartObjectSearchType>",
+													"value": "NewEnumerator0",
+													"category": "Default"
+												},
+												{
+													"name": "Smart Object",
+													"type": "AActor*",
+													"value": "None",
+													"category": "Output"
+												}
+											]
+										}
+									],
+									"transitions": [],
+									"children": [
+										{
+											"name": "ClaimSlot",
+											"stateGuid": "C21BA0DF43F11ACDD8E170B8056686A1",
+											"type": "State",
+											"selectionBehavior": "TrySelectChildrenInOrder",
+											"enterConditions": [],
+											"tasks": [
+												{
+													"name": "StateTreeBlueprintTaskWrapper",
+													"structType": "/Script/StateTreeModule.StateTreeBlueprintTaskWrapper",
+													"category": "Task",
+													"instanceId": "EDE07B474F27A2E3961B1489702012E1",
+													"properties": [
+														{
+															"name": "bCanEditConsideredForCompletion",
+															"type": "uint8",
+															"value": "True"
+														},
+														{
+															"name": "bConsideredForCompletion",
+															"type": "uint8",
+															"value": "True"
+														},
+														{
+															"name": "BindingsBatch",
+															"type": "FStateTreeIndex16",
+															"value": "(Value=65535)"
+														},
+														{
+															"name": "bTaskEnabled",
+															"type": "uint8",
+															"value": "True"
+														},
+														{
+															"name": "ExecutionRuntimeTemplateIndex",
+															"type": "FStateTreeIndex16",
+															"value": "(Value=65535)"
+														},
+														{
+															"name": "InstanceDataHandle",
+															"type": "FStateTreeDataHandle",
+															"value": "(Index=65535,StateHandle=(Index=65535))"
+														},
+														{
+															"name": "InstanceTemplateIndex",
+															"type": "FStateTreeIndex16",
+															"value": "(Value=65535)"
+														},
+														{
+															"name": "Name",
+															"type": "FName",
+															"value": "None"
+														},
+														{
+															"name": "OutputBindingsBatch",
+															"type": "FStateTreeIndex16",
+															"value": "(Value=65535)"
+														},
+														{
+															"name": "TaskClass",
+															"type": "TSubclassOf<UStateTreeTaskBlueprintBase>",
+															"value": "/Script/Engine.BlueprintGeneratedClass'/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STT_ClaimSlot.STT_ClaimSlot_C'"
+														},
+														{
+															"name": "TaskFlags",
+															"type": "uint8",
+															"value": "0"
+														},
+														{
+															"name": "TransitionHandlingPriority",
+															"type": "EStateTreeTransitionPriority",
+															"value": "Normal"
+														}
+													],
+													"instanceObjectClass": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STT_ClaimSlot.STT_ClaimSlot_C",
+													"instanceObjectProperties": [
+														{
+															"name": "Actor",
+															"type": "AActor*",
+															"value": "None",
+															"category": "Context"
+														},
+														{
+															"name": "bCanEditConsideredForCompletion",
+															"type": "uint8",
+															"value": "True",
+															"category": "Default"
+														},
+														{
+															"name": "bConsideredForCompletion",
+															"type": "uint8",
+															"value": "False",
+															"category": "Default"
+														},
+														{
+															"name": "bShouldCallTickOnlyOnEvents",
+															"type": "uint8",
+															"value": "False",
+															"category": "Default"
+														},
+														{
+															"name": "bShouldCopyBoundPropertiesOnExitState",
+															"type": "uint8",
+															"value": "True",
+															"category": "Default"
+														},
+														{
+															"name": "bShouldCopyBoundPropertiesOnTick",
+															"type": "uint8",
+															"value": "True",
+															"category": "Default"
+														},
+														{
+															"name": "bShouldStateChangeOnReselect",
+															"type": "uint8",
+															"value": "True",
+															"category": "Default"
+														},
+														{
+															"name": "ClaimedHandle",
+															"type": "FSmartObjectClaimHandle",
+															"value": "()",
+															"category": "Output"
+														},
+														{
+															"name": "Description",
+															"type": "FText",
+															"value": "",
+															"category": "Description"
+														},
+														{
+															"name": "IconColor",
+															"type": "FColor",
+															"value": "(B=148,G=148,R=148,A=255)",
+															"category": "Description"
+														},
+														{
+															"name": "IconName",
+															"type": "FName",
+															"value": "None",
+															"category": "Description"
+														},
+														{
+															"name": "SlotToBeClaimed",
+															"type": "FSmartObjectSlotHandle",
+															"value": "()",
+															"category": "Input"
+														},
+														{
+															"name": "SmartObject",
+															"type": "AActor*",
+															"value": "None",
+															"category": "Input"
+														}
+													]
+												}
+											],
+											"transitions": [],
+											"children": [
+												{
+													"name": "UseSmartObject",
+													"stateGuid": "FD81088A4809D78A0EA0218398BA9D3D",
+													"type": "State",
+													"selectionBehavior": "TrySelectChildrenInOrder",
+													"enterConditions": [],
+													"tasks": [
+														{
+															"name": "StateTreeBlueprintTaskWrapper",
+															"structType": "/Script/StateTreeModule.StateTreeBlueprintTaskWrapper",
+															"category": "Task",
+															"instanceId": "2E32EADD40894CD960282596EE08040E",
+															"properties": [
+																{
+																	"name": "bCanEditConsideredForCompletion",
+																	"type": "uint8",
+																	"value": "True"
+																},
+																{
+																	"name": "bConsideredForCompletion",
+																	"type": "uint8",
+																	"value": "True"
+																},
+																{
+																	"name": "BindingsBatch",
+																	"type": "FStateTreeIndex16",
+																	"value": "(Value=65535)"
+																},
+																{
+																	"name": "bTaskEnabled",
+																	"type": "uint8",
+																	"value": "True"
+																},
+																{
+																	"name": "ExecutionRuntimeTemplateIndex",
+																	"type": "FStateTreeIndex16",
+																	"value": "(Value=65535)"
+																},
+																{
+																	"name": "InstanceDataHandle",
+																	"type": "FStateTreeDataHandle",
+																	"value": "(Index=65535,StateHandle=(Index=65535))"
+																},
+																{
+																	"name": "InstanceTemplateIndex",
+																	"type": "FStateTreeIndex16",
+																	"value": "(Value=65535)"
+																},
+																{
+																	"name": "Name",
+																	"type": "FName",
+																	"value": "None"
+																},
+																{
+																	"name": "OutputBindingsBatch",
+																	"type": "FStateTreeIndex16",
+																	"value": "(Value=65535)"
+																},
+																{
+																	"name": "TaskClass",
+																	"type": "TSubclassOf<UStateTreeTaskBlueprintBase>",
+																	"value": "/Script/Engine.BlueprintGeneratedClass'/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STT_UseSmartObject.STT_UseSmartObject_C'"
+																},
+																{
+																	"name": "TaskFlags",
+																	"type": "uint8",
+																	"value": "0"
+																},
+																{
+																	"name": "TransitionHandlingPriority",
+																	"type": "EStateTreeTransitionPriority",
+																	"value": "Normal"
+																}
+															],
+															"instanceObjectClass": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STT_UseSmartObject.STT_UseSmartObject_C",
+															"instanceObjectProperties": [
+																{
+																	"name": "AIController",
+																	"type": "AAIController*",
+																	"value": "None",
+																	"category": "Input"
+																},
+																{
+																	"name": "bCanEditConsideredForCompletion",
+																	"type": "uint8",
+																	"value": "True",
+																	"category": "Default"
+																},
+																{
+																	"name": "bConsideredForCompletion",
+																	"type": "uint8",
+																	"value": "True",
+																	"category": "Default"
+																},
+																{
+																	"name": "bShouldCallTickOnlyOnEvents",
+																	"type": "uint8",
+																	"value": "False",
+																	"category": "Default"
+																},
+																{
+																	"name": "bShouldCopyBoundPropertiesOnExitState",
+																	"type": "uint8",
+																	"value": "True",
+																	"category": "Default"
+																},
+																{
+																	"name": "bShouldCopyBoundPropertiesOnTick",
+																	"type": "uint8",
+																	"value": "True",
+																	"category": "Default"
+																},
+																{
+																	"name": "bShouldStateChangeOnReselect",
+																	"type": "uint8",
+																	"value": "True",
+																	"category": "Default"
+																},
+																{
+																	"name": "Claimed Handle",
+																	"type": "FSmartObjectClaimHandle",
+																	"value": "()",
+																	"category": "Input"
+																},
+																{
+																	"name": "Description",
+																	"type": "FText",
+																	"value": "",
+																	"category": "Description"
+																},
+																{
+																	"name": "IconColor",
+																	"type": "FColor",
+																	"value": "(B=148,G=148,R=148,A=255)",
+																	"category": "Description"
+																},
+																{
+																	"name": "IconName",
+																	"type": "FName",
+																	"value": "None",
+																	"category": "Description"
+																}
+															]
+														}
+													],
+													"transitions": [],
+													"children": []
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Patrol State",
+							"stateGuid": "6D4364FF43F6A715AC22B3B39F3EA84D",
+							"type": "Group",
+							"selectionBehavior": "TrySelectChildrenInOrder",
+							"enterConditions": [],
+							"tasks": [],
+							"transitions": [
+								{
+									"transitionId": "3EF081154BA2156C2110A8B31A35F2DD",
+									"trigger": "OnStateCompleted",
+									"targetStateName": "Smart Object State",
+									"targetStateGuid": "3B06FAB443CBB0279B1E0C9CEE90AED6",
+									"linkType": "GotoState",
+									"priority": "Normal",
+									"conditions": []
+								}
+							],
+							"children": [
+								{
+									"name": "Patrol",
+									"stateGuid": "346F9EDB40AB49C7BD8143984FC19217",
+									"type": "LinkedAsset",
+									"selectionBehavior": "TryEnterState",
+									"linkedAssetPath": "/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/ST_NPC_SandboxCharacter_Patrol_Subtree.ST_NPC_SandboxCharacter_Patrol_Subtree",
+									"enterConditions": [],
+									"tasks": [],
+									"transitions": [
+										{
+											"transitionId": "AC34AC4947A45D571BB2E3957D518027",
+											"trigger": "OnStateCompleted",
+											"targetStateName": "Smart Object State",
+											"targetStateGuid": "3B06FAB443CBB0279B1E0C9CEE90AED6",
+											"linkType": "GotoState",
+											"priority": "Normal",
+											"conditions": []
+										}
+									],
+									"children": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"bindings": [
+		{
+			"sourcePath": "",
+			"targetPath": "Actor"
+		},
+		{
+			"sourcePath": "",
+			"targetPath": "AIController"
+		},
+		{
+			"sourcePath": "",
+			"targetPath": "AIController"
+		},
+		{
+			"sourcePath": "",
+			"targetPath": "Character"
+		},
+		{
+			"sourcePath": "ClaimedHandle",
+			"targetPath": "Claimed Handle"
+		},
+		{
+			"sourcePath": "CandidateSlot",
+			"targetPath": "SlotToBeClaimed"
+		},
+		{
+			"sourcePath": "Smart Object",
+			"targetPath": "SmartObject"
+		}
+	],
+	"dependencies": [
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/ST_NPC_SandboxCharacter_Patrol_Subtree",
+			"assetName": "ST_NPC_SandboxCharacter_Patrol_Subtree",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/TasksAndConditions/STT_SetCharacterInputState",
+			"assetName": "STT_SetCharacterInputState",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STC_CheckCooldown",
+			"assetName": "STC_CheckCooldown",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STT_ClaimSlot",
+			"assetName": "STT_ClaimSlot",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STT_FindSmartObject",
+			"assetName": "STT_FindSmartObject",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STT_UseSmartObject",
+			"assetName": "STT_UseSmartObject",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/AIModule",
+			"assetName": "AIModule",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/GameplayStateTreeModule",
+			"assetName": "GameplayStateTreeModule",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/StateTreeEditorModule",
+			"assetName": "StateTreeEditorModule",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/StateTreeModule",
+			"assetName": "StateTreeModule",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": ""
+		}
+	],
+	"assetType": "StateTree",
+	"coverage":
+	{
+		"states":
+		{
+			"total": 8,
+			"documented": 8
+		},
+		"specialized":
+		{
+			"applicable": [
+				"ST.TasksPerState",
+				"ST.Transitions",
+				"ST.Conditions",
+				"ST.InstancedStructTypes"
+			],
+			"documented": [
+				"ST.TasksPerState",
+				"ST.Transitions",
+				"ST.Conditions",
+				"ST.InstancedStructTypes"
+			]
+		},
+		"overallPct": 100
+	}
+}

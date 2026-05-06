@@ -1,0 +1,23 @@
+{
+  "_comment": "M28.5.2 remove_eqs_test post-apply inspection + soak. Third M28.5 EQS write-side op. Duplicates EQS_BpxTestWithOption (pre-seeded with one option carrying an EnvQueryGenerator_ActorsOfClass generator + one EnvQueryTest_Random test) into a scratch path and removes test_index=0 from option 0 — deleting the pre-seeded Random test. The inspect gate asserts the rendered .deep.md no longer surfaces EnvQueryTest_Random (positive 'expected_deep' hit on the ActorsOfClass generator that stays, negative 'not_expected_deep' hit on the now-removed Random test). The soak gate asserts md5 stability across 2 rounds — RemoveAt is deterministic on its own, but the TestOrder reseat loop on the tail is the load-bearing invariant this gate protects (EnvQueryManager.cpp:874 only repairs zero at runtime).",
+  "op": "remove_eqs_test",
+  "source_fixture": "/Game/TestBlueprints/EQS_BpxTestWithOption",
+  "scratch_path":   "/Game/TestBlueprints/EQS_BpxTest_RemoveTestScratch",
+  "inspect_path":   "/Game/TestBlueprints/EQS_BpxTest_RemoveTestScratch",
+  "plan_kwargs": {
+    "eqs_path":     "/Game/TestBlueprints/EQS_BpxTest_RemoveTestScratch",
+    "option_index": 0,
+    "test_index":   0
+  },
+  "expected_md": [],
+  "not_expected_md": [],
+  "expected_deep": [
+    "EnvQueryGenerator_ActorsOfClass"
+  ],
+  "not_expected_deep": [
+    "EnvQueryTest_Random"
+  ],
+  "soak": {
+    "rounds": 2
+  }
+}

@@ -1,0 +1,598 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "4ab0f50bac885f3b548cfc92799e0162"
+	},
+	"assetPath": "/Game/_ThirdParty/UltraDynamicSky/Blueprints/System/UDS_OcclusionSettings.UDS_OcclusionSettings",
+	"assetName": "UDS_OcclusionSettings",
+	"blueprintGuid": "51AD17014E151B4AC2CC7F873D682A51",
+	"blueprintType": "Normal",
+	"blueprintSubclass": "Blueprint",
+	"parentClass":
+	{
+		"className": "PrimaryDataAsset",
+		"classPath": "/Script/Engine.PrimaryDataAsset",
+		"isNative": true,
+		"moduleName": "/Script/Engine"
+	},
+	"implementedInterfaces": [],
+	"variables": [
+		{
+			"variableName": "Global Occlusion Max Fraction",
+			"variableGuid": "7FA67E8C428FF4252EF18480211A1698",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "0.900000",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": true,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "Global Occlusion is the value representing general occlusion from all directions. This value is the fraction of trace hits where global occlusion will max out at 1.",
+			"metaData":
+			{
+				"MultiLine": "true",
+				"tooltip": "Global Occlusion is the value representing general occlusion from all directions. This value is the fraction of trace hits where global occlusion will max out at 1.",
+				"UIMax": "1",
+				"UIMin": "0"
+			}
+		},
+		{
+			"variableName": "Global Occlusion Min Fraction",
+			"variableGuid": "A929DBFE47F5C4C480051E8245D85585",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "0.200000",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": true,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "Global Occlusion is the value representing general occlusion from all directions. This value is the fraction of trace hits needed for global occlusion to start increasing from 0.",
+			"metaData":
+			{
+				"MultiLine": "true",
+				"tooltip": "Global Occlusion is the value representing general occlusion from all directions. This value is the fraction of trace hits needed for global occlusion to start increasing from 0.",
+				"UIMax": "1",
+				"UIMin": "0"
+			}
+		},
+		{
+			"variableName": "GPU Distance Field Sample Count",
+			"variableGuid": "AC306E284927EBF6C9453DBE1B3EF1E9",
+			"variableType":
+			{
+				"category": "int",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "1000",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": true,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "When GPU Distance Field Collision is used, this is the number of points on the hemisphere which query the distance field. This defines the amount of directions traced against.",
+			"metaData":
+			{
+				"tooltip": "When GPU Distance Field Collision is used, this is the number of points on the hemisphere which query the distance field. This defines the amount of directions traced against."
+			}
+		},
+		{
+			"variableName": "Horizontal Trace Steps",
+			"variableGuid": "0A3491ED4104677778B444A4C90036A8",
+			"variableType":
+			{
+				"category": "int",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "12",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": true,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "Number of steps in a full rotation 360 degrees around the occlusion sampling location. Each of these steps will have a number of line traces determined by Vertical Trace Steps.",
+			"metaData":
+			{
+				"ClampMin": "",
+				"MultiLine": "true",
+				"tooltip": "Number of steps in a full rotation 360 degrees around the occlusion sampling location. Each of these steps will have a number of line traces determined by Vertical Trace Steps.",
+				"UIMax": "48",
+				"UIMin": "4"
+			}
+		},
+		{
+			"variableName": "Max Trace Distance",
+			"variableGuid": "16FE5B1144EBA208492D9482D926628C",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "4500.000000",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": true,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "The max distance that the traces used for occlusion will test. This should be generally determined by the max size of your interior spaces.",
+			"metaData":
+			{
+				"ClampMin": "1",
+				"MultiLine": "true",
+				"tooltip": "The max distance that the traces used for occlusion will test. This should be generally determined by the max size of your interior spaces.",
+				"UIMax": "10000",
+				"UIMin": "100"
+			}
+		},
+		{
+			"variableName": "Occlusion Behavior Under Water",
+			"variableGuid": "52A2874F407CC5892165D99C7AA17A3E",
+			"variableType":
+			{
+				"category": "byte",
+				"subCategoryObject": "/Game/_ThirdParty/UltraDynamicSky/Blueprints/Enum/UDS_Occlusion_Water_Behavior.UDS_Occlusion_Water_Behavior",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "NewEnumerator0",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": true,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "Defines what happens when the occlusion sampling location is under the water level, if UDW has its water level setting enabled.",
+			"metaData":
+			{
+				"tooltip": "Defines what happens when the occlusion sampling location is under the water level, if UDW has its water level setting enabled."
+			}
+		},
+		{
+			"variableName": "Occlusion Mode",
+			"variableGuid": "30AD4F3540E4F82E2B172A949AE7CE13",
+			"variableType":
+			{
+				"category": "byte",
+				"subCategoryObject": "/Game/_ThirdParty/UltraDynamicSky/Blueprints/Enum/UDS_Occlusion_Mode.UDS_Occlusion_Mode",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "NewEnumerator2",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": true,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "Determines how the occlusion values are acquired. Either by sending out line traces to test for collision, testing the occlusion location for occlusion volumes (UDS_Occlusion_Volume) or both.",
+			"metaData":
+			{
+				"MultiLine": "true",
+				"tooltip": "Determines how the occlusion values are acquired. Either by sending out line traces to test for collision, testing the occlusion location for occlusion volumes (UDS_Occlusion_Volume) or both."
+			}
+		},
+		{
+			"variableName": "Query Occlusion Portals",
+			"variableGuid": "070EE2794A4684D397D435A4ACD9EBC0",
+			"variableType":
+			{
+				"category": "bool",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "True",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": true,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "If true, Occlusion Portal components will be used to affect occlusion if available.",
+			"metaData":
+			{
+				"MultiLine": "true",
+				"tooltip": "If true, Occlusion Portal components will be used to affect occlusion if available."
+			}
+		},
+		{
+			"variableName": "Show Trace Debugs",
+			"variableGuid": "2B10A0E04B9E83A5C8D099A802F9AC4A",
+			"variableType":
+			{
+				"category": "bool",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "False",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": true,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "Enable during development to see trace debugs for the occlusion traces during testing.",
+			"metaData":
+			{
+				"MultiLine": "true",
+				"tooltip": "Enable during development to see trace debugs for the occlusion traces during testing."
+			}
+		},
+		{
+			"variableName": "Trace Channel",
+			"variableGuid": "22857F1D43DAC6D2BC7D90A82BE2BCC4",
+			"variableType":
+			{
+				"category": "byte",
+				"subCategoryObject": "/Script/Engine.ETraceTypeQuery",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "TraceTypeQuery1",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": true,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "The trace channel used by the line traces for scene collision",
+			"metaData":
+			{
+				"MultiLine": "true",
+				"tooltip": "The trace channel used by the line traces for scene collision"
+			}
+		},
+		{
+			"variableName": "Update Period",
+			"variableGuid": "4C9F5D9841EC95A8C828EC9F8BF3533D",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "0.350000",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": true,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "The amount of time it takes for the occlusion component to run through all of its trace directions. This constitutes a full update of the current occlusion values. Higher values will take more time for occlusion to update when context around the sampling location changes.",
+			"metaData":
+			{
+				"ClampMin": ".05",
+				"MultiLine": "true",
+				"tooltip": "The amount of time it takes for the occlusion component to run through all of its trace directions. This constitutes a full update of the current occlusion values. Higher values will take more time for occlusion to update when context around the sampling location changes.",
+				"UIMax": "2",
+				"UIMin": ".05"
+			}
+		},
+		{
+			"variableName": "Use GPU Distance Field Collision",
+			"variableGuid": "127A5C7D4B6E67838FD97E9A2E27C732",
+			"variableType":
+			{
+				"category": "bool",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "False",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": true,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "If enabled, the occlusion collision traces will happen on the GPU, querying the global distance field instead of simple collision. This is done using a special niagara system with GPU particle logic for querying occlusion.\r\nNote, this only applies at runtime. When previewing the effects of player occlusion in the level editor, the simple collision traces will still be used.",
+			"metaData":
+			{
+				"tooltip": "If enabled, the occlusion collision traces will happen on the GPU, querying the global distance field instead of simple collision. This is done using a special niagara system with GPU particle logic for querying occlusion.\r\nNote, this only applies at runtime. When previewing the effects of player occlusion in the level editor, the simple collision traces will still be used."
+			}
+		},
+		{
+			"variableName": "Vertical Trace Steps",
+			"variableGuid": "E17721704A869ED49C2D43A01EC52104",
+			"variableType":
+			{
+				"category": "int",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "5",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": true,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "Number of traces for each Horizontal Trace Step, distributed over 90 degrees from straight forward to straight up.",
+			"metaData":
+			{
+				"MultiLine": "true",
+				"tooltip": "Number of traces for each Horizontal Trace Step, distributed over 90 degrees from straight forward to straight up.",
+				"UIMax": "15",
+				"UIMin": "2"
+			}
+		}
+	],
+	"functions": [],
+	"macros": [],
+	"eventGraph":
+	{
+		"graphName": "EventGraph",
+		"graphGuid": "16B8C8CA47F9A22F424D778EF0918CC2",
+		"graphType": "EventGraph",
+		"schemaClass": "/Script/BlueprintGraph.EdGraphSchema_K2",
+		"nodes": []
+	},
+	"constructionScript":
+	{
+		"graphName": "",
+		"graphGuid": "",
+		"graphType": "",
+		"schemaClass": "",
+		"nodes": []
+	},
+	"components": [],
+	"cdoProperties": [],
+	"dataCarrierKind": "DataAsset",
+	"additionalGraphs": [],
+	"stateMachines": [],
+	"widgetTree": [],
+	"dependencies": [
+		{
+			"assetPath": "/Game/_ThirdParty/UltraDynamicSky/Blueprints/Enum/UDS_Occlusion_Mode",
+			"assetName": "UDS_Occlusion_Mode",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/UltraDynamicSky/Blueprints/Enum/UDS_Occlusion_Water_Behavior",
+			"assetName": "UDS_Occlusion_Water_Behavior",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/Engine.PrimaryDataAsset",
+			"assetName": "PrimaryDataAsset",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": "Parent class"
+		}
+	],
+	"metaData":
+	{
+	},
+	"assetType": "Blueprint",
+	"coverage":
+	{
+		"variables":
+		{
+			"total": 13,
+			"documented": 13
+		},
+		"functions":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"components":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"graphs":
+		{
+			"total": 2,
+			"documented": 2
+		},
+		"cdoProperties":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"specialized":
+		{
+			"applicable": [
+				"DataAsset.CDO"
+			],
+			"documented": [
+				"DataAsset.CDO"
+			]
+		},
+		"overallPct": 100
+	}
+}

@@ -1,0 +1,15 @@
+{
+  "_comment": "M28.12 add_function_override post-apply soak. Duplicates BP_GAS_Ability (UGameplayAbility child shipped in BugHunt fixtures via GenBP_GAS_Ability) into a scratch path and authors an override of K2_ShouldAbilityRespondToEvent — a UFUNCTION(BlueprintImplementableEvent) on UGameplayAbility that returns bool and takes two struct params (FGameplayAbilityActorInfo, FGameplayEventData), exercising the typed-pin signature mirror that distinguishes the override path from add_bp_function's fresh void/void path. Soak asserts md5 stability across 2 rounds, proving SeedGuidFromJoined(':override_func:K2_ShouldAbilityRespondToEvent:graph'/':entry'/':return') overrides UE's FGuid::NewGuid() calls inside FBlueprintEditorUtils::AddFunctionGraph<UClass> and the inline auto-Result NewObject. skip_inspect=true because the rendered .deep.md surfaces the override graph as part of the function-list section in a form that isn't grep-friendly for the inspect gate.",
+  "op": "add_function_override",
+  "skip_inspect": true,
+  "source_fixture": "/Game/TestBlueprints/BP_GAS_Ability",
+  "scratch_path":   "/Game/TestBlueprints/BP_GAS_AbilityScratch_FuncOverride",
+  "plan_kwargs": {
+    "bp_path":       "/Game/TestBlueprints/BP_GAS_AbilityScratch_FuncOverride",
+    "function_name": "K2_ShouldAbilityRespondToEvent"
+  },
+  "soak": {
+    "rounds": 2,
+    "stable_keys": ["entry_guid", "return_guid"]
+  }
+}

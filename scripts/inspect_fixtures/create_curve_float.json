@@ -1,0 +1,20 @@
+{
+  "_comment": "M28.4.1 create_curve_float soak-only. UCurveFloat is not in the inventory pipeline's logic-bearing set (PROJECT_INVENTORY_BRIEF.md §3), so the inspect harness's re-export phase emits zero .md and the inspect gate would always fail. Expanding inventory scope is a separate design decision; for M28.4.1 we keep inspect skipped via `skip_inspect: true` and rely on soak for the determinism signal. The soak gate still validates byte-identity of the scratch .uasset across 2 rounds of create_curve_float — trivially stable since the duplicate pre-places a curve at scratch_path and the op short-circuits on StaticLoadObject hit (skipped=\"curve already exists\", no save path exercised). The actual create-from-scratch path is covered by MCP pytest's get_op_catalog coverage + manual editor verification. UCurveFloat / UCurveBase / FRichCurveKey have zero FGuid::NewGuid() usage per the M28.4.0 research so no seed recipe is needed; explicit FName on NewObject (derived from the short-name tail) is the only determinism lever.",
+  "skip_inspect": true,
+  "op": "create_curve_float",
+  "source_fixture": "/Game/TestBlueprints/Curve_BpxTestEmpty",
+  "scratch_path":   "/Game/TestBlueprints/Curve_BpxTest_CreateScratch",
+  "inspect_path":   "/Game/TestBlueprints/Curve_BpxTest_CreateScratch",
+  "plan_kwargs": {
+    "curve_path": "/Game/TestBlueprints/Curve_BpxTest_CreateScratch"
+  },
+  "expected_md": [
+    "Curve_BpxTest_CreateScratch"
+  ],
+  "not_expected_md": [],
+  "expected_deep": [],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2
+  }
+}

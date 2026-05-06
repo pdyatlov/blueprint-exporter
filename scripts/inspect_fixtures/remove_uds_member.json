@@ -1,0 +1,21 @@
+{
+  "_comment": "M28.4.3 remove_uds_member soak-only. Marked skip_inspect: true to match M28.4.1/M28.4.2 scope. The soak gate validates byte-identity across 2 rounds of a destructive op — round 1 removes BpxRemovalCandidate from the UDS_BpxTestEmpty duplicate (which arrives with {BpxAutoBool, BpxRemovalCandidate}, leaving just BpxAutoBool), round 2 sees BpxRemovalCandidate already absent and hits the idempotent skip=\"member already absent\" path. Destructive-op idempotency is load-bearing here because the soak harness re-applies the same plan and round 1 already deleted the target — same pattern M28.5.2 remove_eqs_test had to harden against. UUserDefinedStruct's bAllowToMakeEmpty=false engine invariant (StructureEditorUtils.cpp:327) is NOT exercised by this fixture because the pre-remove struct has 2 members (can drop to 1); see the M28.4.3 shipped block for the structured error path on would-empty-struct.",
+  "skip_inspect": true,
+  "op": "remove_uds_member",
+  "source_fixture": "/Game/TestBlueprints/UDS_BpxTestEmpty",
+  "scratch_path":   "/Game/TestBlueprints/UDS_BpxTest_RemoveMemberScratch",
+  "inspect_path":   "/Game/TestBlueprints/UDS_BpxTest_RemoveMemberScratch",
+  "plan_kwargs": {
+    "uds_path":    "/Game/TestBlueprints/UDS_BpxTest_RemoveMemberScratch",
+    "member_name": "BpxRemovalCandidate"
+  },
+  "expected_md": [
+    "UDS_BpxTest_RemoveMemberScratch"
+  ],
+  "not_expected_md": [],
+  "expected_deep": [],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2
+  }
+}

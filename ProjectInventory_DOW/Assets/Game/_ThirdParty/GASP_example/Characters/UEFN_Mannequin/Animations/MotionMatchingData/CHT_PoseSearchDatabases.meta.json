@@ -1,0 +1,119 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"assetType": "ChooserTable",
+	"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/CHT_PoseSearchDatabases.CHT_PoseSearchDatabases",
+	"assetName": "CHT_PoseSearchDatabases",
+	"parentClass":
+	{
+		"className": "ChooserSignature",
+		"classPath": "/Script/Chooser.ChooserSignature",
+		"isNative": true
+	},
+	"resultType": "ObjectResult",
+	"outputObjectType": "/Script/PoseSearch.PoseSearchDatabase",
+	"isRootChooser": true,
+	"contextData": [
+		{
+			"structType": "/Script/Chooser.ContextObjectTypeClass"
+		}
+	],
+	"columns": [
+		{
+			"index": 0,
+			"structType": "/Script/Chooser.FloatRangeColumn",
+			"hasFilter": true,
+			"hasOutput": false,
+			"hasCost": false,
+			"disabled": false,
+			"inputType": "/Script/Chooser.FloatContextProperty"
+		}
+	],
+	"rows": [
+		{
+			"index": 0,
+			"structType": "/Script/Chooser.EvaluateChooser",
+			"disabled": false
+		},
+		{
+			"index": 1,
+			"structType": "/Script/Chooser.EvaluateChooser",
+			"disabled": false
+		},
+		{
+			"index": 2,
+			"structType": "/Script/Chooser.EvaluateChooser",
+			"disabled": false
+		}
+	],
+	"fallback":
+	{
+		"set": true,
+		"structType": "/Script/Chooser.EvaluateChooser"
+	},
+	"nestedChoosers": [],
+	"nestedObjects": 1,
+	"dependencies": [
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/SandboxCharacter_CMC_ABP",
+			"assetName": "SandboxCharacter_CMC_ABP",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/CHT_PoseSearchDatabases_Dense",
+			"assetName": "CHT_PoseSearchDatabases_Dense",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/CHT_PoseSearchDatabases_ExtremeSparse",
+			"assetName": "CHT_PoseSearchDatabases_ExtremeSparse",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/CHT_PoseSearchDatabases_Sparse",
+			"assetName": "CHT_PoseSearchDatabases_Sparse",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/Chooser",
+			"assetName": "Chooser",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/PoseSearch",
+			"assetName": "PoseSearch",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		}
+	],
+	"coverage":
+	{
+		"rows":
+		{
+			"total": 3,
+			"documented": 3
+		},
+		"specialized":
+		{
+			"applicable": [],
+			"documented": []
+		},
+		"overallPct": 100
+	}
+}

@@ -1,0 +1,673 @@
+{
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "18d4c3c2631581812543f4ff19be70ea"
+	},
+	"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/ST_NPC_SandboxCharacter_Patrol_Subtree.ST_NPC_SandboxCharacter_Patrol_Subtree",
+	"assetName": "ST_NPC_SandboxCharacter_Patrol_Subtree",
+	"schema": "StateTreeAIComponentSchema",
+	"evaluators": [],
+	"globalTasks": [],
+	"rootStates": [
+		{
+			"name": "FindRandomLocation",
+			"stateGuid": "21D1A837460D42B600F4EA91C59F89D1",
+			"type": "State",
+			"selectionBehavior": "TrySelectChildrenInOrder",
+			"enterConditions": [],
+			"tasks": [
+				{
+					"name": "StateTreeBlueprintTaskWrapper",
+					"structType": "/Script/StateTreeModule.StateTreeBlueprintTaskWrapper",
+					"category": "Task",
+					"instanceId": "DA0CD0674E197E2094409AB4F9FF551D",
+					"properties": [
+						{
+							"name": "bCanEditConsideredForCompletion",
+							"type": "uint8",
+							"value": "True"
+						},
+						{
+							"name": "bConsideredForCompletion",
+							"type": "uint8",
+							"value": "True"
+						},
+						{
+							"name": "BindingsBatch",
+							"type": "FStateTreeIndex16",
+							"value": "(Value=65535)"
+						},
+						{
+							"name": "bTaskEnabled",
+							"type": "uint8",
+							"value": "True"
+						},
+						{
+							"name": "ExecutionRuntimeTemplateIndex",
+							"type": "FStateTreeIndex16",
+							"value": "(Value=65535)"
+						},
+						{
+							"name": "InstanceDataHandle",
+							"type": "FStateTreeDataHandle",
+							"value": "(Index=65535,StateHandle=(Index=65535))"
+						},
+						{
+							"name": "InstanceTemplateIndex",
+							"type": "FStateTreeIndex16",
+							"value": "(Value=65535)"
+						},
+						{
+							"name": "Name",
+							"type": "FName",
+							"value": "None"
+						},
+						{
+							"name": "OutputBindingsBatch",
+							"type": "FStateTreeIndex16",
+							"value": "(Value=65535)"
+						},
+						{
+							"name": "TaskClass",
+							"type": "TSubclassOf<UStateTreeTaskBlueprintBase>",
+							"value": "/Script/Engine.BlueprintGeneratedClass'/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/TasksAndConditions/STT_SetCharacterInputState.STT_SetCharacterInputState_C'"
+						},
+						{
+							"name": "TaskFlags",
+							"type": "uint8",
+							"value": "0"
+						},
+						{
+							"name": "TransitionHandlingPriority",
+							"type": "EStateTreeTransitionPriority",
+							"value": "Normal"
+						}
+					],
+					"instanceObjectClass": "/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/TasksAndConditions/STT_SetCharacterInputState.STT_SetCharacterInputState_C",
+					"instanceObjectProperties": [
+						{
+							"name": "bCanEditConsideredForCompletion",
+							"type": "uint8",
+							"value": "True",
+							"category": "Default"
+						},
+						{
+							"name": "bConsideredForCompletion",
+							"type": "uint8",
+							"value": "True",
+							"category": "Default"
+						},
+						{
+							"name": "bShouldCallTickOnlyOnEvents",
+							"type": "uint8",
+							"value": "False",
+							"category": "Default"
+						},
+						{
+							"name": "bShouldCopyBoundPropertiesOnExitState",
+							"type": "uint8",
+							"value": "True",
+							"category": "Default"
+						},
+						{
+							"name": "bShouldCopyBoundPropertiesOnTick",
+							"type": "uint8",
+							"value": "True",
+							"category": "Default"
+						},
+						{
+							"name": "bShouldStateChangeOnReselect",
+							"type": "uint8",
+							"value": "True",
+							"category": "Default"
+						},
+						{
+							"name": "Character",
+							"type": "APawn*",
+							"value": "None",
+							"category": "Context"
+						},
+						{
+							"name": "Description",
+							"type": "FText",
+							"value": "",
+							"category": "Description"
+						},
+						{
+							"name": "IconColor",
+							"type": "FColor",
+							"value": "(B=138,G=138,R=255,A=255)",
+							"category": "Description"
+						},
+						{
+							"name": "IconName",
+							"type": "FName",
+							"value": "EditorStyle|ClassIcon.K2Node_VariableSet",
+							"category": "Description"
+						},
+						{
+							"name": "WantsToWalk",
+							"type": "bool",
+							"value": "True",
+							"category": "Default"
+						}
+					]
+				},
+				{
+					"name": "StateTreeBlueprintTaskWrapper",
+					"structType": "/Script/StateTreeModule.StateTreeBlueprintTaskWrapper",
+					"category": "Task",
+					"instanceId": "49F287BB42E63F5A686B25BE84B81E5B",
+					"properties": [
+						{
+							"name": "bCanEditConsideredForCompletion",
+							"type": "uint8",
+							"value": "True"
+						},
+						{
+							"name": "bConsideredForCompletion",
+							"type": "uint8",
+							"value": "True"
+						},
+						{
+							"name": "BindingsBatch",
+							"type": "FStateTreeIndex16",
+							"value": "(Value=65535)"
+						},
+						{
+							"name": "bTaskEnabled",
+							"type": "uint8",
+							"value": "True"
+						},
+						{
+							"name": "ExecutionRuntimeTemplateIndex",
+							"type": "FStateTreeIndex16",
+							"value": "(Value=65535)"
+						},
+						{
+							"name": "InstanceDataHandle",
+							"type": "FStateTreeDataHandle",
+							"value": "(Index=65535,StateHandle=(Index=65535))"
+						},
+						{
+							"name": "InstanceTemplateIndex",
+							"type": "FStateTreeIndex16",
+							"value": "(Value=65535)"
+						},
+						{
+							"name": "Name",
+							"type": "FName",
+							"value": "None"
+						},
+						{
+							"name": "OutputBindingsBatch",
+							"type": "FStateTreeIndex16",
+							"value": "(Value=65535)"
+						},
+						{
+							"name": "TaskClass",
+							"type": "TSubclassOf<UStateTreeTaskBlueprintBase>",
+							"value": "/Script/Engine.BlueprintGeneratedClass'/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/TasksAndConditions/STT_FindRandomLocation.STT_FindRandomLocation_C'"
+						},
+						{
+							"name": "TaskFlags",
+							"type": "uint8",
+							"value": "0"
+						},
+						{
+							"name": "TransitionHandlingPriority",
+							"type": "EStateTreeTransitionPriority",
+							"value": "Normal"
+						}
+					],
+					"instanceObjectClass": "/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/TasksAndConditions/STT_FindRandomLocation.STT_FindRandomLocation_C",
+					"instanceObjectProperties": [
+						{
+							"name": "AIReference",
+							"type": "AAIController*",
+							"value": "None",
+							"category": "Context"
+						},
+						{
+							"name": "bCanEditConsideredForCompletion",
+							"type": "uint8",
+							"value": "True",
+							"category": "Default"
+						},
+						{
+							"name": "bConsideredForCompletion",
+							"type": "uint8",
+							"value": "True",
+							"category": "Default"
+						},
+						{
+							"name": "bShouldCallTickOnlyOnEvents",
+							"type": "uint8",
+							"value": "False",
+							"category": "Default"
+						},
+						{
+							"name": "bShouldCopyBoundPropertiesOnExitState",
+							"type": "uint8",
+							"value": "True",
+							"category": "Default"
+						},
+						{
+							"name": "bShouldCopyBoundPropertiesOnTick",
+							"type": "uint8",
+							"value": "True",
+							"category": "Default"
+						},
+						{
+							"name": "bShouldStateChangeOnReselect",
+							"type": "uint8",
+							"value": "True",
+							"category": "Default"
+						},
+						{
+							"name": "Description",
+							"type": "FText",
+							"value": "",
+							"category": "Description"
+						},
+						{
+							"name": "IconColor",
+							"type": "FColor",
+							"value": "(B=74,G=194,R=139,A=255)",
+							"category": "Description"
+						},
+						{
+							"name": "IconName",
+							"type": "FName",
+							"value": "EditorStyle|ShowFlagsMenu.Navigation",
+							"category": "Description"
+						},
+						{
+							"name": "Random Location",
+							"type": "FVector",
+							"value": "(X=0.000000,Y=0.000000,Z=0.000000)",
+							"category": "Output"
+						},
+						{
+							"name": "SearchRadius",
+							"type": "float",
+							"value": "1000.000000",
+							"category": "Default"
+						}
+					]
+				}
+			],
+			"transitions": [],
+			"children": [
+				{
+					"name": "MoveToRandomLocation",
+					"stateGuid": "F6041A8F4A80E33A66212FB92492E0C4",
+					"type": "State",
+					"selectionBehavior": "TrySelectChildrenInOrder",
+					"enterConditions": [],
+					"tasks": [
+						{
+							"name": "StateTreeMoveToTask",
+							"structType": "/Script/GameplayStateTreeModule.StateTreeMoveToTask",
+							"category": "Task",
+							"instanceId": "2DD91C2346C5903CFC265EBDEFAB0564",
+							"properties": [
+								{
+									"name": "bCanEditConsideredForCompletion",
+									"type": "uint8",
+									"value": "True"
+								},
+								{
+									"name": "bConsideredForCompletion",
+									"type": "uint8",
+									"value": "True"
+								},
+								{
+									"name": "BindingsBatch",
+									"type": "FStateTreeIndex16",
+									"value": "(Value=65535)"
+								},
+								{
+									"name": "bSavedShouldCallTick",
+									"type": "bool",
+									"value": "False"
+								},
+								{
+									"name": "bTaskEnabled",
+									"type": "uint8",
+									"value": "True"
+								},
+								{
+									"name": "ExecutionRuntimeTemplateIndex",
+									"type": "FStateTreeIndex16",
+									"value": "(Value=65535)"
+								},
+								{
+									"name": "InstanceDataHandle",
+									"type": "FStateTreeDataHandle",
+									"value": "(Index=65535,StateHandle=(Index=65535))"
+								},
+								{
+									"name": "InstanceTemplateIndex",
+									"type": "FStateTreeIndex16",
+									"value": "(Value=65535)"
+								},
+								{
+									"name": "Name",
+									"type": "FName",
+									"value": "None"
+								},
+								{
+									"name": "OutputBindingsBatch",
+									"type": "FStateTreeIndex16",
+									"value": "(Value=65535)"
+								},
+								{
+									"name": "TransitionHandlingPriority",
+									"type": "EStateTreeTransitionPriority",
+									"value": "Normal"
+								}
+							],
+							"instanceProperties": [
+								{
+									"name": "AcceptableRadius",
+									"type": "float",
+									"value": "5.000000",
+									"category": "Parameter"
+								},
+								{
+									"name": "AIController",
+									"type": "TObjectPtr<AAIController>",
+									"value": "None",
+									"category": "Context"
+								},
+								{
+									"name": "bAllowPartialPath",
+									"type": "bool",
+									"value": "True",
+									"category": "Parameter"
+								},
+								{
+									"name": "bAllowStrafe",
+									"type": "bool",
+									"value": "False",
+									"category": "Parameter"
+								},
+								{
+									"name": "bProjectGoalLocation",
+									"type": "bool",
+									"value": "True",
+									"category": "Parameter"
+								},
+								{
+									"name": "bReachTestIncludesAgentRadius",
+									"type": "bool",
+									"value": "True",
+									"category": "Parameter"
+								},
+								{
+									"name": "bReachTestIncludesGoalRadius",
+									"type": "bool",
+									"value": "True",
+									"category": "Parameter"
+								},
+								{
+									"name": "bRequireNavigableEndLocation",
+									"type": "bool",
+									"value": "True",
+									"category": "Parameter"
+								},
+								{
+									"name": "bTrackMovingGoal",
+									"type": "bool",
+									"value": "True",
+									"category": "Parameter"
+								},
+								{
+									"name": "Destination",
+									"type": "FVector",
+									"value": "(X=0.000000,Y=0.000000,Z=0.000000)",
+									"category": "Parameter"
+								},
+								{
+									"name": "DestinationMoveTolerance",
+									"type": "float",
+									"value": "0.000000",
+									"category": "Parameter"
+								},
+								{
+									"name": "FilterClass",
+									"type": "TSubclassOf<UNavigationQueryFilter>",
+									"value": "None",
+									"category": "Parameter"
+								},
+								{
+									"name": "MoveToTask",
+									"type": "TObjectPtr<UAITask_MoveTo>",
+									"value": "None"
+								},
+								{
+									"name": "TargetActor",
+									"type": "TObjectPtr<AActor>",
+									"value": "None",
+									"category": "Parameter"
+								},
+								{
+									"name": "TaskOwner",
+									"type": "TScriptInterface",
+									"value": "None"
+								}
+							]
+						}
+					],
+					"transitions": [
+						{
+							"transitionId": "9BCC12634434D018A96CC69985281B3C",
+							"trigger": "OnStateCompleted",
+							"targetStateName": "(next state)",
+							"linkType": "NextState",
+							"priority": "Normal",
+							"conditions": []
+						}
+					],
+					"children": []
+				},
+				{
+					"name": "Wait",
+					"stateGuid": "992BFA8E482E731F798113A56A2BAE99",
+					"type": "State",
+					"selectionBehavior": "TrySelectChildrenInOrder",
+					"enterConditions": [],
+					"tasks": [
+						{
+							"name": "StateTreeDelayTask",
+							"structType": "/Script/StateTreeModule.StateTreeDelayTask",
+							"category": "Task",
+							"instanceId": "341970584A15FFF286F0FC93BB2F469D",
+							"properties": [
+								{
+									"name": "bCanEditConsideredForCompletion",
+									"type": "uint8",
+									"value": "True"
+								},
+								{
+									"name": "bConsideredForCompletion",
+									"type": "uint8",
+									"value": "True"
+								},
+								{
+									"name": "BindingsBatch",
+									"type": "FStateTreeIndex16",
+									"value": "(Value=65535)"
+								},
+								{
+									"name": "bTaskEnabled",
+									"type": "uint8",
+									"value": "True"
+								},
+								{
+									"name": "ExecutionRuntimeTemplateIndex",
+									"type": "FStateTreeIndex16",
+									"value": "(Value=65535)"
+								},
+								{
+									"name": "InstanceDataHandle",
+									"type": "FStateTreeDataHandle",
+									"value": "(Index=65535,StateHandle=(Index=65535))"
+								},
+								{
+									"name": "InstanceTemplateIndex",
+									"type": "FStateTreeIndex16",
+									"value": "(Value=65535)"
+								},
+								{
+									"name": "Name",
+									"type": "FName",
+									"value": "None"
+								},
+								{
+									"name": "OutputBindingsBatch",
+									"type": "FStateTreeIndex16",
+									"value": "(Value=65535)"
+								},
+								{
+									"name": "TransitionHandlingPriority",
+									"type": "EStateTreeTransitionPriority",
+									"value": "Normal"
+								}
+							],
+							"instanceProperties": [
+								{
+									"name": "bRunForever",
+									"type": "bool",
+									"value": "False",
+									"category": "Parameter"
+								},
+								{
+									"name": "Duration",
+									"type": "float",
+									"value": "3.000000",
+									"category": "Parameter"
+								},
+								{
+									"name": "RandomDeviation",
+									"type": "float",
+									"value": "0.000000",
+									"category": "Parameter"
+								}
+							]
+						}
+					],
+					"transitions": [
+						{
+							"transitionId": "6B6E90404D1CF0F538FC3FB49088E6CC",
+							"trigger": "OnStateSucceeded",
+							"targetStateName": "(tree succeeded)",
+							"linkType": "Succeeded",
+							"priority": "Normal",
+							"conditions": []
+						}
+					],
+					"children": []
+				}
+			]
+		}
+	],
+	"bindings": [
+		{
+			"sourcePath": "",
+			"targetPath": "AIController"
+		},
+		{
+			"sourcePath": "",
+			"targetPath": "AIReference"
+		},
+		{
+			"sourcePath": "",
+			"targetPath": "Character"
+		},
+		{
+			"sourcePath": "Random Location",
+			"targetPath": "Destination"
+		}
+	],
+	"dependencies": [
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/TasksAndConditions/STT_FindRandomLocation",
+			"assetName": "STT_FindRandomLocation",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/TasksAndConditions/STT_SetCharacterInputState",
+			"assetName": "STT_SetCharacterInputState",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/AIModule",
+			"assetName": "AIModule",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/GameplayStateTreeModule",
+			"assetName": "GameplayStateTreeModule",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/StateTreeEditorModule",
+			"assetName": "StateTreeEditorModule",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/StateTreeModule",
+			"assetName": "StateTreeModule",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": ""
+		}
+	],
+	"assetType": "StateTree",
+	"coverage":
+	{
+		"states":
+		{
+			"total": 3,
+			"documented": 3
+		},
+		"specialized":
+		{
+			"applicable": [
+				"ST.TasksPerState",
+				"ST.Transitions",
+				"ST.Conditions",
+				"ST.InstancedStructTypes"
+			],
+			"documented": [
+				"ST.TasksPerState",
+				"ST.Transitions",
+				"ST.Conditions",
+				"ST.InstancedStructTypes"
+			]
+		},
+		"overallPct": 100
+	}
+}

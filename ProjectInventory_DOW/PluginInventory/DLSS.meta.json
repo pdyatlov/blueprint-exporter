@@ -1,0 +1,78 @@
+{
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "c29c9b66ba4a2e6f18d16f0956c34bdd"
+	},
+	"name": "DLSS",
+	"pluginType": "Project",
+	"baseDir": "Plugins/Marketplace/DLSS",
+	"enabled": true,
+	"version": 57,
+	"versionName": "8.5.0-NGX310.5.0",
+	"friendlyName": "NVIDIA DLSS Super Resolution/Ray Reconstruction/DLAA",
+	"description": "DLSS Super Resolution boosts frame rates by rendering fewer pixels and using AI to output high resolution frames. DLSS Ray Reconstruction enhances image quality by generating high-quality pixels between sampled rays for intensive ray traced content. DLAA is an AI-based anti-aliasing mode to improve image quality.",
+	"category": "Rendering",
+	"createdBy": "NVIDIA",
+	"createdByURL": "https://developer.nvidia.com/dlss",
+	"supportURL": "mailto:DLSS-Support@nvidia.com",
+	"canContainContent": true,
+	"installed": true,
+	"modules": [
+		{
+			"name": "DLSS",
+			"hostType": "Runtime",
+			"loadingPhase": "PostEngineInit"
+		},
+		{
+			"name": "DLSSBlueprint",
+			"hostType": "Runtime",
+			"loadingPhase": "PostConfigInit"
+		},
+		{
+			"name": "DLSSEditor",
+			"hostType": "Editor",
+			"loadingPhase": "PostEngineInit"
+		},
+		{
+			"name": "DLSSUtility",
+			"hostType": "Runtime",
+			"loadingPhase": "PostConfigInit"
+		},
+		{
+			"name": "NGXD3D11RHI",
+			"hostType": "Runtime",
+			"loadingPhase": "PostEngineInit"
+		},
+		{
+			"name": "NGXD3D12RHI",
+			"hostType": "Runtime",
+			"loadingPhase": "PostEngineInit"
+		},
+		{
+			"name": "NGXRHI",
+			"hostType": "Runtime",
+			"loadingPhase": "PostEngineInit"
+		},
+		{
+			"name": "NGXVulkanRHI",
+			"hostType": "Runtime",
+			"loadingPhase": "PostEngineInit"
+		},
+		{
+			"name": "NGXVulkanRHIPreInit",
+			"hostType": "Runtime",
+			"loadingPhase": "PostConfigInit"
+		}
+	],
+	"pluginDependencies": [
+		{
+			"name": "StreamlineNGXCommon",
+			"enabled": true,
+			"optional": false
+		}
+	]
+}

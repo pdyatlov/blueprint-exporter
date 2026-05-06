@@ -1,0 +1,273 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "3ae98b4d58ed1426facc34159ca9f55b"
+	},
+	"assetPath": "/Game/_ThirdParty/GASP_example/MetaHumans/Common/Face/Neck_CtrlRig.Neck_CtrlRig",
+	"assetName": "Neck_CtrlRig",
+	"blueprintGuid": "5063ED40494D62DF65EAF1AC10B1DBF7",
+	"blueprintType": "Normal",
+	"blueprintSubclass": "ControlRigBlueprint",
+	"parentClass":
+	{
+		"className": "ControlRig",
+		"classPath": "/Script/ControlRig.ControlRig",
+		"isNative": true,
+		"moduleName": "/Script/ControlRig"
+	},
+	"implementedInterfaces": [],
+	"variables": [
+		{
+			"variableName": "neckCorrMultD",
+			"variableGuid": "8CFD447443C586118949D3B1B79910E9",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "1.000000",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "Head Turn Left Right Corrective Multiplier",
+			"metaData":
+			{
+				"ClampMax": "1",
+				"ClampMin": "0",
+				"MultiLine": "true",
+				"tooltip": "Head Turn Left Right Corrective Multiplier",
+				"UIMax": "1",
+				"UIMin": "0"
+			}
+		},
+		{
+			"variableName": "neckCorrMultM",
+			"variableGuid": "EFC6EEF447756DB12DD4978912ADE87D",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "1.000000",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "Head Tilt Left Right Corrective Multiplier",
+			"metaData":
+			{
+				"MultiLine": "true",
+				"tooltip": "Head Tilt Left Right Corrective Multiplier"
+			}
+		},
+		{
+			"variableName": "neckCorrMultU",
+			"variableGuid": "51A91D76434A781C964F989265B8F510",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "1.000000",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "Head Turn Up Down Corrective Multiplier",
+			"metaData":
+			{
+				"MultiLine": "true",
+				"tooltip": "Head Turn Up Down Corrective Multiplier"
+			}
+		}
+	],
+	"functions": [],
+	"macros": [],
+	"eventGraph":
+	{
+		"graphName": "EventGraph",
+		"graphGuid": "F91B9DA8407CFD299C754597FBCD70A0",
+		"graphType": "EventGraph",
+		"schemaClass": "/Script/ControlRigDeveloper.ControlRigGraphSchema",
+		"nodes": []
+	},
+	"constructionScript":
+	{
+		"graphName": "",
+		"graphGuid": "",
+		"graphType": "",
+		"schemaClass": "",
+		"nodes": []
+	},
+	"components": [],
+	"cdoProperties": [
+		{
+			"propertyName": "DynamicHierarchy",
+			"propertyType": "TObjectPtr<URigHierarchy>",
+			"value": "/Script/ControlRig.RigHierarchy'/Game/_ThirdParty/GASP_example/MetaHumans/Common/Face/Neck_CtrlRig.Default__Neck_CtrlRig_C:DynamicHierarchy'"
+		},
+		{
+			"propertyName": "Influences",
+			"propertyType": "FRigInfluenceMapPerEvent",
+			"value": "(Maps=((EventName=\"Forwards Solve\")),EventToIndex=((\"Forwards Solve\", 0)))"
+		},
+		{
+			"propertyName": "ShapeLibraries",
+			"propertyType": "TArray",
+			"value": "(\"/ControlRig/Controls/DefaultGizmoLibrary.DefaultGizmoLibrary\")"
+		}
+	],
+	"additionalGraphs": [],
+	"stateMachines": [],
+	"widgetTree": [],
+	"dependencies": [
+		{
+			"assetPath": "/ControlRig/Controls/DefaultGizmoLibrary",
+			"assetName": "DefaultGizmoLibrary",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/MetaHumans/Common/Face/SKM_Face_Preview",
+			"assetName": "SKM_Face_Preview",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/ControlRig",
+			"assetName": "ControlRig",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/ControlRig.ControlRig",
+			"assetName": "ControlRig",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": "Parent class"
+		},
+		{
+			"assetPath": "/Script/ControlRigDeveloper",
+			"assetName": "ControlRigDeveloper",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/RigVM",
+			"assetName": "RigVM",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/RigVMDeveloper",
+			"assetName": "RigVMDeveloper",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		}
+	],
+	"metaData":
+	{
+	},
+	"assetType": "ControlRigBlueprint",
+	"coverage":
+	{
+		"variables":
+		{
+			"total": 3,
+			"documented": 3
+		},
+		"functions":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"components":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"graphs":
+		{
+			"total": 2,
+			"documented": 2
+		},
+		"cdoProperties":
+		{
+			"total": 3,
+			"documented": 3
+		},
+		"specialized":
+		{
+			"applicable": [],
+			"documented": []
+		},
+		"overallPct": 100
+	}
+}

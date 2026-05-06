@@ -1,0 +1,20 @@
+{
+  "_comment": "M28.5.1 add_eqs_option post-apply inspection + soak. First M28.5 EQS write-side op. Duplicates the empty EQS_BpxTestBasic fixture into a scratch path and appends one option with an EnvQueryGenerator_ActorsOfClass generator. The inspect gate asserts the rendered .deep.md surfaces the generator's class name via the M15 EnvQueryDeepRenderer (which walks UEnvQuery::Options per-option + per-generator UPROPERTY tables); the soak gate asserts md5 stability across 2 rounds, proving explicit FName on each NewObject (`BpxEqsOption_<idx>` / `BpxEqsGen_<idx>_<class>`) overrides NewObject's default counter-suffix drift. EQS classes have zero FGuid::NewGuid() usage per the M28.5.0 research so this is the only drift source that needed closing.",
+  "op": "add_eqs_option",
+  "source_fixture": "/Game/TestBlueprints/EQS_BpxTestBasic",
+  "scratch_path":   "/Game/TestBlueprints/EQS_BpxTest_InspectScratch",
+  "inspect_path":   "/Game/TestBlueprints/EQS_BpxTest_InspectScratch",
+  "plan_kwargs": {
+    "eqs_path":             "/Game/TestBlueprints/EQS_BpxTest_InspectScratch",
+    "generator_class_path": "/Script/AIModule.EnvQueryGenerator_ActorsOfClass"
+  },
+  "expected_md": [],
+  "not_expected_md": [],
+  "expected_deep": [
+    "EnvQueryGenerator_ActorsOfClass"
+  ],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2
+  }
+}

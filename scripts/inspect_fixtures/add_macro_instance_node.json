@@ -1,0 +1,17 @@
+{
+  "_comment": "M28.13 add_macro_instance_node post-apply soak. Duplicates BP_BpxTestGraphNodesCalls into a scratch path and spawns a UK2Node_MacroInstance pointed at /Engine/EditorBlueprintResources/StandardMacros.StandardMacros:ForEachLoop onto the default EventGraph at a fixed position. ForEachLoop has a well-defined Tunnel/Result signature (execute / Array / Array Element / Array Index / LoopBody / Completed) so SeedPinGuidsForNode after AllocateDefaultPins produces stable PinIds. The soak gate asserts md5 stability across 2 rounds, proving SeedGuidFromJoined(':graph:EventGraph:macro:/Engine/EditorBlueprintResources/StandardMacros.StandardMacros:ForEachLoop:512,-48') + SeedPinGuidsForNode overrides UEdGraphNode::CreateNewGuid + UEdGraphPin::CreatePin's FGuid::NewGuid() calls that fire inside the inherited UK2Node_Tunnel::AllocateDefaultPins pin-mirror walk. skip_inspect=true because the rendered .deep.md surfaces macro instances inline as part of the EventGraph dump in a form that isn't grep-friendly.",
+  "op": "add_macro_instance_node",
+  "skip_inspect": true,
+  "source_fixture": "/Game/TestBlueprints/BP_BpxTestGraphNodesCalls",
+  "scratch_path":   "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_MacroForEach",
+  "plan_kwargs": {
+    "bp_path":    "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_MacroForEach",
+    "graph_name": "EventGraph",
+    "macro_path": "/Engine/EditorBlueprintResources/StandardMacros.StandardMacros:ForEachLoop",
+    "position":   [512, -48]
+  },
+  "soak": {
+    "rounds": 2,
+    "stable_keys": ["node_guid"]
+  }
+}

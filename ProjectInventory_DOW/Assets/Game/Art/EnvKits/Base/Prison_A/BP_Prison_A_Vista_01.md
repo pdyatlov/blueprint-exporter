@@ -1,0 +1,666 @@
+# BP_Prison_A_Vista_01
+
+## Identity
+
+| Field | Value |
+|---|---|
+| Asset path | `/Game/Art/EnvKits/Base/Prison_A/BP_Prison_A_Vista_01.BP_Prison_A_Vista_01` |
+| Asset name | `BP_Prison_A_Vista_01` |
+| Subclass | `Blueprint` |
+| Blueprint type | `Normal` |
+| Engine version | `5.7.4-573521+++UE_DOW+main` |
+| Plugin version | `1.28.6` |
+
+## Inheritance
+
+- Parent class: `Actor` (`/Script/Engine.Actor`, native, module `/Script/Engine`)
+- Interfaces: _none_
+
+## Variables (0)
+
+_None._
+
+## Functions (0)
+
+_None._
+
+## Macros (0)
+
+_None._
+
+## Components (1)
+
+- `SharedRoot` — `SceneComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_11_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_12_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWallInnerCorner_A_Ceiling_20_4_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_20_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_14_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_21_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_28_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_29_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWallInnerCorner_A_20_2_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_30_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_31_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_37_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_38_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_39_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_29_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_30_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_31_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_32_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_33_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_29_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_30_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_31_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorInnerCorner_A_20_2_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingInnerCorner_A_20_2_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_114_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_194_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_195_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_91_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_190_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_191_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_235_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_236_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_204_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_205_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_105_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_106_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_105_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_106_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_22_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_35_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_36_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_14_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_42_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_43_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_35_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_36_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_37_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_38_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_23_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_24_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_23_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_24_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_10_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_5_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWallInnerCorner_A_Ceiling_20_3_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_15_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_13_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_6_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_11_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_17_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWallInnerCorner_A_20_01_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_18_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_19_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_28_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_27_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_11_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_20_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_18_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_17_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_19_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_12_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_12_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_19_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_20_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorInnerCorner_A_20_01_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingInnerCorner_A_20_01_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_37_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_15_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_44_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_45_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_37_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_38_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_39_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_40_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_25_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_26_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_25_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_26_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_13_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_13_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_13_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_11_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_6_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_6_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_5_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_5_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_9_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_32_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_8_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_8_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWallOuterCorner_A_20_01_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_14_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_14_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_15_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_16_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_16_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_18_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_23_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_16_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_15_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_10_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_21_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_22_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_20_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_13_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWallOuterCorner_A_Wall_20_01_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_7_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_10_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_11_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_8_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_9_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWallOuterCorner_A_Wall_20_2_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWallOuterCorner_A_Ceiling_20_2_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_2_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_01_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_8_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_20_4_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_12_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_20_3_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWallInnerCorner_A_Ceiling_20_2_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_20_2_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWallInnerCorner_A_Ceiling_20_01_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWallOuterCorner_A_Ceiling_20_01_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_9_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_6_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWallOuterCorner_A_20_2_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_17_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_73_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_16_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_72_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_49_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_48_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_47_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_46_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_75_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_39_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_77_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_78_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_43_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_81_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_44_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_80_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_41_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_42_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_42_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_41_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_40_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_40_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_45_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_39_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_40_10_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_28_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_27_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_39_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_30_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_45_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_29_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_27_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_28_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_29_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_30_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_85_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_84_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_82_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_83_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_50_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_80_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_81_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_35_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_78_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_79_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_86_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_87_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_83_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_84_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_43_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_44_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_43_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_44_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_63_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_106_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_107_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_48_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_116_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_117_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_129_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_130_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_109_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_110_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_67_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_68_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_67_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_68_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_50_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_9_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWallInnerCorner_A_Ceiling_20_10_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_65_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_66_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_67_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_110_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_111_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWallInnerCorner_A_20_6_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_112_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_113_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_35_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_36_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_22_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_113_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_114_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_115_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_116_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_117_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_133_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_134_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_135_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorInnerCorner_A_20_4_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingInnerCorner_A_20_4_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_64_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_108_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_109_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_49_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_118_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_119_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_131_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_132_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_111_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_112_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_69_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_70_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_69_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_70_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_73_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_72_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_120_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_121_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_54_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_124_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_125_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_141_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_142_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_125_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_126_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_73_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_74_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_74_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_72_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_71_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_118_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_119_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_53_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_122_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_123_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_139_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_140_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_123_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_124_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_71_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_72_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_71_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_51_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_52_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWallInnerCorner_A_Ceiling_20_11_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_68_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_69_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_70_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_114_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_115_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWallInnerCorner_A_20_7_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_116_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_117_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_120_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_121_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_23_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_118_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_119_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_120_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_121_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_122_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_136_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_137_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_138_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorInnerCorner_A_20_5_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingInnerCorner_A_20_5_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_62_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_104_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_105_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_47_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_114_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_115_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_127_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_128_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_107_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_108_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_65_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_66_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_65_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_66_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_61_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_102_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_103_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_46_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_112_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_113_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_125_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_126_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_105_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_106_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_63_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_64_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_63_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_64_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_60_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_100_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_101_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_45_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_110_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_111_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_123_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_124_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_103_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_104_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_61_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_62_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_61_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_62_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_57_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_42_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_43_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_58_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_98_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_44_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_59_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_99_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_100_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_101_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_104_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_105_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_94_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_95_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_96_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_97_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_98_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_99_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_97_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_98_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_99_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_117_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_100_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_118_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_101_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_119_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_102_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_120_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_53_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_121_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_54_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_122_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_40_15_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_55_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_56_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_53_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_59_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_54_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_60_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_55_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_56_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_59_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_60_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_106_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_107_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_108_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_109_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_55_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_90_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_91_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_40_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_92_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_93_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_113_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_114_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_93_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_94_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_47_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_48_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_47_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_48_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_54_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_88_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_89_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_39_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_90_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_91_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_111_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_112_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_91_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_92_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_39_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_46_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_40_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_46_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_56_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_92_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_93_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_41_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_102_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_103_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_115_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_116_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_95_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_96_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_57_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_58_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_57_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_58_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_40_11_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_50_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_51_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_52_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_49_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_49_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_52_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_51_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_50_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_97_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_94_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_95_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_96_StaticMeshComponent0` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh1` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_112_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_119_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_118_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_109_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_108_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_131_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_64_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_111_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_70_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_132_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_69_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_70_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_69_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh2` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh3` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh4` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh5` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh6` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh7` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh8` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh9` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh10` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh11` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh12` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh13` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh14` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_47_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_92_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_54_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_90_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_39_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_88_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_89_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_91_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_91_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_39_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_112_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_111_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_46_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_46_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_40_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_10_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_6_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_11_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_17_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_11_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_11_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh15` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh16` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_26_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh17` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_26_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh18` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh19` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh20` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_49_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh21` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh22` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh23` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh24` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh25` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh26` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh27` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh28` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh29` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh30` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh31` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh32` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh33` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh34` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh35` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh36` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh37` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh38` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh39` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh40` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh41` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh42` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh43` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh44` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh45` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_47_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh46` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh47` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_46_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_11_StaticMeshComponent3` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_10_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh48` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh49` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh50` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh51` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh52` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh53` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_26_StaticMeshComponent3` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_26_StaticMeshComponent4` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_11_StaticMeshComponent4` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_39_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_111_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_92_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_88_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_54_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_89_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_91_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorOuterEdge_A_20_46_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingOuterEdge_A_20_40_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `SM_Floor_A_20_112_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_39_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_91_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_90_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_39_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_40_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_38_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_39_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorTrim_A_20_40_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_37_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_23_StaticMeshComponent3` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_23_StaticMeshComponent4` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh54` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh55` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh56` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh57` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh58` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_37_StaticMeshComponent3` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_23_StaticMeshComponent5` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Wall_40x20_23_StaticMeshComponent6` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_37_StaticMeshComponent4` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_37_StaticMeshComponent5` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_37_StaticMeshComponent6` — `StaticMeshComponent` @ socket `None`
+  - `SM_FloorWall_A_20_37_StaticMeshComponent7` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_15_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_CeilingWall_A_Ceiling_40_15_StaticMeshComponent2` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_49_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `SM_Ceiling_A_20_48_StaticMeshComponent1` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh59` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh60` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh61` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh62` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh63` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh64` — `StaticMeshComponent` @ socket `None`
+  - `StaticMesh65` — `StaticMeshComponent` @ socket `None`
+  - `SpotLight` — `SpotLightComponent` @ socket `None`
+
+## Class Default Object (2)
+
+- `bCanBeDamaged` (`uint8`) = `False`
+- `PrimaryActorTick` (`FActorTickFunction`) = `(bStartWithTickEnabled=False)`
+
+## Graphs
+
+- Event graph: `EventGraph` (3 nodes)
+- Construction script: `UserConstructionScript` (1 nodes)
+- Additional graphs: _none_
+
+## References
+
+Hard refs out (28):
+- `/Engine/BasicShapes/Cube` [asset]
+- `/Engine/EditorResources/LightIcons/S_LightError` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/Materials/MI_Prison_A_Emissive_Lights_A_Warm` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_Ceiling_A_20_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_CeilingEdge_A_20_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_CeilingEdge_A_40_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_CeilingInnerCorner_A_20_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_CeilingOuterEdge_A_20_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_CeilingWall_A_Wall_20_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_CeilingWall_A_Wall_40x20_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_CeilingWallInnerCorner_A_Ceiling_20_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_CeilingWallInnerCorner_A_Wall_20_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_CeilingWallOuterCorner_A_Ceiling_20_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_CeilingWallOuterCorner_A_Wall_20_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_CellRoom_A_Outer_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_Floor_A_20_02` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_Floor_A_40_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_FloorInnerCorner_A_20_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_FloorOuterEdge_A_20_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_FloorTrim_A_20_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_FloorTrimInnerCorner_A_20_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_FloorTrimOuterCorner_A_20_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_FloorWall_A_20_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_FloorWallInnerCorner_A_20_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_FloorWallOuterCorner_A_20_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_Pilaster_A_01` [asset]
+- `/Game/Art/EnvKits/Base/Prison_A/SM_Vista_CellRoomDoor_A_01` [asset]
+- `/Script/Engine.Actor` [native]
+
+Soft refs out (0):
+- _none_
+
+## Metadata & Flags
+
+- Blueprint type: `Normal`
+- Subclass: `Blueprint`
+- Custom metadata: _none_
+

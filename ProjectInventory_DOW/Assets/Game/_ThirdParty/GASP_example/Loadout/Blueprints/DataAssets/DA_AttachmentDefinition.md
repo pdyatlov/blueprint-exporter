@@ -1,0 +1,75 @@
+# DA_AttachmentDefinition
+
+## Identity
+
+| Field | Value |
+|---|---|
+| Asset path | `/Game/_ThirdParty/GASP_example/Loadout/Blueprints/DataAssets/DA_AttachmentDefinition.DA_AttachmentDefinition` |
+| Asset name | `DA_AttachmentDefinition` |
+| Subclass | `Blueprint` |
+| Blueprint type | `Normal` |
+| Engine version | `5.7.4-573521+++UE_DOW+main` |
+| Plugin version | `1.28.6` |
+
+## Inheritance
+
+- Parent class: `PrimaryDataAsset` (`/Script/Engine.PrimaryDataAsset`, native, module `/Script/Engine`)
+- Interfaces: _none_
+
+## Variables (15)
+
+| Name | Type | Default | Category | Replication | RepNotify | Flags |
+|---|---|---|---|---|---|---|
+| `AttachmentMesh` | `object<SkeletalMesh>` | `None` | `Spawning` | — | — | InstanceEditable |
+| `DamageBias` | `real<double>` | `0.000000` | `Weapon Stat Modifiers` | — | — | InstanceEditable |
+| `FireRateBias` | `real<double>` | `0.000000` | `Weapon Stat Modifiers` | — | — | InstanceEditable |
+| `RecoilStrengthBias` | `real<double>` | `0.000000` | `Weapon Stat Modifiers` | — | — | InstanceEditable |
+| `HipfireSpreadBias` | `real<double>` | `0.000000` | `Weapon Stat Modifiers` | — | — | InstanceEditable |
+| `DamageDropOffRangeBias` | `real<double>` | `0.000000` | `Weapon Stat Modifiers` | — | — | InstanceEditable |
+| `ReloadSpeedMultBias` | `real<double>` | `0.000000` | `Weapon Stat Modifiers` | — | — | InstanceEditable |
+| `ADS SpeedMultBias` | `real<double>` | `0.000000` | `Weapon Stat Modifiers` | — | — | InstanceEditable |
+| `EquipSpeedMultBias` | `real<double>` | `0.000000` | `Weapon Stat Modifiers` | — | — | InstanceEditable |
+| `MagSizeBias` | `real<double>` | `0.000000` | `Weapon Stat Modifiers` | — | — | InstanceEditable |
+| `MagReserveBias` | `real<double>` | `0.000000` | `Weapon Stat Modifiers` | — | — | InstanceEditable |
+| `Name` | `text` | — | `Info` | — | — | InstanceEditable |
+| `Icon` | `object<Texture2D>` | `None` | `Info` | — | — | InstanceEditable |
+| `AttachmentSlot` | `byte<EAttachmentSlot>` | `NewEnumerator0` | `Info` | — | — | InstanceEditable |
+| `(REMOVE) AttachmentSocketName` | `name` | `None` | `Spawning` | — | — | InstanceEditable |
+
+## Functions (0)
+
+_None._
+
+## Macros (0)
+
+_None._
+
+## Components (0)
+
+_None (not an Actor Blueprint, or no SCS root)._
+
+## Class Default Object (0) — DataAsset
+
+_No authored overrides found on the CDO. `DataAsset` Blueprints typically author their payload here — if this BP is meant to differ from its parent class, this is a coverage gap._
+
+## Graphs
+
+- Event graph: `EventGraph` (0 nodes)
+- Construction script: `` (0 nodes)
+- Additional graphs: _none_
+
+## References
+
+Hard refs out (2):
+- `/Game/_ThirdParty/GASP_example/Loadout/Enums/EAttachmentSlot` [asset]
+- `/Script/Engine.PrimaryDataAsset` [native]
+
+Soft refs out (0):
+- _none_
+
+## Metadata & Flags
+
+- Blueprint type: `Normal`
+- Subclass: `Blueprint`
+- Custom metadata: _none_
+

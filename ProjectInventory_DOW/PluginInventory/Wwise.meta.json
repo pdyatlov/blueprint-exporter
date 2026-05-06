@@ -1,0 +1,169 @@
+{
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "19b2a47107cb42d02806b6364b7f65ec"
+	},
+	"name": "Wwise",
+	"pluginType": "Project",
+	"baseDir": "Plugins/Wwise",
+	"enabled": true,
+	"version": 202514199,
+	"versionName": "2025.1.5.9095.4199",
+	"friendlyName": "Wwise Unreal Engine Integration",
+	"description": "Wwise integration for Unreal Engine",
+	"category": "Audio",
+	"createdBy": "Audiokinetic, Inc.",
+	"createdByURL": "http://audiokinetic.com",
+	"canContainContent": true,
+	"modules": [
+		{
+			"name": "AkAudio",
+			"hostType": "Runtime",
+			"loadingPhase": "None"
+		},
+		{
+			"name": "AudiokineticTools",
+			"hostType": "Editor",
+			"loadingPhase": "Default"
+		},
+		{
+			"name": "Wwise",
+			"hostType": "Runtime",
+			"loadingPhase": "PreLoadingScreen"
+		},
+		{
+			"name": "WwiseAudioLinkEditor",
+			"hostType": "Editor",
+			"loadingPhase": "None"
+		},
+		{
+			"name": "WwiseAudioLinkRuntime",
+			"hostType": "Runtime",
+			"loadingPhase": "None"
+		},
+		{
+			"name": "WwiseConcurrency",
+			"hostType": "Runtime",
+			"loadingPhase": "None"
+		},
+		{
+			"name": "WwiseEditorUtils",
+			"hostType": "Editor",
+			"loadingPhase": "None"
+		},
+		{
+			"name": "WwiseEngineUtils",
+			"hostType": "Runtime",
+			"loadingPhase": "None"
+		},
+		{
+			"name": "WwiseFileHandler",
+			"hostType": "Runtime",
+			"loadingPhase": "None"
+		},
+		{
+			"name": "WwiseObjectUtils",
+			"hostType": "Runtime",
+			"loadingPhase": "None"
+		},
+		{
+			"name": "WwiseObstructionOcclusion",
+			"hostType": "Runtime",
+			"loadingPhase": "None"
+		},
+		{
+			"name": "WwisePackaging",
+			"hostType": "Runtime",
+			"loadingPhase": "None"
+		},
+		{
+			"name": "WwisePackagingEditor",
+			"hostType": "Editor",
+			"loadingPhase": "None"
+		},
+		{
+			"name": "WwisePackagingRuntime",
+			"hostType": "Runtime",
+			"loadingPhase": "None"
+		},
+		{
+			"name": "WwiseProcessing",
+			"hostType": "Runtime",
+			"loadingPhase": "None"
+		},
+		{
+			"name": "WwiseProjectDatabase",
+			"hostType": "UncookedOnly",
+			"loadingPhase": "None"
+		},
+		{
+			"name": "WwiseReconcile",
+			"hostType": "Editor",
+			"loadingPhase": "Default"
+		},
+		{
+			"name": "WwiseResourceCooker",
+			"hostType": "UncookedOnly",
+			"loadingPhase": "None"
+		},
+		{
+			"name": "WwiseResourceLoader",
+			"hostType": "Runtime",
+			"loadingPhase": "None"
+		},
+		{
+			"name": "WwiseSimpleExternalSource",
+			"hostType": "Runtime",
+			"loadingPhase": "None"
+		},
+		{
+			"name": "WwiseUtils",
+			"hostType": "Runtime",
+			"loadingPhase": "None"
+		}
+	],
+	"pluginDependencies": [
+		{
+			"name": "GeometryMode",
+			"enabled": true,
+			"optional": false
+		},
+		{
+			"name": "WwiseSoundEngine",
+			"enabled": true,
+			"optional": false
+		}
+	],
+	"nativeTypes": [
+		{
+			"classPath": "/Script/AkAudio.AkEventAnimNotify",
+			"parentClassPath": "/Script/Engine.AnimNotify",
+			"moduleName": "AkAudio",
+			"subsystem": "Anim",
+			"properties": [
+				{
+					"name": "AttachName",
+					"type": "FString",
+					"value": "",
+					"category": "Default"
+				},
+				{
+					"name": "Event",
+					"type": "TObjectPtr<UAkAudioEvent>",
+					"value": "None",
+					"category": "Default"
+				},
+				{
+					"name": "Follow",
+					"type": "bool",
+					"value": "True",
+					"category": "Default"
+				}
+			]
+		}
+	]
+}

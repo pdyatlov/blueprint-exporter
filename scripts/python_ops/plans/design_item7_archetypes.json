@@ -1,0 +1,73 @@
+{
+  "intended_outcome": "Test-run design.md item #7 chained-plan: register 4 archetype gameplay tags, author shared S_EnemyArchetype tuning struct, and create 4 per-archetype aggression-vs-distance curves with distinct shapes. Validates plan-validator + executor on a multi-module plan (gameplay_tags + uds + curves) crossing the .ini-config boundary plus the /Game/.uasset boundary.",
+  "risk_level": "high",
+  "operations": [
+    { "op": "add_gameplay_tag", "tag_name": "AI.Archetype.Rusher",     "dev_comment": "Rusher: closes distance, shotgun/SMG",         "source_ini": "AI.ini" },
+    { "op": "add_gameplay_tag", "tag_name": "AI.Archetype.Marksman",   "dev_comment": "Marksman: holds cover, long sight, headshots", "source_ini": "AI.ini" },
+    { "op": "add_gameplay_tag", "tag_name": "AI.Archetype.Suppresser", "dev_comment": "Suppresser: high fire rate, low accuracy",     "source_ini": "AI.ini" },
+    { "op": "add_gameplay_tag", "tag_name": "AI.Archetype.Flanker",    "dev_comment": "Flanker: ignores LoS, high mobility",          "source_ini": "AI.ini" },
+
+    { "op": "create_user_defined_struct", "uds_path": "/Game/_M28_test/Structs/S_EnemyArchetype" },
+
+    { "op": "add_uds_member", "uds_path": "/Game/_M28_test/Structs/S_EnemyArchetype", "member_name": "AggressionScore", "var_type_spec": "real", "default_value": "0.5"    },
+    { "op": "add_uds_member", "uds_path": "/Game/_M28_test/Structs/S_EnemyArchetype", "member_name": "CoverPreference", "var_type_spec": "real", "default_value": "0.5"    },
+    { "op": "add_uds_member", "uds_path": "/Game/_M28_test/Structs/S_EnemyArchetype", "member_name": "Mobility",        "var_type_spec": "real", "default_value": "1.0"    },
+    { "op": "add_uds_member", "uds_path": "/Game/_M28_test/Structs/S_EnemyArchetype", "member_name": "Accuracy",        "var_type_spec": "real", "default_value": "0.7"    },
+    { "op": "add_uds_member", "uds_path": "/Game/_M28_test/Structs/S_EnemyArchetype", "member_name": "SightRadius",     "var_type_spec": "real", "default_value": "1500.0" },
+    { "op": "add_uds_member", "uds_path": "/Game/_M28_test/Structs/S_EnemyArchetype", "member_name": "FireRate",        "var_type_spec": "real", "default_value": "1.0"    },
+
+    { "op": "remove_uds_member", "uds_path": "/Game/_M28_test/Structs/S_EnemyArchetype", "member_name": "BpxAutoBool" },
+
+    { "op": "create_curve_float", "curve_path": "/Game/_M28_test/Curves/Curve_Rusher_AggressionVsDistance"     },
+    { "op": "create_curve_float", "curve_path": "/Game/_M28_test/Curves/Curve_Marksman_AggressionVsDistance"   },
+    { "op": "create_curve_float", "curve_path": "/Game/_M28_test/Curves/Curve_Suppresser_AggressionVsDistance" },
+    { "op": "create_curve_float", "curve_path": "/Game/_M28_test/Curves/Curve_Flanker_AggressionVsDistance"    },
+
+    { "op": "set_curve_float_keys", "curve_path": "/Game/_M28_test/Curves/Curve_Rusher_AggressionVsDistance",
+      "keys": [
+        { "time": 0.0,    "value": 1.0 },
+        { "time": 500.0,  "value": 0.9 },
+        { "time": 1500.0, "value": 0.4 },
+        { "time": 3000.0, "value": 0.1 }
+      ]
+    },
+    { "op": "set_curve_float_keys", "curve_path": "/Game/_M28_test/Curves/Curve_Marksman_AggressionVsDistance",
+      "keys": [
+        { "time": 0.0,    "value": 0.2 },
+        { "time": 500.0,  "value": 0.4 },
+        { "time": 2000.0, "value": 0.9 },
+        { "time": 4000.0, "value": 1.0 }
+      ]
+    },
+    { "op": "set_curve_float_keys", "curve_path": "/Game/_M28_test/Curves/Curve_Suppresser_AggressionVsDistance",
+      "keys": [
+        { "time": 0.0,    "value": 0.85 },
+        { "time": 1500.0, "value": 0.85 },
+        { "time": 3000.0, "value": 0.85 }
+      ]
+    },
+    { "op": "set_curve_float_keys", "curve_path": "/Game/_M28_test/Curves/Curve_Flanker_AggressionVsDistance",
+      "keys": [
+        { "time": 0.0,    "value": 0.3 },
+        { "time": 1000.0, "value": 0.6 },
+        { "time": 2500.0, "value": 0.95, "interp_mode": "cubic" },
+        { "time": 4000.0, "value": 0.7 }
+      ]
+    }
+  ],
+  "expected_side_effects": [
+    "Config/Tags/AI.ini will be created with 4 AI.Archetype.* entries",
+    "/Game/_M28_test/Structs/S_EnemyArchetype will be created (UDS, 6 real members)",
+    "/Game/_M28_test/Curves/Curve_Rusher_AggressionVsDistance will be created",
+    "/Game/_M28_test/Curves/Curve_Marksman_AggressionVsDistance will be created",
+    "/Game/_M28_test/Curves/Curve_Suppresser_AggressionVsDistance will be created",
+    "/Game/_M28_test/Curves/Curve_Flanker_AggressionVsDistance will be created"
+  ],
+  "verification": [
+    { "asset_exists": "/Game/_M28_test/Structs/S_EnemyArchetype" },
+    { "asset_exists": "/Game/_M28_test/Curves/Curve_Rusher_AggressionVsDistance" },
+    { "asset_exists": "/Game/_M28_test/Curves/Curve_Marksman_AggressionVsDistance" },
+    { "asset_exists": "/Game/_M28_test/Curves/Curve_Suppresser_AggressionVsDistance" },
+    { "asset_exists": "/Game/_M28_test/Curves/Curve_Flanker_AggressionVsDistance" }
+  ]
+}

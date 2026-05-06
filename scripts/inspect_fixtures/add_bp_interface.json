@@ -1,0 +1,25 @@
+{
+  "_comment": "M28.2.4 add_bp_interface post-apply inspection + soak. Duplicates BP_BpxTestStructuralInterfaces (empty Actor BP) into a scratch path and attaches the existing BPI_BpxTestInterface (M26.1 fixture — declares GetTargetingInfo with three outputs: bIsAlive:bool, bIsTargetable:bool, Faction:int32). The inspect gate asserts the rendered .md / .deep.md surface the interface class + the auto-generated GetTargetingInfo override graph; the soak gate asserts md5 stability across 2 rounds, proving SeedGuidFromJoined(':iface_graph:...:GetTargetingInfo:graph') and the per-node Entry/Return seeding triad override the FGuid::NewGuid() assignments UEdGraph::PostInitProperties + CreateFunctionGraphTerminators make (without it, round 2 would md5-differ from round 1 every run).",
+  "op": "add_bp_interface",
+  "source_fixture": "/Game/TestBlueprints/BP_BpxTestStructuralInterfaces",
+  "scratch_path":   "/Game/TestBlueprints/BP_BpxTest_StructuralInterfacesScratch",
+  "inspect_path":   "/Game/TestBlueprints/BP_BpxTest_StructuralInterfacesScratch",
+  "plan_kwargs": {
+    "bp_path":              "/Game/TestBlueprints/BP_BpxTest_StructuralInterfacesScratch",
+    "interface_class_path": "/Game/TestBlueprints/BPI_BpxTestInterface.BPI_BpxTestInterface_C"
+  },
+  "expected_md": [
+    "BPI_BpxTestInterface",
+    "GetTargetingInfo"
+  ],
+  "not_expected_md": [],
+  "expected_deep": [
+    "BPI_BpxTestInterface",
+    "GetTargetingInfo"
+  ],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2,
+    "stable_keys": []
+  }
+}

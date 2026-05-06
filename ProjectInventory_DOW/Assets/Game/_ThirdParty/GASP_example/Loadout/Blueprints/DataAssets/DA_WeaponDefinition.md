@@ -1,0 +1,113 @@
+# DA_WeaponDefinition
+
+## Identity
+
+| Field | Value |
+|---|---|
+| Asset path | `/Game/_ThirdParty/GASP_example/Loadout/Blueprints/DataAssets/DA_WeaponDefinition.DA_WeaponDefinition` |
+| Asset name | `DA_WeaponDefinition` |
+| Subclass | `Blueprint` |
+| Blueprint type | `Normal` |
+| Engine version | `5.7.4-573521+++UE_DOW+main` |
+| Plugin version | `1.28.6` |
+
+## Inheritance
+
+- Parent class: `PrimaryDataAsset` (`/Script/Engine.PrimaryDataAsset`, native, module `/Script/Engine`)
+- Interfaces: _none_
+
+## Variables (49)
+
+| Name | Type | Default | Category | Replication | RepNotify | Flags |
+|---|---|---|---|---|---|---|
+| `WeaponBase` | `class<Class>` | `None` | `Spawning` | — | — | InstanceEditable, Private |
+| `DisplayName` | `text` | — | `Info` | — | — | InstanceEditable |
+| `Icon` | `object<Texture2D>` | `None` | `Info` | — | — | InstanceEditable |
+| `Archetype` | `byte<EWeaponType>` | `NewEnumerator0` | `Identity` | — | — | InstanceEditable |
+| `WeaponBaseMesh` | `object<SkeletalMesh>` | `None` | `Spawning` | — | — | InstanceEditable |
+| `PlayerSocketName` | `name` | `None` | `Spawning` | — | — | InstanceEditable |
+| `Caliber` | `byte<EWeaponCaliber>` | `NewEnumerator1` | `Identity` | — | — | InstanceEditable |
+| `FireMode` | `byte<EFireMode>` | `NewEnumerator0` | `Identity` | — | — | InstanceEditable |
+| `RecoilPattern` | `name` | `!!! REPLACE WITH LOGIC` | `Identity` | — | — | InstanceEditable |
+| `BarrelSocket` | `name` | `None` | `Attachment Sockets` | — | — | InstanceEditable |
+| `StockSocket` | `name` | `None` | `Attachment Sockets` | — | — | InstanceEditable |
+| `OpticSocket` | `name` | `None` | `Attachment Sockets` | — | — | InstanceEditable |
+| `DefaultBarrel` | `object<DA_AttachmentDefinition_C>` | `None` | `Default Attachments` | — | — | InstanceEditable |
+| `DefaultStock` | `object<DA_AttachmentDefinition_C>` | `None` | `Default Attachments` | — | — | InstanceEditable |
+| `DefaultOptic` | `object<DA_AttachmentDefinition_C>` | `None` | `Default Attachments` | — | — | InstanceEditable |
+| `DamageDefault` | `real<double>` | `10.000000` | `Base Weapon Stats - Damage` | — | — | InstanceEditable |
+| `DamageMinBounds` | `real<double>` | `1.000000` | `Base Weapon Stats - Damage` | — | — | InstanceEditable |
+| `DamageMaxBounds` | `real<double>` | `100.000000` | `Base Weapon Stats - Damage` | — | — | InstanceEditable |
+| `FireRateDefault` | `real<double>` | `750.000000` | `Base Weapon Stats - Fire Rate` | — | — | InstanceEditable |
+| `FireRateMinBounds` | `real<double>` | `10.000000` | `Base Weapon Stats - Fire Rate` | — | — | InstanceEditable |
+| `FireRateMaxBounds` | `real<double>` | `3000.000000` | `Base Weapon Stats - Fire Rate` | — | — | InstanceEditable |
+| `RecoilStrengthMultDefault` | `real<double>` | `1.000000` | `Base Weapon Stats - Accuracy` | — | — | InstanceEditable |
+| `RecoilStrengthMultMinBounds` | `real<double>` | `0.100000` | `Base Weapon Stats - Accuracy` | — | — | InstanceEditable |
+| `RecoilStrengthMultMaxBounds` | `real<double>` | `3.000000` | `Base Weapon Stats - Accuracy` | — | — | InstanceEditable |
+| `HipfireSpreadDefault` | `real<double>` | `5.000000` | `Base Weapon Stats - Accuracy` | — | — | InstanceEditable |
+| `HipfireSpreadMinBounds` | `real<double>` | `0.100000` | `Base Weapon Stats - Accuracy` | — | — | InstanceEditable |
+| `HipfireSpreadMaxBounds` | `real<double>` | `10.000000` | `Base Weapon Stats - Accuracy` | — | — | InstanceEditable |
+| `DamageDropOffRangeDefault` | `real<double>` | `40.000000` | `Base Weapon Stats - Range` | — | — | InstanceEditable |
+| `DamageDropOffRangeMinBounds` | `real<double>` | `1.000000` | `Base Weapon Stats - Range` | — | — | InstanceEditable |
+| `DamageDropOffRangeMaxBounds` | `real<double>` | `100.000000` | `Base Weapon Stats - Range` | — | — | InstanceEditable |
+| `ReloadSpeedMultDefault` | `real<double>` | `1.000000` | `Base Weapon Stats - Mobility` | — | — | InstanceEditable |
+| `ReloadSpeedMultMinBounds` | `real<double>` | `0.100000` | `Base Weapon Stats - Mobility` | — | — | InstanceEditable |
+| `ReloadSpeedMultMaxBounds` | `real<double>` | `2.000000` | `Base Weapon Stats - Mobility` | — | — | InstanceEditable |
+| `ADS SpeedMultDefault` | `real<double>` | `1.000000` | `Base Weapon Stats - Mobility` | — | — | InstanceEditable |
+| `ADS SpeedMultMinBounds` | `real<double>` | `0.100000` | `Base Weapon Stats - Mobility` | — | — | InstanceEditable |
+| `ADS SpeedMultMaxBounds` | `real<double>` | `2.000000` | `Base Weapon Stats - Mobility` | — | — | InstanceEditable |
+| `EquipSpeedMultDefault` | `real<double>` | `1.000000` | `Base Weapon Stats - Mobility` | — | — | InstanceEditable |
+| `EquipSpeedMultMinBounds` | `real<double>` | `0.100000` | `Base Weapon Stats - Mobility` | — | — | InstanceEditable |
+| `EquipSpeedMultMaxBounds` | `real<double>` | `2.000000` | `Base Weapon Stats - Mobility` | — | — | InstanceEditable |
+| `MagSizeDefault` | `int` | `30` | `Base Weapon Stats - Ammo` | — | — | InstanceEditable |
+| `MagSizeMinBounds` | `int` | `1` | `Base Weapon Stats - Ammo` | — | — | InstanceEditable |
+| `MagSizeMaxBounds` | `int` | `100` | `Base Weapon Stats - Ammo` | — | — | InstanceEditable |
+| `MagReserveDefault` | `int` | `5` | `Base Weapon Stats - Ammo` | — | — | InstanceEditable |
+| `MagReserveMinBounds` | `int` | `1` | `Base Weapon Stats - Ammo` | — | — | InstanceEditable |
+| `MagReserveMaxBounds` | `int` | `10` | `Base Weapon Stats - Ammo` | — | — | InstanceEditable |
+| `CustomBarrel` | `object<DA_AttachmentDefinition_C>` | `None` | `Custom Attachments` | — | — | InstanceEditable |
+| `CustomStock` | `object<DA_AttachmentDefinition_C>` | `None` | `Custom Attachments` | — | — | InstanceEditable |
+| `CustomOptic` | `object<DA_AttachmentDefinition_C>` | `None` | `Custom Attachments` | — | — | InstanceEditable |
+| `FiringSocketName` | `name` | `FiringSocket` | `WeaponControllerEssentials` | — | — | InstanceEditable |
+
+## Functions (0)
+
+_None._
+
+## Macros (0)
+
+_None._
+
+## Components (0)
+
+_None (not an Actor Blueprint, or no SCS root)._
+
+## Class Default Object (0) — DataAsset
+
+_No authored overrides found on the CDO. `DataAsset` Blueprints typically author their payload here — if this BP is meant to differ from its parent class, this is a coverage gap._
+
+## Graphs
+
+- Event graph: `EventGraph` (0 nodes)
+- Construction script: `` (0 nodes)
+- Additional graphs: _none_
+
+## References
+
+Hard refs out (6):
+- `/Game/_ThirdParty/GASP_example/Loadout/Blueprints/BP_WeaponBase` [asset]
+- `/Game/_ThirdParty/GASP_example/Loadout/Blueprints/DataAssets/DA_AttachmentDefinition` [asset]
+- `/Game/_ThirdParty/GASP_example/Loadout/Enums/EFireMode` [asset]
+- `/Game/_ThirdParty/GASP_example/Loadout/Enums/EWeaponCaliber` [asset]
+- `/Game/_ThirdParty/GASP_example/Loadout/Enums/EWeaponType` [asset]
+- `/Script/Engine.PrimaryDataAsset` [native]
+
+Soft refs out (0):
+- _none_
+
+## Metadata & Flags
+
+- Blueprint type: `Normal`
+- Subclass: `Blueprint`
+- Custom metadata: _none_
+

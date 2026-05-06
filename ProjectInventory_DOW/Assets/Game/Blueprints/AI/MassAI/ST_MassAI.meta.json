@@ -1,0 +1,264 @@
+{
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "ffd60d7fec03f563ad6dcea21b3a7c4c"
+	},
+	"assetPath": "/Game/Blueprints/AI/MassAI/ST_MassAI.ST_MassAI",
+	"assetName": "ST_MassAI",
+	"schema": "MassStateTreeSchema",
+	"evaluators": [],
+	"globalTasks": [],
+	"rootStates": [
+		{
+			"name": "Root",
+			"stateGuid": "FD6DDB9A40B182A1BB2719B13ABE913B",
+			"type": "State",
+			"selectionBehavior": "TrySelectChildrenInOrder",
+			"enterConditions": [],
+			"tasks": [],
+			"transitions": [],
+			"children": [
+				{
+					"name": "Wander",
+					"stateGuid": "911C52C64118DF23EAAE648315CAB301",
+					"type": "State",
+					"selectionBehavior": "TrySelectChildrenInOrder",
+					"enterConditions": [],
+					"tasks": [
+						{
+							"name": "MassZoneGraphFindWanderTarget",
+							"structType": "/Script/MassCrowd.MassZoneGraphFindWanderTarget",
+							"category": "Task",
+							"instanceId": "0B97BE064AB947B1E72ADA9626B5C7E1",
+							"properties": [
+								{
+									"name": "AllowedAnnotationTags",
+									"type": "FZoneGraphTagFilter",
+									"value": "(AnyTags=(Mask=6),AllTags=(),NotTags=())",
+									"category": "Parameter"
+								},
+								{
+									"name": "bCanEditConsideredForCompletion",
+									"type": "uint8",
+									"value": "True"
+								},
+								{
+									"name": "bConsideredForCompletion",
+									"type": "uint8",
+									"value": "True"
+								},
+								{
+									"name": "BindingsBatch",
+									"type": "FStateTreeIndex16",
+									"value": "(Value=65535)"
+								},
+								{
+									"name": "bTaskEnabled",
+									"type": "uint8",
+									"value": "True"
+								},
+								{
+									"name": "ExecutionRuntimeTemplateIndex",
+									"type": "FStateTreeIndex16",
+									"value": "(Value=65535)"
+								},
+								{
+									"name": "InstanceDataHandle",
+									"type": "FStateTreeDataHandle",
+									"value": "(Index=65535,StateHandle=(Index=65535))"
+								},
+								{
+									"name": "InstanceTemplateIndex",
+									"type": "FStateTreeIndex16",
+									"value": "(Value=65535)"
+								},
+								{
+									"name": "Name",
+									"type": "FName",
+									"value": "None"
+								},
+								{
+									"name": "OutputBindingsBatch",
+									"type": "FStateTreeIndex16",
+									"value": "(Value=65535)"
+								},
+								{
+									"name": "TransitionHandlingPriority",
+									"type": "EStateTreeTransitionPriority",
+									"value": "Normal"
+								}
+							],
+							"instanceProperties": [
+								{
+									"name": "WanderTargetLocation",
+									"type": "FMassZoneGraphTargetLocation",
+									"value": "()",
+									"category": "Output"
+								}
+							]
+						},
+						{
+							"name": "MassZoneGraphPathFollowTask",
+							"structType": "/Script/MassAIBehavior.MassZoneGraphPathFollowTask",
+							"category": "Task",
+							"instanceId": "7BFAD46B420199B41F84248C3F7015A8",
+							"properties": [
+								{
+									"name": "bCanEditConsideredForCompletion",
+									"type": "uint8",
+									"value": "True"
+								},
+								{
+									"name": "bConsideredForCompletion",
+									"type": "uint8",
+									"value": "True"
+								},
+								{
+									"name": "BindingsBatch",
+									"type": "FStateTreeIndex16",
+									"value": "(Value=65535)"
+								},
+								{
+									"name": "bTaskEnabled",
+									"type": "uint8",
+									"value": "True"
+								},
+								{
+									"name": "ExecutionRuntimeTemplateIndex",
+									"type": "FStateTreeIndex16",
+									"value": "(Value=65535)"
+								},
+								{
+									"name": "InstanceDataHandle",
+									"type": "FStateTreeDataHandle",
+									"value": "(Index=65535,StateHandle=(Index=65535))"
+								},
+								{
+									"name": "InstanceTemplateIndex",
+									"type": "FStateTreeIndex16",
+									"value": "(Value=65535)"
+								},
+								{
+									"name": "Name",
+									"type": "FName",
+									"value": "None"
+								},
+								{
+									"name": "OutputBindingsBatch",
+									"type": "FStateTreeIndex16",
+									"value": "(Value=65535)"
+								},
+								{
+									"name": "TransitionHandlingPriority",
+									"type": "EStateTreeTransitionPriority",
+									"value": "Normal"
+								}
+							],
+							"instanceProperties": [
+								{
+									"name": "MovementStyle",
+									"type": "FMassMovementStyleRef",
+									"value": "(ID=00000000000000000000000000000000)",
+									"category": "Parameter"
+								},
+								{
+									"name": "SpeedScale",
+									"type": "float",
+									"value": "1.000000",
+									"category": "Parameter"
+								},
+								{
+									"name": "TargetLocation",
+									"type": "FStateTreePropertyRef",
+									"value": "(RefAccessIndex=(Value=65535))",
+									"category": "Input"
+								}
+							]
+						}
+					],
+					"transitions": [
+						{
+							"transitionId": "16D841BD4C91D10009159992A9F16515",
+							"trigger": "OnStateCompleted",
+							"targetStateName": "Root",
+							"targetStateGuid": "FD6DDB9A40B182A1BB2719B13ABE913B",
+							"linkType": "GotoState",
+							"priority": "Normal",
+							"conditions": []
+						}
+					],
+					"children": []
+				}
+			]
+		}
+	],
+	"bindings": [
+		{
+			"sourcePath": "WanderTargetLocation",
+			"targetPath": "TargetLocation"
+		}
+	],
+	"dependencies": [
+		{
+			"assetPath": "/Script/MassAIBehavior",
+			"assetName": "MassAIBehavior",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/MassCrowd",
+			"assetName": "MassCrowd",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/StateTreeEditorModule",
+			"assetName": "StateTreeEditorModule",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/StateTreeModule",
+			"assetName": "StateTreeModule",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": ""
+		}
+	],
+	"assetType": "StateTree",
+	"coverage":
+	{
+		"states":
+		{
+			"total": 2,
+			"documented": 2
+		},
+		"specialized":
+		{
+			"applicable": [
+				"ST.TasksPerState",
+				"ST.Transitions",
+				"ST.Conditions",
+				"ST.InstancedStructTypes"
+			],
+			"documented": [
+				"ST.TasksPerState",
+				"ST.Transitions",
+				"ST.Conditions",
+				"ST.InstancedStructTypes"
+			]
+		},
+		"overallPct": 100
+	}
+}

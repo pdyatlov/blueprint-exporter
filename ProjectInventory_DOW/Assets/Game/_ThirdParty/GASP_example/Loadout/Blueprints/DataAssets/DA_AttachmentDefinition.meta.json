@@ -1,0 +1,662 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "fedc9e959ff3602616ec2d61500259b5"
+	},
+	"assetPath": "/Game/_ThirdParty/GASP_example/Loadout/Blueprints/DataAssets/DA_AttachmentDefinition.DA_AttachmentDefinition",
+	"assetName": "DA_AttachmentDefinition",
+	"blueprintGuid": "3AECC4FF47B5D7FE5F601489E1305AB9",
+	"blueprintType": "Normal",
+	"blueprintSubclass": "Blueprint",
+	"parentClass":
+	{
+		"className": "PrimaryDataAsset",
+		"classPath": "/Script/Engine.PrimaryDataAsset",
+		"isNative": true,
+		"moduleName": "/Script/Engine"
+	},
+	"implementedInterfaces": [],
+	"variables": [
+		{
+			"variableName": "(REMOVE) AttachmentSocketName",
+			"variableGuid": "3A0E68194AA1688370AA64B673B5CAB8",
+			"variableType":
+			{
+				"category": "name",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "None",
+			"category": "Spawning",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "",
+			"metaData":
+			{
+			}
+		},
+		{
+			"variableName": "ADS SpeedMultBias",
+			"variableGuid": "53CD8F6F49D9F7B20696C9BB64A4435A",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "0.000000",
+			"category": "Weapon Stat Modifiers",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "How much this attachment pushes the stat from the default toward the weapon’s min/max bounds.",
+			"metaData":
+			{
+				"ClampMin": "-1",
+				"tooltip": "How much this attachment pushes the stat from the default toward the weapon’s min/max bounds.",
+				"UIMax": "1",
+				"UIMin": "-1"
+			}
+		},
+		{
+			"variableName": "AttachmentMesh",
+			"variableGuid": "1147E68749492C88EDB7D68F1C9F3BBF",
+			"variableType":
+			{
+				"category": "object",
+				"subCategoryObject": "/Script/Engine.SkeletalMesh",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "None",
+			"category": "Spawning",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "",
+			"metaData":
+			{
+				"tooltip": ""
+			}
+		},
+		{
+			"variableName": "AttachmentSlot",
+			"variableGuid": "475A59FC42FF67C42DA67F8280B28DA7",
+			"variableType":
+			{
+				"category": "byte",
+				"subCategoryObject": "/Game/_ThirdParty/GASP_example/Loadout/Enums/EAttachmentSlot.EAttachmentSlot",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "NewEnumerator0",
+			"category": "Info",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "",
+			"metaData":
+			{
+			}
+		},
+		{
+			"variableName": "DamageBias",
+			"variableGuid": "648A1E9E49A396D492AE2B8787E19BA4",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "0.000000",
+			"category": "Weapon Stat Modifiers",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "How much this attachment pushes the stat from the default toward the weapon’s min/max bounds.",
+			"metaData":
+			{
+				"ClampMin": "-1",
+				"tooltip": "How much this attachment pushes the stat from the default toward the weapon’s min/max bounds.",
+				"UIMax": "1",
+				"UIMin": "-1"
+			}
+		},
+		{
+			"variableName": "DamageDropOffRangeBias",
+			"variableGuid": "2AD3BAA9492FBB5F58297882DA04666C",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "0.000000",
+			"category": "Weapon Stat Modifiers",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "How much this attachment pushes the stat from the default toward the weapon’s min/max bounds.",
+			"metaData":
+			{
+				"ClampMin": "-1",
+				"tooltip": "How much this attachment pushes the stat from the default toward the weapon’s min/max bounds.",
+				"UIMax": "1",
+				"UIMin": "-1"
+			}
+		},
+		{
+			"variableName": "EquipSpeedMultBias",
+			"variableGuid": "98ED49904F7CEBDBACD7A89AA3E3E0EB",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "0.000000",
+			"category": "Weapon Stat Modifiers",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "How much this attachment pushes the stat from the default toward the weapon’s min/max bounds.",
+			"metaData":
+			{
+				"ClampMin": "-1",
+				"tooltip": "How much this attachment pushes the stat from the default toward the weapon’s min/max bounds.",
+				"UIMax": "1",
+				"UIMin": "-1"
+			}
+		},
+		{
+			"variableName": "FireRateBias",
+			"variableGuid": "23E605234F1B7B58DE6973B03367CEA5",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "0.000000",
+			"category": "Weapon Stat Modifiers",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "How much this attachment pushes the stat from the default toward the weapon’s min/max bounds.",
+			"metaData":
+			{
+				"ClampMin": "-1",
+				"tooltip": "How much this attachment pushes the stat from the default toward the weapon’s min/max bounds.",
+				"UIMax": "1",
+				"UIMin": "-1"
+			}
+		},
+		{
+			"variableName": "HipfireSpreadBias",
+			"variableGuid": "E163A0714630B2979A98E0A61CFE7E9C",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "0.000000",
+			"category": "Weapon Stat Modifiers",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "How much this attachment pushes the stat from the default toward the weapon’s min/max bounds.",
+			"metaData":
+			{
+				"ClampMin": "-1",
+				"tooltip": "How much this attachment pushes the stat from the default toward the weapon’s min/max bounds.",
+				"UIMax": "1",
+				"UIMin": "-1"
+			}
+		},
+		{
+			"variableName": "Icon",
+			"variableGuid": "B86772F4444BDE8C41E34288D4C646B2",
+			"variableType":
+			{
+				"category": "object",
+				"subCategoryObject": "/Script/Engine.Texture2D",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "None",
+			"category": "Info",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "",
+			"metaData":
+			{
+				"MultiLine": "true"
+			}
+		},
+		{
+			"variableName": "MagReserveBias",
+			"variableGuid": "9CB309284EA64E690B5802B89AB80829",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "0.000000",
+			"category": "Weapon Stat Modifiers",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "How much this attachment pushes the stat from the default toward the weapon’s min/max bounds.",
+			"metaData":
+			{
+				"ClampMin": "-1",
+				"tooltip": "How much this attachment pushes the stat from the default toward the weapon’s min/max bounds.",
+				"UIMax": "1",
+				"UIMin": "-1"
+			}
+		},
+		{
+			"variableName": "MagSizeBias",
+			"variableGuid": "C1931A3C46CA7C4573AB9A9F74760863",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "0.000000",
+			"category": "Weapon Stat Modifiers",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "How much this attachment pushes the stat from the default toward the weapon’s min/max bounds.",
+			"metaData":
+			{
+				"ClampMin": "-1",
+				"tooltip": "How much this attachment pushes the stat from the default toward the weapon’s min/max bounds.",
+				"UIMax": "1",
+				"UIMin": "-1"
+			}
+		},
+		{
+			"variableName": "Name",
+			"variableGuid": "C7DD6BAA46E60BDF092BA9B20286C015",
+			"variableType":
+			{
+				"category": "text",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "",
+			"category": "Info",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "",
+			"metaData":
+			{
+			}
+		},
+		{
+			"variableName": "RecoilStrengthBias",
+			"variableGuid": "EA70F54140B8118240D29180A7C66D26",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "0.000000",
+			"category": "Weapon Stat Modifiers",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "How much this attachment pushes the stat from the default toward the weapon’s min/max bounds.",
+			"metaData":
+			{
+				"ClampMin": "-1",
+				"tooltip": "How much this attachment pushes the stat from the default toward the weapon’s min/max bounds.",
+				"UIMax": "1",
+				"UIMin": "-1"
+			}
+		},
+		{
+			"variableName": "ReloadSpeedMultBias",
+			"variableGuid": "FD02278D49495768C3D061AFA70C9C86",
+			"variableType":
+			{
+				"category": "real",
+				"subCategoryObject": "",
+				"pinSubCategory": "double",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "0.000000",
+			"category": "Weapon Stat Modifiers",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "How much this attachment pushes the stat from the default toward the weapon’s min/max bounds.",
+			"metaData":
+			{
+				"ClampMin": "-1",
+				"tooltip": "How much this attachment pushes the stat from the default toward the weapon’s min/max bounds.",
+				"UIMax": "1",
+				"UIMin": "-1"
+			}
+		}
+	],
+	"functions": [],
+	"macros": [],
+	"eventGraph":
+	{
+		"graphName": "EventGraph",
+		"graphGuid": "0931B7194C0451B102936FB50F28E2D1",
+		"graphType": "EventGraph",
+		"schemaClass": "/Script/BlueprintGraph.EdGraphSchema_K2",
+		"nodes": []
+	},
+	"constructionScript":
+	{
+		"graphName": "",
+		"graphGuid": "",
+		"graphType": "",
+		"schemaClass": "",
+		"nodes": []
+	},
+	"components": [],
+	"cdoProperties": [],
+	"dataCarrierKind": "DataAsset",
+	"additionalGraphs": [],
+	"stateMachines": [],
+	"widgetTree": [],
+	"dependencies": [
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Loadout/Enums/EAttachmentSlot",
+			"assetName": "EAttachmentSlot",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/Engine.PrimaryDataAsset",
+			"assetName": "PrimaryDataAsset",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": "Parent class"
+		}
+	],
+	"metaData":
+	{
+	},
+	"assetType": "Blueprint",
+	"coverage":
+	{
+		"variables":
+		{
+			"total": 15,
+			"documented": 15
+		},
+		"functions":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"components":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"graphs":
+		{
+			"total": 2,
+			"documented": 2
+		},
+		"cdoProperties":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"specialized":
+		{
+			"applicable": [
+				"DataAsset.CDO"
+			],
+			"documented": [
+				"DataAsset.CDO"
+			]
+		},
+		"overallPct": 100
+	}
+}

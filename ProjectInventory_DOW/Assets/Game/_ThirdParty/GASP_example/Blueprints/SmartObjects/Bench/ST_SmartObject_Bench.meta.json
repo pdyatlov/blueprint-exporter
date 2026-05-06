@@ -1,0 +1,2014 @@
+{
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "74bb8e6254eb4f099b6f7c05b2e7c75c"
+	},
+	"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/Bench/ST_SmartObject_Bench.ST_SmartObject_Bench",
+	"assetName": "ST_SmartObject_Bench",
+	"schema": "GameplayInteractionStateTreeSchema",
+	"evaluators": [
+		{
+			"name": "StateTreeBlueprintEvaluatorWrapper",
+			"structType": "/Script/StateTreeModule.StateTreeBlueprintEvaluatorWrapper",
+			"category": "Evaluator",
+			"instanceId": "88DEDA9B431F881A1C18BCA9C3ADDDEA",
+			"properties": [
+				{
+					"name": "BindingsBatch",
+					"type": "FStateTreeIndex16",
+					"value": "(Value=65535)"
+				},
+				{
+					"name": "EvaluatorClass",
+					"type": "TSubclassOf<UStateTreeEvaluatorBlueprintBase>",
+					"value": "/Script/Engine.BlueprintGeneratedClass'/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STE_GetAIData.STE_GetAIData_C'"
+				},
+				{
+					"name": "ExecutionRuntimeTemplateIndex",
+					"type": "FStateTreeIndex16",
+					"value": "(Value=65535)"
+				},
+				{
+					"name": "InstanceDataHandle",
+					"type": "FStateTreeDataHandle",
+					"value": "(Index=65535,StateHandle=(Index=65535))"
+				},
+				{
+					"name": "InstanceTemplateIndex",
+					"type": "FStateTreeIndex16",
+					"value": "(Value=65535)"
+				},
+				{
+					"name": "Name",
+					"type": "FName",
+					"value": "None"
+				},
+				{
+					"name": "OutputBindingsBatch",
+					"type": "FStateTreeIndex16",
+					"value": "(Value=65535)"
+				}
+			],
+			"instanceObjectClass": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STE_GetAIData.STE_GetAIData_C",
+			"instanceObjectProperties": [
+				{
+					"name": "Actor",
+					"type": "AActor*",
+					"value": "None",
+					"category": "Context"
+				},
+				{
+					"name": "AIController",
+					"type": "AAIController*",
+					"value": "None",
+					"category": "Output"
+				},
+				{
+					"name": "Description",
+					"type": "FText",
+					"value": "",
+					"category": "Description"
+				},
+				{
+					"name": "IconColor",
+					"type": "FColor",
+					"value": "(B=148,G=148,R=148,A=255)",
+					"category": "Description"
+				},
+				{
+					"name": "IconName",
+					"type": "FName",
+					"value": "None",
+					"category": "Description"
+				}
+			]
+		}
+	],
+	"globalTasks": [],
+	"rootStates": [
+		{
+			"name": "Root",
+			"stateGuid": "3B7921A148CE1C830E3892BB47231A3E",
+			"type": "State",
+			"selectionBehavior": "TrySelectChildrenInOrder",
+			"enterConditions": [],
+			"tasks": [],
+			"transitions": [],
+			"children": [
+				{
+					"name": "Find Slot Location",
+					"stateGuid": "6CF86AD64DFB48B53B440297ACE5A972",
+					"type": "State",
+					"selectionBehavior": "TrySelectChildrenInOrder",
+					"enterConditions": [],
+					"tasks": [
+						{
+							"name": "StateTreeTask_FindSlotEntranceLocation",
+							"structType": "/Script/GameplayInteractionsModule.StateTreeTask_FindSlotEntranceLocation",
+							"category": "Task",
+							"instanceId": "E2AC68364E657B282F647A824BD832BC",
+							"properties": [
+								{
+									"name": "bCanEditConsideredForCompletion",
+									"type": "uint8",
+									"value": "True"
+								},
+								{
+									"name": "bCheckEntranceLocationOverlap",
+									"type": "bool",
+									"value": "True",
+									"category": "Default"
+								},
+								{
+									"name": "bCheckSlotLocationOverlap",
+									"type": "bool",
+									"value": "True",
+									"category": "Default"
+								},
+								{
+									"name": "bCheckTransitionTrajectory",
+									"type": "bool",
+									"value": "True",
+									"category": "Default"
+								},
+								{
+									"name": "bConsideredForCompletion",
+									"type": "uint8",
+									"value": "True"
+								},
+								{
+									"name": "BindingsBatch",
+									"type": "FStateTreeIndex16",
+									"value": "(Value=65535)"
+								},
+								{
+									"name": "bProjectNavigationLocation",
+									"type": "bool",
+									"value": "True",
+									"category": "Default"
+								},
+								{
+									"name": "bTaskEnabled",
+									"type": "uint8",
+									"value": "True"
+								},
+								{
+									"name": "bTraceGroundLocation",
+									"type": "bool",
+									"value": "True",
+									"category": "Default"
+								},
+								{
+									"name": "bUseSlotLocationAsFallbackCandidate",
+									"type": "bool",
+									"value": "False",
+									"category": "Default"
+								},
+								{
+									"name": "bUseUpAxisLockedRotation",
+									"type": "bool",
+									"value": "True",
+									"category": "Default"
+								},
+								{
+									"name": "ExecutionRuntimeTemplateIndex",
+									"type": "FStateTreeIndex16",
+									"value": "(Value=65535)"
+								},
+								{
+									"name": "InstanceDataHandle",
+									"type": "FStateTreeDataHandle",
+									"value": "(Index=65535,StateHandle=(Index=65535))"
+								},
+								{
+									"name": "InstanceTemplateIndex",
+									"type": "FStateTreeIndex16",
+									"value": "(Value=65535)"
+								},
+								{
+									"name": "LocationType",
+									"type": "ESmartObjectSlotNavigationLocationType",
+									"value": "Entry",
+									"category": "Default"
+								},
+								{
+									"name": "Name",
+									"type": "FName",
+									"value": "None"
+								},
+								{
+									"name": "OutputBindingsBatch",
+									"type": "FStateTreeIndex16",
+									"value": "(Value=65535)"
+								},
+								{
+									"name": "SelectMethod",
+									"type": "FSmartObjectSlotEntrySelectionMethod",
+									"value": "NearestToSearchLocation",
+									"category": "Default"
+								},
+								{
+									"name": "TransitionHandlingPriority",
+									"type": "EStateTreeTransitionPriority",
+									"value": "Normal"
+								},
+								{
+									"name": "ValidationFilter",
+									"type": "TSubclassOf<USmartObjectSlotValidationFilter>",
+									"value": "None",
+									"category": "Default"
+								}
+							],
+							"instanceProperties": [
+								{
+									"name": "EntranceTags",
+									"type": "FGameplayTagContainer",
+									"value": "()",
+									"category": "Output"
+								},
+								{
+									"name": "EntryTransform",
+									"type": "FTransform",
+									"value": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+									"category": "Output"
+								},
+								{
+									"name": "ReferenceSlot",
+									"type": "FSmartObjectSlotHandle",
+									"value": "()",
+									"category": "Input"
+								},
+								{
+									"name": "UserActor",
+									"type": "TObjectPtr<AActor>",
+									"value": "None",
+									"category": "Context"
+								}
+							]
+						}
+					],
+					"transitions": [],
+					"children": [
+						{
+							"name": "Move To Slot And Play Entry",
+							"stateGuid": "4468C40C4C9B8D0BEC14E98DED27241C",
+							"type": "State",
+							"selectionBehavior": "TrySelectChildrenInOrder",
+							"enterConditions": [],
+							"tasks": [
+								{
+									"name": "StateTreeMoveToTask",
+									"structType": "/Script/GameplayStateTreeModule.StateTreeMoveToTask",
+									"category": "Task",
+									"instanceId": "4C622A23493F250DEF8A26AE95B3BD3C",
+									"properties": [
+										{
+											"name": "bCanEditConsideredForCompletion",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "bConsideredForCompletion",
+											"type": "uint8",
+											"value": "False"
+										},
+										{
+											"name": "BindingsBatch",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "bSavedShouldCallTick",
+											"type": "bool",
+											"value": "False"
+										},
+										{
+											"name": "bTaskEnabled",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "ExecutionRuntimeTemplateIndex",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "InstanceDataHandle",
+											"type": "FStateTreeDataHandle",
+											"value": "(Index=65535,StateHandle=(Index=65535))"
+										},
+										{
+											"name": "InstanceTemplateIndex",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "Name",
+											"type": "FName",
+											"value": "None"
+										},
+										{
+											"name": "OutputBindingsBatch",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "TransitionHandlingPriority",
+											"type": "EStateTreeTransitionPriority",
+											"value": "Normal"
+										}
+									],
+									"instanceProperties": [
+										{
+											"name": "AcceptableRadius",
+											"type": "float",
+											"value": "100.000000",
+											"category": "Parameter"
+										},
+										{
+											"name": "AIController",
+											"type": "TObjectPtr<AAIController>",
+											"value": "None",
+											"category": "Context"
+										},
+										{
+											"name": "bAllowPartialPath",
+											"type": "bool",
+											"value": "True",
+											"category": "Parameter"
+										},
+										{
+											"name": "bAllowStrafe",
+											"type": "bool",
+											"value": "False",
+											"category": "Parameter"
+										},
+										{
+											"name": "bProjectGoalLocation",
+											"type": "bool",
+											"value": "True",
+											"category": "Parameter"
+										},
+										{
+											"name": "bReachTestIncludesAgentRadius",
+											"type": "bool",
+											"value": "False",
+											"category": "Parameter"
+										},
+										{
+											"name": "bReachTestIncludesGoalRadius",
+											"type": "bool",
+											"value": "False",
+											"category": "Parameter"
+										},
+										{
+											"name": "bRequireNavigableEndLocation",
+											"type": "bool",
+											"value": "True",
+											"category": "Parameter"
+										},
+										{
+											"name": "bTrackMovingGoal",
+											"type": "bool",
+											"value": "True",
+											"category": "Parameter"
+										},
+										{
+											"name": "Destination",
+											"type": "FVector",
+											"value": "(X=0.000000,Y=0.000000,Z=0.000000)",
+											"category": "Parameter"
+										},
+										{
+											"name": "DestinationMoveTolerance",
+											"type": "float",
+											"value": "0.000000",
+											"category": "Parameter"
+										},
+										{
+											"name": "FilterClass",
+											"type": "TSubclassOf<UNavigationQueryFilter>",
+											"value": "None",
+											"category": "Parameter"
+										},
+										{
+											"name": "MoveToTask",
+											"type": "TObjectPtr<UAITask_MoveTo>",
+											"value": "None"
+										},
+										{
+											"name": "TargetActor",
+											"type": "TObjectPtr<AActor>",
+											"value": "None",
+											"category": "Parameter"
+										},
+										{
+											"name": "TaskOwner",
+											"type": "TScriptInterface",
+											"value": "None"
+										}
+									]
+								},
+								{
+									"name": "StateTreeBlueprintTaskWrapper",
+									"structType": "/Script/StateTreeModule.StateTreeBlueprintTaskWrapper",
+									"category": "Task",
+									"instanceId": "92C1E7F44D1F284554A33CAEBDD046C9",
+									"properties": [
+										{
+											"name": "bCanEditConsideredForCompletion",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "bConsideredForCompletion",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "BindingsBatch",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "bTaskEnabled",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "ExecutionRuntimeTemplateIndex",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "InstanceDataHandle",
+											"type": "FStateTreeDataHandle",
+											"value": "(Index=65535,StateHandle=(Index=65535))"
+										},
+										{
+											"name": "InstanceTemplateIndex",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "Name",
+											"type": "FName",
+											"value": "None"
+										},
+										{
+											"name": "OutputBindingsBatch",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "TaskClass",
+											"type": "TSubclassOf<UStateTreeTaskBlueprintBase>",
+											"value": "/Script/Engine.BlueprintGeneratedClass'/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/TasksAndConditions/STT_FocusToTarget.STT_FocusToTarget_C'"
+										},
+										{
+											"name": "TaskFlags",
+											"type": "uint8",
+											"value": "0"
+										},
+										{
+											"name": "TransitionHandlingPriority",
+											"type": "EStateTreeTransitionPriority",
+											"value": "Normal"
+										}
+									],
+									"instanceObjectClass": "/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/TasksAndConditions/STT_FocusToTarget.STT_FocusToTarget_C",
+									"instanceObjectProperties": [
+										{
+											"name": "AIController",
+											"type": "AAIController*",
+											"value": "None",
+											"category": "Context"
+										},
+										{
+											"name": "bCanEditConsideredForCompletion",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bConsideredForCompletion",
+											"type": "uint8",
+											"value": "False",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCallTickOnlyOnEvents",
+											"type": "uint8",
+											"value": "False",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCopyBoundPropertiesOnExitState",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCopyBoundPropertiesOnTick",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldStateChangeOnReselect",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "Description",
+											"type": "FText",
+											"value": "",
+											"category": "Description"
+										},
+										{
+											"name": "IconColor",
+											"type": "FColor",
+											"value": "(B=148,G=148,R=148,A=255)",
+											"category": "Description"
+										},
+										{
+											"name": "IconName",
+											"type": "FName",
+											"value": "None",
+											"category": "Description"
+										},
+										{
+											"name": "TargetToFocus",
+											"type": "AActor*",
+											"value": "None",
+											"category": "Input"
+										}
+									]
+								},
+								{
+									"name": "StateTreeBlueprintTaskWrapper",
+									"structType": "/Script/StateTreeModule.StateTreeBlueprintTaskWrapper",
+									"category": "Task",
+									"instanceId": "DEF34A4444B731208A822295A8001F08",
+									"properties": [
+										{
+											"name": "bCanEditConsideredForCompletion",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "bConsideredForCompletion",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "BindingsBatch",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "bTaskEnabled",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "ExecutionRuntimeTemplateIndex",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "InstanceDataHandle",
+											"type": "FStateTreeDataHandle",
+											"value": "(Index=65535,StateHandle=(Index=65535))"
+										},
+										{
+											"name": "InstanceTemplateIndex",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "Name",
+											"type": "FName",
+											"value": "None"
+										},
+										{
+											"name": "OutputBindingsBatch",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "TaskClass",
+											"type": "TSubclassOf<UStateTreeTaskBlueprintBase>",
+											"value": "/Script/Engine.BlueprintGeneratedClass'/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/TasksAndConditions/STT_CharacterIgnoreCollisionsWithOtherActor.STT_CharacterIgnoreCollisionsWithOtherActor_C'"
+										},
+										{
+											"name": "TaskFlags",
+											"type": "uint8",
+											"value": "0"
+										},
+										{
+											"name": "TransitionHandlingPriority",
+											"type": "EStateTreeTransitionPriority",
+											"value": "Normal"
+										}
+									],
+									"instanceObjectClass": "/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/TasksAndConditions/STT_CharacterIgnoreCollisionsWithOtherActor.STT_CharacterIgnoreCollisionsWithOtherActor_C",
+									"instanceObjectProperties": [
+										{
+											"name": "bCanEditConsideredForCompletion",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bConsideredForCompletion",
+											"type": "uint8",
+											"value": "False",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCallTickOnlyOnEvents",
+											"type": "uint8",
+											"value": "False",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCopyBoundPropertiesOnExitState",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCopyBoundPropertiesOnTick",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldStateChangeOnReselect",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "Character",
+											"type": "AActor*",
+											"value": "None",
+											"category": "Context"
+										},
+										{
+											"name": "Description",
+											"type": "FText",
+											"value": "",
+											"category": "Description"
+										},
+										{
+											"name": "IconColor",
+											"type": "FColor",
+											"value": "(B=148,G=148,R=148,A=255)",
+											"category": "Description"
+										},
+										{
+											"name": "IconName",
+											"type": "FName",
+											"value": "None",
+											"category": "Description"
+										},
+										{
+											"name": "Other Actor",
+											"type": "AActor*",
+											"value": "None",
+											"category": "Context"
+										},
+										{
+											"name": "ShouldIgnore",
+											"type": "bool",
+											"value": "True",
+											"category": "Default"
+										}
+									]
+								},
+								{
+									"name": "StateTreeBlueprintTaskWrapper",
+									"structType": "/Script/StateTreeModule.StateTreeBlueprintTaskWrapper",
+									"category": "Task",
+									"instanceId": "1F5C42E54F8E06D219A4CE8CDB37056C",
+									"properties": [
+										{
+											"name": "bCanEditConsideredForCompletion",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "bConsideredForCompletion",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "BindingsBatch",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "bTaskEnabled",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "ExecutionRuntimeTemplateIndex",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "InstanceDataHandle",
+											"type": "FStateTreeDataHandle",
+											"value": "(Index=65535,StateHandle=(Index=65535))"
+										},
+										{
+											"name": "InstanceTemplateIndex",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "Name",
+											"type": "FName",
+											"value": "None"
+										},
+										{
+											"name": "OutputBindingsBatch",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "TaskClass",
+											"type": "TSubclassOf<UStateTreeTaskBlueprintBase>",
+											"value": "/Script/Engine.BlueprintGeneratedClass'/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STT_PlayAnimFromBestCost.STT_PlayAnimFromBestCost_C'"
+										},
+										{
+											"name": "TaskFlags",
+											"type": "uint8",
+											"value": "0"
+										},
+										{
+											"name": "TransitionHandlingPriority",
+											"type": "EStateTreeTransitionPriority",
+											"value": "Normal"
+										}
+									],
+									"instanceObjectClass": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STT_PlayAnimFromBestCost.STT_PlayAnimFromBestCost_C",
+									"instanceObjectProperties": [
+										{
+											"name": "Actor",
+											"type": "AActor*",
+											"value": "None",
+											"category": "Context"
+										},
+										{
+											"name": "Animation Proxy Table",
+											"type": "UProxyTable*",
+											"value": "/Script/ProxyTable.ProxyTable'/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/Bench/CHPT_SmartObject_Bench.CHPT_SmartObject_Bench'",
+											"category": "Default"
+										},
+										{
+											"name": "bCanEditConsideredForCompletion",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bConsideredForCompletion",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCallTickOnlyOnEvents",
+											"type": "uint8",
+											"value": "False",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCopyBoundPropertiesOnExitState",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCopyBoundPropertiesOnTick",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldStateChangeOnReselect",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "Claimed Handle",
+											"type": "FSmartObjectClaimHandle",
+											"value": "()",
+											"category": "Input"
+										},
+										{
+											"name": "CostThreshold",
+											"type": "double",
+											"value": "1.000000",
+											"category": "Default"
+										},
+										{
+											"name": "Description",
+											"type": "FText",
+											"value": "",
+											"category": "Description"
+										},
+										{
+											"name": "Destination",
+											"type": "FTransform",
+											"value": "(Rotation=(X=0.000000,Y=0.000000,Z=0.000000,W=1.000000),Translation=(X=0.000000,Y=0.000000,Z=0.000000),Scale3D=(X=1.000000,Y=1.000000,Z=1.000000))",
+											"category": "Input"
+										},
+										{
+											"name": "IconColor",
+											"type": "FColor",
+											"value": "(B=148,G=148,R=148,A=255)",
+											"category": "Description"
+										},
+										{
+											"name": "IconName",
+											"type": "FName",
+											"value": "None",
+											"category": "Description"
+										},
+										{
+											"name": "MaximumDistanceThreshold",
+											"type": "double",
+											"value": "350.000000",
+											"category": "Default"
+										},
+										{
+											"name": "Minimum Velocity Check",
+											"type": "double",
+											"value": "100.000000",
+											"category": "Default"
+										},
+										{
+											"name": "Needs Evaluation",
+											"type": "bool",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "PossibleOwnerMoverComponent",
+											"type": "UMoverComponent*",
+											"value": "None",
+											"category": "Default"
+										},
+										{
+											"name": "Smart Object Animation Component",
+											"type": "UAC_SmartObjectAnimation_C*",
+											"value": "None",
+											"category": "Default"
+										}
+									]
+								}
+							],
+							"transitions": [
+								{
+									"transitionId": "3374736844FBBE72419BA4B818C76AC4",
+									"trigger": "OnStateSucceeded",
+									"targetStateName": "(next state)",
+									"linkType": "NextState",
+									"priority": "Normal",
+									"conditions": []
+								},
+								{
+									"transitionId": "4DDBA0744B0C6923510E92B95F26E4C5",
+									"trigger": "OnStateFailed",
+									"targetStateName": "ReleaseSlot",
+									"targetStateGuid": "4F834DBF4617CD9C68F68384E6188107",
+									"linkType": "GotoState",
+									"priority": "Normal",
+									"conditions": []
+								}
+							],
+							"children": []
+						},
+						{
+							"name": "Play Loop",
+							"stateGuid": "7F8CFCC2489902F50245E388E5A778CD",
+							"type": "State",
+							"selectionBehavior": "TrySelectChildrenInOrder",
+							"enterConditions": [],
+							"tasks": [
+								{
+									"name": "StateTreeBlueprintTaskWrapper",
+									"structType": "/Script/StateTreeModule.StateTreeBlueprintTaskWrapper",
+									"category": "Task",
+									"instanceId": "C919A5794B48FE9348A306AF7A9F418D",
+									"properties": [
+										{
+											"name": "bCanEditConsideredForCompletion",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "bConsideredForCompletion",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "BindingsBatch",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "bTaskEnabled",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "ExecutionRuntimeTemplateIndex",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "InstanceDataHandle",
+											"type": "FStateTreeDataHandle",
+											"value": "(Index=65535,StateHandle=(Index=65535))"
+										},
+										{
+											"name": "InstanceTemplateIndex",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "Name",
+											"type": "FName",
+											"value": "None"
+										},
+										{
+											"name": "OutputBindingsBatch",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "TaskClass",
+											"type": "TSubclassOf<UStateTreeTaskBlueprintBase>",
+											"value": "/Script/Engine.BlueprintGeneratedClass'/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STT_PlayAnimMontage.STT_PlayAnimMontage_C'"
+										},
+										{
+											"name": "TaskFlags",
+											"type": "uint8",
+											"value": "0"
+										},
+										{
+											"name": "TransitionHandlingPriority",
+											"type": "EStateTreeTransitionPriority",
+											"value": "Normal"
+										}
+									],
+									"instanceObjectClass": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STT_PlayAnimMontage.STT_PlayAnimMontage_C",
+									"instanceObjectProperties": [
+										{
+											"name": "Actor",
+											"type": "AActor*",
+											"value": "None",
+											"category": "Context"
+										},
+										{
+											"name": "bCanEditConsideredForCompletion",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bConsideredForCompletion",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCallTickOnlyOnEvents",
+											"type": "uint8",
+											"value": "False",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCopyBoundPropertiesOnExitState",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCopyBoundPropertiesOnTick",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldStateChangeOnReselect",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "Description",
+											"type": "FText",
+											"value": "",
+											"category": "Description"
+										},
+										{
+											"name": "IconColor",
+											"type": "FColor",
+											"value": "(B=148,G=148,R=148,A=255)",
+											"category": "Description"
+										},
+										{
+											"name": "IconName",
+											"type": "FName",
+											"value": "None",
+											"category": "Description"
+										},
+										{
+											"name": "Ignore Collision",
+											"type": "bool",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "Montage to Play",
+											"type": "UAnimMontage*",
+											"value": "/Script/Engine.AnimMontage'/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Interactions/Bench/M_interaction_bench_idle_loop_Montage.M_interaction_bench_idle_loop_Montage'",
+											"category": "Default"
+										},
+										{
+											"name": "Mover Component",
+											"type": "UCharacterMoverComponent*",
+											"value": "None",
+											"category": "Default"
+										},
+										{
+											"name": "Number Of Loops",
+											"type": "int32",
+											"value": "0",
+											"category": "Default"
+										},
+										{
+											"name": "Play Rate",
+											"type": "float",
+											"value": "1.000000",
+											"category": "Default"
+										},
+										{
+											"name": "Play Time",
+											"type": "double",
+											"value": "10.000000",
+											"category": "Default"
+										},
+										{
+											"name": "Play Time Variance",
+											"type": "double",
+											"value": "3.000000",
+											"category": "Default"
+										},
+										{
+											"name": "Slot Handle",
+											"type": "FSmartObjectClaimHandle",
+											"value": "()",
+											"category": "Input"
+										},
+										{
+											"name": "Smart Object Actor",
+											"type": "AActor*",
+											"value": "None",
+											"category": "Input"
+										},
+										{
+											"name": "Smart Object Anim Component",
+											"type": "UAC_SmartObjectAnimation_C*",
+											"value": "None",
+											"category": "Default"
+										},
+										{
+											"name": "Start Time",
+											"type": "float",
+											"value": "0.000000",
+											"category": "Default"
+										}
+									]
+								}
+							],
+							"transitions": [
+								{
+									"transitionId": "12383C7A41F68A888EBADBB6BD5C28F4",
+									"trigger": "OnStateCompleted",
+									"targetStateName": "(next state)",
+									"linkType": "NextState",
+									"priority": "Normal",
+									"conditions": []
+								}
+							],
+							"children": []
+						},
+						{
+							"name": "Play Exit",
+							"stateGuid": "6E9736D34B1AA8A513D60681C2217601",
+							"type": "State",
+							"selectionBehavior": "TrySelectChildrenInOrder",
+							"enterConditions": [],
+							"tasks": [
+								{
+									"name": "StateTreeBlueprintTaskWrapper",
+									"structType": "/Script/StateTreeModule.StateTreeBlueprintTaskWrapper",
+									"category": "Task",
+									"instanceId": "0DE2E7EF4DB98FB5475448899F2BD1F9",
+									"properties": [
+										{
+											"name": "bCanEditConsideredForCompletion",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "bConsideredForCompletion",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "BindingsBatch",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "bTaskEnabled",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "ExecutionRuntimeTemplateIndex",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "InstanceDataHandle",
+											"type": "FStateTreeDataHandle",
+											"value": "(Index=65535,StateHandle=(Index=65535))"
+										},
+										{
+											"name": "InstanceTemplateIndex",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "Name",
+											"type": "FName",
+											"value": "None"
+										},
+										{
+											"name": "OutputBindingsBatch",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "TaskClass",
+											"type": "TSubclassOf<UStateTreeTaskBlueprintBase>",
+											"value": "/Script/Engine.BlueprintGeneratedClass'/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STT_PlayAnimMontage.STT_PlayAnimMontage_C'"
+										},
+										{
+											"name": "TaskFlags",
+											"type": "uint8",
+											"value": "0"
+										},
+										{
+											"name": "TransitionHandlingPriority",
+											"type": "EStateTreeTransitionPriority",
+											"value": "Normal"
+										}
+									],
+									"instanceObjectClass": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STT_PlayAnimMontage.STT_PlayAnimMontage_C",
+									"instanceObjectProperties": [
+										{
+											"name": "Actor",
+											"type": "AActor*",
+											"value": "None",
+											"category": "Context"
+										},
+										{
+											"name": "bCanEditConsideredForCompletion",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bConsideredForCompletion",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCallTickOnlyOnEvents",
+											"type": "uint8",
+											"value": "False",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCopyBoundPropertiesOnExitState",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCopyBoundPropertiesOnTick",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldStateChangeOnReselect",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "Description",
+											"type": "FText",
+											"value": "",
+											"category": "Description"
+										},
+										{
+											"name": "IconColor",
+											"type": "FColor",
+											"value": "(B=148,G=148,R=148,A=255)",
+											"category": "Description"
+										},
+										{
+											"name": "IconName",
+											"type": "FName",
+											"value": "None",
+											"category": "Description"
+										},
+										{
+											"name": "Ignore Collision",
+											"type": "bool",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "Montage to Play",
+											"type": "UAnimMontage*",
+											"value": "/Script/Engine.AnimMontage'/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Interactions/Bench/M_interaction_bench_out_to_stand_Montage.M_interaction_bench_out_to_stand_Montage'",
+											"category": "Default"
+										},
+										{
+											"name": "Mover Component",
+											"type": "UCharacterMoverComponent*",
+											"value": "None",
+											"category": "Default"
+										},
+										{
+											"name": "Number Of Loops",
+											"type": "int32",
+											"value": "0",
+											"category": "Default"
+										},
+										{
+											"name": "Play Rate",
+											"type": "float",
+											"value": "1.000000",
+											"category": "Default"
+										},
+										{
+											"name": "Play Time",
+											"type": "double",
+											"value": "0.000000",
+											"category": "Default"
+										},
+										{
+											"name": "Play Time Variance",
+											"type": "double",
+											"value": "0.000000",
+											"category": "Default"
+										},
+										{
+											"name": "Slot Handle",
+											"type": "FSmartObjectClaimHandle",
+											"value": "()",
+											"category": "Input"
+										},
+										{
+											"name": "Smart Object Actor",
+											"type": "AActor*",
+											"value": "None",
+											"category": "Input"
+										},
+										{
+											"name": "Smart Object Anim Component",
+											"type": "UAC_SmartObjectAnimation_C*",
+											"value": "None",
+											"category": "Default"
+										},
+										{
+											"name": "Start Time",
+											"type": "float",
+											"value": "0.000000",
+											"category": "Default"
+										}
+									]
+								}
+							],
+							"transitions": [
+								{
+									"transitionId": "80AB36F0452CF33DF285599331C61F24",
+									"trigger": "OnStateCompleted",
+									"targetStateName": "(next state)",
+									"linkType": "NextState",
+									"priority": "Normal",
+									"conditions": []
+								}
+							],
+							"children": []
+						},
+						{
+							"name": "ReleaseSlot",
+							"stateGuid": "4F834DBF4617CD9C68F68384E6188107",
+							"type": "State",
+							"selectionBehavior": "TrySelectChildrenInOrder",
+							"enterConditions": [],
+							"tasks": [
+								{
+									"name": "StateTreeBlueprintTaskWrapper",
+									"structType": "/Script/StateTreeModule.StateTreeBlueprintTaskWrapper",
+									"category": "Task",
+									"instanceId": "62D3ED00439B0372EF123BB8130EC7EE",
+									"properties": [
+										{
+											"name": "bCanEditConsideredForCompletion",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "bConsideredForCompletion",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "BindingsBatch",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "bTaskEnabled",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "ExecutionRuntimeTemplateIndex",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "InstanceDataHandle",
+											"type": "FStateTreeDataHandle",
+											"value": "(Index=65535,StateHandle=(Index=65535))"
+										},
+										{
+											"name": "InstanceTemplateIndex",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "Name",
+											"type": "FName",
+											"value": "None"
+										},
+										{
+											"name": "OutputBindingsBatch",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "TaskClass",
+											"type": "TSubclassOf<UStateTreeTaskBlueprintBase>",
+											"value": "/Script/Engine.BlueprintGeneratedClass'/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/TasksAndConditions/STT_ClearFocus.STT_ClearFocus_C'"
+										},
+										{
+											"name": "TaskFlags",
+											"type": "uint8",
+											"value": "0"
+										},
+										{
+											"name": "TransitionHandlingPriority",
+											"type": "EStateTreeTransitionPriority",
+											"value": "Normal"
+										}
+									],
+									"instanceObjectClass": "/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/TasksAndConditions/STT_ClearFocus.STT_ClearFocus_C",
+									"instanceObjectProperties": [
+										{
+											"name": "AIController",
+											"type": "AAIController*",
+											"value": "None",
+											"category": "Context"
+										},
+										{
+											"name": "bCanEditConsideredForCompletion",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bConsideredForCompletion",
+											"type": "uint8",
+											"value": "False",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCallTickOnlyOnEvents",
+											"type": "uint8",
+											"value": "False",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCopyBoundPropertiesOnExitState",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCopyBoundPropertiesOnTick",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldStateChangeOnReselect",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "Description",
+											"type": "FText",
+											"value": "",
+											"category": "Description"
+										},
+										{
+											"name": "IconColor",
+											"type": "FColor",
+											"value": "(B=148,G=148,R=148,A=255)",
+											"category": "Description"
+										},
+										{
+											"name": "IconName",
+											"type": "FName",
+											"value": "None",
+											"category": "Description"
+										}
+									]
+								},
+								{
+									"name": "StateTreeBlueprintTaskWrapper",
+									"structType": "/Script/StateTreeModule.StateTreeBlueprintTaskWrapper",
+									"category": "Task",
+									"instanceId": "3D5560324D4C93E6EB2B3B9DD8FD25F5",
+									"properties": [
+										{
+											"name": "bCanEditConsideredForCompletion",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "bConsideredForCompletion",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "BindingsBatch",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "bTaskEnabled",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "ExecutionRuntimeTemplateIndex",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "InstanceDataHandle",
+											"type": "FStateTreeDataHandle",
+											"value": "(Index=65535,StateHandle=(Index=65535))"
+										},
+										{
+											"name": "InstanceTemplateIndex",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "Name",
+											"type": "FName",
+											"value": "None"
+										},
+										{
+											"name": "OutputBindingsBatch",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "TaskClass",
+											"type": "TSubclassOf<UStateTreeTaskBlueprintBase>",
+											"value": "/Script/Engine.BlueprintGeneratedClass'/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STT_AddCooldown.STT_AddCooldown_C'"
+										},
+										{
+											"name": "TaskFlags",
+											"type": "uint8",
+											"value": "0"
+										},
+										{
+											"name": "TransitionHandlingPriority",
+											"type": "EStateTreeTransitionPriority",
+											"value": "Normal"
+										}
+									],
+									"instanceObjectClass": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STT_AddCooldown.STT_AddCooldown_C",
+									"instanceObjectProperties": [
+										{
+											"name": "AIController",
+											"type": "AAIController*",
+											"value": "None",
+											"category": "Context"
+										},
+										{
+											"name": "bCanEditConsideredForCompletion",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bConsideredForCompletion",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCallTickOnlyOnEvents",
+											"type": "uint8",
+											"value": "False",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCopyBoundPropertiesOnExitState",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCopyBoundPropertiesOnTick",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldStateChangeOnReselect",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "Cooldown Tag",
+											"type": "FGameplayTag",
+											"value": "()",
+											"category": "Default"
+										},
+										{
+											"name": "Cooldown Time",
+											"type": "double",
+											"value": "5.000000",
+											"category": "Default"
+										},
+										{
+											"name": "CooldownName",
+											"type": "FString",
+											"value": "Sit",
+											"category": "Default"
+										},
+										{
+											"name": "Description",
+											"type": "FText",
+											"value": "",
+											"category": "Description"
+										},
+										{
+											"name": "IconColor",
+											"type": "FColor",
+											"value": "(B=148,G=148,R=148,A=255)",
+											"category": "Description"
+										},
+										{
+											"name": "IconName",
+											"type": "FName",
+											"value": "None",
+											"category": "Description"
+										}
+									]
+								},
+								{
+									"name": "StateTreeBlueprintTaskWrapper",
+									"structType": "/Script/StateTreeModule.StateTreeBlueprintTaskWrapper",
+									"category": "Task",
+									"instanceId": "D84F47C54D0A334418370FBF372375B6",
+									"properties": [
+										{
+											"name": "bCanEditConsideredForCompletion",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "bConsideredForCompletion",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "BindingsBatch",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "bTaskEnabled",
+											"type": "uint8",
+											"value": "True"
+										},
+										{
+											"name": "ExecutionRuntimeTemplateIndex",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "InstanceDataHandle",
+											"type": "FStateTreeDataHandle",
+											"value": "(Index=65535,StateHandle=(Index=65535))"
+										},
+										{
+											"name": "InstanceTemplateIndex",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "Name",
+											"type": "FName",
+											"value": "None"
+										},
+										{
+											"name": "OutputBindingsBatch",
+											"type": "FStateTreeIndex16",
+											"value": "(Value=65535)"
+										},
+										{
+											"name": "TaskClass",
+											"type": "TSubclassOf<UStateTreeTaskBlueprintBase>",
+											"value": "/Script/Engine.BlueprintGeneratedClass'/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/TasksAndConditions/STT_CharacterIgnoreCollisionsWithOtherActor.STT_CharacterIgnoreCollisionsWithOtherActor_C'"
+										},
+										{
+											"name": "TaskFlags",
+											"type": "uint8",
+											"value": "0"
+										},
+										{
+											"name": "TransitionHandlingPriority",
+											"type": "EStateTreeTransitionPriority",
+											"value": "Normal"
+										}
+									],
+									"instanceObjectClass": "/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/TasksAndConditions/STT_CharacterIgnoreCollisionsWithOtherActor.STT_CharacterIgnoreCollisionsWithOtherActor_C",
+									"instanceObjectProperties": [
+										{
+											"name": "bCanEditConsideredForCompletion",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bConsideredForCompletion",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCallTickOnlyOnEvents",
+											"type": "uint8",
+											"value": "False",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCopyBoundPropertiesOnExitState",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldCopyBoundPropertiesOnTick",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "bShouldStateChangeOnReselect",
+											"type": "uint8",
+											"value": "True",
+											"category": "Default"
+										},
+										{
+											"name": "Character",
+											"type": "AActor*",
+											"value": "None",
+											"category": "Context"
+										},
+										{
+											"name": "Description",
+											"type": "FText",
+											"value": "",
+											"category": "Description"
+										},
+										{
+											"name": "IconColor",
+											"type": "FColor",
+											"value": "(B=148,G=148,R=148,A=255)",
+											"category": "Description"
+										},
+										{
+											"name": "IconName",
+											"type": "FName",
+											"value": "None",
+											"category": "Description"
+										},
+										{
+											"name": "Other Actor",
+											"type": "AActor*",
+											"value": "None",
+											"category": "Context"
+										},
+										{
+											"name": "ShouldIgnore",
+											"type": "bool",
+											"value": "False",
+											"category": "Default"
+										}
+									]
+								}
+							],
+							"transitions": [
+								{
+									"transitionId": "974CA2134701BF4402F85CB30ECEBEFE",
+									"trigger": "OnStateCompleted",
+									"targetStateName": "(tree succeeded)",
+									"linkType": "Succeeded",
+									"priority": "Normal",
+									"conditions": []
+								}
+							],
+							"children": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"bindings": [
+		{
+			"sourcePath": "",
+			"targetPath": "Actor"
+		},
+		{
+			"sourcePath": "",
+			"targetPath": "Actor"
+		},
+		{
+			"sourcePath": "",
+			"targetPath": "Actor"
+		},
+		{
+			"sourcePath": "",
+			"targetPath": "Actor"
+		},
+		{
+			"sourcePath": "AIController",
+			"targetPath": "AIController"
+		},
+		{
+			"sourcePath": "AIController",
+			"targetPath": "AIController"
+		},
+		{
+			"sourcePath": "AIController",
+			"targetPath": "AIController"
+		},
+		{
+			"sourcePath": "AIController",
+			"targetPath": "AIController"
+		},
+		{
+			"sourcePath": "",
+			"targetPath": "Character"
+		},
+		{
+			"sourcePath": "",
+			"targetPath": "Claimed Handle"
+		},
+		{
+			"sourcePath": "EntryTransform",
+			"targetPath": "Destination"
+		},
+		{
+			"sourcePath": "EntryTransform.Translation",
+			"targetPath": "Destination"
+		},
+		{
+			"sourcePath": "",
+			"targetPath": "Other Actor"
+		},
+		{
+			"sourcePath": "SlotHandle",
+			"targetPath": "ReferenceSlot"
+		},
+		{
+			"sourcePath": "",
+			"targetPath": "Slot Handle"
+		},
+		{
+			"sourcePath": "",
+			"targetPath": "Slot Handle"
+		},
+		{
+			"sourcePath": "",
+			"targetPath": "Smart Object Actor"
+		},
+		{
+			"sourcePath": "",
+			"targetPath": "Smart Object Actor"
+		},
+		{
+			"sourcePath": "",
+			"targetPath": "TargetToFocus"
+		},
+		{
+			"sourcePath": "",
+			"targetPath": "UserActor"
+		}
+	],
+	"dependencies": [
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/TasksAndConditions/STT_CharacterIgnoreCollisionsWithOtherActor",
+			"assetName": "STT_CharacterIgnoreCollisionsWithOtherActor",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/TasksAndConditions/STT_ClearFocus",
+			"assetName": "STT_ClearFocus",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/AI/StateTree/TasksAndConditions/STT_FocusToTarget",
+			"assetName": "STT_FocusToTarget",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/Bench/CHPT_SmartObject_Bench",
+			"assetName": "CHPT_SmartObject_Bench",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STE_GetAIData",
+			"assetName": "STE_GetAIData",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STT_AddCooldown",
+			"assetName": "STT_AddCooldown",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STT_PlayAnimFromBestCost",
+			"assetName": "STT_PlayAnimFromBestCost",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Blueprints/SmartObjects/TasksAndConditions/STT_PlayAnimMontage",
+			"assetName": "STT_PlayAnimMontage",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Interactions/Bench/M_interaction_bench_idle_loop_Montage",
+			"assetName": "M_interaction_bench_idle_loop_Montage",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Interactions/Bench/M_interaction_bench_out_to_stand_Montage",
+			"assetName": "M_interaction_bench_out_to_stand_Montage",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/GameplayInteractionsModule",
+			"assetName": "GameplayInteractionsModule",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/GameplayStateTreeModule",
+			"assetName": "GameplayStateTreeModule",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/SmartObjectsModule",
+			"assetName": "SmartObjectsModule",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/StateTreeEditorModule",
+			"assetName": "StateTreeEditorModule",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/StateTreeModule",
+			"assetName": "StateTreeModule",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": ""
+		}
+	],
+	"assetType": "StateTree",
+	"coverage":
+	{
+		"states":
+		{
+			"total": 6,
+			"documented": 6
+		},
+		"specialized":
+		{
+			"applicable": [
+				"ST.TasksPerState",
+				"ST.Transitions",
+				"ST.Conditions",
+				"ST.InstancedStructTypes"
+			],
+			"documented": [
+				"ST.TasksPerState",
+				"ST.Transitions",
+				"ST.Conditions",
+				"ST.InstancedStructTypes"
+			]
+		},
+		"overallPct": 100
+	}
+}

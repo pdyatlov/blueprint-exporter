@@ -1,0 +1,24 @@
+{
+  "_comment": "M28.2.3 add_component_to_scs post-apply inspection + soak. Duplicates BP_BpxTestStructuralComponents (empty Actor BP) into a scratch path and adds a single UAudioComponent named 'CalloutAudio' (design.md item #4 squad callouts). The inspect gate asserts the rendered .md / .deep.md surface the new component; the soak gate asserts md5 stability across 2 rounds, proving SeedGuidFromJoined(':scs:CalloutAudio') overrides the FGuid::NewGuid() assignment CreateNodeImpl makes at SimpleConstructionScript.cpp:1375 (without it, round 2 would md5-differ from round 1 every run).",
+  "op": "add_component_to_scs",
+  "source_fixture": "/Game/TestBlueprints/BP_BpxTestStructuralComponents",
+  "scratch_path":   "/Game/TestBlueprints/BP_BpxTest_StructuralComponentsScratch",
+  "inspect_path":   "/Game/TestBlueprints/BP_BpxTest_StructuralComponentsScratch",
+  "plan_kwargs": {
+    "bp_path":              "/Game/TestBlueprints/BP_BpxTest_StructuralComponentsScratch",
+    "component_class_path": "/Script/Engine.AudioComponent",
+    "component_name":       "CalloutAudio"
+  },
+  "expected_md": [
+    "CalloutAudio"
+  ],
+  "not_expected_md": [],
+  "expected_deep": [
+    "CalloutAudio"
+  ],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2,
+    "stable_keys": []
+  }
+}

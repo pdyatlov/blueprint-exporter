@@ -1,0 +1,63 @@
+{
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "fd537c860247352360268f4e887a682e"
+	},
+	"name": "StreamlineCore",
+	"pluginType": "Project",
+	"baseDir": "Plugins/Marketplace/StreamlineCore",
+	"enabled": true,
+	"version": 129,
+	"versionName": "8.5.0-SL2.10.3",
+	"friendlyName": "NVIDIA Streamline Core (hidden, implementation detail)",
+	"description": "Please use the specific NVIDIA Streamline feature plugins for DLSS-FG etc",
+	"category": "Rendering",
+	"createdBy": "NVIDIA",
+	"createdByURL": "https://developer.nvidia.com/rtx/streamline",
+	"supportURL": "mailto:DLSS-Support@nvidia.com",
+	"canContainContent": false,
+	"installed": true,
+	"modules": [
+		{
+			"name": "StreamlineBlueprint",
+			"hostType": "Runtime",
+			"loadingPhase": "PostEngineInit"
+		},
+		{
+			"name": "StreamlineCore",
+			"hostType": "Runtime",
+			"loadingPhase": "PostEngineInit"
+		},
+		{
+			"name": "StreamlineD3D11RHI",
+			"hostType": "Runtime",
+			"loadingPhase": "None"
+		},
+		{
+			"name": "StreamlineD3D12RHI",
+			"hostType": "Runtime",
+			"loadingPhase": "None"
+		},
+		{
+			"name": "StreamlineRHI",
+			"hostType": "Runtime",
+			"loadingPhase": "PostSplashScreen"
+		},
+		{
+			"name": "StreamlineShaders",
+			"hostType": "Runtime",
+			"loadingPhase": "PostConfigInit"
+		}
+	],
+	"pluginDependencies": [
+		{
+			"name": "StreamlineNGXCommon",
+			"enabled": true,
+			"optional": false
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+  "_comment": "M28.pre.2 reference assertions for implement_interface_function. Smoke-gate for the post-apply inspection harness itself. Duplicates BP_BpxTestImplementsInterface (UE auto-adds a stub override when the interface is attached), applies force_rebind=True to author the three-binding passthrough, re-exports, and asserts the rendered .md surfaces the override with no 'stub' suffix and .deep.md shows the VariableGet nodes for self.bIsAlive / self.Faction.",
+  "op": "implement_interface_function",
+  "source_fixture": "/Game/TestBlueprints/BP_BpxTestImplementsInterface",
+  "scratch_path":   "/Game/TestBlueprints/BP_BpxTest_InspectScratch",
+  "inspect_path":   "/Game/TestBlueprints/BP_BpxTest_InspectScratch",
+  "plan_kwargs": {
+    "bp_path":           "/Game/TestBlueprints/BP_BpxTest_InspectScratch",
+    "interface_bp_path": "/Game/TestBlueprints/BPI_BpxTestInterface",
+    "function_name":     "GetTargetingInfo",
+    "output_bindings": {
+      "bIsAlive":      "self.bIsAlive",
+      "bIsTargetable": "true",
+      "Faction":       "self.Faction"
+    },
+    "force_rebind": true
+  },
+  "expected_md": [
+    "Interface override of .*BPI_BpxTestInterface",
+    "GetTargetingInfo"
+  ],
+  "not_expected_md": [
+    "stub \\(no authored body\\)"
+  ],
+  "expected_deep": [
+    "GetTargetingInfo",
+    "bIsAlive",
+    "Faction"
+  ],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2,
+    "stable_keys": ["entry_guid"],
+    "round2_min_wiped_nodes": 1
+  }
+}

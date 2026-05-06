@@ -1,0 +1,43 @@
+{
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "6d7169d58410d8c2af55e34dbf98c771"
+	},
+	"name": "DLSSMoviePipelineSupport",
+	"pluginType": "Project",
+	"baseDir": "Plugins/Marketplace/DLSSMoviePipelineSupport",
+	"enabled": true,
+	"version": 32,
+	"versionName": "8.5.0",
+	"friendlyName": "Movie Render Queue DLSS/DLAA Support",
+	"description": "Plugin that adds DLSS/DLAA support to Movie Render Queue.",
+	"category": "Rendering",
+	"createdBy": "NVIDIA",
+	"createdByURL": "https://developer.nvidia.com/dlss",
+	"supportURL": "mailto:DLSS-Support@nvidia.com",
+	"canContainContent": true,
+	"installed": true,
+	"modules": [
+		{
+			"name": "DLSSMoviePipelineSupport",
+			"hostType": "Runtime",
+			"loadingPhase": "PostEngineInit"
+		}
+	],
+	"pluginDependencies": [
+		{
+			"name": "DLSS",
+			"enabled": true,
+			"optional": false
+		},
+		{
+			"name": "MovieRenderPipeline",
+			"enabled": true,
+			"optional": false
+		}
+	]
+}

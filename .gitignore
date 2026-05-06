@@ -1,0 +1,71 @@
+# Build artifacts
+BuiltPlugin/Binaries/Win64/*.pdb
+BuiltPlugin/Intermediate/
+# Covers _build_output/ (default RunUAT target) and the suffixed variants
+# _build_output_5_7/ (stock UE 5.7), _build_output_dow/ (custom UE_DOW),
+# _build_output_bphtests/ (BugHunt tests). Some of these are live junction
+# targets for external installs (e.g. UE_DOW_Legacy/Plugins/BlueprintExporter
+# → _build_output_5_7), so do NOT delete them; just don't stage them either.
+_build_output*/
+_compile_check/
+
+# Inventory subsystem ephemerals. ProjectInventory/ (BugHunt smoke output)
+# is fully ephemeral. ProjectInventory_DOW/ is the canonical committed
+# deliverable EXCEPT for its Deep/ subdir which is on-demand DeepDump output
+# that should be regenerated, not committed.
+ProjectInventory/
+ProjectInventory_DOW/Deep/
+
+# Verification twin-run outputs (always ephemeral; verify_determinism.ps1
+# cleans these on success but leaves them on failure for inspection).
+_determinism_A/
+_determinism_A_logs/
+_determinism_B/
+_determinism_B_logs/
+_deep_st_A/
+_deep_st_B/
+
+# Commandlet / build log captures from manual verification runs.
+_*.log
+
+# BugHunt/ — dev-only workstream. Build outputs and local plugin-discovery
+# junctions live here and must never be committed.
+BugHunt/TestProject/Binaries/
+BugHunt/TestProject/Build/
+BugHunt/TestProject/DerivedDataCache/
+BugHunt/TestProject/Intermediate/
+BugHunt/TestProject/Saved/
+BugHunt/TestProject/*.sln
+BugHunt/TestProject/.vs/
+BugHunt/TestProject/Plugins/BlueprintExporter/
+BugHunt/TestProject/Plugins/BlueprintExporterTests
+BugHunt/BlueprintExporterTests/Binaries/
+BugHunt/BlueprintExporterTests/Intermediate/
+
+# UE auto-generated on first editor run — never milestone content.
+# DefaultEngine.ini / DefaultGame.ini ARE tracked (authored configuration);
+# DefaultInput.ini is generated from engine defaults the first time the
+# project loads, so it varies per machine and must stay out.
+BugHunt/TestProject/Config/DefaultInput.ini
+# Plugin Config dir auto-created on first package load. Contents are
+# boilerplate FilterPlugin.ini etc. — never committed.
+BugHunt/BlueprintExporterTests/Config/
+
+# Inspect-harness scratch assets. The M28.pre.2 verify_post_apply_inspect
+# harness duplicates fixtures into scratch paths like
+# BP_BpxTest_<Something>Scratch_<Op>.uasset to exercise ops without
+# touching source fixtures. Normal runs clean up; -KeepScratch or a
+# failed cleanup leaves residue which must not be staged.
+BugHunt/TestProject/Content/TestBlueprints/*Scratch*.uasset
+
+# IDE
+.vs/
+*.sln
+*.vcxproj*
+
+# Python artefacts (scripts/python_ops/ + scripts/blueprint-exporter-mcp/)
+__pycache__/
+*.pyc
+*.egg-info/
+scripts/blueprint-exporter-mcp/build/
+scripts/blueprint-exporter-mcp/dist/

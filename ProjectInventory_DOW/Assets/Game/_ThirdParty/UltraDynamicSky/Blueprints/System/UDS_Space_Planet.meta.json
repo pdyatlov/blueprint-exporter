@@ -1,0 +1,312 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"assetType": "UserDefinedStruct",
+	"assetPath": "/Game/_ThirdParty/UltraDynamicSky/Blueprints/System/UDS_Space_Planet.UDS_Space_Planet",
+	"assetName": "UDS_Space_Planet",
+	"fields": [
+		{
+			"name": "Parent_2_0E1A37CE4AF01519A9BCE6ACA2CD1137",
+			"type": "TEnumAsByte<UDS_Space_Parent>",
+			"category": "",
+			"toolTip": "Determines if this space object will move with the sun, moon, or not move."
+		},
+		{
+			"name": "RelativeRotation_5_6AB46E784AAA14769695A882EB23223E",
+			"type": "FRotator",
+			"category": "",
+			"toolTip": "The rotation of the object, relative to the actor if it has no parent, or relative to the sun or moon if parented to those."
+		},
+		{
+			"name": "Scale_9_D8C257DF48AA1AA6FF92B0BADA269EDB",
+			"type": "double",
+			"category": "",
+			"toolTip": "The visual size of the planet/moon"
+		},
+		{
+			"name": "ColorTexture_30_2BBB70D24D2BDD9AD355609B4FF9B21B",
+			"type": "TSoftObjectPtr<UTexture2D>",
+			"category": "",
+			"toolTip": "The texture used for the color. Should be flat/unshaded."
+		},
+		{
+			"name": "ColorTextureTint_123_F088C5B64DFD1D20EEC23CBC27966B9C",
+			"type": "FLinearColor",
+			"category": "",
+			"toolTip": "Tints the color texture overall"
+		},
+		{
+			"name": "NormalMap_33_A9266AE648B84654F7C9B9849CFA3E7C",
+			"type": "TSoftObjectPtr<UTexture2D>",
+			"category": "",
+			"toolTip": "Normal map for adding detail to shading from the sun"
+		},
+		{
+			"name": "NormalMapStrength_36_6F822CA84FCDEF589CED9595F668D77A",
+			"type": "double",
+			"category": "",
+			"toolTip": "The strength of the normal map's effect on the shading."
+		},
+		{
+			"name": "DarkSideTint_40_83860D2D4EEEF7086AB3AFB09CF1DCCC",
+			"type": "FLinearColor",
+			"category": "",
+			"toolTip": "The color multiplied over the dark side of the planet. Can be set to white to make an object that doesn't visibly have shading."
+		},
+		{
+			"name": "LightSideTint_42_0EF08CD645E27CABBE7DBD8E7471F04B",
+			"type": "FLinearColor",
+			"category": "",
+			"toolTip": "The color multiplied over the light side of the planet. Would typically be white, but can be used to tint the light side as needed."
+		},
+		{
+			"name": "TerminatorThickness_58_E6DC59F2417BA23BB1BAA5BF464BF621",
+			"type": "double",
+			"category": "",
+			"toolTip": "Multiplied over the shading gradient, to control how wide/tight the terminator (the border between the light and dark side) is."
+		},
+		{
+			"name": "TerminatorPower_60_249814CB4B2F0A60E458FEA89132D36E",
+			"type": "double",
+			"category": "",
+			"toolTip": "An exponent for the shading gradient, to control the curve of falloff from light to dark."
+		},
+		{
+			"name": "TerminatorOffset_62_E26446874807C179E62DC3A3D511938F",
+			"type": "double",
+			"category": "",
+			"toolTip": "An offset for the shading gradient, to have more or less of the sphere be lit."
+		},
+		{
+			"name": "TerminatorTint_44_8A6F729743E618D4CBE093BDCA99CD01",
+			"type": "FLinearColor",
+			"category": "",
+			"toolTip": "A tint color applied in the middle of the terminator. Useful for planets with atmospheres like Earth, to imitate the way light filters warm along the terminator."
+		},
+		{
+			"name": "LightVector_105_71AFA5654C1A2915EF2F6F9636985F79",
+			"type": "TEnumAsByte<UDS_Planet_Lightsource>",
+			"category": "",
+			"toolTip": "Choose the angle that the material will appear lit from. The sun, the moon, or the custom vector (adjustable below)"
+		},
+		{
+			"name": "CustomLightVector_108_A1E02E374DF47067FFF4BB83AD035BC4",
+			"type": "FVector",
+			"category": "",
+			"toolTip": "If the Light Vector setting is Custom, this vector will be used for the direction light shades this planet."
+		},
+		{
+			"name": "Glow_116_6BBE205A4CB7B5A1555103A09A90E0F7",
+			"type": "double",
+			"category": "",
+			"toolTip": "Glow around the planet/moon, like light scattering through the local atmosphere"
+		},
+		{
+			"name": "GlowColor_117_D644808A49C9F262468CD988D1087F09",
+			"type": "FLinearColor",
+			"category": "",
+			"toolTip": "Tints the color of the glow added by the above setting"
+		},
+		{
+			"name": "GlowScale_120_20ADA5B346CD968A0904D284F1D968B0",
+			"type": "double",
+			"category": "",
+			"toolTip": "Scales the glow sprite relative to the planet/moon scale"
+		},
+		{
+			"name": "RenderAtmosphere_47_8FA38C394C66F95149E4269D6A13E9DE",
+			"type": "bool",
+			"category": "",
+			"toolTip": "If true, atmosphere color and a ring of atmosphere \"glow\" will encircle the planet."
+		},
+		{
+			"name": "AtmosphereStrength_50_0D33B16248764FF3CEBC98B70F026998",
+			"type": "double",
+			"category": "",
+			"toolTip": "The opacity of the atmosphere color and glow"
+		},
+		{
+			"name": "AtmosphereThickness_52_0C2D526D4C6E998A929F2D9A2B3FE30B",
+			"type": "double",
+			"category": "",
+			"toolTip": "The size of the atmosphere's \"ring\" around the planet's sphere."
+		},
+		{
+			"name": "AtmosphereColor_55_39F94C30482BE08919CDB1BE025A7DC8",
+			"type": "FLinearColor",
+			"category": "",
+			"toolTip": "The color of the atmosphere, applied if Render Atmosphere is true."
+		},
+		{
+			"name": "EmissiveTexture_66_5312AAA94E7A901D5F46D6AC848F943F",
+			"type": "TSoftObjectPtr<UTexture2D>",
+			"category": "",
+			"toolTip": "An emissive color texture or grayscale mask. One possible use is for city lights visible on the night side of a planet."
+		},
+		{
+			"name": "EmissiveLightSideTint_73_969799654B9C1754BDE425B229EA063E",
+			"type": "FLinearColor",
+			"category": "",
+			"toolTip": "Tints the emissive texture on the lit side of the planet"
+		},
+		{
+			"name": "EmissiveDarkSideTint_74_EBFDD1104CC20ADAE943EC913D1977B2",
+			"type": "FLinearColor",
+			"category": "",
+			"toolTip": "Tints the emissive texture on the dark side of the planet"
+		},
+		{
+			"name": "RenderRing_78_1DDEF5604EC914832AB31CA1327D2947",
+			"type": "bool",
+			"category": "",
+			"toolTip": "Render planetary rings around the sphere"
+		},
+		{
+			"name": "RingPitch_80_56F5E8E14589B8624F3C7B9951D4C8D1",
+			"type": "double",
+			"category": "",
+			"toolTip": "The pitch of the ring's rotation"
+		},
+		{
+			"name": "RingRoll_82_091721764596A286D8F56C92EFB17435",
+			"type": "double",
+			"category": "",
+			"toolTip": "The roll of the ring's rotation"
+		},
+		{
+			"name": "RingDistance_84_8E87B9394476970597D7A8B81A055C39",
+			"type": "double",
+			"category": "",
+			"toolTip": "The innter distance of the ring, from the planet surface."
+		},
+		{
+			"name": "RingWidth_86_324627CE43F44BEFA03D019FC1E0FF8F",
+			"type": "double",
+			"category": "",
+			"toolTip": "The thickness of the ring"
+		},
+		{
+			"name": "RingTexture_92_B962AC934EE0E4617A29BE9F710F32EF",
+			"type": "TSoftObjectPtr<UTexture2D>",
+			"category": "",
+			"toolTip": "The texture used for the ring. Only sampled on X axis, so should be 1 pixel tall. RGB contains color and A is used for opacity."
+		},
+		{
+			"name": "RingTintColor_95_4F6B04E54C74C020B0C009971EB24538",
+			"type": "FLinearColor",
+			"category": "",
+			"toolTip": "Tint the color of the ring. Multiplied over the color from the Ring Texture."
+		},
+		{
+			"name": "RingOpacity_98_6F398376468F51CF8289D9AA39638D49",
+			"type": "double",
+			"category": "",
+			"toolTip": "Scales the alpha channel of the ring texture"
+		},
+		{
+			"name": "RingShadowBrightness_100_82A5108141E68184387C0CBDA39F37D6",
+			"type": "double",
+			"category": "",
+			"toolTip": "Sets how much the planet's shadow darkens the ring."
+		},
+		{
+			"name": "RingShadowSoftness_102_B53027E540B8F2E6C7744D90958C1B85",
+			"type": "double",
+			"category": "",
+			"toolTip": "Larger values will make the planet's shadow on the ring softer."
+		},
+		{
+			"name": "RingAroundLocalPlanet_137_C88F416041C533DC98C9EA8F7D68CBD7",
+			"type": "bool",
+			"category": "",
+			"toolTip": "This is for if you want to use this planet/moon to render a ring around the local planet (the planet you're on). When this is true, only the ring decal will be rendered, centered around the local planet."
+		},
+		{
+			"name": "MeshDeformTexture_126_B7DC215A433430E4AD89459B331BC0CE",
+			"type": "TSoftObjectPtr<UTexture2D>",
+			"category": "",
+			"toolTip": "Alpha texture used to deform the surface along the vertex normal (for irregularly shaped moons, asteroids)"
+		},
+		{
+			"name": "MeshDeformStrength_129_CBDEB487415F39784E41DBB95BE8F4B1",
+			"type": "double",
+			"category": "",
+			"toolTip": "Amount to deform the mesh along the vertex normal, relative to the size of the object."
+		},
+		{
+			"name": "MeshDeformCenterLevel_135_D94322934BFA5C635C0D2BA54E37A086",
+			"type": "double",
+			"category": "",
+			"toolTip": "Defines the level of brightness in the mesh deform texture which is unmoved by the deformation."
+		},
+		{
+			"name": "MeshDeformTextureOffset_132_F11E46C5458E2C4E5B3ABB8E3C2E6B45",
+			"type": "FVector",
+			"category": "",
+			"toolTip": "The first two channels offset the mesh deform texture in X and Y space. The third scales the texture."
+		}
+	],
+	"dependencies": [
+		{
+			"assetPath": "/Game/_ThirdParty/UltraDynamicSky/Blueprints/Enum/UDS_Planet_Lightsource",
+			"assetName": "UDS_Planet_Lightsource",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/UltraDynamicSky/Blueprints/Enum/UDS_Space_Parent",
+			"assetName": "UDS_Space_Parent",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/UltraDynamicSky/Textures/Space/Planets_Moons/Deform_Noise",
+			"assetName": "Deform_Noise",
+			"dependencyType": "Soft",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/UltraDynamicSky/Textures/Space/Rings/Planetary_Ring_1",
+			"assetName": "Planetary_Ring_1",
+			"dependencyType": "Soft",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/CoreUObject",
+			"assetName": "CoreUObject",
+			"dependencyType": "Soft",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/Engine",
+			"assetName": "Engine",
+			"dependencyType": "Soft",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		}
+	],
+	"coverage":
+	{
+		"fields":
+		{
+			"total": 40,
+			"documented": 40
+		},
+		"specialized":
+		{
+			"applicable": [],
+			"documented": []
+		},
+		"overallPct": 100
+	}
+}

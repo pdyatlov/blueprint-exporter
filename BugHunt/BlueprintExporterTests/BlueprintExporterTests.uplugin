@@ -1,0 +1,46 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0.0",
+	"FriendlyName": "TenChambers Blueprint Exporter — Bug Hunt Tests",
+	"Description": "Dev-only test harness for BlueprintExporter. Hosts the GenerateTestBlueprints commandlet used to regenerate committed .uasset fixtures. NOT part of any shippable distribution — lives under BugHunt/ and is only enabled by BugHunt/TestProject.",
+	"Category": "Editor",
+	"CreatedBy": "10 Chambers",
+	"CreatedByURL": "https://www.10chambers.com",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": true,
+	"Installed": false,
+	"EnabledByDefault": false,
+	"Modules": [
+		{
+			"Name": "BlueprintExporterTests",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "BlueprintExporter",
+			"Enabled": true
+		},
+		{
+			"Name": "StateTree",
+			"Enabled": true,
+			"Optional": true
+		},
+		{
+			"Name": "StructUtils",
+			"Enabled": true,
+			"Optional": true
+		},
+		{
+			"Name": "GameplayAbilities",
+			"Enabled": true,
+			"Optional": true
+		}
+	]
+}

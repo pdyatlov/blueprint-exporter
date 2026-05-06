@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BlueprintExporter Bug Hunt — how it works</title>
+<style>
+  :root {
+    --bg:          #0f1419;
+    --bg-card:     #171c24;
+    --bg-card-2:   #1d232c;
+    --border:      #2a323e;
+    --text:        #e6e8ec;
+    --text-dim:    #8d949e;
+    --accent:      #5ee6d0;
+    --accent-2:    #f5a524;
+    --ok:          #28c76f;
+    --fail:        #ea5455;
+    --skip:        #6b7380;
+    --mono: "Menlo", "Consolas", "SFMono-Regular", ui-monospace, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+    padding: 48px 24px;
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  header {
+    margin-bottom: 48px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 24px;
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+  h1 .tag { color: var(--accent); }
+
+  header p {
+    color: var(--text-dim);
+    font-size: 15px;
+    max-width: 780px;
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px;
+  }
+
+  .card + .card { margin-top: 16px; }
+
+  /* oracle flow */
+  .flow {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 12px 18px;
+    align-items: center;
+    margin-top: 8px;
+  }
+  .step {
+    background: var(--bg-card-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-family: var(--mono);
+    font-size: 13px;
+  }
+  .step .label {
+    display: block;
+    color: var(--text-dim);
+    font-family: var(--sans);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 4px;
+  }
+  .step.input    { border-color: var(--accent-2); }
+  .step.pivot    { border-color: var(--accent);   }
+  .step.output   { border-color: var(--accent);   }
+  .step.verdict  { border-color: var(--ok); text-align: center; font-weight: 700; }
+  .step.verdict.fail { border-color: var(--fail); }
+
+  .arrow {
+    color: var(--accent);
+    font-size: 22px;
+    text-align: center;
+    font-family: var(--mono);
+  }
+  .arrow .note {
+    display: block;
+    font-family: var(--sans);
+    font-size: 11px;
+    color: var(--text-dim);
+    margin-top: 2px;
+  }
+
+  /* three commandlets grid */
+  .cmdlets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+  }
+  .cmdlet {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px;
+  }
+  .cmdlet h3 {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+  .cmdlet .role {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    margin-bottom: 10px;
+  }
+  .cmdlet p {
+    font-size: 13px;
+    color: var(--text);
+  }
+  .cmdlet code {
+    font-family: var(--mono);
+    font-size: 12px;
+    background: var(--bg-card-2);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: var(--accent-2);
+  }
+
+  /* fixture tier table */
+  .tier-grid {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px 18px;
+    align-items: center;
+    font-size: 13px;
+  }
+  .tier-badge {
+    font-family: var(--mono);
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-align: center;
+    min-width: 60px;
+  }
+  .tier-A { background: rgba(245,165,36,0.15); color: var(--accent-2); }
+  .tier-B { background: rgba(94,230,208,0.12); color: var(--accent); }
+  .tier-C { background: rgba(108,120,140,0.2); color: var(--text-dim); }
+  .tier-desc { color: var(--text); }
+  .tier-count {
+    font-family: var(--mono);
+    color: var(--text-dim);
+    font-size: 12px;
+    text-align: right;
+  }
+
+  /* scoreboard */
+  .scoreboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+  .score {
+    background: var(--bg-card-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+  }
+  .score .num {
+    font-family: var(--mono);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--accent);
+    display: block;
+    line-height: 1;
+  }
+  .score .denom {
+    color: var(--text-dim);
+    font-size: 14px;
+    font-family: var(--mono);
+  }
+  .score .what {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    margin-top: 8px;
+    display: block;
+  }
+  .score.pass .num { color: var(--ok); }
+  .score.fail .num { color: var(--fail); }
+  .score.skip .num { color: var(--skip); }
+
+  /* matrix */
+  .matrix {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 6px 14px;
+    font-size: 13px;
+    font-family: var(--mono);
+  }
+  .matrix .row {
+    display: contents;
+  }
+  .matrix .fxt { padding: 6px 0; color: var(--text); }
+  .matrix .status {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+    text-align: center;
+    min-width: 56px;
+    align-self: center;
+  }
+  .s-pass { background: rgba(40,198,111,0.15); color: var(--ok); }
+  .s-fail { background: rgba(234,84,85,0.15);  color: var(--fail); }
+  .s-skip { background: rgba(107,115,128,0.2); color: var(--skip); }
+  .matrix .reason {
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--text-dim);
+    align-self: center;
+  }
+
+  /* guid scrub insight */
+  .insight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 8px;
+  }
+  .insight .column {
+    background: var(--bg-card-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 18px;
+  }
+  .insight .column h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+  }
+  .insight .bad h4  { color: var(--fail); }
+  .insight .good h4 { color: var(--ok); }
+  .insight .column p {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .insight .column code {
+    font-family: var(--mono);
+    font-size: 11px;
+    background: var(--bg);
+    padding: 8px 10px;
+    border-radius: 4px;
+    display: block;
+    color: var(--text);
+    white-space: pre-wrap;
+  }
+
+  /* commands */
+  pre {
+    background: var(--bg-card-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 18px;
+    overflow-x: auto;
+    font-family: var(--mono);
+    font-size: 12.5px;
+    color: var(--text);
+    line-height: 1.6;
+  }
+  pre .cmt { color: var(--text-dim); }
+  pre .flag { color: var(--accent-2); }
+  pre .path { color: var(--accent); }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-dim);
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer code { font-family: var(--mono); }
+
+  @media (max-width: 760px) {
+    .cmdlets, .scoreboard, .insight { grid-template-columns: 1fr; }
+    .flow { grid-template-columns: 1fr; }
+    .arrow { transform: rotate(90deg); }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>BlueprintExporter <span class="tag">/ bug hunt</span></h1>
+  <p>A programmatic round-trip oracle. Every target Blueprint — whether a committed fixture or any Blueprint in a real project — is exported to JSON, re-imported into a sandbox package, re-exported, and diffed. Any semantic drift between the two exports is a bug in the plugin: serializer, deserializer, or the schema between them.</p>
+</header>
+
+<section>
+  <h2>The oracle loop (per asset)</h2>
+  <div class="card">
+    <div class="flow">
+      <div class="step input">
+        <span class="label">source fixture</span>
+        /Game/TestBlueprints/BP_NodeZoo
+      </div>
+      <div class="arrow">→<span class="note">FBlueprintSerializer</span></div>
+      <div class="step">
+        <span class="label">source.json</span>
+        full FExportedBlueprint tree
+      </div>
+
+      <div class="step">
+        <span class="label">redirect</span>
+        assetPath → /Game/_Roundtrip/&lt;name&gt;_RT
+      </div>
+      <div class="arrow">→<span class="note">FBlueprintImportManager</span></div>
+      <div class="step pivot">
+        <span class="label">sandbox BP</span>
+        fresh UBlueprint in /Game/_Roundtrip/
+      </div>
+
+      <div class="step output">
+        <span class="label">target.json</span>
+        re-serialise the sandbox BP
+      </div>
+      <div class="arrow">→<span class="note">scrub GUID noise</span></div>
+      <div class="step">
+        <span class="label">normalized pair</span>
+        guids / ids / timestamps / paths zeroed
+      </div>
+
+      <div class="step verdict">PASS if structurally identical</div>
+      <div class="arrow">↔<span class="note">FBlueprintDiffEngine</span></div>
+      <div class="step verdict fail">FAIL with a structured diff</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Three commandlets, one pipeline</h2>
+  <div class="cmdlets">
+    <div class="cmdlet">
+      <h3>GenerateTestBlueprints</h3>
+      <div class="role">Fixture-only · writes <code>/Game/TestBlueprints/</code></div>
+      <p>Builds every committed fixture programmatically via <code>FKismetEditorUtilities::CreateBlueprint</code>, populates variables / components / graphs, compiles, saves <code>.uasset</code>. Skips fixtures already on disk unless <code>-Force</code>. Only ever run against <code>BugHunt/TestProject</code> — it pollutes any other project's Content folder.</p>
+    </div>
+    <div class="cmdlet">
+      <h3>BlueprintExportRoundtrip</h3>
+      <div class="role">General-purpose · any project</div>
+      <p>Runs the oracle loop against a <code>-TargetBP=</code> asset path or directory. Works against <em>any</em> project's Blueprints, not just the fixture set — point it at <code>/Game/Characters/BP_Heister</code> in a project with the plugin enabled. Writes <code>source.json</code>, <code>target.json</code>, a structured <code>report.json</code>, and a sandbox BP under <code>/Game/_Roundtrip/</code> in the target project.</p>
+    </div>
+    <div class="cmdlet">
+      <h3>RunBugHunt</h3>
+      <div class="role">Dual-mode · agent entry point</div>
+      <p>Single agent entry point. Takes either <code>-Area=&lt;name&gt;</code> (fixture catalog — looks up <code>GetAreaCatalog()</code>) or <code>-Path=/Game/...</code> (recurses any subtree via the AssetRegistry, including <code>UWidgetBlueprint</code> / <code>UAnimBlueprint</code> subclasses). Runs each target through the oracle, emits one aggregated <code>report.json</code> with a categorized summary at the top. Supports <code>-Resume</code> for crash-tolerant multi-hour runs against real projects.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Two modes: self-test vs external project</h2>
+  <div class="insight">
+    <div class="column good">
+      <h4>Self-test (fixture catalog)</h4>
+      <p>Run against <code>BugHunt/TestProject</code>. Fixture corpus is deterministic and committed; regressions are obvious in the per-fixture <code>report.json</code>. This is the pre-ship correctness gate for the plugin itself.</p>
+      <code>-run=RunBugHunt -Area=Roundtrip
+(14 committed fixtures, same every run)</code>
+    </div>
+    <div class="column bad">
+      <h4>External project (any /Game/ subtree)</h4>
+      <p>Point <code>RunBugHunt -Path=/Game/...</code> at any project's <code>.uproject</code> with the plugin enabled — enumerates every <code>UBlueprint</code> recursively, runs each through the same oracle, emits one categorized <code>report.json</code>. Use <code>BlueprintExportRoundtrip -TargetBP=</code> instead when you want paired source/target JSONs for a single asset. <strong>Caveat: writes <code>/Game/_Roundtrip/</code> into the target project</strong> — don't run against a read-only tree like UE_DOW without a working copy.</p>
+      <code>-run=RunBugHunt -Path=/Game/Characters/
+(recursive; -Resume skips completed entries)</code>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Fixture catalog (14 committed, 2 explicit skips)</h2>
+  <div class="card">
+    <div class="tier-grid">
+      <div class="tier-badge tier-A">Tier A</div>
+      <div class="tier-desc">Ambitious AI surfaces — State Tree, Behavior Tree, Perception, Smart Objects, GASP AnimBP. Highest bug-yield target, hardest to generate without real assets.</div>
+      <div class="tier-count">3 green · 2 skip</div>
+
+      <div class="tier-badge tier-B">Tier B</div>
+      <div class="tier-desc">Gameplay Ability System — GameplayAbility BP with cooldown + charges.</div>
+      <div class="tier-count">1 green</div>
+
+      <div class="tier-badge tier-C">Tier C</div>
+      <div class="tier-desc">Structural baseline — NodeZoo, PinHell, InheritanceChain, SCSMonster, MacroMania, NetRep, StructEnumZoo, WidgetTree.</div>
+      <div class="tier-count">5 green · 3 fail</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Why the oracle scrubs GUIDs</h2>
+  <div class="insight">
+    <div class="column bad">
+      <h4>Without scrub</h4>
+      <p>Re-imported nodes get fresh GUIDs. The diff engine matches nodes by <code>nodeId</code> which embeds the GUID, so every node reads as added-and-removed.</p>
+      <code>Changes: 6 added, 6 removed, 0 modified
+(every single fixture)
+0/14 passing</code>
+    </div>
+    <div class="column good">
+      <h4>With scrub</h4>
+      <p>Both JSONs have volatile fields zeroed before diffing: blueprintGuid, variableGuid, graphGuid, nodeGuid, pinGuid, nodeId, pinId, contentHash, exportTimestamp, assetPath, sourcePackage. Only semantic drift survives.</p>
+      <code>8/14 passing
+the remaining 4 are real bugs</code>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>First-hunt scoreboard</h2>
+  <div class="scoreboard">
+    <div class="score pass">
+      <span class="num">8</span><span class="denom">/ 14</span>
+      <span class="what">round-trip green</span>
+    </div>
+    <div class="score fail">
+      <span class="num">4</span>
+      <span class="what">real bugs surfaced</span>
+    </div>
+    <div class="score skip">
+      <span class="num">2</span>
+      <span class="what">fixtures skipped (deps)</span>
+    </div>
+    <div class="score">
+      <span class="num">3</span>
+      <span class="what">plugin fixes shipped</span>
+    </div>
+  </div>
+  <div class="card" style="margin-top:14px;">
+    <div class="matrix">
+      <div class="row"><span class="fxt">BP_NodeZoo</span>          <span class="status s-pass">PASS</span> <span class="reason">K2 nodes, variables, sequence</span></div>
+      <div class="row"><span class="fxt">BP_PinHell</span>          <span class="status s-pass">PASS</span> <span class="reason">array / set / map / object / vector</span></div>
+      <div class="row"><span class="fxt">BP_InheritanceChain</span> <span class="status s-fail">FAIL</span> <span class="reason">member refs fall back to NAME_None on compile</span></div>
+      <div class="row"><span class="fxt">BP_SCSMonster</span>       <span class="status s-pass">PASS*</span> <span class="reason">* numeric diff clean, but ApplyComponents is a stub</span></div>
+      <div class="row"><span class="fxt">BP_MacroMania</span>       <span class="status s-pass">PASS</span> <span class="reason">macro library + consumer</span></div>
+      <div class="row"><span class="fxt">BP_NetRep</span>           <span class="status s-fail">FAIL</span> <span class="reason">duplicate OnRep_HealthLow at compile</span></div>
+      <div class="row"><span class="fxt">BP_StructEnumZoo</span>    <span class="status s-pass">PASS</span> <span class="reason">user-defined struct + enum refs</span></div>
+      <div class="row"><span class="fxt">BP_WidgetTree</span>       <span class="status s-fail">FAIL</span> <span class="reason">widget tree not reconstructed on import</span></div>
+      <div class="row"><span class="fxt">BP_NPC_BehaviorTree</span> <span class="status s-pass">PASS</span> <span class="reason">AIController BP + soft-ref to BT</span></div>
+      <div class="row"><span class="fxt">BP_NPC_Perception</span>   <span class="status s-fail">FAIL</span> <span class="reason">AIPerceptionComponent not re-imported</span></div>
+      <div class="row"><span class="fxt">BP_NPC_StateTree</span>    <span class="status s-pass">PASS</span> <span class="reason">AIController + soft-ref to UStateTree</span></div>
+      <div class="row"><span class="fxt">BP_NPC_SmartObject</span>  <span class="status s-skip">SKIP</span> <span class="reason">SmartObjects module not in plugin deps</span></div>
+      <div class="row"><span class="fxt">BP_GASP_AnimBP</span>      <span class="status s-skip">SKIP</span> <span class="reason">no USkeleton available programmatically</span></div>
+      <div class="row"><span class="fxt">BP_GAS_Ability</span>      <span class="status s-pass">PASS</span> <span class="reason">GameplayAbility BP</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Running it</h2>
+  <pre><span class="cmt"># generate fixtures (idempotent; -Force to regenerate)</span>
+UnrealEditor-Cmd.exe <span class="path">BugHunt/TestProject/BugHunt.uproject</span> \
+  <span class="flag">-run=GenerateTestBlueprints</span> -nullrhi -unattended -nopause
+
+<span class="cmt"># per-area hunt (catalog mode; see GetAreaCatalog for valid -Area values)</span>
+UnrealEditor-Cmd.exe <span class="path">BugHunt/TestProject/BugHunt.uproject</span> \
+  <span class="flag">-run=RunBugHunt -Area=Roundtrip</span> -nullrhi -unattended -nopause
+
+<span class="cmt"># external-project sweep (any /Game/ subtree, crash-resumable via -Resume)</span>
+<span class="cmt"># MSYS_NO_PATHCONV=1 keeps git-bash from rewriting /Game/... to a Windows path</span>
+MSYS_NO_PATHCONV=1 UnrealEditor-Cmd.exe <span class="path">SomeProject.uproject</span> \
+  <span class="flag">-run=RunBugHunt -Path=/Game/Characters/</span> [<span class="flag">-Resume</span>] -nullrhi -unattended -nopause
+
+<span class="cmt"># single-asset deep dive (source.json + target.json side-by-side)</span>
+UnrealEditor-Cmd.exe <span class="path">BugHunt/TestProject/BugHunt.uproject</span> \
+  <span class="flag">-run=BlueprintExportRoundtrip</span> \
+  <span class="flag">-TargetBP=/Game/TestBlueprints/BP_NodeZoo</span> \
+  <span class="flag">-OutDir=D:\scratch\rt</span> -nullrhi -unattended -nopause</pre>
+</section>
+
+<footer>
+  <span>BugHunt lives under <code>BugHunt/</code> — dev-only, never ships.</span>
+  <span>Details: <code>BugHunt/README.md</code> · <code>REPORT.md</code> · <code>HANDOFF.md</code></span>
+</footer>
+
+</body>
+</html>

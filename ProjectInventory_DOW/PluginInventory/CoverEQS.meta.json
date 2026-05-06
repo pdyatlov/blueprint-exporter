@@ -1,0 +1,92 @@
+{
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "89ccb10563635976bae9f5b352c6a739"
+	},
+	"name": "CoverEQS",
+	"pluginType": "Project",
+	"baseDir": "Plugins/CoverEQS",
+	"enabled": true,
+	"version": 1,
+	"versionName": "1.0.0",
+	"friendlyName": "Cover EQS - Trace Distance Test",
+	"description": "Custom EQS test that scores items by distance to first blocking hit along a trace. Fills the gap between the engine's boolean Trace test and continuous cover quality scoring.",
+	"category": "AI",
+	"canContainContent": false,
+	"modules": [
+		{
+			"name": "CoverEQS",
+			"hostType": "Runtime",
+			"loadingPhase": "Default"
+		}
+	],
+	"pluginDependencies": [],
+	"nativeTypes": [
+		{
+			"classPath": "/Script/CoverEQS.EnvQueryTest_TraceDistance",
+			"parentClassPath": "/Script/AIModule.EnvQueryTest",
+			"moduleName": "CoverEQS",
+			"subsystem": "EQS",
+			"properties": [
+				{
+					"name": "bScoreMissAsMaxDistance",
+					"type": "bool",
+					"value": "False",
+					"category": "Trace"
+				},
+				{
+					"name": "bTraceFromContext",
+					"type": "FAIDataProviderBoolValue",
+					"value": "()",
+					"category": "Trace"
+				},
+				{
+					"name": "ContextHeightOffset",
+					"type": "FAIDataProviderFloatValue",
+					"value": "()",
+					"category": "Trace"
+				},
+				{
+					"name": "IgnoreActorsContext",
+					"type": "TSubclassOf<UEnvQueryContext>",
+					"value": "/Script/CoreUObject.Class'/Script/AIModule.EnvQueryContext_Querier'",
+					"category": "Trace"
+				},
+				{
+					"name": "ItemHeightOffset",
+					"type": "FAIDataProviderFloatValue",
+					"value": "()",
+					"category": "Trace"
+				},
+				{
+					"name": "MaxTraceDistance",
+					"type": "FAIDataProviderFloatValue",
+					"value": "(DefaultValue=3000.000000)",
+					"category": "Trace"
+				},
+				{
+					"name": "ScoreMode",
+					"type": "ECoverEQSTraceDistanceScoreMode",
+					"value": "InvertedDistanceToHit",
+					"category": "Trace"
+				},
+				{
+					"name": "TraceData",
+					"type": "FEnvTraceData",
+					"value": "(ProjectDown=1024.000000,ProjectUp=1024.000000,ExtentX=10.000000,ExtentY=10.000000,ExtentZ=10.000000,TraceMode=GeometryByChannel,bOnlyBlockingHits=True,bCanTraceOnGeometry=True)",
+					"category": "Trace"
+				},
+				{
+					"name": "TraceTo",
+					"type": "TSubclassOf<UEnvQueryContext>",
+					"value": "/Script/CoreUObject.Class'/Script/AIModule.EnvQueryContext_Querier'",
+					"category": "Trace"
+				}
+			]
+		}
+	]
+}

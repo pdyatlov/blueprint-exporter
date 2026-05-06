@@ -1,0 +1,139 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"assetType": "PoseSearchDatabase",
+	"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Databases/Relaxed/PSD_Relaxed_Slide_FeetOut_ExitToRun.PSD_Relaxed_Slide_FeetOut_ExitToRun",
+	"assetName": "PSD_Relaxed_Slide_FeetOut_ExitToRun",
+	"parentClass":
+	{
+		"className": "DataAsset",
+		"classPath": "/Script/Engine.DataAsset",
+		"isNative": true
+	},
+	"schema":
+	{
+		"path": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Schemas/PSS_Relaxed_SlideExit.PSS_Relaxed_SlideExit",
+		"sampleRate": 30,
+		"cardinality": 29,
+		"channels": [
+			{
+				"className": "PoseSearchFeatureChannel_Trajectory",
+				"classPath": "/Script/PoseSearch.PoseSearchFeatureChannel_Trajectory"
+			},
+			{
+				"className": "PoseSearchFeatureChannel_Group",
+				"classPath": "/Script/PoseSearch.PoseSearchFeatureChannel_Group"
+			},
+			{
+				"className": "PoseSearchFeatureChannel_Position",
+				"classPath": "/Script/PoseSearch.PoseSearchFeatureChannel_Position"
+			},
+			{
+				"className": "PoseSearchFeatureChannel_Position",
+				"classPath": "/Script/PoseSearch.PoseSearchFeatureChannel_Position"
+			}
+		],
+		"skeletonRoles": [
+			{
+				"role": "(none)",
+				"skeletonPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Meshes/SK_UEFN_Mannequin.SK_UEFN_Mannequin"
+			}
+		]
+	},
+	"animationAssets": [
+		{
+			"index": 0,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Slide/M_Relaxed_Slide_FootOut_Out_Moving_Run.M_Relaxed_Slide_FootOut_Out_Moving_Run",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		},
+		{
+			"index": 1,
+			"animAssetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Slide/M_Relaxed_Slide_KneesOut_Out_Moving_Run.M_Relaxed_Slide_KneesOut_Out_Moving_Run",
+			"animAssetClass": "AnimSequence",
+			"samplingRangeMin": 0,
+			"samplingRangeMax": 0,
+			"enabled": true,
+			"disableReselection": false,
+			"mirrorOption": "UnmirroredOnly"
+		}
+	],
+	"normalizationSet": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Normalization_Sets/PSN_Relaxed_All.PSN_Relaxed_All",
+	"performance":
+	{
+		"poseSearchMode": "PCAKDTree",
+		"continuingPoseCostBias": -0.5,
+		"baseCostBias": -0.10000000149011612,
+		"loopingCostBias": -0.004999999888241291,
+		"continuingInteractionCostBias": 0,
+		"kdTreeQueryNumNeighbors": 200,
+		"numberOfPrincipalComponents": 4,
+		"kdTreeMaxLeafSize": 16,
+		"posePruningSimilarityThreshold": 0,
+		"pcaValuesPruningSimilarityThreshold": 0,
+		"excludeFromDatabaseMin": 0,
+		"excludeFromDatabaseMax": -0.30000001192092896,
+		"additionalExtrapolationMin": -100,
+		"additionalExtrapolationMax": 100
+	},
+	"tags": [],
+	"dependencies": [
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Normalization_Sets/PSN_Relaxed_All",
+			"assetName": "PSN_Relaxed_All",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/MotionMatchingData/Schemas/PSS_Relaxed_SlideExit",
+			"assetName": "PSS_Relaxed_SlideExit",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Slide/M_Relaxed_Slide_FootOut_Out_Moving_Run",
+			"assetName": "M_Relaxed_Slide_FootOut_Out_Moving_Run",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/Characters/UEFN_Mannequin/Animations/Slide/M_Relaxed_Slide_KneesOut_Out_Moving_Run",
+			"assetName": "M_Relaxed_Slide_KneesOut_Out_Moving_Run",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/PoseSearch",
+			"assetName": "PoseSearch",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		}
+	],
+	"coverage":
+	{
+		"animationAssets":
+		{
+			"total": 2,
+			"documented": 2
+		},
+		"specialized":
+		{
+			"applicable": [],
+			"documented": []
+		},
+		"overallPct": 100
+	}
+}

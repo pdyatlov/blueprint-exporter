@@ -1,0 +1,24 @@
+{
+  "_comment": "M28.3.3 add_custom_event_node post-apply inspection + soak. Duplicates BP_BpxTestGraphNodesCalls (Actor BP with declared TestCount int + DoTheThing() function; reused verbatim from M28.3.2 per the M28.3.3 plan — no new fixture needed) into a scratch path and spawns a UK2Node_CustomEvent named OnTestEvent onto the default EventGraph at a fixed position. The inspect gate asserts the rendered .deep.md surfaces the new CustomEvent node; the soak gate asserts md5 stability across 2 rounds, proving SeedGuidFromJoined(':graph:EventGraph:custom_event:OnTestEvent:224,-48') + SeedPinGuidsForNode overrides UEdGraphNode::CreateNewGuid + UEdGraphPin::CreatePin's FGuid::NewGuid() calls that fire inside AllocateDefaultPins (including the parent UK2Node_Event's delegate pin path).",
+  "op": "add_custom_event_node",
+  "source_fixture": "/Game/TestBlueprints/BP_BpxTestGraphNodesCalls",
+  "scratch_path":   "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_CustomEvent",
+  "inspect_path":   "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_CustomEvent",
+  "plan_kwargs": {
+    "bp_path":    "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_CustomEvent",
+    "graph_name": "EventGraph",
+    "event_name": "OnTestEvent",
+    "position":   [224, -48]
+  },
+  "expected_md": [],
+  "not_expected_md": [],
+  "expected_deep": [
+    "K2Node_CustomEvent",
+    "OnTestEvent"
+  ],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2,
+    "stable_keys": ["node_guid"]
+  }
+}

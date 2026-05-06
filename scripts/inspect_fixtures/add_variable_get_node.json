@@ -1,0 +1,25 @@
+{
+  "_comment": "M28.3.2 add_variable_get_node post-apply inspection + soak. Duplicates BP_BpxTestGraphNodesCalls (Actor BP with declared TestCount int variable) into a scratch path and spawns a UK2Node_VariableGet targeting self-context TestCount onto the default EventGraph at a fixed position. The inspect gate asserts the rendered .deep.md surfaces the new VariableGet node; the soak gate asserts md5 stability across 2 rounds, proving SeedGuidFromJoined(':graph:EventGraph:varget:TestCount:self:160,-48') + SeedPinGuidsForNode overrides UEdGraphNode::CreateNewGuid + UEdGraphPin::CreatePin's FGuid::NewGuid() calls that fire inside AllocateDefaultPins.",
+  "op": "add_variable_get_node",
+  "source_fixture": "/Game/TestBlueprints/BP_BpxTestGraphNodesCalls",
+  "scratch_path":   "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_VarGet",
+  "inspect_path":   "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_VarGet",
+  "plan_kwargs": {
+    "bp_path":            "/Game/TestBlueprints/BP_BpxTest_GraphNodesCallsScratch_VarGet",
+    "graph_name":         "EventGraph",
+    "variable_name":      "TestCount",
+    "target_class_path":  "",
+    "position":           [160, -48]
+  },
+  "expected_md": [],
+  "not_expected_md": [],
+  "expected_deep": [
+    "K2Node_VariableGet",
+    "TestCount"
+  ],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2,
+    "stable_keys": ["node_guid"]
+  }
+}

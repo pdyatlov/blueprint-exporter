@@ -1,0 +1,2837 @@
+{
+	"$schema": "blueprint-exporter-v1",
+	"exportInfo":
+	{
+		"schemaVersion": "1.0.0",
+		"engineVersion": "5.7.4-573521+++UE_DOW+main",
+		"pluginVersion": "1.28.6",
+		"exportTimestamp": "",
+		"contentHash": "7be53e463b01e675b19846b539b2b6ed"
+	},
+	"assetPath": "/Game/_ThirdParty/GASP_example/MetaHumans/Common/Face/Face_PostProcess_AnimBP.Face_PostProcess_AnimBP",
+	"assetName": "Face_PostProcess_AnimBP",
+	"blueprintGuid": "F67A82C544CEB5C34FF340A4F658E208",
+	"blueprintType": "Normal",
+	"blueprintSubclass": "AnimBlueprint",
+	"parentClass":
+	{
+		"className": "AnimInstance",
+		"classPath": "/Script/Engine.AnimInstance",
+		"isNative": true,
+		"moduleName": "/Script/Engine"
+	},
+	"implementedInterfaces": [],
+	"variables": [
+		{
+			"variableName": "Enable Neck Correctives",
+			"variableGuid": "5EDDA1534C554A3EBEF95E87E14BF35F",
+			"variableType":
+			{
+				"category": "bool",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "True",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "",
+			"metaData":
+			{
+			}
+		},
+		{
+			"variableName": "Enable Neck Procedural Control Rig",
+			"variableGuid": "CC04030D4982E482676E81BFC3EE027B",
+			"variableType":
+			{
+				"category": "bool",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "True",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "",
+			"metaData":
+			{
+			}
+		},
+		{
+			"variableName": "Neck Corrective Pose Asset",
+			"variableGuid": "BC1A51354D876AD838B156B541CEB905",
+			"variableType":
+			{
+				"category": "object",
+				"subCategoryObject": "/Script/Engine.PoseAsset",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "None",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "",
+			"metaData":
+			{
+			}
+		},
+		{
+			"variableName": "Neck Correctives LOD Threshold",
+			"variableGuid": "7D53A54B46D5884B2DB08CA51367C605",
+			"variableType":
+			{
+				"category": "int",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "4",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "",
+			"metaData":
+			{
+			}
+		},
+		{
+			"variableName": "Neck Procedural Control Rig LOD Threshold",
+			"variableGuid": "C509DA5C4112310DB197C29E9D97BB5A",
+			"variableType":
+			{
+				"category": "int",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "4",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "",
+			"metaData":
+			{
+			}
+		},
+		{
+			"variableName": "Rig Logic LOD Threshold",
+			"variableGuid": "D4D032C44F1CB238AF8CC385C4DE817B",
+			"variableType":
+			{
+				"category": "int",
+				"subCategoryObject": "",
+				"pinSubCategory": "None",
+				"isArray": false,
+				"isSet": false,
+				"isMap": false,
+				"isReference": false,
+				"isConst": false,
+				"isWeakPointer": false
+			},
+			"defaultValue": "-1",
+			"category": "Default",
+			"flags":
+			{
+				"instanceEditable": true,
+				"blueprintReadOnly": false,
+				"exposeOnSpawn": false,
+				"private": false,
+				"exposeToCinematics": false,
+				"replicated": false,
+				"replicationCondition": "",
+				"repNotify": false,
+				"repNotifyFunc": ""
+			},
+			"toolTip": "",
+			"metaData":
+			{
+			}
+		}
+	],
+	"functions": [
+		{
+			"functionName": "AnimGraph",
+			"functionGuid": "1F1C9B02457BF6EBCF8E10A2B5DC5DFA",
+			"flags":
+			{
+				"pure": false,
+				"const": false,
+				"static": false,
+				"callInEditor": false,
+				"override": false,
+				"event": false,
+				"accessSpecifier": "",
+				"server": false,
+				"client": false,
+				"netMulticast": false,
+				"reliable": false,
+				"blueprintAuthorityOnly": false,
+				"blueprintCosmetic": false
+			},
+			"inputs": [],
+			"outputs": [],
+			"localVariables": [],
+			"description": "",
+			"keywords": [],
+			"category": "",
+			"graph":
+			{
+				"graphName": "AnimGraph",
+				"graphGuid": "1F1C9B02457BF6EBCF8E10A2B5DC5DFA",
+				"graphType": "K2Graph",
+				"schemaClass": "/Script/AnimGraph.AnimationGraphSchema",
+				"nodes": [
+					{
+						"nodeId": "EdGraphNode_Comment_-3184_-384_049BA1AE",
+						"nodeGuid": "049BA1AEB806FC1143E1B9931D67AA2C",
+						"nodeClass": "/Script/UnrealEd.EdGraphNode_Comment",
+						"nodeTitle": "1. Cache Input Pose",
+						"nodeType": "Generic",
+						"positionX": -3184,
+						"positionY": -384,
+						"comment": "1. Cache Input Pose",
+						"commentBubbleVisible": true,
+						"commentBubblePinned": true,
+						"nodeColor": "",
+						"pins": []
+					},
+					{
+						"nodeId": "EdGraphNode_Comment_-2592_-384_5C6D5BCE",
+						"nodeGuid": "5C6D5BCE2B5A506176334578D651AB7F",
+						"nodeClass": "/Script/UnrealEd.EdGraphNode_Comment",
+						"nodeTitle": "2. Head Movement IK (needs to be evaluated only for animations created with MHA)",
+						"nodeType": "Generic",
+						"positionX": -2592,
+						"positionY": -384,
+						"comment": "2. Head Movement IK (needs to be evaluated only for animations created with MHA)",
+						"commentBubbleVisible": true,
+						"commentBubblePinned": true,
+						"nodeColor": "",
+						"pins": []
+					},
+					{
+						"nodeId": "EdGraphNode_Comment_-1296_-384_5FF8533F",
+						"nodeGuid": "5FF8533FC065E36253F3C9E35187C22A",
+						"nodeClass": "/Script/UnrealEd.EdGraphNode_Comment",
+						"nodeTitle": "3. Neck Correctives",
+						"nodeType": "Generic",
+						"positionX": -1296,
+						"positionY": -384,
+						"comment": "3. Neck Correctives",
+						"commentBubbleVisible": true,
+						"commentBubblePinned": true,
+						"nodeColor": "",
+						"pins": []
+					},
+					{
+						"nodeId": "EdGraphNode_Comment_630_-378_7EF60196",
+						"nodeGuid": "7EF60196D2847BA2EF3FA77BA0A977D8",
+						"nodeClass": "/Script/UnrealEd.EdGraphNode_Comment",
+						"nodeTitle": "4. Neck procedural Control Rig",
+						"nodeType": "Generic",
+						"positionX": 630,
+						"positionY": -378,
+						"comment": "4. Neck procedural Control Rig",
+						"commentBubbleVisible": true,
+						"commentBubblePinned": true,
+						"nodeColor": "",
+						"pins": []
+					},
+					{
+						"nodeId": "AnimGraphNode_LinkedInputPose_-3120_-320_774C7585",
+						"nodeGuid": "774C7585EBE5D288ADDD9F9A64160F89",
+						"nodeClass": "/Script/AnimGraph.AnimGraphNode_LinkedInputPose",
+						"nodeTitle": "Input Pose\nInPose",
+						"nodeType": "K2Node",
+						"positionX": -3120,
+						"positionY": -320,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_Pose",
+								"pinName": "Pose",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_SaveCachedPose_-2960_-304_425EF4F6",
+										"pinId": "Pose"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "AnimGraphNode_UseCachedPose_662_-314_0FD7015C",
+						"nodeGuid": "0FD7015CFC7EE528A1841054D49B8B26",
+						"nodeClass": "/Script/AnimGraph.AnimGraphNode_UseCachedPose",
+						"nodeTitle": "Use cached pose 'Neck Corrected Pose'",
+						"nodeType": "K2Node",
+						"positionX": 662,
+						"positionY": -314,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_Pose",
+								"pinName": "Pose",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_ControlRig_966_-314_2B103E32",
+										"pinId": "Source"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "AnimGraphNode_ControlRig_966_-314_2B103E32",
+						"nodeGuid": "2B103E32AF70A255B233AC7630640D3A",
+						"nodeClass": "/Script/ControlRigDeveloper.AnimGraphNode_ControlRig",
+						"nodeTitle": "Control Rig",
+						"nodeType": "K2Node",
+						"positionX": 966,
+						"positionY": -314,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_Alpha",
+								"pinName": "Alpha",
+								"pinFriendlyName": "Alpha",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "1.000000",
+								"autogeneratedDefaultValue": "1.000000",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_AlphaCurveName",
+								"pinName": "AlphaCurveName",
+								"pinFriendlyName": "Alpha Curve Name",
+								"direction": "Input",
+								"type":
+								{
+									"category": "name",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "None",
+								"autogeneratedDefaultValue": "None",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_bAlphaBoolEnabled",
+								"pinName": "bAlphaBoolEnabled",
+								"pinFriendlyName": "bEnabled",
+								"direction": "Input",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "True",
+								"autogeneratedDefaultValue": "True",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_LODThreshold",
+								"pinName": "LODThreshold",
+								"pinFriendlyName": "LOD Threshold",
+								"direction": "Input",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "-1",
+								"autogeneratedDefaultValue": "-1",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_Neck Procedural Control Rig LOD Threshold_646_-218_14FC342A",
+										"pinId": "Neck Procedural Control Rig LOD Threshold"
+									}
+								]
+							},
+							{
+								"pinId": "In_neckCorrMultD",
+								"pinName": "neckCorrMultD",
+								"pinFriendlyName": "neckCorrMultD",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "double",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.600000",
+								"autogeneratedDefaultValue": "0.0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_neckCorrMultM",
+								"pinName": "neckCorrMultM",
+								"pinFriendlyName": "neckCorrMultM",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "double",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.800000",
+								"autogeneratedDefaultValue": "0.0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_neckCorrMultU",
+								"pinName": "neckCorrMultU",
+								"pinFriendlyName": "neckCorrMultU",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "double",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "1.000000",
+								"autogeneratedDefaultValue": "0.0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_Source",
+								"pinName": "Source",
+								"pinFriendlyName": "Source",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"autogeneratedDefaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_UseCachedPose_662_-314_0FD7015C",
+										"pinId": "Pose"
+									}
+								]
+							},
+							{
+								"pinId": "Out_Pose",
+								"pinName": "Pose",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_BlendListByBool_1270_-218_8C001E65",
+										"pinId": "BlendPose_0"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "AnimGraphNode_SaveCachedPose_-2960_-304_425EF4F6",
+						"nodeGuid": "425EF4F6E940A15EBF88C16255641289",
+						"nodeClass": "/Script/AnimGraph.AnimGraphNode_SaveCachedPose",
+						"nodeTitle": "Save cached pose 'Input Pose'",
+						"nodeType": "K2Node",
+						"positionX": -2960,
+						"positionY": -304,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_Pose",
+								"pinName": "Pose",
+								"pinFriendlyName": "Pose",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"autogeneratedDefaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_LinkedInputPose_-3120_-320_774C7585",
+										"pinId": "Pose"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "AnimGraphNode_UseCachedPose_-2496_-304_3623E1BE",
+						"nodeGuid": "3623E1BEF0FCE8B18603D2F183A3BA31",
+						"nodeClass": "/Script/AnimGraph.AnimGraphNode_UseCachedPose",
+						"nodeTitle": "Use cached pose 'Input Pose'",
+						"nodeType": "K2Node",
+						"positionX": -2496,
+						"positionY": -304,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_Pose",
+								"pinName": "Pose",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_ControlRig_-2224_-304_9A2FF5FC",
+										"pinId": "Source"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "AnimGraphNode_ControlRig_-2224_-304_9A2FF5FC",
+						"nodeGuid": "9A2FF5FC9A0BDAD7C7726A6A48307A1B",
+						"nodeClass": "/Script/ControlRigDeveloper.AnimGraphNode_ControlRig",
+						"nodeTitle": "Control Rig",
+						"nodeType": "K2Node",
+						"positionX": -2224,
+						"positionY": -304,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_Alpha",
+								"pinName": "Alpha",
+								"pinFriendlyName": "Alpha",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "1.000000",
+								"autogeneratedDefaultValue": "1.000000",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_AlphaCurveName",
+								"pinName": "AlphaCurveName",
+								"pinFriendlyName": "Alpha Curve Name",
+								"direction": "Input",
+								"type":
+								{
+									"category": "name",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "None",
+								"autogeneratedDefaultValue": "None",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_bAlphaBoolEnabled",
+								"pinName": "bAlphaBoolEnabled",
+								"pinFriendlyName": "bEnabled",
+								"direction": "Input",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "True",
+								"autogeneratedDefaultValue": "True",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_Source",
+								"pinName": "Source",
+								"pinFriendlyName": "Source",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"autogeneratedDefaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_UseCachedPose_-2496_-304_3623E1BE",
+										"pinId": "Pose"
+									}
+								]
+							},
+							{
+								"pinId": "Out_Pose",
+								"pinName": "Pose",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_BlendListByBool_-2000_-240_A952ADD6",
+										"pinId": "BlendPose_0"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Get_Neck Corrective Pose Asset_-1216_-288_22D9546E",
+						"nodeGuid": "22D9546ED324B0760E990E7822B07651",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get Neck Corrective Pose Asset",
+						"nodeType": "VariableGet",
+						"positionX": -1216,
+						"positionY": -288,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/Engine.PoseAsset",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_Neck Corrective Pose Asset",
+								"pinName": "Neck Corrective Pose Asset",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "/Script/Engine.PoseAsset",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_PoseDriver_-880_-288_9A5CAB03",
+										"pinId": "PoseAsset"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "Neck Corrective Pose Asset",
+							"isPure": true,
+							"variableSourceClass": "Self"
+						}
+					},
+					{
+						"nodeId": "AnimGraphNode_PoseDriver_-880_-288_9A5CAB03",
+						"nodeGuid": "9A5CAB03F723DE358FCD374680463DD0",
+						"nodeClass": "/Script/AnimGraph.AnimGraphNode_PoseDriver",
+						"nodeTitle": "Pose Driver\nSource: neck_01 and 2 more",
+						"nodeType": "K2Node",
+						"positionX": -880,
+						"positionY": -288,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_LODThreshold",
+								"pinName": "LODThreshold",
+								"pinFriendlyName": "LOD Threshold",
+								"direction": "Input",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "-1",
+								"autogeneratedDefaultValue": "-1",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_Neck Correctives LOD Threshold_-1216_-112_83AA6568",
+										"pinId": "Neck Correctives LOD Threshold"
+									}
+								]
+							},
+							{
+								"pinId": "In_PoseAsset",
+								"pinName": "PoseAsset",
+								"pinFriendlyName": "Pose Asset",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "None",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_Neck Corrective Pose Asset_-1216_-288_22D9546E",
+										"pinId": "Neck Corrective Pose Asset"
+									}
+								]
+							},
+							{
+								"pinId": "In_SourcePose",
+								"pinName": "SourcePose",
+								"pinFriendlyName": "Source Pose",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"autogeneratedDefaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_UseCachedPose_-1232_-224_1DCE72DE",
+										"pinId": "Pose"
+									}
+								]
+							},
+							{
+								"pinId": "Out_Pose",
+								"pinName": "Pose",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_BlendListByBool_-288_-272_BA9D1A41",
+										"pinId": "BlendPose_0"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "EdGraphNode_Comment_1776_-288_A148D1BA",
+						"nodeGuid": "A148D1BA052EC639BDDA3850883C4328",
+						"nodeClass": "/Script/UnrealEd.EdGraphNode_Comment",
+						"nodeTitle": "5. Rig Logic",
+						"nodeType": "Generic",
+						"positionX": 1776,
+						"positionY": -288,
+						"comment": "5. Rig Logic",
+						"commentBubbleVisible": true,
+						"commentBubblePinned": true,
+						"nodeColor": "",
+						"pins": []
+					},
+					{
+						"nodeId": "AnimGraphNode_Root_2438_-282_1E174398",
+						"nodeGuid": "1E1743985F10A3126C24054B70D9A773",
+						"nodeClass": "/Script/AnimGraph.AnimGraphNode_Root",
+						"nodeTitle": "Output Pose\nAnimGraph",
+						"nodeType": "K2Node",
+						"positionX": 2438,
+						"positionY": -282,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_Result",
+								"pinName": "Result",
+								"pinFriendlyName": "Result",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"autogeneratedDefaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_RigLogic_2022_-218_CFD9E8AE",
+										"pinId": "Pose"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "AnimGraphNode_BlendListByBool_-288_-272_BA9D1A41",
+						"nodeGuid": "BA9D1A4132128162B9A6B3FAAF907C37",
+						"nodeClass": "/Script/AnimGraph.AnimGraphNode_BlendListByBool",
+						"nodeTitle": "Blend Poses by bool",
+						"nodeType": "K2Node",
+						"positionX": -288,
+						"positionY": -272,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_bActiveValue",
+								"pinName": "bActiveValue",
+								"pinFriendlyName": "Active Value",
+								"direction": "Input",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "False",
+								"autogeneratedDefaultValue": "False",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_Enable Neck Correctives_-512_-112_31174957",
+										"pinId": "Enable Neck Correctives"
+									}
+								]
+							},
+							{
+								"pinId": "In_BlendPose_0",
+								"pinName": "BlendPose_0",
+								"pinFriendlyName": "True Pose",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"autogeneratedDefaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_PoseDriver_-880_-288_9A5CAB03",
+										"pinId": "Pose"
+									}
+								]
+							},
+							{
+								"pinId": "In_BlendPose_1",
+								"pinName": "BlendPose_1",
+								"pinFriendlyName": "False Pose",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"autogeneratedDefaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_UseCachedPose_-592_-208_ACE66DEC",
+										"pinId": "Pose"
+									}
+								]
+							},
+							{
+								"pinId": "In_BlendTime_0",
+								"pinName": "BlendTime_0",
+								"pinFriendlyName": "True Blend Time",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.100000",
+								"autogeneratedDefaultValue": "0.100000",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_BlendTime_1",
+								"pinName": "BlendTime_1",
+								"pinFriendlyName": "False Blend Time",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.100000",
+								"autogeneratedDefaultValue": "0.100000",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_Pose",
+								"pinName": "Pose",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_SaveCachedPose_-32_-272_3D559599",
+										"pinId": "Pose"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "AnimGraphNode_SaveCachedPose_-32_-272_3D559599",
+						"nodeGuid": "3D559599E22EADD8A5D2CB8A8989EF9D",
+						"nodeClass": "/Script/AnimGraph.AnimGraphNode_SaveCachedPose",
+						"nodeTitle": "Save cached pose 'Neck Corrected Pose'",
+						"nodeType": "K2Node",
+						"positionX": -32,
+						"positionY": -272,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_Pose",
+								"pinName": "Pose",
+								"pinFriendlyName": "Pose",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"autogeneratedDefaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_BlendListByBool_-288_-272_BA9D1A41",
+										"pinId": "Pose"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "AnimGraphNode_BlendListByBool_-2000_-240_A952ADD6",
+						"nodeGuid": "A952ADD63CB065A7D2C052BA8C4429AD",
+						"nodeClass": "/Script/AnimGraph.AnimGraphNode_BlendListByBool",
+						"nodeTitle": "Blend Poses by bool",
+						"nodeType": "K2Node",
+						"positionX": -2000,
+						"positionY": -240,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_bActiveValue",
+								"pinName": "bActiveValue",
+								"pinFriendlyName": "Active Value",
+								"direction": "Input",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "False",
+								"autogeneratedDefaultValue": "False",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Greater_DoubleDouble_-2208_-64_4A0ADD9A",
+										"pinId": "ReturnValue"
+									}
+								]
+							},
+							{
+								"pinId": "In_BlendPose_0",
+								"pinName": "BlendPose_0",
+								"pinFriendlyName": "True Pose",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"autogeneratedDefaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_ControlRig_-2224_-304_9A2FF5FC",
+										"pinId": "Pose"
+									}
+								]
+							},
+							{
+								"pinId": "In_BlendPose_1",
+								"pinName": "BlendPose_1",
+								"pinFriendlyName": "False Pose",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"autogeneratedDefaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_UseCachedPose_-2288_-160_C4BFA308",
+										"pinId": "Pose"
+									}
+								]
+							},
+							{
+								"pinId": "In_BlendTime_0",
+								"pinName": "BlendTime_0",
+								"pinFriendlyName": "True Blend Time",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.100000",
+								"autogeneratedDefaultValue": "0.100000",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_BlendTime_1",
+								"pinName": "BlendTime_1",
+								"pinFriendlyName": "False Blend Time",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.100000",
+								"autogeneratedDefaultValue": "0.100000",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_Pose",
+								"pinName": "Pose",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_SaveCachedPose_-1744_-240_BD7C4A2E",
+										"pinId": "Pose"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "AnimGraphNode_SaveCachedPose_-1744_-240_BD7C4A2E",
+						"nodeGuid": "BD7C4A2EF958C22D3197C6D05DD2ABC1",
+						"nodeClass": "/Script/AnimGraph.AnimGraphNode_SaveCachedPose",
+						"nodeTitle": "Save cached pose 'Head Moved Pose'",
+						"nodeType": "K2Node",
+						"positionX": -1744,
+						"positionY": -240,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_Pose",
+								"pinName": "Pose",
+								"pinFriendlyName": "Pose",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"autogeneratedDefaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_BlendListByBool_-2000_-240_A952ADD6",
+										"pinId": "Pose"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "AnimGraphNode_UseCachedPose_-1232_-224_1DCE72DE",
+						"nodeGuid": "1DCE72DEC8EECC50EDED6A6E1C4A6DEF",
+						"nodeClass": "/Script/AnimGraph.AnimGraphNode_UseCachedPose",
+						"nodeTitle": "Use cached pose 'Head Moved Pose'",
+						"nodeType": "K2Node",
+						"positionX": -1232,
+						"positionY": -224,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_Pose",
+								"pinName": "Pose",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_PoseDriver_-880_-288_9A5CAB03",
+										"pinId": "SourcePose"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Get_Neck Procedural Control Rig LOD Threshold_646_-218_14FC342A",
+						"nodeGuid": "14FC342A08A2BB274AB682618762EA88",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get Neck Procedural Control Rig LOD Threshold",
+						"nodeType": "VariableGet",
+						"positionX": 646,
+						"positionY": -218,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_Neck Procedural Control Rig LOD Threshold",
+								"pinName": "Neck Procedural Control Rig LOD Threshold",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0",
+								"autogeneratedDefaultValue": "0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_ControlRig_966_-314_2B103E32",
+										"pinId": "LODThreshold"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "Neck Procedural Control Rig LOD Threshold",
+							"isPure": true,
+							"variableSourceClass": "Self"
+						}
+					},
+					{
+						"nodeId": "AnimGraphNode_BlendListByBool_1270_-218_8C001E65",
+						"nodeGuid": "8C001E653A0B81C91199E4C83DB37291",
+						"nodeClass": "/Script/AnimGraph.AnimGraphNode_BlendListByBool",
+						"nodeTitle": "Blend Poses by bool",
+						"nodeType": "K2Node",
+						"positionX": 1270,
+						"positionY": -218,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_bActiveValue",
+								"pinName": "bActiveValue",
+								"pinFriendlyName": "Active Value",
+								"direction": "Input",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "False",
+								"autogeneratedDefaultValue": "False",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_Enable Neck Procedural Control Rig_934_54_8C9A4C71",
+										"pinId": "Enable Neck Procedural Control Rig"
+									}
+								]
+							},
+							{
+								"pinId": "In_BlendPose_0",
+								"pinName": "BlendPose_0",
+								"pinFriendlyName": "True Pose",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"autogeneratedDefaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_ControlRig_966_-314_2B103E32",
+										"pinId": "Pose"
+									}
+								]
+							},
+							{
+								"pinId": "In_BlendPose_1",
+								"pinName": "BlendPose_1",
+								"pinFriendlyName": "False Pose",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"autogeneratedDefaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_UseCachedPose_902_-42_BCB588A5",
+										"pinId": "Pose"
+									}
+								]
+							},
+							{
+								"pinId": "In_BlendTime_0",
+								"pinName": "BlendTime_0",
+								"pinFriendlyName": "True Blend Time",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.100000",
+								"autogeneratedDefaultValue": "0.100000",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_BlendTime_1",
+								"pinName": "BlendTime_1",
+								"pinFriendlyName": "False Blend Time",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.100000",
+								"autogeneratedDefaultValue": "0.100000",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_Pose",
+								"pinName": "Pose",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_RigLogic_2022_-218_CFD9E8AE",
+										"pinId": "AnimSequence"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "AnimGraphNode_RigLogic_2022_-218_CFD9E8AE",
+						"nodeGuid": "CFD9E8AE191C1D2C6FE9D6788803C8B1",
+						"nodeClass": "/Script/RigLogicDeveloper.AnimGraphNode_RigLogic",
+						"nodeTitle": "AnimNode_RigLogic",
+						"nodeType": "K2Node",
+						"positionX": 2022,
+						"positionY": -218,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_AnimSequence",
+								"pinName": "AnimSequence",
+								"pinFriendlyName": "Anim Sequence",
+								"direction": "Input",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"autogeneratedDefaultValue": "(LinkID=-1,SourceLinkID=-1)",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_BlendListByBool_1270_-218_8C001E65",
+										"pinId": "Pose"
+									}
+								]
+							},
+							{
+								"pinId": "In_LODThreshold",
+								"pinName": "LODThreshold",
+								"pinFriendlyName": "LODThreshold",
+								"direction": "Input",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "-1",
+								"autogeneratedDefaultValue": "-1",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Get_Rig Logic LOD Threshold_1798_-154_6A324D25",
+										"pinId": "Rig Logic LOD Threshold"
+									}
+								]
+							},
+							{
+								"pinId": "Out_Pose",
+								"pinName": "Pose",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_Root_2438_-282_1E174398",
+										"pinId": "Result"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "AnimGraphNode_UseCachedPose_-592_-208_ACE66DEC",
+						"nodeGuid": "ACE66DEC3D0559ACF2BF0148833C61D8",
+						"nodeClass": "/Script/AnimGraph.AnimGraphNode_UseCachedPose",
+						"nodeTitle": "Use cached pose 'Head Moved Pose'",
+						"nodeType": "K2Node",
+						"positionX": -592,
+						"positionY": -208,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_Pose",
+								"pinName": "Pose",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_BlendListByBool_-288_-272_BA9D1A41",
+										"pinId": "BlendPose_1"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "AnimGraphNode_UseCachedPose_-2288_-160_C4BFA308",
+						"nodeGuid": "C4BFA308CCF5636D2D4E50DA3E8B5D5A",
+						"nodeClass": "/Script/AnimGraph.AnimGraphNode_UseCachedPose",
+						"nodeTitle": "Use cached pose 'Input Pose'",
+						"nodeType": "K2Node",
+						"positionX": -2288,
+						"positionY": -160,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_Pose",
+								"pinName": "Pose",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_BlendListByBool_-2000_-240_A952ADD6",
+										"pinId": "BlendPose_1"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Get_Rig Logic LOD Threshold_1798_-154_6A324D25",
+						"nodeGuid": "6A324D2515F4FB7D9B93A165372B3CAC",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get Rig Logic LOD Threshold",
+						"nodeType": "VariableGet",
+						"positionX": 1798,
+						"positionY": -154,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_Rig Logic LOD Threshold",
+								"pinName": "Rig Logic LOD Threshold",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0",
+								"autogeneratedDefaultValue": "0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_RigLogic_2022_-218_CFD9E8AE",
+										"pinId": "LODThreshold"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "Rig Logic LOD Threshold",
+							"isPure": true,
+							"variableSourceClass": "Self"
+						}
+					},
+					{
+						"nodeId": "Get_Neck Correctives LOD Threshold_-1216_-112_83AA6568",
+						"nodeGuid": "83AA6568D6D65FB037B9666C7FE907CE",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get Neck Correctives LOD Threshold",
+						"nodeType": "VariableGet",
+						"positionX": -1216,
+						"positionY": -112,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_Neck Correctives LOD Threshold",
+								"pinName": "Neck Correctives LOD Threshold",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "int",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0",
+								"autogeneratedDefaultValue": "0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_PoseDriver_-880_-288_9A5CAB03",
+										"pinId": "LODThreshold"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "Neck Correctives LOD Threshold",
+							"isPure": true,
+							"variableSourceClass": "Self"
+						}
+					},
+					{
+						"nodeId": "Get_Enable Neck Correctives_-512_-112_31174957",
+						"nodeGuid": "3117495709FE81B3E2075469EFA913BB",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get Enable Neck Correctives",
+						"nodeType": "VariableGet",
+						"positionX": -512,
+						"positionY": -112,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_Enable Neck Correctives",
+								"pinName": "Enable Neck Correctives",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "false",
+								"autogeneratedDefaultValue": "false",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_BlendListByBool_-288_-272_BA9D1A41",
+										"pinId": "bActiveValue"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "Enable Neck Correctives",
+							"isPure": true,
+							"variableSourceClass": "Self"
+						}
+					},
+					{
+						"nodeId": "Call_GetCurveValue_-2560_-64_660647F9",
+						"nodeGuid": "660647F9AEFEBE1EE8BF2B3D71E00CD7",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_CallFunction",
+						"nodeTitle": "GetCurveValue",
+						"nodeType": "CallFunction",
+						"positionX": -2560,
+						"positionY": -64,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_CurveName",
+								"pinName": "CurveName",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "name",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "HeadControlSwitch",
+								"autogeneratedDefaultValue": "None",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "float",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.0",
+								"autogeneratedDefaultValue": "0.0",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_Greater_DoubleDouble_-2208_-64_4A0ADD9A",
+										"pinId": "A"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "GetCurveValue",
+							"targetFunction": "/Script/Engine.AnimInstance:GetCurveValue",
+							"functionName": "GetCurveValue",
+							"functionOwnerClass": "/Script/Engine.AnimInstance",
+							"memberParentClass": "Self"
+						}
+					},
+					{
+						"nodeId": "Call_Greater_DoubleDouble_-2208_-64_4A0ADD9A",
+						"nodeGuid": "4A0ADD9ACF9DB4BE1309AE67CDAA8955",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_PromotableOperator",
+						"nodeTitle": "Greater_DoubleDouble",
+						"nodeType": "CallFunction",
+						"positionX": -2208,
+						"positionY": -64,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_A",
+								"pinName": "A",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "double",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "Call_GetCurveValue_-2560_-64_660647F9",
+										"pinId": "ReturnValue"
+									}
+								]
+							},
+							{
+								"pinId": "In_B",
+								"pinName": "B",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "real",
+									"subCategoryObject": "",
+									"pinSubCategory": "double",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "0.500000",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "In_ErrorTolerance",
+								"pinName": "ErrorTolerance",
+								"pinFriendlyName": "",
+								"direction": "Input",
+								"type":
+								{
+									"category": "None",
+									"subCategoryObject": "",
+									"pinSubCategory": "",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"hasBrokenReference": true,
+									"brokenReferenceInfo": "Pin has no category (NAME_None) - likely corrupted"
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_ReturnValue",
+								"pinName": "ReturnValue",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_BlendListByBool_-2000_-240_A952ADD6",
+										"pinId": "bActiveValue"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"memberName": "Greater_DoubleDouble",
+							"targetFunction": "/Script/Engine.KismetMathLibrary:Greater_DoubleDouble",
+							"functionName": "Greater_DoubleDouble",
+							"functionOwnerClass": "/Script/Engine.KismetMathLibrary"
+						}
+					},
+					{
+						"nodeId": "AnimGraphNode_UseCachedPose_902_-42_BCB588A5",
+						"nodeGuid": "BCB588A53065FE79DE0BB99FFD27E863",
+						"nodeClass": "/Script/AnimGraph.AnimGraphNode_UseCachedPose",
+						"nodeTitle": "Use cached pose 'Neck Corrected Pose'",
+						"nodeType": "K2Node",
+						"positionX": 902,
+						"positionY": -42,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "Out_Pose",
+								"pinName": "Pose",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "struct",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_BlendListByBool_1270_-218_8C001E65",
+										"pinId": "BlendPose_1"
+									}
+								]
+							}
+						]
+					},
+					{
+						"nodeId": "Get_Enable Neck Procedural Control Rig_934_54_8C9A4C71",
+						"nodeGuid": "8C9A4C71A16F0657248697947F565B39",
+						"nodeClass": "/Script/BlueprintGraph.K2Node_VariableGet",
+						"nodeTitle": "Get Enable Neck Procedural Control Rig",
+						"nodeType": "VariableGet",
+						"positionX": 934,
+						"positionY": 54,
+						"comment": "",
+						"commentBubbleVisible": false,
+						"commentBubblePinned": false,
+						"nodeColor": "",
+						"pins": [
+							{
+								"pinId": "In_self",
+								"pinName": "self",
+								"pinFriendlyName": "Target",
+								"direction": "Input",
+								"type":
+								{
+									"category": "object",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false,
+									"subCategoryObjectResolved": false
+								},
+								"defaultValue": "",
+								"autogeneratedDefaultValue": "",
+								"hidden": true,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": []
+							},
+							{
+								"pinId": "Out_Enable Neck Procedural Control Rig",
+								"pinName": "Enable Neck Procedural Control Rig",
+								"pinFriendlyName": "",
+								"direction": "Output",
+								"type":
+								{
+									"category": "bool",
+									"subCategoryObject": "",
+									"pinSubCategory": "None",
+									"isArray": false,
+									"isSet": false,
+									"isMap": false,
+									"isReference": false,
+									"isConst": false,
+									"isWeakPointer": false
+								},
+								"defaultValue": "false",
+								"autogeneratedDefaultValue": "false",
+								"hidden": false,
+								"notConnectable": false,
+								"advancedView": false,
+								"connections": [
+									{
+										"nodeId": "AnimGraphNode_BlendListByBool_1270_-218_8C001E65",
+										"pinId": "bActiveValue"
+									}
+								]
+							}
+						],
+						"nodeSpecificData":
+						{
+							"variableName": "Enable Neck Procedural Control Rig",
+							"isPure": true,
+							"variableSourceClass": "Self"
+						}
+					}
+				]
+			}
+		}
+	],
+	"macros": [],
+	"eventGraph":
+	{
+		"graphName": "EventGraph",
+		"graphGuid": "783A6ED24AB5CA0D8615C6AD52C00A4E",
+		"graphType": "EventGraph",
+		"schemaClass": "/Script/BlueprintGraph.EdGraphSchema_K2",
+		"nodes": []
+	},
+	"constructionScript":
+	{
+		"graphName": "",
+		"graphGuid": "",
+		"graphType": "",
+		"schemaClass": "",
+		"nodes": []
+	},
+	"components": [],
+	"cdoProperties": [],
+	"additionalGraphs": [],
+	"stateMachines": [],
+	"widgetTree": [],
+	"dependencies": [
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/MetaHumans/Common/Face/Face_Archetype_Skeleton",
+			"assetName": "Face_Archetype_Skeleton",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/MetaHumans/Common/Face/HeadMovementIK_Proc_CtrlRig",
+			"assetName": "HeadMovementIK_Proc_CtrlRig",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Game/_ThirdParty/GASP_example/MetaHumans/Common/Face/Neck_CtrlRig",
+			"assetName": "Neck_CtrlRig",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/AnimGraph",
+			"assetName": "AnimGraph",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/AnimGraphRuntime",
+			"assetName": "AnimGraphRuntime",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/ControlRig",
+			"assetName": "ControlRig",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/ControlRigDeveloper",
+			"assetName": "ControlRigDeveloper",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/Engine.AnimInstance",
+			"assetName": "AnimInstance",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": true,
+			"description": "Parent class"
+		},
+		{
+			"assetPath": "/Script/RigLogicDeveloper",
+			"assetName": "RigLogicDeveloper",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		},
+		{
+			"assetPath": "/Script/RigLogicModule",
+			"assetName": "RigLogicModule",
+			"dependencyType": "Hard",
+			"isBlueprint": false,
+			"isNativeClass": false,
+			"description": ""
+		}
+	],
+	"metaData":
+	{
+	},
+	"assetType": "AnimBlueprint",
+	"coverage":
+	{
+		"variables":
+		{
+			"total": 6,
+			"documented": 6
+		},
+		"functions":
+		{
+			"total": 1,
+			"documented": 1
+		},
+		"components":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"graphs":
+		{
+			"total": 2,
+			"documented": 2
+		},
+		"cdoProperties":
+		{
+			"total": 0,
+			"documented": 0
+		},
+		"specialized":
+		{
+			"applicable": [
+				"AnimBP.StateMachines"
+			],
+			"documented": [
+				"AnimBP.StateMachines"
+			]
+		},
+		"overallPct": 100
+	}
+}

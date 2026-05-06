@@ -1,0 +1,21 @@
+{
+  "_comment": "M28.5.2 add_eqs_test post-apply inspection + soak. Second M28.5 EQS write-side op. Duplicates EQS_BpxTestWithOption (pre-seeded with one option carrying an EnvQueryGenerator_ActorsOfClass generator + one EnvQueryTest_Random test) into a scratch path and appends a second test of class EnvQueryTest_Distance to option 0. Different test class from the pre-seeded one so the idempotency pre-check does not short-circuit the op. The inspect gate asserts the rendered .deep.md surfaces the Distance test's class name via the M15 EnvQueryDeepRenderer (per-option per-test UPROPERTY table); the soak gate asserts md5 stability across 2 rounds, proving explicit FName on NewObject (`BpxEqsTest_<opt>_<pre_count>_<class>`) + TestOrder=PreCount assignment overrides default counter-suffix drift. Matches M28.5.1 recipe.",
+  "op": "add_eqs_test",
+  "source_fixture": "/Game/TestBlueprints/EQS_BpxTestWithOption",
+  "scratch_path":   "/Game/TestBlueprints/EQS_BpxTest_AddTestScratch",
+  "inspect_path":   "/Game/TestBlueprints/EQS_BpxTest_AddTestScratch",
+  "plan_kwargs": {
+    "eqs_path":        "/Game/TestBlueprints/EQS_BpxTest_AddTestScratch",
+    "option_index":    0,
+    "test_class_path": "/Script/AIModule.EnvQueryTest_Distance"
+  },
+  "expected_md": [],
+  "not_expected_md": [],
+  "expected_deep": [
+    "EnvQueryTest_Distance"
+  ],
+  "not_expected_deep": [],
+  "soak": {
+    "rounds": 2
+  }
+}

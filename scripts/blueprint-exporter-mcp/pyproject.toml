@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "blueprint-exporter-mcp"
+version = "0.1.0"
+description = "MCP server exposing BlueprintExporter's ProjectInventory + edit-plan pipeline to LLM clients."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "fastmcp>=2.11",
+    "websockets>=12",
+]
+
+[project.scripts]
+blueprint-exporter-mcp = "blueprint_exporter_mcp.server:run"
+bpx-mcp-doctor = "blueprint_exporter_mcp.doctor:run"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/blueprint_exporter_mcp"]
